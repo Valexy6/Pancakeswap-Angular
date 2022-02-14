@@ -8,10 +8,7 @@ Usa HTTPS(https:) per immagini ed altri file multimediali.
 ## Struttura sito
 
 Root
-- Pagine (index.html, about.html, contatti.html, ecc)
-- css (cartella contenete tutti i fogli stile)
-- img (cartella contenete tutte le immagini)
-- component Angular
+- ...
 &nbsp;
 
 ## HTML
@@ -78,7 +75,6 @@ Eseguendo il comando per effettuare un commit, è opportuno assegnare ad ogni co
 ### Pull Request
 
 Quando hai terminato con i cambiamenti al tuo progetto, effettua una Pull Request.  
-
 <strong>N.B. Il merge va fatto su develop e non su main!</strong>
 &nbsp;
 
