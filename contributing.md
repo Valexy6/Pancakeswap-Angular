@@ -32,7 +32,7 @@ Assicurati che il tuo editor utilizzi
 
 #### Commenti
 
-Usa i commenti il più possibile per spiegare il codice: a cosa serve, perché viene utilizzato.
+Usa i commenti il più possibile per spiegare il codice: a cosa serve, perchè viene utilizzato.
 
 #### Identazione
 
@@ -50,7 +50,7 @@ Consigliato:
 #### Multimedia Fallback
 
 Fornire contenuti alternativi per la multimedialità.
-Per i contenuti multimediali, come immagini, video, assicurati di offrire un accesso alternativo. Per le immagini ciò significa l'uso di testo alternativo (alt) e per video ed audio, trascrizioni e didascalie ,se disponibili.
+Per i contenuti multimediali, come immagini, video, assicurati di offrire un accesso alternativo. Per le immagini ciò significa l'uso di testo alternativo (alt) e per video ed audio, trascrizioni e didascalie, se disponibili.
 Esempio:
 Non consigliato:
 `<img src="gattini.png/>`
@@ -69,15 +69,16 @@ Denominazione classi in inglese.
 
 ### Branch
 
-Quando crei un branch, é opportuno assegnare un nome che ne descriva il contenuto o la pagina di riferimento a cui si sta lavorando (es.contatti).
+Quando crei un branch, è opportuno assegnare un nome che ne descriva il contenuto o la pagina di riferimento a cui si sta lavorando (es.contatti).
   
 ### Commit
 
-Eseguendo il comando per effettuare un commit, é opportuno assegnare ad ogni commit un nome che descriva ciò che stiamo facendo.
+Eseguendo il comando per effettuare un commit, è opportuno assegnare ad ogni commit un nome che descriva ciò che stiamo facendo.
 
 ### Pull Request
 
-Quando hai terminato con i cambiamenti al tuo progetto, effettua una Pull Request. <br />
+Quando hai terminato con i cambiamenti al tuo progetto, effettua una Pull Request.  
+
 <strong>N.B. Il merge va fatto su develop e non su main!</strong>
 &nbsp;
 
