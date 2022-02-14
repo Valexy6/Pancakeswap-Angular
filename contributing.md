@@ -3,6 +3,7 @@
 ## Protocollo
 
 Usa HTTPS(https:) per immagini ed altri file multimediali.
+&nbsp;
 
 ## Struttura sito
 
@@ -11,6 +12,7 @@ Root
 - css (cartella contenete tutti i fogli stile)
 - img (cartella contenete tutte le immagini)
 - component Angular
+&nbsp;
 
 ## HTML
 
@@ -54,12 +56,14 @@ Non consigliato:
 `<img src="gattini.png/>`
 Consigliato:
 `<img src="gattini.png" alt="foto di 3 gattini che dormono"/>`
+&nbsp;
 
 ## CSS
 
 ### Classi
 
 Denominazione classi in inglese.
+&nbsp;
 
 ## GitHub e Git
 
@@ -75,5 +79,18 @@ Eseguendo il comando per effettuare un commit, é opportuno assegnare ad ogni co
 
 Quando hai terminato con i cambiamenti al tuo progetto, effettua una Pull Request. <br />
 <strong>N.B. Il merge va fatto su develop e non su main!</strong>
+&nbsp;
+
+## Tool
+### Linguaggi
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?style=for-the-badge&logo=typescript&logoColor=white)
+&nbsp;  
+
+### Librerie & Framework
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+&nbsp;
 
 ##### Il team 3 ti ringrazia :tada: :tada: :tada:
