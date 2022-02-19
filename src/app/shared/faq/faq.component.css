@@ -1,0 +1,102 @@
+.tableSection {
+  background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+  padding: 64px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* padding-left: 140px; */
+}
+
+.tableInside {
+  background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+  border: 1px solid rgb(231, 227, 235);
+  border-radius: 24px 24px 0px 0px;
+  padding: 24px;
+  width: 886px;
+  height: 74px;
+}
+
+
+
+.textFaqs h2 {
+  font-size: 24px;
+  color: rgb(118, 69, 217);
+}
+
+.tableContainer {
+  background: #FFFFFF;
+  padding: 24px;
+  border: 1px solid rgb(231, 227, 235);
+  width: 886px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.lineContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.line {
+  height: 2px;
+  background-color: rgb(231, 227, 235);
+  width: 100%;
+}
+
+.secondLine {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.text2 {
+  color: rgb(40, 13, 95);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.thirdLine {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.text3 {
+  color: rgb(40, 13, 95);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.fourthLine {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.text4 {
+  color: rgb(40, 13, 95);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.hiddenDiv1 {
+  color: rgb(122, 110, 170);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-bottom: 16px;
+}

@@ -1,0 +1,34 @@
+.firstLine {
+  cursor: pointer;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.text1 {
+  color: rgb(40, 13, 95);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.buttonDetails {
+  border: 0px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  height: 48px;
+  background-color: transparent;
+  color: rgb(31, 199, 212);
+  box-shadow: none;
+}
+
+.buttonTable svg {
+  fill: rgb(31, 199, 212);
+  /*  margin-left: 0.5rem; */
+}
