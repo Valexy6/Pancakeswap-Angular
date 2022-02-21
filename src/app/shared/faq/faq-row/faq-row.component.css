@@ -1,3 +1,8 @@
+.lineContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .firstLine {
   cursor: pointer;
   display: flex;
@@ -30,5 +35,18 @@
 
 .buttonTable svg {
   fill: rgb(31, 199, 212);
-  /*  margin-left: 0.5rem; */
+}
+
+.line {
+  height: 2px;
+  background-color: rgb(231, 227, 235);
+  width: 100%;
+}
+
+.hiddenDiv1 {
+  color: rgb(122, 110, 170);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-bottom: 16px;
 }

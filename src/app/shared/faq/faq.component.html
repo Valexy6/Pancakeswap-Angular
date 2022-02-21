@@ -8,10 +8,9 @@
   </div>
   <div class="tableContainer">
     <div class="lineContainer">
-      <app-faq-row></app-faq-row>
-      <div class="line"></div>
+      <app-faq-row *ngFor="let faqText of faqTexts" [faqTextInput]="faqText"></app-faq-row>
 
-      <div>
+      <!-- <div>
         <div class="secondLine" (click)="changeBtn()" >
           <div class="text2">When can I trade other NFT Collections?</div>
           <div class="buttonTable">
@@ -75,8 +74,8 @@
             </svg>
           </div>
         </div>
-        <div class="line"></div>
-      </div>
-    </div>
+        <div class="line"></div> -->
+      <!-- </div>
+    </div> -->
   </div>
 </div>

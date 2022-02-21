@@ -1,3 +1,7 @@
+* {
+  font-family: 'Kanit',sans-serif;
+}
+
 .tableSection {
   background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
   padding: 64px 0px;
@@ -21,6 +25,7 @@
 .textFaqs h2 {
   font-size: 24px;
   color: rgb(118, 69, 217);
+  font-weight: bold;
 }
 
 .tableContainer {
@@ -30,67 +35,6 @@
   width: 886px;
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
-}
-
-.lineContainer {
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-.line {
-  height: 2px;
-  background-color: rgb(231, 227, 235);
-  width: 100%;
-}
-
-.secondLine {
-  display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  align-items: center;
-  padding-bottom: 16px;
-}
-
-.text2 {
-  color: rgb(40, 13, 95);
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: bold;
-}
-
-.thirdLine {
-  display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  align-items: center;
-  padding-bottom: 16px;
-}
-
-.text3 {
-  color: rgb(40, 13, 95);
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: bold;
-}
-
-.fourthLine {
-  display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  align-items: center;
-  padding-bottom: 16px;
-}
-
-.text4 {
-  color: rgb(40, 13, 95);
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: bold;
 }
 
 .hiddenDiv1 {
