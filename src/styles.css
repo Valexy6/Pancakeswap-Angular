@@ -49,44 +49,44 @@
 
 /* -- TYPOGRAPHY -- */
 .h1 {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 600;
 }
 
 .h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 
 .h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
 .h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .p {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 .p-light-purple {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--light-purple);
 }
 
 .p-small {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 600;
   line-height: 1.5;
 }
 
 .p-dark {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--dark-purple);
   line-height: 1.1;
