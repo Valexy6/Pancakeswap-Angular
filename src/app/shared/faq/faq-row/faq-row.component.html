@@ -1,4 +1,5 @@
-<div class="firstLine" (click)="changeBtn()" (click)="divShow()">
+<div class="lineContainer">
+  <div class="firstLine" (click)="changeBtn()" (click)="divShow()">
     <div class="text1" >{{ faqTextInput.title }}</div>
     <div class="buttonTable" >
       <button class="buttonDetails" type="button" >
@@ -19,3 +20,4 @@
   </div>
   <div *ngIf="isShown" class="hiddenDiv1"> {{ faqTextInput.description }} </div>
   <div class="line"></div>
+</div>

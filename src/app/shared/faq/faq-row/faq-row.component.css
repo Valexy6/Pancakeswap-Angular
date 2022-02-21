@@ -1,6 +1,7 @@
 .lineContainer {
   display: flex;
   flex-direction: column;
+  margin-bottom: 24px;
 }
 
 .firstLine {
@@ -18,6 +19,7 @@
   font-size: 16px;
   line-height: 1.5;
   font-weight: bold;
+  align-items: center;
 }
 
 .buttonDetails {
