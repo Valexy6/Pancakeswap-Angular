@@ -32,16 +32,5 @@ export class FaqComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  btnVal = "Details"
-  changeBtn() {
-    if (this.btnVal=="Hide") {this.btnVal = "Details"} 
-    else {this.btnVal = "Hide"}
-  }
-
-  isShown: boolean = false ;
-  divShow() {
-    this.isShown = ! this.isShown;
-  }
-
+  
 }
