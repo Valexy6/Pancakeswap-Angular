@@ -1,1 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --hover-color: rgb(31, 199, 212, 0.65);
+  --active-color: rgb(31, 199, 212, 0.85);
+  --cyan: rgb(31, 199, 212);
+  --light-yellow: rgb(240, 185, 11);
+  --yellow: rgb(255, 178, 55);
+  --fuchsia: rgb(237, 75, 158);
+  --green: rgb(49, 208, 170);
+  --white: rgb(250, 249, 250);
+  --grey: rgb(239, 244, 245);
+  --background-color: rgb(238, 234, 244);
+  --grey-border: rgb(231, 227, 235);
+  --column-border: rgb(215, 202, 236);
+  --mauve: rgb(184,173,210);
+  --light-purple: rgb(122, 110, 170);
+  --purple: rgb(118, 69, 217);
+  --dark-purple: rgb(40, 13, 95);
+  --gradient: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
+  --gradient-purple: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
+  --gradient-pink-blue: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+}
+
+/* -- GENERIC -- */
+* {
+  text-decoration: none;
+  font-family: Kanit, sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* -- SCROLL BAR --*/
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: rgb(238 234 244) 0px 0px 5px inset;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--light-purple);
+  border-radius: 0.5rem;
+}
+
+/* -- TYPOGRAPHY -- */
+.h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.p-light-purple {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--light-purple);
+}
+
+.p-small {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.p-dark {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-purple);
+  line-height: 1.1;
+}
+
+.key-words {
+  color: var(--purple);
+}
