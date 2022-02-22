@@ -1,24 +1,24 @@
 .tableSection {
-  padding: 64px 0px;
+  padding: 4rem 0;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 .tableInside {
-  background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
-  border: 1px solid rgb(231, 227, 235);
+  background: var(--gradient-pink-blue);
+  border: 1px solid var(--grey-border);
   border-radius: 24px 24px 0px 0px;
-  padding: 24px;
-  width: 886px;
-  height: 74px;
+  padding: 1.5rem;
+  width: 55.375rem;
+  height: 4.625rem;
 }
 
 
 
 .textFaqs h2 {
   font-size: 24px;
-  color: rgb(118, 69, 217);
+  color: var(--purple);
   font-weight: bold;
   align-items: center;
 }
@@ -26,7 +26,7 @@
 .tableContainer {
   background: #FFFFFF;
   padding: 24px;
-  border: 1px solid rgb(231, 227, 235);
+  border: 1px solid var(--grey-border);
   width: 886px;
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
