@@ -20,7 +20,8 @@ export class FaqComponent implements OnInit {
 
   {
     title: "How can I list my NFT collection on the Market?",
-    description: "In Phase 2 of the NFT Marketplace, collections must be whitelisted before they may be listed.\nWe are now accepting applications from NFT collection owners seeking to list their collections."
+    description: "In Phase 2 of the NFT Marketplace, collections must be whitelisted before they may be listed.\nWe are now accepting applications from NFT collection owners seeking to list their collections.",
+    link: "Ciao"
   },
 
   {

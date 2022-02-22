@@ -19,5 +19,8 @@
     </div>
   </div>
   <div *ngIf="isShown" class="hiddenDiv1"> {{ faqTextInput.description }} </div>
+  <div>
+    <p *ngIf="isShown">{{ faqTextInput.link }}</p>
+  </div>
   <div class="line"></div>
 </div>

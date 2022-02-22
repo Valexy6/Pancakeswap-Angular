@@ -37,12 +37,6 @@
   border-bottom-right-radius: 24px;
 }
 
-.lineContainer {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 24px;
-}
-
 span {
   white-space: pre-line;
 }
