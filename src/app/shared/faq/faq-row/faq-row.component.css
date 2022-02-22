@@ -1,0 +1,72 @@
+.lineContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.firstLine {
+  cursor: pointer;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.text1 {
+  color: rgb(40, 13, 95);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+  align-items: center;
+}
+
+.buttonDetails {
+  border: 0px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  height: 48px;
+  background-color: transparent;
+  color: rgb(31, 199, 212);
+  box-shadow: none;
+}
+
+.buttonTable svg {
+  fill: rgb(31, 199, 212);
+}
+
+.line {
+  height: 2px;
+  background-color: rgb(231, 227, 235);
+  width: 100%;
+}
+
+.hiddenDiv1 {
+  color: rgb(122, 110, 170);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.hyperlink {
+  display: flex;
+  color: rgb(31, 199, 212);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.hyperlink svg {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  margin-left: 4px;
+}
