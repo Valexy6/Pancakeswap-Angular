@@ -1,9 +1,4 @@
-* {
-  font-family: 'Kanit',sans-serif;
-}
-
 .tableSection {
-  background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
   padding: 64px 0px;
   display: flex;
   align-items: center;
