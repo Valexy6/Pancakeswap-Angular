@@ -1,0 +1,226 @@
+/* -- logo -- */
+/* eyes animation */
+.logo-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo-container:hover .left-eye,
+.logo-container:hover .right-eye {
+  transform-origin: center 60%;
+  animation-name: eyes;
+  animation-duration: 350ms;
+  animation-iteration-count: 1;
+}
+
+@keyframes eyes {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(0.1);
+  }
+}
+
+/* logo desktop */
+.desktop-logo {
+  width: 10rem;
+}
+
+/* logo mobile */
+.mobile-logo {
+  width: 2rem;
+}
+
+/* navbar container */
+nav {
+  position: fixed;
+  left: 0;
+  border-bottom: 1px solid var(--grey-border);
+  height: 3.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+  width: 100%;
+  background-color: white;
+  transition: top 0.2s ease 0s;
+}
+
+.nav-position-hide { /* <<<<<<<<<<<<<<<<<<<< */
+  top: -3.5rem;  
+}
+
+.nav-position-show{  /* <<<<<<<<<<<<<<<<<<<< */
+  top: 0;
+  z-index: 20;  
+}
+
+/* link */
+.navlink-left {
+  display: flex;
+  position: relative;
+  margin-left: 1.5rem;
+  z-index: 100;
+}
+
+.dropdown-nav {
+  position: relative;
+}
+
+.dropdown-nav:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  cursor: pointer;
+}
+
+.dropbtn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  color: var(--light-purple);
+  font-size: 1rem;
+  padding: 0 1rem;
+  line-height: 1;
+}
+
+.dropbtn a:hover,
+.dropbtn a:active {
+  background: var(--grey);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid var(--grey-border);
+  border-radius: 1rem;
+  padding: 0.25rem 0;
+  width: 17.5rem;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  color: var(--light-purple);
+  white-space: nowrap;
+  padding: 0 1rem;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--grey);
+}
+
+.dropdown-content a:active {
+  color: var(--purple);
+  opacity: 0.85;
+  transform: translateY(1px);
+}
+
+.dropdown-content a:link {
+  color: var(--light-purple);
+}
+
+.dropdown-content a:visited {
+  color: var(--light-purple);
+}
+
+.dropdown-content hr {
+  border-color: var(--grey-border);
+  border-style: solid;
+  border-width: 1px 0 0;
+  margin: 0.25rem 0;
+}
+
+/* -- nav right -- */
+.pancakes-link {
+  margin-right: 0.75rem;
+  cursor: pointer;
+}
+
+.pancakes-link a {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--light-purple);
+}
+
+.pancakes-link img {
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease 0s;
+}
+
+.pancakes-link:hover img {
+  transform: scale(1.2);
+}
+
+.button-squashed {
+  border-radius: 1rem;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--cyan);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0 -1px 0 0 inset;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  padding: 0px 1rem;
+  height: 2rem; /*32px*/
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.button-squashed:hover {
+  background-color: var(--hover-color);
+}
+
+.button-squashed:active {
+  background-color: var(--active-color);
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+/* -- RESPONSIVE -- */
+@media screen and (min-width: 967px) {
+  .mobile-logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 967px) {
+  .desktop-logo {
+    display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .navlink-left {
+    display: none;
+  }
+
+  .pancakes-link{
+    display: none;
+  }
+}

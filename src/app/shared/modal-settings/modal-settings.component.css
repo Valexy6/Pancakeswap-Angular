@@ -1,0 +1,19 @@
+.mr-1-2 {
+  margin-right: 0.75rem;
+}
+
+.button-gear {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-gear:hover {
+  opacity: 0.65;
+}
+
+.button-gear:active {
+  opacity: 0.85;
+  transform: translateY(1px);
+  box-shadow: none;
+}

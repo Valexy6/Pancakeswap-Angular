@@ -8,6 +8,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FaqComponent } from './shared/faq/faq.component';
 import { FaqRowComponent } from './shared/faq-row/faq-row.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { ModalSettingsComponent } from './shared/modal-settings/modal-settings.component';
+import { LanguageSelectorComponent } from './shared/language-selector/language-selector.component';
 
 
 @NgModule({
@@ -17,6 +19,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     FaqComponent,
     FaqRowComponent,
     NavbarComponent,
+    ModalSettingsComponent,
+    LanguageSelectorComponent,
   ],
   imports: [
     BrowserModule,
