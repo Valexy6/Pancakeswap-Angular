@@ -4,6 +4,7 @@
   --hover-color: rgb(31, 199, 212, 0.65);
   --active-color: rgb(31, 199, 212, 0.85);
   --cyan: rgb(31, 199, 212);
+  --light-yellow: rgb(240, 185, 11);
   --yellow: rgb(255, 178, 55);
   --fuchsia: rgb(237, 75, 158);
   --green: rgb(49, 208, 170);
@@ -12,6 +13,7 @@
   --background-color: rgb(238, 234, 244);
   --grey-border: rgb(231, 227, 235);
   --column-border: rgb(215, 202, 236);
+  --mauve: rgb(184,173,210);
   --light-purple: rgb(122, 110, 170);
   --purple: rgb(118, 69, 217);
   --dark-purple: rgb(40, 13, 95);
