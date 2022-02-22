@@ -7,6 +7,7 @@ import { DesignSystemComponent } from './pages/design-system/design-system.compo
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FaqComponent } from './shared/faq/faq.component';
 import { FaqRowComponent } from './shared/faq-row/faq-row.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { FaqRowComponent } from './shared/faq-row/faq-row.component';
     DesignSystemComponent,
     FaqComponent,
     FaqRowComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
