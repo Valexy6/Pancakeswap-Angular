@@ -35,8 +35,11 @@
   width: 2rem;
 }
 
+/* -- NAVBAR -- */
 /* navbar container */
-nav {
+.navbar-desktop {
+  top: 0;
+  z-index: 20;
   position: fixed;
   left: 0;
   border-bottom: 1px solid var(--grey-border);
@@ -48,16 +51,32 @@ nav {
   padding: 0 1rem 0 1rem;
   width: 100%;
   background-color: white;
-  transition: top 0.2s ease 0s;
 }
 
-.nav-position-hide { /* <<<<<<<<<<<<<<<<<<<< */
-  top: -3.5rem;  
+.collapse-nav {
+  animation: collapse .5s ease forwards;
 }
 
-.nav-position-show{  /* <<<<<<<<<<<<<<<<<<<< */
-  top: 0;
-  z-index: 20;  
+.open{
+  animation: open .5s ease forwards;
+}
+
+@keyframes collapse {
+  from {
+    top: 0;
+  }
+  to {
+    top: -3.5rem;
+  }
+}
+
+@keyframes open {
+  from {
+    top: -3.5rem;
+  }
+  to {
+    top: 0;
+  }
 }
 
 /* link */
@@ -89,13 +108,16 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
   border: none;
   background-color: transparent;
   color: var(--light-purple);
-  font-size: 1rem;
+}
+
+.a-nav {
   padding: 0 1rem;
+  font-size: 1rem;
   line-height: 1;
+  height: 100%;
 }
 
 .dropbtn a:hover,
@@ -202,6 +224,79 @@ nav {
   box-shadow: none;
 }
 
+/* -- bottom navbar -- */
+.nav-bottom {
+  display: none;
+  width: 100%;
+  z-index: 20;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid var(--grey-border);
+  height: 3rem;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.313rem 0.5rem 0;
+  background-color: white;
+}
+
+.navlink-bottom {
+  display: flex;
+  position: relative;
+  margin-left: 1.5rem;
+  z-index: 100;
+}
+
+.a-nav-bottom {
+  flex-direction: column;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.625rem;
+  line-height: 1;
+  height: 2.75rem;
+}
+
+.a-nav-bottom img {
+  height: 22px;
+  width: 21px;
+}
+
+.dropdown-content-bottom {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 3rem);
+  background-color: rgba(40, 13, 95, 0.57);
+  z-index: 19;
+}
+
+.dropdown-nav:hover .dropdown-content-bottom {
+  display: block;
+}
+
+.earn {
+  inset: auto auto 0px 0px;
+  width: calc(100vw - 2rem);
+}
+
+.win {
+  inset: auto auto 0px 0px;
+  width: calc(100vw - 2rem);
+  transform: translate(0.75rem, 0);
+}
+
+.nft {
+  inset: auto 0.5rem 0 auto;
+  width: calc(100vw - 2rem);
+}
+
+.dots {
+  inset: auto 0.5rem 0 auto;
+  width: calc(100vw - 2rem);
+}
+
 /* -- RESPONSIVE -- */
 @media screen and (min-width: 967px) {
   .mobile-logo {
@@ -222,5 +317,9 @@ nav {
 
   .pancakes-link{
     display: none;
+  }
+
+  .nav-bottom{
+    display: flex;
   }
 }
