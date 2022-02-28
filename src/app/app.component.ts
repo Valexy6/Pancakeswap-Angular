@@ -1,5 +1,4 @@
 import { Component, HostListener } from '@angular/core';
-import { Scroll } from '@angular/router';
 
 @Component({
   selector: 'app-root',
