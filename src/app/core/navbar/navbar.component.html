@@ -1,4 +1,5 @@
-<div class="navbar-desktop" [ngClass]="{'collapse-nav': scrollDeltaY > 0, open: scrollDeltaY < 0}">
+<!-- <div class="navbar-desktop" [ngClass]="{'collapse-nav': scrollDeltaY > 0, open: scrollDeltaY < 0}"> -->
+  <div class="navbar-desktop" [ngClass]="scrollDeltaY > 0 ? 'collapse-nav': 'open'">
   <div class="d-flex h-100">
     <div>
       <a href="index.html" class="logo-container">
