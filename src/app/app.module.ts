@@ -7,6 +7,9 @@ import { DesignSystemComponent } from './pages/design-system/design-system.compo
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FaqComponent } from './shared/faq/faq.component';
 import { FaqRowComponent } from './shared/faq-row/faq-row.component';
+import { NavbarComponent } from './core/navbar/navbar.component';
+import { ModalSettingsComponent } from './shared/modal-settings/modal-settings.component';
+import { LanguageSelectorComponent } from './shared/language-selector/language-selector.component';
 
 
 @NgModule({
@@ -15,6 +18,9 @@ import { FaqRowComponent } from './shared/faq-row/faq-row.component';
     DesignSystemComponent,
     FaqComponent,
     FaqRowComponent,
+    NavbarComponent,
+    ModalSettingsComponent,
+    LanguageSelectorComponent,
   ],
   imports: [
     BrowserModule,

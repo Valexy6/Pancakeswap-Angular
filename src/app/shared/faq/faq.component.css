@@ -1,5 +1,4 @@
 .tableSection {
-  padding: 4rem 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -10,11 +9,10 @@
   border: 0.063rem solid var(--grey-border);
   border-radius: 1.5rem 1.5rem 0rem 0rem;
   padding: 1.5rem;
-  width: 55.375rem;
+  width: 100%;
+  max-width: 55.375rem;
   height: 4.625rem;
 }
-
-
 
 .textFaqs h2 {
   font-size: 1.5rem;
@@ -27,7 +25,8 @@
   background: #FFFFFF;
   padding: 1.5rem;
   border: 0.063rem solid var(--grey-border);
-  width:55.375rem;
+  width: 100%;
+  max-width: 55.375rem;
   border-bottom-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
 }
