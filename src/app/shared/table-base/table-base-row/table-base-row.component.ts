@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { ITableBase } from 'src/app/models/TableBase';
 
 @Component({
@@ -8,6 +8,7 @@ import { ITableBase } from 'src/app/models/TableBase';
 })
 export class TableBaseRowComponent implements OnInit {
   @Input() tableBaseRows!:ITableBase;
+
 
   constructor() { }
 
