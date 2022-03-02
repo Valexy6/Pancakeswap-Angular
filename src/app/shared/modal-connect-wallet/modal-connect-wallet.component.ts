@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./modal-connect-wallet.component.css']
 })
 export class ModalConnectWalletComponent implements OnInit {
+  isVisible: boolean = false;
 
   constructor() { }
-
+    
   ngOnInit(): void {
+  }
+
+  modalToggle() {
+    this.isVisible = !this.isVisible;
   }
 
 }

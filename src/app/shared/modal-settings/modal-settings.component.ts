@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,  OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-modal-settings',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./modal-settings.component.css']
 })
 export class ModalSettingsComponent implements OnInit {
+  isVisible: boolean = false;
 
   constructor() { }
-
+    
   ngOnInit(): void {
+  }
+
+  modalToggle() {
+    this.isVisible = !this.isVisible;
   }
 
 }
