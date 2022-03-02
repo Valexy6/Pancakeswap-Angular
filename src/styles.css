@@ -13,7 +13,7 @@
   --background-color: rgb(238, 234, 244);
   --grey-border: rgb(231, 227, 235);
   --column-border: rgb(215, 202, 236);
-  --mauve: rgb(184,173,210);
+  --mauve: rgb(184, 173, 210);
   --light-purple: rgb(122, 110, 170);
   --purple: rgb(118, 69, 217);
   --dark-purple: rgb(40, 13, 95);
@@ -30,6 +30,16 @@
   margin: 0px;
   padding: 0px;
 }
+
+html {
+  overflow-y: overlay;
+}
+
+a {
+  text-decoration: none;
+}
+
+
 
 /* -- SCROLL BAR --*/
 /* width */
