@@ -10,6 +10,7 @@ import { FaqRowComponent } from './shared/faq-row/faq-row.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { ModalSettingsComponent } from './shared/modal-settings/modal-settings.component';
 import { LanguageSelectorComponent } from './shared/language-selector/language-selector.component';
+import { ModalConnectWalletComponent } from './shared/modal-connect-wallet/modal-connect-wallet.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { LanguageSelectorComponent } from './shared/language-selector/language-s
     NavbarComponent,
     ModalSettingsComponent,
     LanguageSelectorComponent,
+    ModalConnectWalletComponent,
   ],
   imports: [
     BrowserModule,
