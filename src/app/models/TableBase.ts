@@ -1,9 +1,10 @@
 export interface ITableBase {
   position: string;
-  imgToken?: string;
+  imgToken: string;
   name: string;
   price: number;
   priceChange: number;
   volume: number;
   liquidity: number;
+  isTrue?: boolean;
 }

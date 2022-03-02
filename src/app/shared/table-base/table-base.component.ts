@@ -25,6 +25,7 @@ export class TableBaseComponent implements OnInit {
     priceChange: 0.03,
     volume: 481.66,
     liquidity: 839.17,
+    isTrue: false,
   },
   {
     position: "2",
@@ -34,15 +35,17 @@ export class TableBaseComponent implements OnInit {
     priceChange: 4.21,
     volume: 461.09,
     liquidity: 2.91,
+    isTrue: true,
   },
   {
     position: "3",
-    imgToken: "",
+    imgToken: "../../../../assets/icons/questionMark.svg",
     name: "FistToken (Fist)",
     price: 6.20,
     priceChange: 85.07,
     volume: 250.28,
     liquidity: 2.20,
+    isTrue: true,
   },
   {
     position: "4",
@@ -52,6 +55,7 @@ export class TableBaseComponent implements OnInit {
     priceChange: 0.02,
     volume: 157.01,
     liquidity: 1.62,
+    isTrue: true,
   },
   {
     position: "5",
@@ -61,6 +65,7 @@ export class TableBaseComponent implements OnInit {
     priceChange: 5.47,
     volume: 15.99,
     liquidity: 237.98,
+    isTrue: true,
   },
   {
     position: "6",
@@ -70,6 +75,7 @@ export class TableBaseComponent implements OnInit {
     priceChange: 0.02,
     volume: 157.01,
     liquidity: 254.37,
+    isTrue: false,
   },
   {
     position: "7",
@@ -79,6 +85,7 @@ export class TableBaseComponent implements OnInit {
     priceChange: 1.04,
     volume: 10.95,
     liquidity: 238.58,
+    isTrue: true,
   },
   {
     position: "8",
@@ -88,15 +95,17 @@ export class TableBaseComponent implements OnInit {
     priceChange: 3.01,
     volume: 10.17,
     liquidity: 228.25,
+    isTrue: false,
   },
   {
     position: "9",
-    imgToken: "",
+    imgToken: "../../../../assets/icons/questionMark.svg",
     name: "Luna Rush Token (LUS)",
     price: 1.00,
     priceChange: 11.06,
     volume: 9.07,
     liquidity: 573.62,
+    isTrue: true,
   },
   {
     position: "10",
@@ -106,6 +115,7 @@ export class TableBaseComponent implements OnInit {
     priceChange: 5.69,
     volume: 6.49,
     liquidity: 3.67,
+    isTrue: true,
   }
 ]
 

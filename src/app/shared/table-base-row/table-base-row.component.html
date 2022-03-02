@@ -4,18 +4,28 @@
   </div>
 
   <div class="img-token">
-    <div class="img-name-token"><img src="{{ tableBaseRows.imgToken }}" alt="image token"></div>
+    <div class="img-name-token">
+      <img src="{{ tableBaseRows.imgToken }}" alt="image token" />
+    </div>
 
     <div class="name-token">
       <div class="description-token">{{ tableBaseRows.name }}</div>
-      
     </div>
   </div>
 
   <div class="rightTable">${{ tableBaseRows.price }}</div>
 
   <div class="rightTable">
-    <div>{{ tableBaseRows.priceChange }}%</div>
+    <div
+      [ngStyle]="
+        tableBaseRows.isTrue
+          ? { color: 'rgb(49, 208, 170)'}
+          : { color: 'rgb(237, 75, 158)'}
+      "
+    >
+      <span *ngIf="tableBaseRows.isTrue; else other_content ">↑</span>
+      {{ tableBaseRows.priceChange }}%
+    </div>
   </div>
 
   <div class="rightTable">${{ tableBaseRows.volume }}M</div>
@@ -23,3 +33,5 @@
   <div class="rightTable">${{ tableBaseRows.liquidity }}M</div>
 </div>
 <div class="line"></div>
+
+<ng-template #other_content>↓</ng-template>
