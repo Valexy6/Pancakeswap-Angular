@@ -17,4 +17,12 @@ export class ModalConnectWalletComponent implements OnInit {
     this.isVisible = !this.isVisible;
   }
 
+  hideScrollbar() {
+    document.body.style.overflow = 'hidden';
+  }
+
+  showScrollbar() {
+    document.body.style.overflow = 'overlay';
+  }
+
 }
