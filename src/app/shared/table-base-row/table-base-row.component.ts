@@ -4,15 +4,12 @@ import { ITableBase } from 'src/app/models/TableBase';
 @Component({
   selector: 'app-table-base-row',
   templateUrl: './table-base-row.component.html',
-  styleUrls: ['./table-base-row.component.css']
+  styleUrls: ['./table-base-row.component.css'],
 })
 export class TableBaseRowComponent implements OnInit {
-  @Input() tableBaseRows!:ITableBase;
+  @Input() tableBaseRows!: ITableBase;
 
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

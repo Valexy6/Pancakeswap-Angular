@@ -8,14 +8,6 @@ import { ITableBase } from 'src/app/models/TableBase';
 })
 export class TableBaseComponent implements OnInit {
   isAscendic = true;
-  // tableBaseTitle:ITableBase = {
-  //   position: "#",
-  //   name: "NAME",
-  //   price: "PRICE",
-  //   priceChange: "PRICE CHANGE",
-  //   volume: "VOLUME",
-  //   liquidity: "LIQUIDITY",
-  // }
 
   tableBaseRows: ITableBase[] = [
     {
@@ -40,7 +32,7 @@ export class TableBaseComponent implements OnInit {
     },
     {
       position: '3',
-      imgToken: '../../../../assets/icons/questionMark.svg',
+      imgToken: 'assets/icons/questionMark.svg',
       name: 'FistToken (Fist)',
       price: 6.2,
       priceChange: 85.07,
@@ -99,7 +91,7 @@ export class TableBaseComponent implements OnInit {
     },
     {
       position: '9',
-      imgToken: '../../../../assets/icons/questionMark.svg',
+      imgToken: 'assets/icons/questionMark.svg',
       name: 'Luna Rush Token (LUS)',
       price: 1.0,
       priceChange: 11.06,

@@ -17,13 +17,17 @@
 
   <div class="rightTable">
     <div
-    [ngClass]="{
-      'positive' : tableBaseRows.priceChange> 0,
-      'negative' : tableBaseRows.priceChange < 0
-   }"
+      [ngClass]="{
+        positive: tableBaseRows.priceChange > 0,
+        negative: tableBaseRows.priceChange < 0
+      }"
     >
-      <span *ngIf="tableBaseRows.priceChange > 0; else other_content ">↑</span>
-      {{ (tableBaseRows.priceChange >= 0 ? tableBaseRows.priceChange : -tableBaseRows.priceChange) }}%
+      <span *ngIf="tableBaseRows.priceChange > 0; else other_content">↑</span>
+      {{
+        tableBaseRows.priceChange >= 0
+          ? tableBaseRows.priceChange
+          : -tableBaseRows.priceChange
+      }}%
     </div>
   </div>
 
