@@ -1,5 +1,5 @@
 <!-- Button trigger modal connect wallet -->
-<button class="button-squashed" type="button" (click)="modalToggle()" (click)="hideScrollbar()">Connect Wallet</button>
+<button class="button-squashed" type="button" (click)="modalToggle(); hideScrollbar()">Connect Wallet</button>
 
 <!-- Modal -->
 <div class="modal-bcg" *ngIf="isVisible" >
@@ -7,7 +7,7 @@
 
     <div class="modal-wallet-header">
       <h3 class="h3 m-0">Connect Wallet</h3>
-      <button type="button" class="close-btn" (click)="showScrollbar()" (click)="modalToggle()" >
+      <button type="button" class="close-btn" (click)="showScrollbar(); modalToggle()">
         <img src="../../../assets/icons/exit.svg" />
       </button>
     </div>
