@@ -1,0 +1,21 @@
+.top-table {
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+  padding: 0px 1.5rem 1rem 1.5rem;
+  grid-template-columns: 1.25rem 3fr repeat(4, 1fr);
+}
+
+.titleTable {
+  color: var(--purple);
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.line {
+  height: 1px;
+  background-color: var(--grey-border);
+  width: 100%;
+}

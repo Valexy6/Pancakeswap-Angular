@@ -7,6 +7,10 @@ import { DesignSystemComponent } from './pages/design-system/design-system.compo
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FaqComponent } from './shared/faq/faq.component';
 import { FaqRowComponent } from './shared/faq-row/faq-row.component';
+
+import { TableBaseComponent } from './shared/table-base/table-base.component';
+import { TableBaseTitleComponent } from './shared/table-base-title/table-base-title.component';
+import { TableBaseRowComponent } from './shared/table-base-row/table-base-row.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { ModalSettingsComponent } from './shared/modal-settings/modal-settings.component';
 import { LanguageSelectorComponent } from './shared/language-selector/language-selector.component';
@@ -18,6 +22,9 @@ import { LanguageSelectorComponent } from './shared/language-selector/language-s
     DesignSystemComponent,
     FaqComponent,
     FaqRowComponent,
+    TableBaseComponent,
+    TableBaseTitleComponent,
+    TableBaseRowComponent,
     NavbarComponent,
     ModalSettingsComponent,
     LanguageSelectorComponent,
