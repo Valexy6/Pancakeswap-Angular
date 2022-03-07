@@ -84,7 +84,7 @@
   display: flex;
   position: relative;
   margin-left: 1.5rem;
-  z-index: 100;
+  z-index: 25;
 }
 
 .dropdown-nav {
@@ -173,6 +173,7 @@
   border-style: solid;
   border-width: 1px 0 0;
   margin: 0.25rem 0;
+  opacity: 1;
 }
 
 /* -- nav right -- */
@@ -195,33 +196,6 @@
 
 .pancakes-link:hover img {
   transform: scale(1.2);
-}
-
-.button-squashed {
-  border-radius: 1rem;
-  border: 0;
-  font-size: 1rem;
-  font-weight: 600;
-  background-color: var(--cyan);
-  color: white;
-  box-shadow: rgb(14 14 44 / 40%) 0 -1px 0 0 inset;
-  cursor: pointer;
-  letter-spacing: 0.03em;
-  line-height: 1;
-  padding: 0px 1rem;
-  height: 2rem; /*32px*/
-  opacity: 1;
-  white-space: nowrap;
-}
-
-.button-squashed:hover {
-  background-color: var(--hover-color);
-}
-
-.button-squashed:active {
-  background-color: var(--active-color);
-  transform: translateY(1px);
-  box-shadow: none;
 }
 
 /* -- bottom navbar -- */

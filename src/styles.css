@@ -17,6 +17,7 @@
   --light-purple: rgb(122, 110, 170);
   --purple: rgb(118, 69, 217);
   --dark-purple: rgb(40, 13, 95);
+  --dark-purple-overlay: rgba(40, 13, 95, 0.6);
   --gradient: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
   --gradient-purple: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
   --gradient-pink-blue: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
@@ -71,7 +72,7 @@ a {
 }
 
 .h3 {
-  font-size: 1.25rem;
+  font-size: 1.25rem; /*20px*/
   font-weight: 600;
 }
 
