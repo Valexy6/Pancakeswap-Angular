@@ -11,6 +11,8 @@ import { NavbarComponent } from './core/navbar/navbar.component';
 import { ModalSettingsComponent } from './shared/modal-settings/modal-settings.component';
 import { LanguageSelectorComponent } from './shared/language-selector/language-selector.component';
 import { ModalConnectWalletComponent } from './shared/modal-connect-wallet/modal-connect-wallet.component';
+import { FooterContainerComponent } from './core/footer-container/footer-container.component';
+import { DarkModeComponent } from './shared/dark-mode/dark-mode.component';
 
 
 @NgModule({
@@ -23,6 +25,8 @@ import { ModalConnectWalletComponent } from './shared/modal-connect-wallet/modal
     ModalSettingsComponent,
     LanguageSelectorComponent,
     ModalConnectWalletComponent,
+    FooterContainerComponent,
+    DarkModeComponent,
   ],
   imports: [
     BrowserModule,

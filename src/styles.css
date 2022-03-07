@@ -52,6 +52,7 @@ a {
 ::-webkit-scrollbar-track {
   box-shadow: rgb(238 234 244) 0px 0px 5px inset;
   border-radius: 10px;
+  background-color: var(--white);
 }
 
 /* Handle */
