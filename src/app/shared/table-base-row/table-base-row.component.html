@@ -17,14 +17,13 @@
 
   <div class="rightTable">
     <div
-      [ngStyle]="
-        tableBaseRows.isTrue
-          ? { color: 'rgb(49, 208, 170)'}
-          : { color: 'rgb(237, 75, 158)'}
-      "
+    [ngClass]="{
+      'positive' : tableBaseRows.priceChange> 0,
+      'negative' : tableBaseRows.priceChange < 0
+   }"
     >
-      <span *ngIf="tableBaseRows.isTrue; else other_content ">↑</span>
-      {{ tableBaseRows.priceChange }}%
+      <span *ngIf="tableBaseRows.priceChange > 0; else other_content ">↑</span>
+      {{ (tableBaseRows.priceChange >= 0 ? tableBaseRows.priceChange : -tableBaseRows.priceChange) }}%
     </div>
   </div>
 

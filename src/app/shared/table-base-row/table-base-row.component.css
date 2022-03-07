@@ -1,15 +1,15 @@
 .line {
   height: 1px;
-  background-color: rgb(231, 227, 235);
+  background-color: var(--grey-border);
   width: 100%;
 }
 
 .tokens {
   display: grid;
-  gap: 1em;
+  gap: 1rem;
   align-items: center;
-  padding: 0px 24px 16px 24px;
-  grid-template-columns: 20px 3fr repeat(4, 1fr);
+  padding: 0px 1.5rem 1rem 1.5rem;
+  grid-template-columns: 1.25rem 3fr repeat(4, 1fr);
 }
 
 .box-number-token {
@@ -18,7 +18,7 @@
 
 .number-token {
   color: var(--dark-purple);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -30,12 +30,12 @@
 }
 
 .img-name-token img {
-  width: 24px;
-  height: 24px;
-  border-radius: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 1.5rem;
   box-shadow: rgb(0 0 0 / 8%) 0px 6px 10px;
-  background-color: rgb(250, 249, 250);
-  color: rgb(40, 13, 95);
+  background-color: var(--white);
+  color: var(--dark-purple);
 }
 
 .name-token {
@@ -44,7 +44,7 @@
 
 .description-token {
   color: var(--dark-purple);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   margin-left: 10px;
@@ -53,7 +53,15 @@
 
 .rightTable {
   color: var(--dark-purple);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
+}
+
+.positive {
+  color: var(--green);
+}
+
+.negative {
+  color: var(--fuchsia);
 }

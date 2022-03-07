@@ -6,5 +6,4 @@ export interface ITableBase {
   priceChange: number;
   volume: number;
   liquidity: number;
-  isTrue?: boolean;
 }
