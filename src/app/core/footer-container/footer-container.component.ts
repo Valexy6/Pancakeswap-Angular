@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer-container.component.css']
 })
 export class FooterContainerComponent implements OnInit {
-
+  colorLink: string = 'var(--mauve)';
+  
   constructor() { }
 
   ngOnInit(): void {

@@ -1,8 +1,13 @@
 footer {
-  background: rgb(39, 38, 44);
+  background: var(--footer-bcg);
   display: flex;
   justify-content: center;
   padding: 56px 40px 32px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .f-wrapper {
@@ -21,7 +26,7 @@ footer {
 
 .f-link {
   list-style: none;  
-  font-size: 16px;
+  font-size: 1rem;
   font-family: 'Kanit', sans-serif;
   color: rgb(244, 238, 255);
 }
@@ -73,24 +78,8 @@ footer {
   min-height: 48px;
 }
 
-.switcher {
-  width: 56px;
-  height: 32px;
-  background-color: gray;
-}
-
-.f-row3 > div:first-child {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .f-row3 .language-container {
   padding: 0px 24px;
-}
-
-button[name=lang-selector] img {
-  margin-right: 0.5rem;
 }
 
 .f-row3 .lang-selector {
@@ -99,20 +88,6 @@ button[name=lang-selector] img {
   bottom: 100%;
 }
 
-.f-row3 > div:last-child {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .f-row3 .pancakes-link {
   margin-right: 20px;
-}
-
-.f-row3 .pancakes-link a {
-  color: var(--light-purple);
-}
-
-.f-row3 > div:last-child img{
-  margin-left: 8px;
 }

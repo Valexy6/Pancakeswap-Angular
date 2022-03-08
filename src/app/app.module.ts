@@ -13,6 +13,8 @@ import { LanguageSelectorComponent } from './shared/language-selector/language-s
 import { ModalConnectWalletComponent } from './shared/modal-connect-wallet/modal-connect-wallet.component';
 import { FooterContainerComponent } from './core/footer-container/footer-container.component';
 import { DarkModeComponent } from './shared/dark-mode/dark-mode.component';
+import { PancakeTradeComponent } from './shared/pancake-trade/pancake-trade.component';
+import { GeneralButtonComponent } from './shared/general-button/general-button.component';
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import { DarkModeComponent } from './shared/dark-mode/dark-mode.component';
     ModalConnectWalletComponent,
     FooterContainerComponent,
     DarkModeComponent,
+    PancakeTradeComponent,
+    GeneralButtonComponent,
   ],
   imports: [
     BrowserModule,

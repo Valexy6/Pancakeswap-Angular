@@ -38,29 +38,30 @@
     </div>
 
     <div class="f-row2">
-      <a href="#"><img src="assets/icons/twitter.svg" /></a>
+      <a href="#"><img src="../../../assets/icons/twitter-mauve.svg" /></a>
       <div>
-        <a href="#"><img src="assets/icons/telegram.svg" /></a>
+        <a href="#"><img src="../../../assets/icons/telegram-mauve.svg" /></a>
       </div>
-      <a href="#"><img src="assets/icons/reddit.svg" /></a>
-      <a href="#"><img src="assets/icons/instagram.svg" /></a>
-      <a href="#"><img src="assets/icons/github.svg" /></a>
-      <a href="#"><img src="assets/icons/discord.svg" /></a>
+      <a href="#"><img src="../../../assets/icons/reddit-mauve.svg" /></a>
+      <a href="#"><img src="../../../assets/icons/instagram-mauve.svg" /></a>
+      <a href="#"><img src="../../../assets/icons/github-mauve.svg" /></a>
+      <a href="#"><img src="../../../assets/icons/discord-mauve.svg" /></a>
+      <a href="#"><img src="../../../assets/icons/medium-mauve.svg" /></a>
+
     </div>
 
     <div class="f-row3">
-      <div>
+      <div class="d-flex justify-content-center align-items-center">
         <app-dark-mode></app-dark-mode>
         <app-language-selector></app-language-selector>
       </div>
 
-      <div>
-        <div class="pancakes-link">
-          <a href="#" target="_blanck"><img src="assets/icons/pancakes.svg" />$11.926</a>
-            <!--link to trade-->
-        </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <app-pancake-trade [colorLink]="colorLink"></app-pancake-trade>
 
-        <button class="button-wallet" type="button">Buy CAKE<img src="assets/icons/row.svg" /></button>
+        <app-general-button
+        [button]="{ class: 'button-squashed', text: 'Buy CAKE' }"
+        ></app-general-button>
       </div>
     </div>
 

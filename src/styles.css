@@ -18,6 +18,7 @@
   --purple: rgb(118, 69, 217);
   --dark-purple: rgb(40, 13, 95);
   --dark-purple-overlay: rgba(40, 13, 95, 0.6);
+  --footer-bcg: rgb(39, 38, 44);
   --gradient: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
   --gradient-purple: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
   --gradient-pink-blue: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
@@ -52,7 +53,6 @@ a {
 ::-webkit-scrollbar-track {
   box-shadow: rgb(238 234 244) 0px 0px 5px inset;
   border-radius: 10px;
-  background-color: var(--white);
 }
 
 /* Handle */

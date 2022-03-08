@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   @Input() scrollDeltaY!: number;
+  colorLink: string = 'var(--light-purple)';
 
   constructor() { }
 

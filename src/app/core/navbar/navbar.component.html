@@ -1,5 +1,5 @@
-<!-- <div class="navbar-desktop" [ngClass]="{'collapse-nav': scrollDeltaY > 0, open: scrollDeltaY < 0}"> -->
-  <div class="navbar-desktop" [ngClass]="scrollDeltaY > 0 ? 'collapse-nav': 'open'">
+<div class="navbar-desktop" [ngClass]="{'collapse-nav': scrollDeltaY > 0, 'open-nav': scrollDeltaY < 0}">
+
   <div class="d-flex h-100">
     <div>
       <a href="index.html" class="logo-container">
@@ -121,7 +121,7 @@
     <!--left side-->
     <div class="navlink-left">
       <div class="dropdown-nav">
-        <div class="dropbtn">
+        <div class="dropbtn-nav">
           <a class="a-nav" href="trade-exchange.html">Trade</a>
         </div>
         <div class="dropdown-content">
@@ -131,7 +131,7 @@
       </div>
 
       <div class="dropdown-nav">
-        <div class="dropbtn">
+        <div class="dropbtn-nav">
           <a class="a-nav" href="#" >Earn</a>
         </div>
         <div class="dropdown-content">
@@ -141,7 +141,7 @@
       </div>
 
       <div class="dropdown-nav">
-        <div class="dropbtn">
+        <div class="dropbtn-nav">
           <a class="a-nav" href="#" >Win</a>
         </div>
         <div class="dropdown-content">
@@ -151,7 +151,7 @@
       </div>
 
       <div class="dropdown-nav">
-        <div class="dropbtn">
+        <div class="dropbtn-nav">
           <a class="a-nav" href="#" >NFT</a>
         </div>
         <div class="dropdown-content">
@@ -161,7 +161,7 @@
       </div>
 
       <div class="dropdown-nav">
-        <div class="dropbtn">
+        <div class="dropbtn-nav">
           <a class="a-nav" href="#" >
             <img class="dot-color" src="../../../assets/icons/dotdotdot-lightpurple.svg" />
           </a>
@@ -182,11 +182,8 @@
 
   <!--right side-->
   <div class="d-flex align-items-center h-100">
-    <div class="pancakes-link">
-      <a href="trade-exchange.html" target="_blanck">
-        <img src="../../../assets/icons/bunny-color.svg" />$11.926</a>
-    </div>
 
+    <app-pancake-trade [colorLink]="colorLink"></app-pancake-trade>
     <app-language-selector></app-language-selector>
     <app-modal-settings></app-modal-settings>
     <app-modal-connect-wallet></app-modal-connect-wallet>
@@ -195,10 +192,10 @@
 
 </div>
 
-<!--Bottom Navbar-->
+<!--Bottom Navbar Responsive-->
 <div class="nav-bottom">
   <div class="dropdown-nav">
-    <div class="dropbtn">
+    <div class="dropbtn-nav">
       <a class="a-nav-bottom" href="trade-exchange.html">
         <img class="mb-1" src="../../../assets/icons/trades-lightpurple.svg" />
         Trade
@@ -207,7 +204,7 @@
   </div>
 
   <div class="dropdown-nav">
-    <div class="dropbtn">
+    <div class="dropbtn-nav">
       <a class="a-nav-bottom" href="#">
         <img class="mb-1" src="../../../assets/icons/earn-lightpurple.svg" />
         Earn
@@ -222,7 +219,7 @@
   </div>
 
   <div class="dropdown-nav">
-    <div class="dropbtn">
+    <div class="dropbtn-nav">
       <a class="a-nav-bottom" href="#">
         <img class="mb-1" src="../../../assets/icons/cup2-lightpurple.svg" />
         Win
@@ -237,7 +234,7 @@
   </div>
 
   <div class="dropdown-nav">
-    <div class="dropbtn">
+    <div class="dropbtn-nav">
       <a class="a-nav-bottom" href="#" >
         <img class="mb-1" src="../../../assets/icons/geometric-forms-lightpurple.svg" />
         NFT
@@ -252,7 +249,7 @@
   </div>
 
   <div class="dropdown-nav">
-    <div class="dropbtn">
+    <div class="dropbtn-nav">
       <a class="a-nav-bottom" href="#" >
         <img class="dot-color" src="../../../assets/icons/dotdotdot-lightpurple.svg" />
       </a>
