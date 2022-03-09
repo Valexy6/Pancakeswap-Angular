@@ -1,0 +1,72 @@
+
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width:100%;
+    height: 180px;
+    border-radius: 24px;
+    
+    
+}
+
+.text {
+    /* background-color: cyan; */
+}
+
+.text > h3{
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(65, 11, 65);
+    margin-bottom: 40px;
+    
+}
+
+
+.button-standard {
+    border-radius: 1rem;
+    border: 0px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--cyan);
+    color: white;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: var(--pointer);
+    letter-spacing: 0.03em;
+    line-height: 1;
+    width: 10.313rem; /*165px*/
+    height: 3rem; /*48px*/
+    opacity: 1;
+  }
+  
+  .button-standard:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .button-standard:active {
+    background-color: var(--active-color);
+    transform: translateY(1px);
+    box-shadow: none;
+  }
+
+   .button-clock  {
+       color:rgb(128, 66, 124);
+       background-color: none;
+       border: none;
+       fill: rgb(112, 85, 112);
+   }
+
+   .button-clock:hover {
+       background-color:transparent;
+   }
+
+   .escButton {
+       position: relative;
+       border: none;
+       background-color: transparent;
+       /* left: 40px; */
+
+   }
