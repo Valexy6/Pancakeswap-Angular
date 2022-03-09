@@ -1,5 +1,6 @@
 import { Component,  OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-modal-settings',
   templateUrl: './modal-settings.component.html',
@@ -7,6 +8,12 @@ import { Component,  OnInit } from '@angular/core';
 })
 export class ModalSettingsComponent implements OnInit {
   isVisible: boolean = false;
+  expert = false;
+  disableMultihops = false;
+  subGraphHealthIndicator = false;
+  flippySounds = false;
+
+  prova = '';
 
   constructor() { }
     
@@ -18,3 +25,5 @@ export class ModalSettingsComponent implements OnInit {
   }
 
 }
+
+

@@ -1,3 +1,4 @@
+/* Button trigger modal setting */
 .mr-1-2 {
   margin-right: 0.75rem;
 }
@@ -34,8 +35,373 @@
 .modal-container {
   z-index: 51;
   width: 390px;
-  min-height: 600px;
-  max-height: 670px;
+
+  height: 756px;
   background-color: white;
   border-radius: 2rem;
+  overflow: auto;
+}
+
+/* Modal */
+
+.modal-settings-header {
+  padding: 1.5rem 1.5rem;
+  line-height: 1.1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--gradient);
+  border-bottom: 1px solid var(--grey-border);
+  color: var(--dark-purple);
+}
+
+.close-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal-settings-body {
+  padding: 0px 24px 0px 24px;
+}
+
+.global {
+  padding-top: 1.6rem;
+}
+
+.sub-title h3 {
+  color: var(--purple);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+
+/* switcher night version */
+.switcher {
+  align-items: center;
+  background-color: rgb(189, 194, 196);
+  border-radius: 24px;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  cursor: pointer;
+  display: inline-flex;
+  height: 32px;
+  position: relative;
+  transition: background-color 200ms ease 0s;
+  width: 56px;
+}
+
+.switcher-input {
+  opacity: 0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.switcher-sun-container {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 26px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  transition: left 200ms ease-in 0s;
+  width: 26px;
+  z-index: 1;
+}
+
+.switcher-sun-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.sun-icon {
+  align-self: center;
+  fill: rgb(255, 178, 55);
+}
+
+.switcher-dark {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.dark-icons {
+  align-self: center;
+  fill: rgb(255, 255, 255);
+}
+
+.switcher-input:hover+.active-border,
+.switcher-input:focus+.active-border {
+  box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+}
+
+/* dark mode */
+.switcher-dark-on {
+  align-items: center;
+  background-color: rgb(102, 97, 113);
+  border-radius: 24px;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  cursor: pointer;
+  display: inline-flex;
+  height: 32px;
+  position: relative;
+  transition: background-color 200ms ease 0s;
+  width: 56px;
+}
+
+.sun-container-dark {
+  background-color: rgb(39, 38, 44);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 26px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  transition: left 200ms ease-in 0s;
+  width: 26px;
+  z-index: 1;
+}
+
+.dark-icons-on {
+  align-self: center;
+  fill: rgb(39, 38, 44);
+}
+
+.moon-dark-on {
+  align-self: center;
+  fill: rgb(154, 106, 255);
+}
+
+.dark-mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark-mode p {
+  padding-top: 10px;
+}
+
+.default-settings {
+  display: flex;
+  align-items: baseline;
+  padding-top: 1rem;
+}
+
+.default-settings p {
+  padding-right: 0.373rem;
+  color: var(--dark-purple);
+}
+
+/* squashed button */
+
+.default-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.3rem;
+  padding-bottom: 0.6rem;
+}
+
+.button-squashed-standard {
+  border-radius: 1rem;
+  border: 0px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--grey);
+  color: var(--cyan);
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 7.9rem;
+  height: 2rem;
+  opacity: 1;
+}
+
+.button-squashed-standard:hover {
+  background-color: var(--hover-color);
+}
+
+.button-squashed-standard:active {
+  background-color: var(--active-color);
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.button-squashed-fast {
+  border-radius: 1rem;
+  border: 0px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--grey);
+  color: var(--cyan);
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 5.6rem;
+  height: 2rem;
+  opacity: 1;
+}
+
+.button-squashed-fast:hover {
+  background-color: var(--hover-color);
+}
+
+.button-squashed-fast:active {
+  background-color: var(--active-color);
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.button-squashed-instant {
+  border-radius: 1rem;
+  border: 0px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--grey);
+  color: var(--cyan);
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 6.9rem;
+  height: 2rem;
+  opacity: 1;
+}
+
+.button-squashed-instant:hover {
+  background-color: var(--hover-color);
+}
+
+.button-squashed-instant:active {
+  background-color: var(--active-color);
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.swaps {
+  padding-top: 0.8rem;
+}
+
+.button-tooltips {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* general inputs */
+.general-field {
+  border: 1px solid var(--column-border);
+  outline: 0px;
+  border-radius: 1rem;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  background-color: var(--grey);
+  color: var(--cyan);
+  font-size: 1rem;
+  font-weight: 600;
+  height: 100%;
+  width: 4.25rem;
+  padding: 0.25rem 1rem;
+  text-align: center;
+}
+
+.general-field-large {
+  border: 1px solid var(--column-border);
+  outline: 0px;
+  border-radius: 1rem;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  background-color: var(--background-color);
+  color: var(--dark-purple);
+  font-size: 1rem;
+  height: 100%;
+  width: 5.6rem;
+  padding: 0.25rem 1rem;
+  text-align: center;
+}
+
+.general-field-large:focus {
+  box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+}
+
+.input-fields {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.3rem;
+}
+
+.input-fields p {
+  color: var(--cyan);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.default-settings-shared {
+  display: flex;
+  align-items: baseline;
+}
+
+.general-field-small {
+  border: 1px solid var(--column-border);
+  outline: 0px;
+  border-radius: 1rem;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  background-color: var(--background-color);
+  color: var(--dark-purple);
+  font-size: 1rem;
+  height: 2rem;
+  width: 3.06rem;
+  text-align: center;
+}
+
+.input-set {
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgb(238, 234, 244);
+  border-radius: 24px;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  cursor: pointer;
+  display: inline-flex;
+  height: 32px;
+  position: relative;
+  transition: background-color 200ms ease 0s;
+  width: 56px;
+}
+
+.input-set2 {
+  cursor: pointer;
+  opacity: 0;
+  height: 100%;
+  position: absolute;
+
+  z-index: 3;
+}
+
+.input-set3 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 26px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  transition: left 200ms ease-in 0s;
+  width: 26px;
+  z-index: 1;
+}
+
+.checked {
+  background-color: red;
+}
+
+.checked .input-set3 {
+  left: calc(100% - 30px);
 }
