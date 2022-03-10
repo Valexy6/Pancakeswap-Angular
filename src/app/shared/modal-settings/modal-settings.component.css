@@ -35,7 +35,6 @@
 .modal-container {
   z-index: 51;
   width: 390px;
-
   height: 756px;
   background-color: white;
   border-radius: 2rem;
@@ -50,7 +49,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--gradient);
+  background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
   border-bottom: 1px solid var(--grey-border);
   color: var(--dark-purple);
 }
@@ -188,6 +187,7 @@
 
 .dark-mode p {
   padding-top: 10px;
+  color: var(--dark-purple);
 }
 
 .default-settings {
@@ -215,8 +215,8 @@
   border: 0px;
   font-size: 1rem;
   font-weight: 600;
-  background-color: var(--grey);
-  color: var(--cyan);
+  background-color: var(--cyan);
+  color: white;
   box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
   cursor: pointer;
   letter-spacing: 0.03em;
@@ -227,7 +227,7 @@
 }
 
 .button-squashed-standard:hover {
-  background-color: var(--hover-color);
+  opacity: 0.65;
 }
 
 .button-squashed-standard:active {
@@ -243,7 +243,6 @@
   font-weight: 600;
   background-color: var(--grey);
   color: var(--cyan);
-  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
   cursor: pointer;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -253,7 +252,7 @@
 }
 
 .button-squashed-fast:hover {
-  background-color: var(--hover-color);
+  opacity: 0.65;
 }
 
 .button-squashed-fast:active {
@@ -269,7 +268,6 @@
   font-weight: 600;
   background-color: var(--grey);
   color: var(--cyan);
-  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
   cursor: pointer;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -279,7 +277,7 @@
 }
 
 .button-squashed-instant:hover {
-  background-color: var(--hover-color);
+  opacity: 0.65;
 }
 
 .button-squashed-instant:active {
@@ -300,10 +298,9 @@
 
 /* general inputs */
 .general-field {
-  border: 1px solid var(--column-border);
+  border: none;
   outline: 0px;
   border-radius: 1rem;
-  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
   background-color: var(--grey);
   color: var(--cyan);
   font-size: 1rem;
@@ -314,13 +311,29 @@
   text-align: center;
 }
 
+.general-field-selected {
+  border: 1px solid var(--column-border);
+  outline: 0px;
+  border-radius: 1rem;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  background-color: var(--cyan);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 100%;
+  width: 4.25rem;
+  padding: 0.25rem 1rem;
+  text-align: center;
+
+}
+
 .general-field-large {
   border: 1px solid var(--column-border);
   outline: 0px;
   border-radius: 1rem;
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
   background-color: var(--background-color);
-  color: var(--dark-purple);
+  color: var(--light-purple);
   font-size: 1rem;
   height: 100%;
   width: 5.6rem;
@@ -355,7 +368,7 @@
   border-radius: 1rem;
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
   background-color: var(--background-color);
-  color: var(--dark-purple);
+  color: var(--light-purple);
   font-size: 1rem;
   height: 2rem;
   width: 3.06rem;
@@ -384,6 +397,8 @@
   z-index: 3;
 }
 
+
+
 .input-set3 {
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
@@ -403,4 +418,8 @@
 
 .checked .input-set3 {
   left: calc(100% - 30px);
+}
+
+.input-set3:hover {
+  box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
 }
