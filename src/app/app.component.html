@@ -1,4 +1,4 @@
-<div (scroll)="detectScroll()">
+<div class="app-body" (scroll)="detectScroll()">
   <app-navbar [scrollDeltaY] = "scrollDeltaY"></app-navbar>
 </div>
 
@@ -13,6 +13,17 @@
     <app-design-system></app-design-system>
     <hr>
     <span class="m-4"><app-faq></app-faq></span>
+    <app-table-base></app-table-base>
   </div>
+
+  <!--Generic-Box-->
+  <div class="pb-4">
+    <div class="generic-box-container container p-4">
+      <div class="d-flex justify-content-center">
+        <h2 class="h2 mb-5">Generic Box</h2>
+      </div>
+    </div>
+  </div>
+
   <app-footer-container></app-footer-container>
 </div>

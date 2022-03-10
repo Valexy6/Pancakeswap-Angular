@@ -33,14 +33,9 @@
   padding: 0px;
 }
 
-html {
-  overflow-y: overlay;
-}
-
 a {
   text-decoration: none;
 }
-
 
 
 /* -- SCROLL BAR --*/

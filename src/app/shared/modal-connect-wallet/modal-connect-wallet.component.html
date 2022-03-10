@@ -1,6 +1,6 @@
 <!-- Button trigger modal connect wallet -->
 <app-general-button
-[button]="{ class: 'button-squashed', text: 'Connect Wallet', imgVisible: false}" (click)="modalToggle()"
+[button]="{ class: 'button-squashed', text: 'Connect Wallet', imgVisible: false}" (click)="modalToggle(); hideScrollbar()"
 ></app-general-button>
 
 <!-- Modal -->
@@ -9,7 +9,7 @@
 
     <div class="modal-wallet-header">
       <h3 class="h3 m-0">Connect Wallet</h3>
-      <button type="button" class="close-btn" (click)="modalToggle()">
+      <button type="button" class="close-btn" (click)="showScrollbar(); modalToggle()">
         <img src="../../../assets/icons/exit.svg" />
       </button>
     </div>
