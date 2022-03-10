@@ -15,6 +15,7 @@ import { NavbarComponent } from './core/navbar/navbar.component';
 import { ModalSettingsComponent } from './shared/modal-settings/modal-settings.component';
 import { LanguageSelectorComponent } from './shared/language-selector/language-selector.component';
 import { ModalConnectWalletComponent } from './shared/modal-connect-wallet/modal-connect-wallet.component';
+import { PaginationComponent } from './shared/pagination/pagination.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { ModalConnectWalletComponent } from './shared/modal-connect-wallet/modal
     ModalSettingsComponent,
     LanguageSelectorComponent,
     ModalConnectWalletComponent,
+    PaginationComponent,
   ],
   imports: [
     BrowserModule,
