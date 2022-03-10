@@ -9,28 +9,27 @@
   margin-bottom: 1.2em;
 }
 
-.arrowFirst {
-  align-self: center;
-  fill: rgb(189, 194, 196);
-  flex-shrink: 0;
-  padding: 0px 20px;
-}
-
-.arrowSecond {
-  align-self: center;
-  fill: rgb(31, 199, 212);
-  flex-shrink: 0;
-  padding: 0px 20px;
-}
-
 .text-page-of {
-  color: var(--dark-purple);
+  color: var(--dark-purple) ;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
+  font-weight: 400 ;
+  line-height: 1.5 ;
 }
 
-li a{
-  padding: 150px !important;
+ngb-pagination label{
+  margin-right: 0.2rem ;
+}
 
+ngb-pagination span {
+  margin-left: 0.3rem ;
+  padding-left: 0rem ;
+}
+
+ngb-pagination ::ng-deep a{
+  background-color: transparent !important;
+  border: none;
+}
+
+ngb-pagination ::ng-deep a:focus {
+  box-shadow: none !important;
 }
