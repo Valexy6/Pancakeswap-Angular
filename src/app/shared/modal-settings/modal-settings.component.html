@@ -149,47 +149,46 @@
           </div>
 
           <label class="input-set" [ngClass]="{ checked: expert }">
-            <input scale="md" type="checkbox" class="input-set2" [(ngModel)]="expert">
-            <div scale="md" class="input-set3"></div>
+            <input type="checkbox" class="input-set2" [(ngModel)]="expert">
+            <div class="input-set3"></div>
           </label>
         </div>
 
         <div class="d-flex align-items-center justify-content-between my-4">
           <div class="d-flex align-items-center">
             <p class="mb-0 pe-2">Disable Multihops</p>
-            <img src="assets/icons/questionMark-light-purple.svg"
-              ngbTooltip="Bypasses confirmation modals and allows high slippage trades. Use at your own risk.">
+            <img src="assets/icons/questionMark-light-purple.svg" ngbTooltip="Restricts swaps to direct pairs only.">
           </div>
 
           <label class="input-set" [ngClass]="{ checked: disableMultihops }">
-            <input scale="md" type="checkbox" class="input-set2" [(ngModel)]="disableMultihops">
-            <div scale="md" class="input-set3"></div>
+            <input type="checkbox" class="input-set2" [(ngModel)]="disableMultihops">
+            <div class="input-set3"></div>
           </label>
         </div>
 
         <div class="d-flex align-items-center justify-content-between my-4">
           <div class="d-flex align-items-center">
-            <p class="mb-0 pe-2">Sub</p>
+            <p class="mb-0 pe-2">Subgraph Health Indicator</p>
             <img src="assets/icons/questionMark-light-purple.svg"
-              ngbTooltip="Bypasses confirmation modals and allows high slippage trades. Use at your own risk.">
+              ngbTooltip="Turn on NFT market subgraph health indicator all the time. Default is to show the indicator only when the network is delayed">
           </div>
 
           <label class="input-set" [ngClass]="{ checked: subGraphHealthIndicator }">
-            <input scale="md" type="checkbox" class="input-set2" [(ngModel)]="subGraphHealthIndicator">
-            <div scale="md" class="input-set3"></div>
+            <input type="checkbox" class="input-set2" [(ngModel)]="subGraphHealthIndicator">
+            <div class="input-set3"></div>
           </label>
         </div>
 
         <div class="d-flex align-items-center justify-content-between my-4">
           <div class="d-flex align-items-center">
-            <p class="mb-0 pe-2">Flippy</p>
+            <p class="mb-0 pe-2">Flippy sounds</p>
             <img src="assets/icons/questionMark-light-purple.svg"
-              ngbTooltip="Bypasses confirmation modals and allows high slippage trades. Use at your own risk.">
+              ngbTooltip="Fun sounds to make a truly immersive pancake-flipping trading experience">
           </div>
 
           <label class="input-set" [ngClass]="{ checked: flippySounds }">
-            <input scale="md" type="checkbox" class="input-set2" [(ngModel)]="flippySounds">
-            <div scale="md" class="input-set3"></div>
+            <input type="checkbox" class="input-set2" [(ngModel)]="flippySounds">
+            <div class="input-set3"></div>
           </label>
         </div>
 
