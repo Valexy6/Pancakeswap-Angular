@@ -1,0 +1,11 @@
+
+<button class="button-clock" (click)="openVerticallyCentered(content)"><img src="../../assets/icons/cirle-clock-lightpurple.svg" alt=""></button>
+
+
+<ng-template #content let-modal>
+<div #content class= "box">
+    <div class="text"> <h3>Recent Transaction <button type="button" class="escButton" (click)="modal.close('ESC')">X</button></h3></div>
+  
+   <button class="button-standard">Connect Wallet</button>
+</div>
+</ng-template>

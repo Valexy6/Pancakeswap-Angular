@@ -12,9 +12,7 @@
     
 }
 
-.text {
-    /* background-color: cyan; */
-}
+
 
 .text > h3{
     position: relative;
@@ -70,3 +68,5 @@
        /* left: 40px; */
 
    }
+
+ 
