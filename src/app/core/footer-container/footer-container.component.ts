@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-footer-container',
@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterContainerComponent implements OnInit {
   colorLink: string = 'var(--mauve)';
+  footer: boolean = true;
+
+  @Input() langSelected!: string;
   
   constructor() { }
 

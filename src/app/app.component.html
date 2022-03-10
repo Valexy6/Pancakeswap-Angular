@@ -1,5 +1,5 @@
 <div class="app-body" (scroll)="detectScroll()">
-  <app-navbar [scrollDeltaY] = "scrollDeltaY"></app-navbar>
+  <app-navbar [scrollDeltaY] = "scrollDeltaY" (setLang)="setLang($event)"></app-navbar>
 </div>
 
 <div style="background-color: var(--grey);" class="mt-5">
@@ -25,5 +25,5 @@
     </div>
   </div>
 
-  <app-footer-container></app-footer-container>
+  <app-footer-container [langSelected]="langSelected"></app-footer-container>
 </div>

@@ -8,7 +8,7 @@
         <li><a class="f-link-a" href="#">Blog</a></li>
         <li><a class="f-link-a" href="#">Community</a></li>
         <li><a class="f-link-a" href="#">CAKE token</a></li>
-        <li><span>—</span></li>
+        <li class="lh-1"><span>—</span></li>
         <li><a class="special-a" href="#">Online Store</a></li>
       </ul>
 
@@ -53,11 +53,11 @@
     <div class="f-row3">
       <div class="d-flex justify-content-center align-items-center">
         <app-dark-mode></app-dark-mode>
-        <app-language-selector></app-language-selector>
+        <app-language-selector [footer]="footer" [langSelected]="langSelected"></app-language-selector>
       </div>
 
       <div class="d-flex justify-content-center align-items-center">
-        <app-pancake-trade [colorLink]="colorLink"></app-pancake-trade>
+        <app-pancake-trade [colorLink]="colorLink" class=""></app-pancake-trade>
 
         <app-general-button
         [button]="{ class: 'button-squashed', text: 'Buy CAKE' }"

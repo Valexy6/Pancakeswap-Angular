@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,11 +7,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   @Input() scrollDeltaY!: number;
+  @Output() setLang = new EventEmitter<string>();
+  
   colorLink: string = 'var(--light-purple)';
+  navbar: boolean = true;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-  
+
 }

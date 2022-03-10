@@ -9,11 +9,13 @@
   --fuchsia: rgb(237, 75, 158);
   --green: rgb(49, 208, 170);
   --white: rgb(250, 249, 250);
+  --text-footer: rgb(244, 238, 255);
   --grey: rgb(239, 244, 245);
   --background-color: rgb(238, 234, 244);
   --grey-border: rgb(231, 227, 235);
   --column-border: rgb(215, 202, 236);
   --mauve: rgb(184, 173, 210);
+  --title-footer: rgb(154, 106, 255);
   --light-purple: rgb(122, 110, 170);
   --purple: rgb(118, 69, 217);
   --dark-purple: rgb(40, 13, 95);

@@ -163,7 +163,7 @@
       <div class="dropdown-nav">
         <div class="dropbtn-nav">
           <a class="a-nav" href="#" >
-            <img class="dot-color" src="../../../assets/icons/dotdotdot-lightpurple.svg" />
+            <img class="dot-color" src="assets/icons/dotdotdot-lightpurple.svg" />
           </a>
         </div>
         <div class="dropdown-content">
@@ -173,8 +173,8 @@
           <hr />
           <a href="#">Leaderboard</a>
           <hr />
-          <a href="#">Blog<img src="../../../assets/icons/link-darkpurple.svg" /></a>
-          <a href="#">Docs<img src="../../../assets/icons/link-darkpurple.svg" /></a>
+          <a href="#">Blog<img src="assets/icons/link-darkpurple.svg" /></a>
+          <a href="#">Docs<img src="assets/icons/link-darkpurple.svg" /></a>
         </div>
       </div>
     </div>
@@ -184,7 +184,7 @@
   <div class="d-flex align-items-center h-100">
 
     <app-pancake-trade [colorLink]="colorLink"></app-pancake-trade>
-    <app-language-selector></app-language-selector>
+    <app-language-selector [navbar]="navbar" (navLangSelected)="setLang.emit($event)"></app-language-selector>
     <app-modal-settings></app-modal-settings>
     <app-modal-connect-wallet></app-modal-connect-wallet>
 
@@ -197,7 +197,7 @@
   <div class="dropdown-nav">
     <div class="dropbtn-nav">
       <a class="a-nav-bottom" href="trade-exchange.html">
-        <img class="mb-1" src="../../../assets/icons/trades-lightpurple.svg" />
+        <img class="mb-1" src="assets/icons/trades-lightpurple.svg" />
         Trade
       </a>
     </div>
@@ -206,7 +206,7 @@
   <div class="dropdown-nav">
     <div class="dropbtn-nav">
       <a class="a-nav-bottom" href="#">
-        <img class="mb-1" src="../../../assets/icons/earn-lightpurple.svg" />
+        <img class="mb-1" src="assets/icons/earn-lightpurple.svg" />
         Earn
       </a>
     </div>
@@ -221,7 +221,7 @@
   <div class="dropdown-nav">
     <div class="dropbtn-nav">
       <a class="a-nav-bottom" href="#">
-        <img class="mb-1" src="../../../assets/icons/cup2-lightpurple.svg" />
+        <img class="mb-1" src="assets/icons/cup2-lightpurple.svg" />
         Win
       </a>
     </div>
@@ -236,7 +236,7 @@
   <div class="dropdown-nav">
     <div class="dropbtn-nav">
       <a class="a-nav-bottom" href="#" >
-        <img class="mb-1" src="../../../assets/icons/geometric-forms-lightpurple.svg" />
+        <img class="mb-1" src="assets/icons/geometric-forms-lightpurple.svg" />
         NFT
       </a>
     </div>
@@ -251,7 +251,7 @@
   <div class="dropdown-nav">
     <div class="dropbtn-nav">
       <a class="a-nav-bottom" href="#" >
-        <img class="dot-color" src="../../../assets/icons/dotdotdot-lightpurple.svg" />
+        <img class="dot-color" src="assets/icons/dotdotdot-lightpurple.svg" />
       </a>
     </div>
     <div class="dropdown-content-bottom">
@@ -262,8 +262,8 @@
         <hr />
         <a href="#">Leaderboard</a>
         <hr />
-        <a href="#">Blog<img src="../../../assets/icons/link-darkpurple.svg" /></a>
-        <a href="#">Docs<img src="../../../assets/icons/link-darkpurple.svg" /></a>
+        <a href="#">Blog<img src="assets/icons/link-darkpurple.svg" /></a>
+        <a href="#">Docs<img src="assets/icons/link-darkpurple.svg" /></a>
       </div>
     </div>
   </div>
