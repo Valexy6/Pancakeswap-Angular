@@ -423,3 +423,16 @@
 .input-set3:hover {
   box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
 }
+
+
+.pancakecheck {
+  background: rgb(226, 124, 49);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  transition: all 0.4s ease 0s;
+  top: 2px;
+  left: 4px;
+  box-shadow: rgb(251 190 124) 0px 1.5px 0px 1.5px;
+}
