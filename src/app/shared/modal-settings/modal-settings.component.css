@@ -34,8 +34,8 @@
 
 .modal-container {
   z-index: 51;
-  width: 390px;
-  height: 756px;
+  width: 24.375rem;
+  height: 47.25rem;
   background-color: white;
   border-radius: 2rem;
   overflow: auto;
@@ -84,10 +84,10 @@
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
   cursor: pointer;
   display: inline-flex;
-  height: 32px;
+  height: 2rem;
   position: relative;
   transition: background-color 200ms ease 0s;
-  width: 56px;
+  width: 3.5rem;
 }
 
 .switcher-input {
@@ -103,12 +103,12 @@
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
   cursor: pointer;
-  height: 26px;
+  height: 1.625rem;
   left: 3px;
   position: absolute;
   top: 3px;
   transition: left 200ms ease-in 0s;
-  width: 26px;
+  width: 1.625rem;
   z-index: 1;
 }
 
@@ -150,10 +150,10 @@
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
   cursor: pointer;
   display: inline-flex;
-  height: 32px;
+  height: 2rem;
   position: relative;
   transition: background-color 200ms ease 0s;
-  width: 56px;
+  width: 3.5rem;
 }
 
 .sun-container-dark {
@@ -353,7 +353,7 @@
 
 .input-fields p {
   color: var(--cyan);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -383,10 +383,10 @@
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
   cursor: pointer;
   display: inline-flex;
-  height: 32px;
+  height: 2rem;
   position: relative;
   transition: background-color 200ms ease 0s;
-  width: 56px;
+  width: 3.5rem;
 }
 
 .input-set2 {
@@ -403,12 +403,12 @@
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
   cursor: pointer;
-  height: 26px;
+  height: 1.625rem;
   left: 3px;
   position: absolute;
   top: 3px;
   transition: left 200ms ease-in 0s;
-  width: 26px;
+  width: 1.625rem;
   z-index: 1;
 }
 
