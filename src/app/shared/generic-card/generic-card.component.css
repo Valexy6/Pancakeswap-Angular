@@ -4,7 +4,7 @@ img {
 }
 
 .hero-image {
-  height: 118px;
+  height: 7.375rem;
 }
 
 .card-nft {
@@ -14,13 +14,13 @@ img {
   background: #fff;
   padding: 1rem;
   position: relative;
-  width: 369px;
-  height: 197px;
+  width: 23.063rem;
+  height: 12.313rem;
 }
 
 .card-nft .image img {
-  width: 88px;
-  height: 88px;
+  width: 5.5rem;
+  height: 5.5rem;
   border-radius: 50%;
   border: 3px solid rgb(231, 227, 234);
   position: absolute;
