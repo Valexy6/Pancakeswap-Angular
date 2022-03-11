@@ -1,0 +1,51 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-image {
+  height: 118px;
+}
+
+.card-nft {
+  border-radius: 8px 8px 8px 56px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: rgb(238 234 244) 0px -2px 5px inset;
+  background: #fff;
+  padding: 1rem;
+  position: relative;
+  width: 369px;
+  height: 197px;
+}
+
+.card-nft .image img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  border: 3px solid rgb(231, 227, 234);
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.d-flex h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--dark-purple);
+  padding-top: 10px;
+}
+
+.d-flex span {
+  color: var(--light-purple);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+.d-flex .mb-0 {
+  color: var(--dark-purple);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+}

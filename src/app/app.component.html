@@ -1,5 +1,5 @@
 <div class="app-body" (scroll)="detectScroll()">
-  <app-navbar [scrollDeltaY] = "scrollDeltaY"></app-navbar>
+  <app-navbar [scrollDeltaY]="scrollDeltaY"></app-navbar>
 </div>
 
 <div style="background-color: var(--grey);" class="mt-5">
@@ -15,9 +15,11 @@
     <app-faq></app-faq>
     <hr>
     <app-table-base></app-table-base>
-    <span class="m-4"><app-faq></app-faq></span>
+    <span class="m-4">
+      <app-faq></app-faq>
+    </span>
   </div>
-  
+
   <!--Generic-Box-->
   <div class="pb-4">
     <div class="generic-box-container container p-4">
@@ -26,4 +28,7 @@
       </div>
     </div>
   </div>
- </div>
+  <!--Generic-Card-->
+
+  <app-generic-card></app-generic-card>
+</div>
