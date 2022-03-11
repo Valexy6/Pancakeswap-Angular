@@ -1,0 +1,104 @@
+::ng-deep .modal-content  {
+   border: none;
+   background-color: transparent;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  ::ng-deep .modal {position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 13, 95, 0.6);
+  ;}
+  
+  
+.box {
+  width: 20.322rem;
+  height: 10.625rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  
+  
+}
+
+.wallet{margin: 24px;display: flex;justify-content: center;align-items: center;}
+.button-standard {
+    border-radius: 1rem;
+    border: 0px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--cyan);
+    color: white;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: var(--pointer);
+    letter-spacing: 0.03em;
+    line-height: 1;
+    width: 18.313rem; /*165px*/
+    height: 3.05rem; /*48px*/
+    opacity: 1;
+   
+    
+    
+  }
+  
+  .button-standard:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .button-standard:active {
+    background-color: var(--active-color);
+    transform: translateY(1px);
+    box-shadow: none;
+  }
+
+   .button-clock  {
+       color:rgb(128, 66, 124);
+       background-color: none;
+       border: none;
+       fill: rgb(112, 85, 112);
+   }
+
+   .button-clock:hover {
+       background-color:transparent;
+   }
+
+   .escButton {
+       position: relative;
+       border: none;
+       background-color: transparent;
+       left: 3.5rem;
+       bottom: 0.25rem;
+       font-size: 1.25rem;
+       color: rgb(113, 218, 183);
+     
+
+   }
+
+   .text {
+     display: inline-flex;
+     height: 45%;
+     background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+     border-top-left-radius: 2rem;
+     border-top-right-radius: 2rem;
+     padding: 1.63rem;
+
+     
+   }
+
+   .text > h5{
+    position: relative;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(61, 13, 61);
+    
+}
+
+ 
+ 
+
+
+

@@ -11,6 +11,7 @@ export class ModalClockComponent implements OnInit  {
 
   constructor(private modalService: NgbModal) {}
   
+
   closeResult = '';
   
   openVerticallyCentered(content:any) {
