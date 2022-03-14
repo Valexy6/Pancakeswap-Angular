@@ -202,6 +202,8 @@
       </a>
     </div>
   </div>
+  
+  <div class="bcg" *ngIf="isSubmenuVisible"></div>
 
   <div class="dropdown-nav" (mouseleave)="closeBottomNavbar()">
     <div class="dropbtn-nav" (mouseover)="openBottomNavbar()">
@@ -210,7 +212,7 @@
         Earn
       </a>
     </div>
-    <div id="earn" class="dropdown-content-bottom">
+    <div class="dropdown-content-bottom">
       <div class="dropdown-content earn">
         <a href="#">Farms</a>
         <a href="#">Pools</a>
@@ -225,7 +227,7 @@
         Win
       </a>
     </div>
-    <div id="win" class="dropdown-content-bottom">
+    <div class="dropdown-content-bottom">
       <div class="dropdown-content win">
         <a href="#">Perdiction (BETA)</a>
         <a href="#">Lottery</a>
@@ -233,14 +235,14 @@
     </div>
   </div>
 
-  <!-- <div class="dropdown-nav" (mouseleave)="closeBottomNavbar()">
+  <div class="dropdown-nav" (mouseleave)="closeBottomNavbar()">
     <div class="dropbtn-nav" (mouseover)="openBottomNavbar()">
       <a class="a-nav-bottom" href="#" >
         <img class="mb-1" src="assets/icons/geometric-forms-lightpurple.svg" />
         NFT
       </a>
     </div>
-    <div class="dropdown-content-bottom hide" (click)="closeBottomNavbar()" [class.hide]="!isSubMenuVisible">
+    <div class="dropdown-content-bottom hide">
       <div class="dropdown-content nft">
         <a href="#">Overview</a>
         <a href="#">Collections</a>
@@ -254,7 +256,7 @@
         <img class="dot-color" src="assets/icons/dotdotdot-lightpurple.svg" />
       </a>
     </div>
-    <div class="dropdown-content-bottom" (click)="closeBottomNavbar()"  [class.hide]="!isSubMenuVisible">
+    <div class="dropdown-content-bottom">
       <div class="dropdown-content dots">
         <a href="#">Info</a>
         <a href="#">IFO</a>
@@ -266,5 +268,5 @@
         <a href="#">Docs<img src="assets/icons/link-darkpurple.svg" /></a>
       </div>
     </div>
-  </div> -->
+  </div>
 </div>

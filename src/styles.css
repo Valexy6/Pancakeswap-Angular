@@ -39,6 +39,39 @@ a {
   text-decoration: none;
 }
 
+/* -- MODAL -- */
+.modal-backdrop {
+  background-color: var(--dark-purple);
+}
+
+.modal-backdrop.show {
+  opacity: 0.6;
+}
+
+.ps-modal-centered {
+  display: flex !important;
+}
+
+.modal-container {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  z-index: 99;
+  width: 20rem; /*320px*/
+  max-height: 90vh;
+  background-color: white;
+  border-radius: 2rem;
+  overflow: auto;
+}
+
+.modal.fade .modal-dialog {
+  transform: none;
+}
 
 /* -- SCROLL BAR --*/
 /* width */
@@ -105,4 +138,11 @@ a {
 
 .key-words {
   color: var(--purple);
+}
+
+/* -- RESPONSIVE -- */
+@media screen and (min-width: 576px) {
+  .modal-content {
+    width: 21.25rem;
+  }
 }

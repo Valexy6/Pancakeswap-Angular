@@ -214,18 +214,27 @@
 }
 
 .dropdown-content-bottom {
-  display: none;
+  /* display: none; */
+  position: fixed;
+  bottom: 3rem;
+  left: 0;
+  width: 100vw;
+  height: fit-content;
+  z-index: 19;
+}
+
+.dropdown-nav:hover .dropdown-content-bottom {
+  display: block;
+}
+
+.bcg {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: calc(100vh - 3rem);
   background-color: rgba(40, 13, 95, 0.57);
-  z-index: 19;
-}
-
-.dropdown-nav:hover .dropdown-content-bottom {
-  display: block;
+  z-index: 18;
 }
 
 .earn {
