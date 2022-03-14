@@ -9,15 +9,18 @@
   --fuchsia: rgb(237, 75, 158);
   --green: rgb(49, 208, 170);
   --white: rgb(250, 249, 250);
+  --text-footer: rgb(244, 238, 255);
   --grey: rgb(239, 244, 245);
   --background-color: rgb(238, 234, 244);
   --grey-border: rgb(231, 227, 235);
   --column-border: rgb(215, 202, 236);
   --mauve: rgb(184, 173, 210);
+  --title-footer: rgb(154, 106, 255);
   --light-purple: rgb(122, 110, 170);
   --purple: rgb(118, 69, 217);
   --dark-purple: rgb(40, 13, 95);
   --dark-purple-overlay: rgba(40, 13, 95, 0.6);
+  --footer-bcg: rgb(39, 38, 44);
   --gradient: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
   --gradient-purple: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
   --gradient-pink-blue: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
@@ -36,6 +39,39 @@ a {
   text-decoration: none;
 }
 
+/* -- MODAL -- */
+.modal-backdrop {
+  background-color: var(--dark-purple);
+}
+
+.modal-backdrop.show {
+  opacity: 0.6;
+}
+
+.ps-modal-centered {
+  display: flex !important;
+}
+
+.modal-container {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  z-index: 99;
+  width: 20rem; /*320px*/
+  max-height: 90vh;
+  background-color: white;
+  border-radius: 2rem;
+  overflow: auto;
+}
+
+.modal.fade .modal-dialog {
+  transform: none;
+}
 
 /* -- SCROLL BAR --*/
 /* width */
@@ -102,4 +138,11 @@ a {
 
 .key-words {
   color: var(--purple);
+}
+
+/* -- RESPONSIVE -- */
+@media screen and (min-width: 576px) {
+  .modal-content {
+    width: 21.25rem;
+  }
 }
