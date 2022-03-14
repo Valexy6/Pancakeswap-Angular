@@ -103,3 +103,12 @@ a {
 .key-words {
   color: var(--purple);
 }
+
+.page-link {
+  background-color: transparent !important;
+  border: none;
+}
+
+.page-link:focus {
+  box-shadow: none !important;
+}

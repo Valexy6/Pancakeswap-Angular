@@ -10,26 +10,17 @@
 }
 
 .text-page-of {
-  color: var(--dark-purple) ;
-  font-size: 16px;
-  font-weight: 400 ;
-  line-height: 1.5 ;
+  color: var(--dark-purple);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
-ngb-pagination label{
-  margin-right: 0.2rem ;
+ngb-pagination label {
+  margin-right: 0.2rem;
 }
 
 ngb-pagination span {
-  margin-left: 0.3rem ;
-  padding-left: 0rem ;
-}
-
-ngb-pagination ::ng-deep a{
-  background-color: transparent !important;
-  border: none;
-}
-
-ngb-pagination ::ng-deep a:focus {
-  box-shadow: none !important;
+  margin-left: 0.3rem;
+  padding-left: 0rem;
 }
