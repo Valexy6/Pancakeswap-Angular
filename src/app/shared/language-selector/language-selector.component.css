@@ -84,3 +84,9 @@
 .lang:focus {
   box-shadow: none;
 }
+
+@media all and (max-width: 768px) {
+  .language-container {
+    height: 3rem;
+  }
+}

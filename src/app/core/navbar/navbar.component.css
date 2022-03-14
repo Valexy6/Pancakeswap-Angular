@@ -176,9 +176,6 @@
   opacity: 1;
 }
 
-/* -- nav right -- */
-
-
 /* -- bottom navbar -- */
 .nav-bottom {
   display: none;
@@ -253,13 +250,13 @@
 }
 
 /* -- RESPONSIVE -- */
-@media screen and (min-width: 967px) {
+@media all and (min-width: 967px) {
   .mobile-logo {
     display: none;
   }
 }
 
-@media screen and (max-width: 967px) {
+@media all and (max-width: 967px) {
   .desktop-logo {
     display: none;
   }

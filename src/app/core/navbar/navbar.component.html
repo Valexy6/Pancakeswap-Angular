@@ -184,7 +184,7 @@
   <div class="d-flex align-items-center h-100">
 
     <app-pancake-trade [colorLink]="colorLink"></app-pancake-trade>
-    <app-language-selector [navbar]="navbar" (navLangSelected)="setLang.emit($event)"></app-language-selector>
+    <app-language-selector [isNavbar]="isNavbar" (navLangSelected)="setLang.emit($event)"></app-language-selector>
     <app-modal-settings></app-modal-settings>
     <app-modal-connect-wallet></app-modal-connect-wallet>
 
@@ -203,14 +203,14 @@
     </div>
   </div>
 
-  <div class="dropdown-nav">
-    <div class="dropbtn-nav">
+  <div class="dropdown-nav" (mouseleave)="closeBottomNavbar()">
+    <div class="dropbtn-nav" (mouseover)="openBottomNavbar()">
       <a class="a-nav-bottom" href="#">
         <img class="mb-1" src="assets/icons/earn-lightpurple.svg" />
         Earn
       </a>
     </div>
-    <div class="dropdown-content-bottom">
+    <div id="earn" class="dropdown-content-bottom">
       <div class="dropdown-content earn">
         <a href="#">Farms</a>
         <a href="#">Pools</a>
@@ -218,14 +218,14 @@
     </div>
   </div>
 
-  <div class="dropdown-nav">
-    <div class="dropbtn-nav">
+  <div class="dropdown-nav" (mouseleave)="closeBottomNavbar()">
+    <div class="dropbtn-nav" (mouseover)="openBottomNavbar()">
       <a class="a-nav-bottom" href="#">
         <img class="mb-1" src="assets/icons/cup2-lightpurple.svg" />
         Win
       </a>
     </div>
-    <div class="dropdown-content-bottom">
+    <div id="win" class="dropdown-content-bottom">
       <div class="dropdown-content win">
         <a href="#">Perdiction (BETA)</a>
         <a href="#">Lottery</a>
@@ -233,14 +233,14 @@
     </div>
   </div>
 
-  <div class="dropdown-nav">
-    <div class="dropbtn-nav">
+  <!-- <div class="dropdown-nav" (mouseleave)="closeBottomNavbar()">
+    <div class="dropbtn-nav" (mouseover)="openBottomNavbar()">
       <a class="a-nav-bottom" href="#" >
         <img class="mb-1" src="assets/icons/geometric-forms-lightpurple.svg" />
         NFT
       </a>
     </div>
-    <div class="dropdown-content-bottom">
+    <div class="dropdown-content-bottom hide" (click)="closeBottomNavbar()" [class.hide]="!isSubMenuVisible">
       <div class="dropdown-content nft">
         <a href="#">Overview</a>
         <a href="#">Collections</a>
@@ -248,13 +248,13 @@
     </div>
   </div>
 
-  <div class="dropdown-nav">
-    <div class="dropbtn-nav">
+  <div class="dropdown-nav" (mouseleave)="closeBottomNavbar()">
+    <div class="dropbtn-nav" (mouseover)="openBottomNavbar()">
       <a class="a-nav-bottom" href="#" >
         <img class="dot-color" src="assets/icons/dotdotdot-lightpurple.svg" />
       </a>
     </div>
-    <div class="dropdown-content-bottom">
+    <div class="dropdown-content-bottom" (click)="closeBottomNavbar()"  [class.hide]="!isSubMenuVisible">
       <div class="dropdown-content dots">
         <a href="#">Info</a>
         <a href="#">IFO</a>
@@ -266,5 +266,5 @@
         <a href="#">Docs<img src="assets/icons/link-darkpurple.svg" /></a>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>

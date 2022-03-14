@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-navbar',
@@ -10,11 +11,21 @@ export class NavbarComponent implements OnInit {
   @Output() setLang = new EventEmitter<string>();
   
   colorLink: string = 'var(--light-purple)';
-  navbar: boolean = true;
+  isNavbar: boolean = true;
 
-  constructor() { }
+  // subMenuVisible: string = 'block';
+
+  constructor() {}
 
   ngOnInit(): void {
+  }
+
+  openBottomNavbar() {
+    document.body.style.overflow = 'hidden';
+  }
+
+  closeBottomNavbar() {
+    document.body.style.overflow = 'overlay';
   }
 
 }

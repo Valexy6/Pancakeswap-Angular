@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class FooterContainerComponent implements OnInit {
   colorLink: string = 'var(--mauve)';
-  footer: boolean = true;
+  isFooter: boolean = true;
 
   @Input() langSelected!: string;
   

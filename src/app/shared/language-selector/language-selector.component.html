@@ -1,10 +1,10 @@
 <div class="language-container me-2">
   <button class="button-language d-flex align-items-center h-100" type="button">
-    <img [src]="navbar ? 'assets/icons/language-light-purple.svg' : 'assets/icons/language-mauve.svg'">
-    <p *ngIf="footer" class="lang-initials">{{ langSelected | uppercase }}</p>
+    <img [src]="isNavbar ? 'assets/icons/language-light-purple.svg' : 'assets/icons/language-mauve.svg'">
+    <p *ngIf="isFooter" class="lang-initials">{{ langSelected | uppercase }}</p>
   </button>
 
-  <div class="lang-selector" [ngClass]="{'lang-selector-top': navbar, 'lang-selector-bottom': footer}">
+  <div class="lang-selector" [ngClass]="{'lang-selector-top': isNavbar, 'lang-selector-bottom': isFooter}">
     <button
       class="lang btn"
       type="button"

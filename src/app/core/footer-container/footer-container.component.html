@@ -1,5 +1,8 @@
 <footer>
   <div class="f-wrapper">
+    <div class="f-logo-responsive">
+      <img src="assets/icons/logo-footer-responsive.svg" alt="logo footer">
+    </div>
     <div class="f-row1">
       <ul class="f-link">
         <li class="li-title">ABOUT</li>
@@ -9,7 +12,7 @@
         <li><a class="f-link-a" href="#">Community</a></li>
         <li><a class="f-link-a" href="#">CAKE token</a></li>
         <li class="lh-1"><span>—</span></li>
-        <li><a class="special-a" href="#">Online Store</a></li>
+        <li><a class="yellow-a" href="#">Online Store</a></li>
       </ul>
 
       <div class="f-container">
@@ -53,10 +56,10 @@
     <div class="f-row3">
       <div class="d-flex justify-content-center align-items-center">
         <app-dark-mode></app-dark-mode>
-        <app-language-selector [footer]="footer" [langSelected]="langSelected"></app-language-selector>
+        <app-language-selector [isFooter]="isFooter" [langSelected]="langSelected"></app-language-selector>
       </div>
 
-      <div class="d-flex justify-content-center align-items-center">
+      <div class="pancake-trade">
         <app-pancake-trade [colorLink]="colorLink" class=""></app-pancake-trade>
 
         <app-general-button
