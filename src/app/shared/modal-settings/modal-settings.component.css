@@ -296,6 +296,10 @@
   cursor: pointer;
 }
 
+p {
+  color: var(--dark-purple);
+}
+
 /* general inputs */
 .general-field {
   border: none;
