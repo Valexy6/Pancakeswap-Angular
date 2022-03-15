@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { LanguageService } from 'src/app/shared/language-selector/language.service';
+import { ILanguage } from 'src/app/models/Language';
 
 @Component({
   selector: 'app-language-selector',
@@ -6,10 +8,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./language-selector.component.css']
 })
 export class LanguageSelectorComponent implements OnInit {
+  @Input() isNavbar: boolean = false;
+  @Input() isFooter: boolean = false;
+  @Input() langSelected: string = 'en';
+  @Output() navLangSelected = new EventEmitter<string>();
 
-  constructor() { }
+  languages: ILanguage[] = []
+
+  constructor(private languageService: LanguageService) { }
 
   ngOnInit(): void {
+    this.languages = this.languageService.getAll();
+  }
+
+  setLang(value: string) {
+    this.langSelected = value;
+    this.navLangSelected.emit(this.langSelected);
+    return this.langSelected;
   }
 
 }

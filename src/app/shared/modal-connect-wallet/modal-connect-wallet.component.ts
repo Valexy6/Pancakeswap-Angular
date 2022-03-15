@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-modal-connect-wallet',
@@ -6,15 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./modal-connect-wallet.component.css']
 })
 export class ModalConnectWalletComponent implements OnInit {
-  isVisible: boolean = false;
+  closeResult!: string;
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
     
   ngOnInit(): void {
   }
 
-  modalToggle() {
-    this.isVisible = !this.isVisible;
+  open(content: any) {
+    this.modalService.open(content, { windowClass: 'ps-modal-centered',modalDialogClass: 'modal-container' });
   }
-
 }

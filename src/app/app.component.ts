@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, EventEmitter, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +10,7 @@ export class AppComponent {
 
   cache!: number;
   scrollDeltaY!: number;
+  langSelected: string = 'en';
 
   @HostListener('window:scroll')
   detectScroll() {
@@ -17,4 +18,9 @@ export class AppComponent {
     this.scrollDeltaY = scroll - this.cache;
     this.cache = scroll;
   }
+
+  setLang(value: string) {
+    this.langSelected = value;
+  }
+
 }

@@ -1,0 +1,6 @@
+<button
+[ngClass]="_button.class"
+[routerLink]="_button.link"
+type="button"
+>{{ _button.text }}
+  <img src="assets/icons/arrow-right-white.svg" [ngStyle]="{'display' : _button.imgVisible ? 'block' : 'none'}" /></button>

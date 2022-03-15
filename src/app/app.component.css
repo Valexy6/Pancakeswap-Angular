@@ -1,0 +1,11 @@
+/* Generic-Box */
+
+.generic-box-container {
+  width: 20.37rem;
+  height: 31.5rem;
+  background-color: var(--white);
+  border-radius: 1.5rem;
+  border: 1px solid var(--grey-border);
+  box-shadow: var(--background-color) 0px 3px 0px;
+  margin-top: 1.5rem;
+}
