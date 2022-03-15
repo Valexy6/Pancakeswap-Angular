@@ -23,7 +23,7 @@ img {
   width: 5.5rem;
   height: 5.5rem;
   border-radius: 50%;
-  border: var(--grey-border);
+  border: 3px solid var(--grey-border);
   position: absolute;
   left: 0.625rem;
   bottom: 0.625rem;
