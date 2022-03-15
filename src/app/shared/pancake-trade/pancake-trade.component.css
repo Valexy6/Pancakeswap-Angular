@@ -17,9 +17,3 @@
 .pancakes-link:hover img {
   transform: scale(1.2);
 }
-
-@media all and (max-width: 846px) {
-  .pancakes-link {
-    display: none;
-  }
-}
