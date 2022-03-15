@@ -1,68 +1,17 @@
 <div class="language-container me-2">
   <button class="button-language d-flex align-items-center h-100" type="button">
-    <img src="../../../assets/icons/language-light-purple.svg">
+    <img [src]="isNavbar ? 'assets/icons/language-light-purple.svg' : 'assets/icons/language-mauve.svg'">
+    <p *ngIf="isFooter" class="lang-initials">{{ langSelected | uppercase }}</p>
   </button>
 
-  <div class="lang-selector">
-    <button class="lang btn" type="button">
-      العربية
-    </button>
-    <button class="lang btn" type="button">বাংলা</button>
-    <button class="lang btn" type="button">
-      English
-    </button>
-    <button class="lang btn" type="button">
-      Deutsch
-    </button>
-    <button class="lang btn" type="button">
-      Ελληνικά
-    </button>
-    <button class="lang btn" type="button">
-      Español
-    </button>
-    <button class="lang btn" type="button">
-      Suomalainen
-    </button>
-    <button class="lang btn" type="button">
-      Filipino
-    </button>
-    <button class="lang btn" type="button">हिंदी</button>
-    <button class="lang btn" type="button">Magyar</button>
-    <button class="lang btn" type="button">
-      Bahasa Indonesia
-    </button>
-    <button class="lang btn" type="button">
-      Italiano
-    </button>
-    <button class="lang btn" type="button">日本語</button>
-    <button class="lang btn" type="button">한국어</button>
-    <button class="lang btn" type="button">
-      Nederlands
-    </button>
-    <button class="lang btn" type="button">Polski</button>
-    <button class="lang btn" type="button">
-      Português (Brazil)
-    </button>
-    <button class="lang btn" type="button">
-      Português
-    </button>
-    <button class="lang btn" type="button">Română</button>
-    <button class="lang btn" type="button">
-      Русский
-    </button>
-    <button class="lang btn" type="button">தமிழ்</button>
-    <button class="lang btn" type="button">Türkçe</button>
-    <button class="lang btn" type="button">
-      Українська
-    </button>
-    <button class="lang btn" type="button">
-      Tiếng Việt
-    </button>
-    <button class="lang btn" type="button">
-      简体中文
-    </button>
-    <button class="lang btn" type="button">
-      繁體中文
+  <div class="lang-selector" [ngClass]="{'lang-selector-top': isNavbar, 'lang-selector-bottom': isFooter}">
+    <button
+      class="lang btn"
+      type="button"
+      (click)="setLang(lang.initials)"
+      *ngFor="let lang of languages">
+        {{lang.language}}
     </button>
   </div>
+
 </div>
