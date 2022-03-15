@@ -62,7 +62,8 @@ a {
 
 .modal-content {
   z-index: 99;
-  width: 20rem; /*320px*/
+  width: 20rem;
+  /*320px*/
   max-height: 90vh;
   background-color: white;
   border-radius: 2rem;
@@ -103,7 +104,8 @@ a {
 }
 
 .h3 {
-  font-size: 1.25rem; /*20px*/
+  font-size: 1.25rem;
+  /*20px*/
   font-weight: 600;
 }
 

@@ -61,123 +61,24 @@
 }
 
 .modal-settings-body {
-  padding: 0px 24px 0px 24px;
+  padding: 0rem 1.5rem;
 }
 
 .global {
   padding-top: 1.6rem;
 }
 
-.sub-title h3 {
-  color: var(--purple);
-  font-size: 12px;
+.p-small h3 {
+  font-size: 0.75rem;
   font-weight: 600;
+  line-height: 1.5;
 }
 
-
-
-/* switcher night version */
-.switcher {
-  align-items: center;
-  background-color: rgb(189, 194, 196);
-  border-radius: 24px;
-  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
-  cursor: pointer;
-  display: inline-flex;
-  height: 2rem;
-  position: relative;
-  transition: background-color 200ms ease 0s;
-  width: 3.5rem;
+.key-words {
+  color: var(--purple);
 }
 
-.switcher-input {
-  opacity: 0;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  z-index: 3;
-  cursor: pointer;
-}
-
-.switcher-sun-container {
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
-  cursor: pointer;
-  height: 1.625rem;
-  left: 3px;
-  position: absolute;
-  top: 3px;
-  transition: left 200ms ease-in 0s;
-  width: 1.625rem;
-  z-index: 1;
-}
-
-.switcher-sun-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-.sun-icon {
-  align-self: center;
-  fill: rgb(255, 178, 55);
-}
-
-.switcher-dark {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.dark-icons {
-  align-self: center;
-  fill: rgb(255, 255, 255);
-}
-
-.switcher-input:hover+.active-border,
-.switcher-input:focus+.active-border {
-  box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
-}
-
-/* dark mode */
-.switcher-dark-on {
-  align-items: center;
-  background-color: rgb(102, 97, 113);
-  border-radius: 24px;
-  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
-  cursor: pointer;
-  display: inline-flex;
-  height: 2rem;
-  position: relative;
-  transition: background-color 200ms ease 0s;
-  width: 3.5rem;
-}
-
-.sun-container-dark {
-  background-color: rgb(39, 38, 44);
-  border-radius: 50%;
-  cursor: pointer;
-  height: 26px;
-  left: 3px;
-  position: absolute;
-  top: 3px;
-  transition: left 200ms ease-in 0s;
-  width: 26px;
-  z-index: 1;
-}
-
-.dark-icons-on {
-  align-self: center;
-  fill: rgb(39, 38, 44);
-}
-
-.moon-dark-on {
-  align-self: center;
-  fill: rgb(154, 106, 255);
-}
+/* positioning dark-mode button */
 
 .dark-mode {
   display: flex;
@@ -186,7 +87,7 @@
 }
 
 .dark-mode p {
-  padding-top: 10px;
+  padding-top: 0.625rem;
   color: var(--dark-purple);
 }
 
@@ -346,7 +247,7 @@ p {
 }
 
 .general-field-large:focus {
-  box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+  box-shadow: var(--purple) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
 }
 
 .input-fields {
@@ -383,7 +284,7 @@ p {
   -webkit-box-align: center;
   align-items: center;
   background-color: rgb(238, 234, 244);
-  border-radius: 24px;
+  border-radius: 1.5rem;
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
   cursor: pointer;
   display: inline-flex;
@@ -408,22 +309,22 @@ p {
   border-radius: 50%;
   cursor: pointer;
   height: 1.625rem;
-  left: 3px;
+  left: 0.188rem;
   position: absolute;
-  top: 3px;
+  top: 0.188rem;
   transition: left 200ms ease-in 0s;
   width: 1.625rem;
   z-index: 1;
 }
 
 .checked {
-  background-color: rgb(49, 208, 170);
+  background-color: var(--green);
 }
 
 .checked .input-set3 {
-  left: calc(100% - 30px);
+  left: calc(100% - 1.875rem);
 }
 
 .input-set3:hover {
-  box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+  box-shadow: var(--purple) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
 }
