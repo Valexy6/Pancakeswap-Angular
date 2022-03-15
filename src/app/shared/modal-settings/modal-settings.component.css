@@ -43,6 +43,7 @@
 
 .sub-title {
   color: var(--purple);
+  padding: 0rem 1.5rem;
 }
 
 /* squashed button */
@@ -58,8 +59,8 @@
   border: 0px;
   font-size: 1rem;
   font-weight: 600;
-  background-color: var(--grey);
-  color: var(--cyan);
+  background-color: var(--cyan);
+  color: white;
   box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
   cursor: pointer;
   letter-spacing: 0.03em;
@@ -70,7 +71,7 @@
 }
 
 .button-squashed-standard:hover {
-  background-color: var(--hover-color);
+  opacity: 0.65;
 }
 
 .button-squashed-standard:active {
@@ -86,7 +87,6 @@
   font-weight: 600;
   background-color: var(--grey);
   color: var(--cyan);
-  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
   cursor: pointer;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -96,7 +96,7 @@
 }
 
 .button-squashed-fast:hover {
-  background-color: var(--hover-color);
+  opacity: 0.65;
 }
 
 .button-squashed-fast:active {
@@ -112,7 +112,6 @@
   font-weight: 600;
   background-color: var(--grey);
   color: var(--cyan);
-  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
   cursor: pointer;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -122,7 +121,7 @@
 }
 
 .button-squashed-instant:hover {
-  background-color: var(--hover-color);
+  opacity: 0.65;
 }
 
 .button-squashed-instant:active {
@@ -145,12 +144,15 @@ hr {
   border-top: 1px solid var(--grey-borders)
 }
 
+p {
+  color: var(--dark-purple);
+}
+
 /* general inputs */
 .general-field {
-  border: 1px solid var(--column-border);
+  border: none;
   outline: 0px;
   border-radius: 1rem;
-  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
   background-color: var(--grey);
   color: var(--cyan);
   font-size: 1rem;
@@ -161,13 +163,29 @@ hr {
   text-align: center;
 }
 
+.general-field-selected {
+  border: 1px solid var(--column-border);
+  outline: 0px;
+  border-radius: 1rem;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  background-color: var(--cyan);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 100%;
+  width: 4.25rem;
+  padding: 0.25rem 1rem;
+  text-align: center;
+
+}
+
 .general-field-large {
   border: 1px solid var(--column-border);
   outline: 0px;
   border-radius: 1rem;
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
   background-color: var(--background-color);
-  color: var(--dark-purple);
+  color: var(--light-purple);
   font-size: 1rem;
   height: 100%;
   width: 5.6rem;
@@ -176,7 +194,7 @@ hr {
 }
 
 .general-field-large:focus {
-  box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+  box-shadow: var(--purple) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
 }
 
 .input-fields {
@@ -202,7 +220,7 @@ hr {
   border-radius: 1rem;
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
   background-color: var(--background-color);
-  color: var(--dark-purple);
+  color: var(--light-purple);
   font-size: 1rem;
   height: 2rem;
   width: 3.06rem;
@@ -213,7 +231,7 @@ hr {
   -webkit-box-align: center;
   align-items: center;
   background-color: rgb(238, 234, 244);
-  border-radius: 24px;
+  border-radius: 1.5rem;
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
   cursor: pointer;
   display: inline-flex;
@@ -231,23 +249,29 @@ hr {
   z-index: 3;
 }
 
+
+
 .input-set3 {
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
   cursor: pointer;
-  height: 26px;
-  left: 3px;
+  height: 1.625rem;
+  left: 0.188rem;
   position: absolute;
-  top: 3px;
+  top: 0.188rem;
   transition: left 200ms ease-in 0s;
-  width: 26px;
+  width: 1.625rem;
   z-index: 1;
 }
 
 .checked {
-  background-color: rgb(49, 208, 170);
+  background-color: var(--green);
 }
 
 .checked .input-set3 {
-  left: calc(100% - 30px);
+  left: calc(100% - 1.875rem);
+}
+
+.input-set3:hover {
+  box-shadow: var(--purple) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
 }
