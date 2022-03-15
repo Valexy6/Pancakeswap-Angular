@@ -1,5 +1,5 @@
-<div (scroll)="detectScroll()">
-  <app-navbar [scrollDeltaY] = "scrollDeltaY"></app-navbar>
+<div class="app-body" (scroll)="detectScroll()">
+  <app-navbar [scrollDeltaY] = "scrollDeltaY" (setLang)="setLang($event)"></app-navbar>
 </div>
 
 <div style="background-color: var(--grey);" class="mt-5">
@@ -13,5 +13,17 @@
     <app-design-system></app-design-system>
     <hr>
     <span class="m-4"><app-faq></app-faq></span>
+    <app-table-base></app-table-base>
   </div>
+
+  <!--Generic-Box-->
+  <div class="pb-4">
+    <div class="generic-box-container container p-4">
+      <div class="d-flex justify-content-center">
+        <h2 class="h2 mb-5">Generic Box</h2>
+      </div>
+    </div>
+  </div>
+
+  <app-footer-container [langSelected]="langSelected"></app-footer-container>
 </div>
