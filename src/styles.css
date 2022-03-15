@@ -140,6 +140,14 @@ a {
   color: var(--purple);
 }
 
+.page-link {
+  background-color: transparent !important;
+  border: none;
+}
+
+.page-link:focus {
+  box-shadow: none !important;
+
 /* -- RESPONSIVE -- */
 @media screen and (min-width: 576px) {
   .modal-content {
