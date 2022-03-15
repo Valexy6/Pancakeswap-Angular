@@ -1,0 +1,25 @@
+.pancakes-link {
+  margin-right: 0.75rem;
+  cursor: pointer;
+}
+
+.pancakes-link a {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.pancakes-link img {
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease 0s;
+}
+
+.pancakes-link:hover img {
+  transform: scale(1.2);
+}
+
+@media all and (max-width: 846px) {
+  .pancakes-link {
+    display: none;
+  }
+}

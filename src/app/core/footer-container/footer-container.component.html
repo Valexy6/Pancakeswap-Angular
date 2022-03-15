@@ -1,0 +1,72 @@
+<footer>
+  <div class="f-wrapper">
+    <div class="f-logo-responsive">
+      <img src="assets/icons/logo-footer-responsive.svg" alt="logo footer">
+    </div>
+    <div class="f-row1">
+      <ul class="f-link">
+        <li class="li-title">ABOUT</li>
+        <li><a class="f-link-a" href="#">Contact</a></li>
+        <li><a class="f-link-a" href="#">Brand</a></li>
+        <li><a class="f-link-a" href="#">Blog</a></li>
+        <li><a class="f-link-a" href="#">Community</a></li>
+        <li><a class="f-link-a" href="#">CAKE token</a></li>
+        <li class="lh-1"><span>—</span></li>
+        <li><a class="yellow-a" href="#">Online Store</a></li>
+      </ul>
+
+      <div class="f-container">
+        <ul class="f-link">
+          <li class="li-title">HELP</li>
+          <li><a class="f-link-a" href="#">Customer Support</a></li>
+          <li><a class="f-link-a" href="#">Troubleshooting</a></li>
+          <li><a class="f-link-a" href="#">Guides</a></li>
+        </ul>
+      </div>
+
+      <div class="f-container">
+        <ul class="f-link">
+          <li class="li-title">DEVELOPERS</li>
+          <li><a class="f-link-a" href="#">Github</a></li>
+          <li><a class="f-link-a" href="#">Documentation</a></li>
+          <li><a class="f-link-a" href="#">Bug Bounty</a></li>
+          <li><a class="f-link-a" href="#">Audits</a></li>
+          <li><a class="f-link-a" href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="f-logo">
+        <img src="assets/icons/logo-footer.svg" alt="logo footer">
+      </div>
+    </div>
+
+    <div class="f-row2">
+      <a href="#"><img src="../../../assets/icons/twitter-mauve.svg" /></a>
+      <div>
+        <a href="#"><img src="../../../assets/icons/telegram-mauve.svg" /></a>
+      </div>
+      <a href="#"><img src="../../../assets/icons/reddit-mauve.svg" /></a>
+      <a href="#"><img src="../../../assets/icons/instagram-mauve.svg" /></a>
+      <a href="#"><img src="../../../assets/icons/github-mauve.svg" /></a>
+      <a href="#"><img src="../../../assets/icons/discord-mauve.svg" /></a>
+      <a href="#"><img src="../../../assets/icons/medium-mauve.svg" /></a>
+
+    </div>
+
+    <div class="f-row3">
+      <div class="d-flex justify-content-center align-items-center">
+        <app-dark-mode></app-dark-mode>
+        <app-language-selector [isFooter]="isFooter" [langSelected]="langSelected"></app-language-selector>
+      </div>
+
+      <div class="pancake-trade">
+        <app-pancake-trade [colorLink]="colorLink" class=""></app-pancake-trade>
+
+        <app-general-button
+        [button]="{ class: 'button-squashed', text: 'Buy CAKE' }"
+        ></app-general-button>
+      </div>
+    </div>
+
+  </div>
+</footer>
