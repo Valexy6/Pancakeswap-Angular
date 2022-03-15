@@ -25,28 +25,6 @@
   box-shadow: none;
 }
 
-.modal-bcg {
-  background-color: rgba(40, 13, 95, 0.6);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 98;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-container {
-  z-index: 99;
-  width: 20rem; /*320px*/
-  max-height: 90vh;
-  background-color: white;
-  border-radius: 2rem;
-  overflow: auto;
-}
-
 .modal-wallet-header {
   padding: 0.75rem 1.5rem;
   line-height: 1.1;
@@ -169,11 +147,4 @@
 .modal-wallet-footer a:active {
   opacity: 0.85;
   transform: translateY(1px);
-}
-
-/* -- RESPONSIVE -- */
-@media screen and (min-width: 576px) {
-  .modal-container {
-    width: 21.25rem;
-  }
 }
