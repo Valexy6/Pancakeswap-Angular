@@ -10,7 +10,7 @@ import { FaqRowComponent } from './shared/faq-row/faq-row.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { ModalSettingsComponent } from './shared/modal-settings/modal-settings.component';
 import { LanguageSelectorComponent } from './shared/language-selector/language-selector.component';
-import { ModalClockComponent } from './modal-clock/modal-clock.component'
+import { ModalClockComponent } from './shared/modal-clock/modal-clock.component'
 
 
 @NgModule({
