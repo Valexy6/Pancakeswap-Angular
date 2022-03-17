@@ -57,7 +57,7 @@
   animation: collapse .5s ease forwards;
 }
 
-.open{
+.open-nav {
   animation: open .5s ease forwards;
 }
 
@@ -84,7 +84,7 @@
   display: flex;
   position: relative;
   margin-left: 1.5rem;
-  z-index: 100;
+  z-index: 25;
 }
 
 .dropdown-nav {
@@ -95,7 +95,7 @@
   display: block;
 }
 
-.dropbtn {
+.dropbtn-nav {
   height: 100%;
   display: flex;
   align-items: center;
@@ -104,7 +104,7 @@
   cursor: pointer;
 }
 
-.dropbtn a {
+.dropbtn-nav a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,8 +120,8 @@
   height: 100%;
 }
 
-.dropbtn a:hover,
-.dropbtn a:active {
+.dropbtn-nav a:hover,
+.dropbtn-nav a:active {
   background: var(--grey);
   border-radius: 1rem;
   cursor: pointer;
@@ -173,55 +173,7 @@
   border-style: solid;
   border-width: 1px 0 0;
   margin: 0.25rem 0;
-}
-
-/* -- nav right -- */
-.pancakes-link {
-  margin-right: 0.75rem;
-  cursor: pointer;
-}
-
-.pancakes-link a {
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  color: var(--light-purple);
-}
-
-.pancakes-link img {
-  margin-right: 0.5rem;
-  transition: transform 0.3s ease 0s;
-}
-
-.pancakes-link:hover img {
-  transform: scale(1.2);
-}
-
-.button-squashed {
-  border-radius: 1rem;
-  border: 0;
-  font-size: 1rem;
-  font-weight: 600;
-  background-color: var(--cyan);
-  color: white;
-  box-shadow: rgb(14 14 44 / 40%) 0 -1px 0 0 inset;
-  cursor: pointer;
-  letter-spacing: 0.03em;
-  line-height: 1;
-  padding: 0px 1rem;
-  height: 2rem; /*32px*/
   opacity: 1;
-  white-space: nowrap;
-}
-
-.button-squashed:hover {
-  background-color: var(--hover-color);
-}
-
-.button-squashed:active {
-  background-color: var(--active-color);
-  transform: translateY(1px);
-  box-shadow: none;
 }
 
 /* -- bottom navbar -- */
@@ -262,18 +214,27 @@
 }
 
 .dropdown-content-bottom {
-  display: none;
+  /* display: none; */
+  position: fixed;
+  bottom: 3rem;
+  left: 0;
+  width: 100vw;
+  height: fit-content;
+  z-index: 19;
+}
+
+.dropdown-nav:hover .dropdown-content-bottom {
+  display: block;
+}
+
+.bcg {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: calc(100vh - 3rem);
   background-color: rgba(40, 13, 95, 0.57);
-  z-index: 19;
-}
-
-.dropdown-nav:hover .dropdown-content-bottom {
-  display: block;
+  z-index: 18;
 }
 
 .earn {
@@ -298,14 +259,20 @@
 }
 
 /* -- RESPONSIVE -- */
-@media screen and (min-width: 967px) {
+@media all and (min-width: 967px) {
   .mobile-logo {
     display: none;
   }
 }
 
-@media screen and (max-width: 967px) {
+@media all and (max-width: 967px) {
   .desktop-logo {
+    display: none;
+  }
+}
+
+@media all and (max-width: 846px) {
+  app-pancake-trade {
     display: none;
   }
 }

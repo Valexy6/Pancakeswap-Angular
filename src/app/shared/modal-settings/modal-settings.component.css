@@ -17,3 +17,25 @@
   transform: translateY(1px);
   box-shadow: none;
 }
+
+.modal-bcg {
+  background-color: rgba(40, 13, 95, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  z-index: 51;
+  width: 390px;
+  min-height: 600px;
+  max-height: 670px;
+  background-color: white;
+  border-radius: 2rem;
+}

@@ -1,1 +1,18 @@
-<button class="button-gear mr-1-2 ml-1 d-flex align-items-center h-100" type="button"><img src="../../../assets/icons/gear-lightpurple.svg"></button>
+<!-- Button trigger modal setting -->
+<button class="button-gear mr-1-2 ml-1 d-flex align-items-center h-100" type="button">
+  <img src="../../../assets/icons/gear-lightpurple.svg" (click)="modalToggle()" />
+</button>
+
+<!-- Modal -->
+<div class="modal-bcg" *ngIf="isVisible" >
+  <div class="modal-container">
+    <h1>Settssssings</h1>
+    <hr>
+    <h3>Glsssal</h3>
+    <div class="dark-mode">
+      <p>Dark mode</p>
+    </div>
+    <button class="button-squashed" type="button" (click)="modalToggle()">Conndfsgsfgect Wallet</button>
+  
+  </div>
+</div>
