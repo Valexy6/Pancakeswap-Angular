@@ -1,30 +1,3 @@
-::ng-deep .modal-content  {
-   border: none;
-   background-color: transparent;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-  }
-  ::ng-deep .modal {position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(85, 46, 165, 0.6);
-  ;}
-  
-  
-.box {
-  width: 20.322rem;
-  height: 10.625rem;
-  border-radius: 2rem;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  
-  
-}
-
 .wallet{margin: 24px;display: flex;justify-content: center;align-items: center;}
 .button-standard {
     border-radius: 1rem;
@@ -40,9 +13,6 @@
     width: 18.313rem; /*165px*/
     height: 3.05rem; /*48px*/
     opacity: 1;
-   
-    
-    
   }
   
   .button-standard:hover {
@@ -72,13 +42,13 @@
        background-color: transparent;
        left: 3.5rem;
        bottom: 0.25rem;
-       font-size: 1.25rem;
-       color: rgb(113, 218, 183);
+       
      
 
    }
 
    .text {
+     width: 100%;
      display: inline-flex;
      height: 45%;
      background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
@@ -97,7 +67,6 @@
     
 }
 
- 
  
 
 

@@ -1,0 +1,14 @@
+new page
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch pool-page
+# Your branch is up to date with 'origin/pool-page'.
+#
+# Changes to be committed:
+#	modified:   src/app/app.module.ts
+#	new file:   src/app/pool-page/pool-page.component.css
+#	new file:   src/app/pool-page/pool-page.component.html
+#	new file:   src/app/pool-page/pool-page.component.ts
+#

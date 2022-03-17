@@ -1,13 +1,22 @@
-
-<button class="button-clock" (click)="openVerticallyCentered(content)"><img src="../../assets/icons/cirle-clock-lightpurple.svg" alt=""></button>
-
+<button class="button-clock" (click)="open(content)">
+  <img src="../../assets/icons/cirle-clock-lightpurple.svg" alt="" />
+</button>
 
 <ng-template #content let-modal>
-
-    <div class="box">
-        <div class="text"><h5>Recent Transactions </h5>     <button type="button" class="escButton" aria-label="Close" (click)="modal.dismiss('Cross click')">X</button>
-        </div>
-        <div class="wallet"> <button class="button-standard">Connect Wallet</button></div>
+  <div >
+    <div class="text">
+      <h5>Recent Transactions</h5>
+      <button
+        type="button"
+        class="escButton"
+        aria-label="Close"
+        (click)="modal.close('Cross click')"
+      >
+        <img src="../../../assets/icons/exit.svg" alt="">
+      </button>
     </div>
-
+    <div class="wallet">
+      <button class="button-standard">Connect Wallet</button>
+    </div>
+  </div>
 </ng-template>

@@ -10,12 +10,11 @@ import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 export class ModalClockComponent implements OnInit  {
 
   constructor(private modalService: NgbModal) {}
-  
 
-  closeResult = '';
+  closeResult!: string;
   
-  openVerticallyCentered(content:any) {
-    this.modalService.open(content, { centered: true });
+  open(content: any) {
+    this.modalService.open(content, { windowClass: 'ps-modal-centered',modalDialogClass: 'modal-container' });
   }
 
   
