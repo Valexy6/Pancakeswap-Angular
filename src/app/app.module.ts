@@ -19,6 +19,7 @@ import { FooterContainerComponent } from './core/footer-container/footer-contain
 import { DarkModeComponent } from './shared/dark-mode/dark-mode.component';
 import { PancakeTradeComponent } from './shared/pancake-trade/pancake-trade.component';
 import { GeneralButtonComponent } from './shared/general-button/general-button.component';
+import { HomepageContainerComponent } from './pages/homepage-container/homepage-container.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { GeneralButtonComponent } from './shared/general-button/general-button.c
     DarkModeComponent,
     PancakeTradeComponent,
     GeneralButtonComponent,
+    HomepageContainerComponent,
   ],
   imports: [
     BrowserModule,
