@@ -1,9 +1,17 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DarkModeService {
-//da implementare con il local sotrage per tenere memoria della preferenza anche dopo il refresh o restart del browser
+  private darkModeSelection$ = new BehaviorSubject<boolean>(false);
+  darkModeState$ = this.darkModeSelection$.asObservable()
+
   constructor() { }
+
+  setDarkMode(isDarkModeOn: boolean) {
+    this.darkModeSelection$.next(isDarkModeOn);
+  }
+
 }

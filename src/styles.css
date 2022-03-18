@@ -14,6 +14,8 @@
   --background-color: rgb(238, 234, 244);
   --grey-border: rgb(231, 227, 235);
   --column-border: rgb(215, 202, 236);
+  --switcher-bcg: rgb(189, 194, 196);
+  --switcher-bcg-darkmode: rgb(102, 97, 113);
   --mauve: rgb(184, 173, 210);
   --title-footer: rgb(154, 106, 255);
   --light-purple: rgb(122, 110, 170);
@@ -38,7 +40,6 @@
 
 body {
   overflow: overlay;
-  background-color: black;
 }
 
 a {
@@ -87,7 +88,7 @@ a {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: rgb(238 234 244) 0px 0px 5px inset;
+  box-shadow: var(--background-color) 0px 0px 5px inset;
   border-radius: 10px;
 }
 
