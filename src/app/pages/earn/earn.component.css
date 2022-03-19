@@ -1,0 +1,13 @@
+#container {
+  margin-top: 5rem;
+}
+
+.active {
+  border-bottom: 2px solid green;
+  color: purple;
+  font-weight: bold;
+}
+
+a {
+  color: gray;
+}

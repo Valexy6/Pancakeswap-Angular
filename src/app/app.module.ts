@@ -20,6 +20,9 @@ import { DarkModeComponent } from './shared/dark-mode/dark-mode.component';
 import { PancakeTradeComponent } from './shared/pancake-trade/pancake-trade.component';
 import { GeneralButtonComponent } from './shared/general-button/general-button.component';
 import { HomepageContainerComponent } from './pages/homepage-container/homepage-container.component';
+import { EarnComponent } from './pages/earn/earn.component';
+import { EarnFarmsComponent } from './pages/earn-farms/earn-farms.component';
+import { EarnPoolsComponent } from './pages/earn-pools/earn-pools.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +43,9 @@ import { HomepageContainerComponent } from './pages/homepage-container/homepage-
     PancakeTradeComponent,
     GeneralButtonComponent,
     HomepageContainerComponent,
+    EarnComponent,
+    EarnFarmsComponent,
+    EarnPoolsComponent,
   ],
   imports: [
     BrowserModule,
