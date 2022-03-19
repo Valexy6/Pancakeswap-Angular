@@ -3,11 +3,12 @@
 }
 
 .active {
-  border-bottom: 2px solid green;
-  color: purple;
-  font-weight: bold;
+  border-bottom: 4px solid var(--cyan);
+  border-radius: 2px;
+  color: var(--purple);
+  font-weight: 600;
 }
 
 a {
-  color: gray;
+  color: var(--light-purple);
 }
