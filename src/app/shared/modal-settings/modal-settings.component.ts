@@ -8,10 +8,10 @@ import { Component,  OnInit } from '@angular/core';
 })
 export class ModalSettingsComponent implements OnInit {
   isVisible: boolean = false;
-  expert = false;
-  disableMultihops = false;
-  subGraphHealthIndicator = false;
-  flippySounds = false;
+  expertActive = false;
+  disableMultihopsActive = false;
+  subGraphHealthIndicatorActive = false;
+  flippySoundsActive = false;
 
   prova = '';
 
