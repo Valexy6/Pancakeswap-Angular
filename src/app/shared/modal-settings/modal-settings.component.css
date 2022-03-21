@@ -202,7 +202,9 @@ p {
 }
 
 /* general inputs */
-.general-field {
+
+
+.input-button {
   border: none;
   outline: 0px;
   border-radius: 1rem;
@@ -216,7 +218,12 @@ p {
   text-align: center;
 }
 
-.general-field-selected {
+.input-button:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.input-button-selected {
   border: 1px solid var(--column-border);
   outline: 0px;
   border-radius: 1rem;
@@ -229,7 +236,11 @@ p {
   width: 4.25rem;
   padding: 0.25rem 1rem;
   text-align: center;
+}
 
+.input-button-selected:active {
+  transform: translateY(1px);
+  box-shadow: none;
 }
 
 .general-field-large {
