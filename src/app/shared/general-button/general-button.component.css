@@ -73,9 +73,10 @@
   align-items: center;
   border-radius: 1rem;
   font-size: 1rem;
+  font-weight: 600;
   opacity: 1;
   color: var(--cyan);
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
   letter-spacing: 0.03em;
   line-height: 1;
   width: 8.25rem; /*132px*/
@@ -87,12 +88,12 @@
 }
 
 .button-medium:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
   opacity: 0.65;
 }
 
 .button-medium:active {
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
   transform: translateY(1px);
   box-shadow: none;
   opacity: 0.85;

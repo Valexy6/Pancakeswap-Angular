@@ -100,40 +100,54 @@ a {
 
 /* -- TYPOGRAPHY -- */
 .h1 {
-  font-size: 4rem;
+  font-size: 4rem; /*64px*/
   font-weight: 600;
+  margin: 0px;
+  padding: 0px;
 }
 
 .h2 {
-  font-size: 2.5rem;
+  font-size: 2.5rem; /*40px*/
   font-weight: 600;
+  margin: 0px;
+  padding: 0px;
 }
 
 .h3 {
   font-size: 1.25rem; /*20px*/
   font-weight: 600;
+  margin: 0px;
+  padding: 0px;
 }
 
 .h4 {
   font-size: 1.5rem;
   font-weight: 600;
+  margin: 0px;
+  padding: 0px;
 }
 
 .p {
   font-size: 1rem;
   font-weight: 400;
+  margin: 0px;
+  padding: 0px;
 }
 
 .p-light-purple {
   font-size: 1rem;
   font-weight: 400;
   color: var(--light-purple);
+  margin: 0px;
+  padding: 0px;
 }
 
 .p-small {
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 1.5;
+  margin: 0px;
+  padding: 0px;
 }
 
 .p-dark {
@@ -141,6 +155,8 @@ a {
   font-weight: 600;
   color: var(--dark-purple);
   line-height: 1.1;
+  margin: 0px;
+  padding: 0px;
 }
 
 .key-words {

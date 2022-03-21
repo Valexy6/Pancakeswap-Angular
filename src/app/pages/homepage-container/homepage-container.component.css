@@ -6,20 +6,20 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 48px 0px;
+  padding: 1rem 0 3rem;
   margin-top: 3.5rem;
   width: 100%;
 }
 
 .hero-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 75rem;
   height: 100%;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column-reverse;
+  align-items: flex-end;
   justify-content: center;
-  align-items: center;
-  padding: 3rem 1.5rem;
+  padding: 1rem;
   z-index: 10;
 }
 
@@ -31,6 +31,7 @@
 }
 
 .cta-hero h2 {
+  font-size: 3rem;
   margin-bottom: 1.5rem;
   color: var(--purple);
   line-height: 1.1;
@@ -48,66 +49,16 @@
   justify-content: flex-start;
 }
 
-.buttonStandard {
-  border-radius: 16px;
-  border: 0px;
-  font-size: 16px;
-  font-weight: 600;
-  background-color: var(--cyan);
-  color: white;
-  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-  cursor: pointer;
-  letter-spacing: 0.03em;
-  line-height: 1;
-  height: 48px;
-  padding: 0 24px;
-  opacity: 1;
+.cta-buttons app-general-button:first-child {
   margin-right: 0.5rem;
-}
-
-.buttonStandard:hover {
-  background-color: rgb(31, 199, 212, 0.65);
-}
-
-.buttonStandard:active {
-  background-color: rgb(31, 199, 212, 0.85);
-  transform: translateY(1px);
-  box-shadow: none;
-}
-
-.buttonMedium {
-  border-radius: 1rem;
-  font-size: 1rem;
-  font-weight: 600;
-  opacity: 1;
-  color: var(--cyan);
-  background-color: transparent;
-  letter-spacing: 0.03em;
-  line-height: 1;
-  width: 132px;
-  height: 48px;
-  border: 2px solid var(--cyan);
-  box-shadow: none;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-}
-
-.buttonMedium:hover {
-  opacity: 0.65;
-}
-
-.buttonMedium:active {
-  transform: translateY(1px);
-  box-shadow: none;
-  opacity: 0.85;
 }
 
 .img-cta-hero {
   display: flex;
-  position: relative;  
-  flex: 1 1 0%;
-  height: 100%;
-  width: 100%;
+  position: relative;
+  height: 12rem;
+  width: 12rem;
+  margin-bottom: 1.5rem;
 }
 
 .bunny {
@@ -120,7 +71,6 @@
   animation-fill-mode: none;
   animation-play-state: running;
   animation-name: cta-img;
-
 }
 
 @keyframes cta-img {
@@ -149,18 +99,7 @@
   animation-direction: normal;
   animation-fill-mode: none;
   animation-play-state: running;
-  animation-name: cta-star1;
-}
-
-@keyframes cta-star1 {
-  0%,
-  100% {
-    opacity: 0.9;
-  }
-
-  50% {
-    opacity: 0.1;
-  }
+  animation-name: cta-star;
 }
 
 .star2 {  
@@ -178,18 +117,7 @@
   animation-direction: normal;
   animation-fill-mode: none;
   animation-play-state: running;
-  animation-name: cta-star2;
-}
-
-@keyframes cta-star2 {
-  0%,
-  100% {
-    opacity: 0.9;
-  }
-
-  50% {
-    opacity: 0.1;
-  }
+  animation-name: cta-star;
 }
 
 .star3 {  
@@ -207,10 +135,10 @@
   animation-direction: normal;
   animation-fill-mode: none;
   animation-play-state: running;
-  animation-name: cta-star3;
+  animation-name: cta-star;
 }
 
-@keyframes cta-star3 {
+@keyframes cta-star {
   0%,
   100% {
     opacity: 0.9;
@@ -226,7 +154,7 @@
   width: 100%;
 }
 
-.cta-divider{
+.cta-divider {
   width: 100%;
   position: absolute;
   bottom: -3px;
@@ -239,39 +167,42 @@
   background: var(--gradient-purple);
 }
 
-.bunny-icon {
-  margin-bottom: 1.5rem;
-}
-
 .subtitle-sec1 {
   line-height: 1.1;
   color: var(--dark-purple);
+  font-size: 2rem;
 }
 
-.home-sec1 .p {
-  line-height: 1.5;
+.subtitle-sec1:nth-child(2) {
+  margin-bottom: 0;
 }
 
 .subtitle-sec1:nth-child(3) {
   margin-bottom: 2rem;
 }
 
-p:nth-child(6) {
+.home-sec1 .p-light-purple {
+  line-height: 1.5;
+  margin: 0;
+}
+
+.home-sec1 .p-light-purple:nth-child(6) {
   margin-top: 1.25rem;
   margin-bottom: 2rem;
   font-weight: 600;
 }
 
+/* stats-card */
 .stats-card {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column;
+  justify-content: center;
 }
 
 .solid-shadow {
   height: fit-content;
-  padding: 1px 1px 4px;
+  padding: 0.063rem 0.063rem 0.25rem;
   box-sizing: border-box;
-  margin-right: 16px;
   margin-bottom: 0px;
   background: var(--grey-border);
   border-radius: 1.5rem;
@@ -279,7 +210,13 @@ p:nth-child(6) {
   overflow: hidden;
 }
 
+.solid-shadow:nth-child(2) {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .stats-container {
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
   border-radius: 1.5rem;
@@ -288,16 +225,20 @@ p:nth-child(6) {
 }
 
 .stats-icons {
+  position: absolute;
   align-self: flex-end;
 }
 
-.stats-text{
-  margin-top: 1.5rem;
+.stats-text {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
-  min-height: 168px;
-  min-width: 232px;
+  min-width: 14.5rem;
+}
+
+.stats-text .h2 {
+  font-size: 2rem;
+  line-height: 1.1;
 }
 
 .key-word1 {
@@ -312,18 +253,19 @@ p:nth-child(6) {
 
 .key-word3 {
   margin-bottom: 1.5rem;
-  color: var(--fuksia);
+  color: var(--fuchsia);
 }
 
 /* -- DIVIDER 1 --*/
 .divider1 {
-  fill: rgb(216, 203, 237);
+  fill: var(--column-border);
   background-color: var(--white);
   width: 100%;
 }
 
 .divider1 .divider {
   width: 100%;
+  position: absolute;
 }
 
 /* -- SEC 2 > TRADE ANYTHING --*/
@@ -1065,7 +1007,7 @@ p:nth-child(6) {
 /* -- divider --*/
 .divider {
   height: 100%;
-  max-height: 48px;
+  max-height: 3rem;
 }
 
 .divider-top {
@@ -1228,4 +1170,74 @@ p:nth-child(6) {
 .hide {
   display: none;
   /* transition: width 2s; */
+}
+
+
+/* -- RESPONSIVE -- */
+@media all and (min-width: 968px) {
+  .hero-container {
+    padding: 3rem 1.5rem;
+  }
+  
+  .cta-hero .h2 {
+    font-size: 4rem;
+  }
+
+  .subtitle-sec1 {
+    font-size: 2.5rem;
+  }
+
+  .stats-text .h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media all and (min-width: 852px) {
+  .img-cta-hero {
+    flex: 1 1 0%;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .hero-section {
+    padding: 3rem 0;
+  }
+
+  .hero-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .solid-shadow:nth-child(2) {
+    margin: 0 1rem;
+
+  }
+
+  .stats-card {
+    flex-flow: row nowrap;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .stats-text {
+    min-height: 10.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .stats-icons {
+    position: static;
+  }
+}
+
+@media all and (min-width: 576px) {
+  .hero-container {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media all and (min-width: 370px) {
+  .hero-container {
+    padding: 2rem 1.5rem;
+  }
 }
