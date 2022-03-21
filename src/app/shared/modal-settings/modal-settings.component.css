@@ -218,6 +218,10 @@ p {
   text-align: center;
 }
 
+.input-button:hover {
+  opacity: 0.65;
+}
+
 .input-button:active {
   transform: translateY(1px);
   box-shadow: none;
@@ -236,6 +240,10 @@ p {
   width: 4.25rem;
   padding: 0.25rem 1rem;
   text-align: center;
+}
+
+.input-button-selected:hover {
+  opacity: 0.65;
 }
 
 .input-button-selected:active {
@@ -312,8 +320,6 @@ p {
   position: absolute;
   z-index: 3;
 }
-
-
 
 .input-set3 {
   background-color: rgb(255, 255, 255);
