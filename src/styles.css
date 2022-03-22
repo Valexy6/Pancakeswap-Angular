@@ -40,6 +40,7 @@
 
 body {
   overflow: overlay;
+  background-color: var(--white);
 }
 
 a {
@@ -126,8 +127,7 @@ a {
 }
 
 .h3 {
-  font-size: 1.25rem;
-  /*20px*/
+  font-size: 1.25rem; /*20px*/
   font-weight: 600;
   margin: 0px;
   padding: 0px;
