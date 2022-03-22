@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { DarkModeService } from './dark-mode.service';
 
@@ -7,7 +7,7 @@ import { DarkModeService } from './dark-mode.service';
   templateUrl: './dark-mode.component.html',
   styleUrls: ['./dark-mode.component.css']
 })
-export class DarkModeComponent implements OnInit {
+export class DarkModeComponent implements OnInit, OnDestroy {
   isDarkModeOn!: boolean;
   darkModeSubscription!: Subscription;
 
