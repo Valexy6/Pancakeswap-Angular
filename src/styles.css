@@ -46,7 +46,7 @@ a {
   text-decoration: none;
 }
 
-/* -- MODAL -- */
+/* -- MODALS -- */
 .modal-backdrop {
   background-color: var(--dark-purple);
 }
@@ -57,6 +57,8 @@ a {
 
 .ps-modal-centered {
   display: flex !important;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-container {
@@ -69,11 +71,21 @@ a {
 
 .modal-content {
   z-index: 99;
-  width: 20rem; /*320px*/
+  width: fit-content;
+  min-width: 20rem; /*320px*/
   max-height: 90vh;
   background-color: white;
   border-radius: 2rem;
   overflow: auto;
+}
+
+.modal-container-settings {
+  width: auto;
+  min-width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .modal.fade .modal-dialog {
@@ -114,7 +126,8 @@ a {
 }
 
 .h3 {
-  font-size: 1.25rem; /*20px*/
+  font-size: 1.25rem;
+  /*20px*/
   font-weight: 600;
   margin: 0px;
   padding: 0px;
@@ -175,6 +188,6 @@ a {
 /* -- RESPONSIVE -- */
 @media screen and (min-width: 576px) {
   .modal-content {
-    width: 21.25rem;
+    min-width: 21.25rem;
   }
 }

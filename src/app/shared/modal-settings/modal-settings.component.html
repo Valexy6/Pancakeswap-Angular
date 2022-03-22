@@ -1,19 +1,119 @@
 <!-- Button trigger modal setting -->
 <button class="button-gear mr-1-2 ml-1 d-flex align-items-center h-100" type="button">
-  <img src="../../../assets/icons/gear-lightpurple.svg" (click)="modalToggle()" />
+  <img src="assets/icons/gear-lightpurple.svg" (click)="open(content)" />
 </button>
 
 <!-- Modal -->
-<div class="modal-bcg" *ngIf="isVisible" >
-  <div class="modal-container d-flex flex-column
-  ">
-    <h1>Settssssings</h1>
-    <hr>
-    <h3>Glsssal</h3>
-    <div class="dark-mode">
-      <p>Dark mode</p>
+<ng-template #content let-modal>
+  <div>
+
+    <div class="modal-settings-header">
+      <h3 class="h3 m-0">Settings</h3>
+      <button class="close-btn" type="button" (click)="modal.close('Close click')"><img src="assets/icons/exit.svg">
+      </button>
     </div>
-    <button class="button-squashed" type="button" (click)="modalToggle()">Conndfsgsfgect Wallet</button>
-  <app-dark-mode></app-dark-mode>
+
+    <div class="modal-settings-body d-flex flex-column justify-content-between">
+      <div>
+        <h3 class="p-small key-words global">GLOBAL</h3>
+      </div>
+      <div class="d-flex justify-content-between align-items-baseline">
+        <p>Dark mode</p>
+        <app-dark-mode></app-dark-mode>
+      </div>
+
+      <div class="default-settings">
+        <p>Default Transaction Speed (GWEI)</p>
+        <img src="assets/icons/questionMark-light-purple.svg"
+          ngbTooltip="Adjusts the gas price (transaction fee) for your transaction. Higher GWEI = higher speed = higher fees">
+      </div>
+
+      <div class="default-buttons">
+        <button class="button-squashed-standard">Standard (5)</button>
+        <button class="button-squashed-fast">Fast (6)</button>
+        <button class="button-squashed-instant">Instant (7)</button>
+      </div>
+      <hr>
+      <div class="p-small key-words swaps">
+        <h3 class="p-small key-words global">SWAPS & LIQUIDITY</h3>
+      </div>
+      <div class="default-settings">
+        <p>Slippage Tolerance</p>
+        <img src="assets/icons/questionMark-light-purple.svg"
+          ngbTooltip="Setting a high slippage tolerance can help transactions succeed, but you may not get such a good price. Use with caution.">
+      </div>
+
+      <div class="input-fields">
+        <button class="input-button" type="button">0.1%</button>
+        <button class="input-button-selected" type="button">0.5%</button>
+        <button class="input-button" type="button">1.0%</button>
+        <input class="general-field-large" type="text" pattern="^[0-9]+$" value="1.00" />
+        <p>%</p>
+      </div>
+
+      <div class="mt-3">
+        <div class="d-flex align-items-center justify-content-between my-3">
+          <div class="d-flex align-items-center">
+            <p class="mb-0 pe-2">Tx deadline (mins)</p>
+            <img src="assets/icons/questionMark-light-purple.svg"
+              ngbTooltip="Your transaction will revert if it is left confirming for longer than this time.">
+          </div>
+          <input class="general-field-small" type="text" pattern="^[0-9]+$" value="20" />
+        </div>
+
+        <div class="d-flex align-items-center justify-content-between my-4">
+          <div class="d-flex align-items-center">
+            <p class="mb-0 pe-2">Expert Mode</p>
+            <img src="assets/icons/questionMark-light-purple.svg"
+              ngbTooltip="Bypasses confirmation modals and allows high slippage trades. Use at your own risk.">
+          </div>
+
+          <label class="input-set" [ngClass]="{ checked: expertActive }">
+            <input type="checkbox" class="input-set2" [(ngModel)]="expertActive">
+            <div class="input-set3"></div>
+          </label>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-between my-4">
+          <div class="d-flex align-items-center">
+            <p class="mb-0 pe-2">Disable Multihops</p>
+            <img src="assets/icons/questionMark-light-purple.svg" ngbTooltip="Restricts swaps to direct pairs only.">
+          </div>
+
+          <label class="input-set" [ngClass]="{ checked: disableMultihopsActive }">
+            <input type="checkbox" class="input-set2" [(ngModel)]="disableMultihopsActive">
+            <div class="input-set3"></div>
+          </label>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-between my-4">
+          <div class="d-flex align-items-center">
+            <p class="mb-0 pe-2">Subgraph Health Indicator</p>
+            <img src="assets/icons/questionMark-light-purple.svg"
+              ngbTooltip="Turn on NFT market subgraph health indicator all the time. Default is to show the indicator only when the network is delayed">
+          </div>
+
+          <label class="input-set" [ngClass]="{ checked: subGraphHealthIndicatorActive }">
+            <input type="checkbox" class="input-set2" [(ngModel)]="subGraphHealthIndicatorActive">
+            <div class="input-set3"></div>
+          </label>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-between my-4">
+          <div class="d-flex align-items-center">
+            <p class="mb-0 pe-2">Flippy sounds</p>
+            <img src="assets/icons/questionMark-light-purple.svg"
+              ngbTooltip="Fun sounds to make a truly immersive pancake-flipping trading experience">
+          </div>
+
+          <label class="input-set" [ngClass]="{ checked: flippySoundsActive }">
+            <input type="checkbox" class="input-set2" [(ngModel)]="flippySoundsActive">
+            <div class="input-set3">
+            </div>
+          </label>
+        </div>
+
+      </div>
+    </div>
   </div>
-</div>
+</ng-template>
