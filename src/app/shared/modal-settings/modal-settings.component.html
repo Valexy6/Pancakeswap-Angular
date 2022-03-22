@@ -44,9 +44,9 @@
       </div>
 
       <div class="input-fields">
-        <input class="general-field" type="text" pattern="^[0-9]+$" value="0.1%" />
-        <input class="general-field-selected" type="text" pattern="^[0-9]+$" value="0.5%" />
-        <input class="general-field" type="text" pattern="^[0-9]+$" value="1.0%" />
+        <button class="input-button" type="button">0.1%</button>
+        <button class="input-button-selected" type="button">0.5%</button>
+        <button class="input-button" type="button">1.0%</button>
         <input class="general-field-large" type="text" pattern="^[0-9]+$" value="1.00" />
         <p>%</p>
       </div>
@@ -68,8 +68,8 @@
               ngbTooltip="Bypasses confirmation modals and allows high slippage trades. Use at your own risk.">
           </div>
 
-          <label class="input-set" [ngClass]="{ checked: expert }">
-            <input type="checkbox" class="input-set2" [(ngModel)]="expert">
+          <label class="input-set" [ngClass]="{ checked: expertActive }">
+            <input type="checkbox" class="input-set2" [(ngModel)]="expertActive">
             <div class="input-set3"></div>
           </label>
         </div>
@@ -80,8 +80,8 @@
             <img src="assets/icons/questionMark-light-purple.svg" ngbTooltip="Restricts swaps to direct pairs only.">
           </div>
 
-          <label class="input-set" [ngClass]="{ checked: disableMultihops }">
-            <input type="checkbox" class="input-set2" [(ngModel)]="disableMultihops">
+          <label class="input-set" [ngClass]="{ checked: disableMultihopsActive }">
+            <input type="checkbox" class="input-set2" [(ngModel)]="disableMultihopsActive">
             <div class="input-set3"></div>
           </label>
         </div>
@@ -93,8 +93,8 @@
               ngbTooltip="Turn on NFT market subgraph health indicator all the time. Default is to show the indicator only when the network is delayed">
           </div>
 
-          <label class="input-set" [ngClass]="{ checked: subGraphHealthIndicator }">
-            <input type="checkbox" class="input-set2" [(ngModel)]="subGraphHealthIndicator">
+          <label class="input-set" [ngClass]="{ checked: subGraphHealthIndicatorActive }">
+            <input type="checkbox" class="input-set2" [(ngModel)]="subGraphHealthIndicatorActive">
             <div class="input-set3"></div>
           </label>
         </div>
@@ -106,8 +106,8 @@
               ngbTooltip="Fun sounds to make a truly immersive pancake-flipping trading experience">
           </div>
 
-          <label class="input-set" [ngClass]="{ checked: flippySounds }">
-            <input type="checkbox" class="input-set2" [(ngModel)]="flippySounds">
+          <label class="input-set" [ngClass]="{ checked: flippySoundsActive }">
+            <input type="checkbox" class="input-set2" [(ngModel)]="flippySoundsActive">
             <div class="input-set3">
             </div>
           </label>
@@ -115,6 +115,5 @@
 
       </div>
     </div>
-
   </div>
 </ng-template>

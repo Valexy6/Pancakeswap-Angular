@@ -14,6 +14,8 @@
   --background-color: rgb(238, 234, 244);
   --grey-border: rgb(231, 227, 235);
   --column-border: rgb(215, 202, 236);
+  --switcher-bcg: rgb(189, 194, 196);
+  --switcher-bcg-darkmode: rgb(102, 97, 113);
   --mauve: rgb(184, 173, 210);
   --title-footer: rgb(154, 106, 255);
   --light-purple: rgb(122, 110, 170);
@@ -22,6 +24,7 @@
   --dark-purple-overlay: rgba(40, 13, 95, 0.6);
   --footer-bcg: rgb(39, 38, 44);
   --gradient: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
+  --gradient-dark: radial-gradient(103.12% 50% at 50% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%);
   --gradient-purple: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
   --gradient-pink-blue: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
 }
@@ -33,6 +36,10 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+}
+
+body {
+  overflow: overlay;
 }
 
 a {
@@ -93,7 +100,7 @@ a {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: rgb(238 234 244) 0px 0px 5px inset;
+  box-shadow: var(--background-color) 0px 0px 5px inset;
   border-radius: 10px;
 }
 
@@ -151,6 +158,15 @@ a {
 
 .key-words {
   color: var(--purple);
+}
+
+.page-link {
+  background-color: transparent !important;
+  border: none;
+}
+
+.page-link:focus {
+  box-shadow: none !important;
 }
 
 /* -- RESPONSIVE -- */

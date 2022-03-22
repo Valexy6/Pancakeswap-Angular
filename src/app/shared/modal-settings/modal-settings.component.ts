@@ -8,11 +8,11 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ModalSettingsComponent implements OnInit {
   closeResult!: string;
-  
-  expert = false;
-  disableMultihops = false;
-  subGraphHealthIndicator = false;
-  flippySounds = false;
+
+  expertActive = false;
+  disableMultihopsActive = false;
+  subGraphHealthIndicatorActive = false;
+  flippySoundsActive = false;
 
   constructor(private modalService: NgbModal) { }
     

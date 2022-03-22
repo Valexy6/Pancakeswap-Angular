@@ -271,6 +271,12 @@
   }
 }
 
+@media all and (max-width: 846px) {
+  app-pancake-trade {
+    display: none;
+  }
+}
+
 @media all and (max-width: 768px) {
   .navlink-left {
     display: none;

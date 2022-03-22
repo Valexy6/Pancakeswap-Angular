@@ -1,6 +1,6 @@
 export interface IButton {
   class: string;
   text: string;
-  link: string;
+  link?: string;
   imgVisible: boolean
 }

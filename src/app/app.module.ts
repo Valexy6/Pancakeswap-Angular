@@ -15,10 +15,12 @@ import { NavbarComponent } from './core/navbar/navbar.component';
 import { ModalSettingsComponent } from './shared/modal-settings/modal-settings.component';
 import { LanguageSelectorComponent } from './shared/language-selector/language-selector.component';
 import { ModalConnectWalletComponent } from './shared/modal-connect-wallet/modal-connect-wallet.component';
+import { PaginationComponent } from './shared/pagination/pagination.component';
 import { FooterContainerComponent } from './core/footer-container/footer-container.component';
 import { DarkModeComponent } from './shared/dark-mode/dark-mode.component';
 import { PancakeTradeComponent } from './shared/pancake-trade/pancake-trade.component';
 import { GeneralButtonComponent } from './shared/general-button/general-button.component';
+import { HomepageContainerComponent } from './pages/homepage-container/homepage-container.component';
 
 @NgModule({
   declarations: [
@@ -33,10 +35,12 @@ import { GeneralButtonComponent } from './shared/general-button/general-button.c
     ModalSettingsComponent,
     LanguageSelectorComponent,
     ModalConnectWalletComponent,
+    PaginationComponent,
     FooterContainerComponent,
     DarkModeComponent,
     PancakeTradeComponent,
     GeneralButtonComponent,
+    HomepageContainerComponent,
   ],
   imports: [
     BrowserModule,
