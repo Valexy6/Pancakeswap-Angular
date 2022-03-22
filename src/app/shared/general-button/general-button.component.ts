@@ -10,7 +10,6 @@ export class GeneralButtonComponent implements OnInit {
   _button: IButton = {
     class: 'button-standard',
     text: '',
-    link: '',
     imgVisible: true
   }
 

@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 import { DesignSystemComponent } from './pages/design-system/design-system.component';
 import { FaqComponent } from './shared/faq/faq.component';
 import { FaqRowComponent } from './shared/faq-row/faq-row.component';
@@ -20,6 +21,7 @@ import { DarkModeComponent } from './shared/dark-mode/dark-mode.component';
 import { PancakeTradeComponent } from './shared/pancake-trade/pancake-trade.component';
 import { GeneralButtonComponent } from './shared/general-button/general-button.component';
 import { GenericCardComponent } from './shared/generic-card/generic-card.component';
+import { HomepageContainerComponent } from './pages/homepage-container/homepage-container.component';
 
 @NgModule({
   declarations: [
@@ -40,11 +42,13 @@ import { GenericCardComponent } from './shared/generic-card/generic-card.compone
     DarkModeComponent,
     PancakeTradeComponent,
     GeneralButtonComponent,
+    HomepageContainerComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

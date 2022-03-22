@@ -1,28 +1,5 @@
-.button-squashed {
-  border-radius: 1rem;
-  border: 0;
-  font-size: 1rem;
-  font-weight: 600;
-  background-color: var(--cyan);
-  color: white;
-  box-shadow: rgb(14 14 44 / 40%) 0 -1px 0 0 inset;
-  cursor: pointer;
-  letter-spacing: 0.03em;
-  line-height: 1;
-  padding: 0px 1rem;
-  height: 2rem; /*32px*/
-  opacity: 1;
-  white-space: nowrap;
-}
-
-.button-squashed:hover {
-  background-color: var(--hover-color);
-}
-
-.button-squashed:active {
-  background-color: var(--active-color);
-  transform: translateY(1px);
-  box-shadow: none;
+.modal-box-connect {
+  width: 20rem;
 }
 
 .modal-wallet-header {
@@ -147,4 +124,11 @@
 .modal-wallet-footer a:active {
   opacity: 0.85;
   transform: translateY(1px);
+}
+
+/* -- RESPONSIVE -- */
+@media screen and (min-width: 576px) {
+  .modal-box-connect {
+    width: 21.25rem;
+  }
 }

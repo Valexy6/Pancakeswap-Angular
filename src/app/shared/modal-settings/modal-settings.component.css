@@ -1,3 +1,4 @@
+/* Button trigger modal setting */
 .mr-1-2 {
   margin-right: 0.75rem;
 }
@@ -18,24 +19,276 @@
   box-shadow: none;
 }
 
-.modal-bcg {
-  background-color: rgba(40, 13, 95, 0.6);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 50;
+/* Modal */
+.modal-settings-header {
+  padding: 1.5rem;
+  line-height: 1.1;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  background: var(--gradient-pink-blue);
+  border-bottom: 1px solid var(--grey-border);
+  color: var(--dark-purple);
 }
 
-.modal-container {
-  z-index: 51;
-  width: 390px;
-  min-height: 600px;
-  max-height: 670px;
-  background-color: white;
-  border-radius: 2rem;
+.close-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal-settings-body {
+  padding: 1.5rem;
+}
+
+.sub-title {
+  color: var(--purple);
+  padding: 0rem 1.5rem;
+}
+
+/* squashed button */
+.default-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.3rem;
+  padding-bottom: 0.6rem;
+}
+
+.button-squashed-standard {
+  border-radius: 1rem;
+  border: 0px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--cyan);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 7.9rem;
+  height: 2rem;
+  opacity: 1;
+}
+
+.button-squashed-standard:hover {
+  opacity: 0.65;
+}
+
+.button-squashed-standard:active {
+  background-color: var(--active-color);
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.button-squashed-fast {
+  border-radius: 1rem;
+  border: 0px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--grey);
+  color: var(--cyan);
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 5.6rem;
+  height: 2rem;
+  opacity: 1;
+}
+
+.button-squashed-fast:hover {
+  opacity: 0.65;
+}
+
+.button-squashed-fast:active {
+  background-color: var(--active-color);
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.button-squashed-instant {
+  border-radius: 1rem;
+  border: 0px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--grey);
+  color: var(--cyan);
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 6.9rem;
+  height: 2rem;
+  opacity: 1;
+}
+
+.button-squashed-instant:hover {
+  opacity: 0.65;
+}
+
+.button-squashed-instant:active {
+  background-color: var(--active-color);
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.swaps {
+  padding-top: 0.8rem;
+}
+
+.button-tooltips {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+hr {
+  border-top: 1px solid var(--grey-borders)
+}
+
+p {
+  color: var(--dark-purple);
+}
+
+/* general inputs */
+
+
+.input-button {
+  border: none;
+  outline: 0px;
+  border-radius: 1rem;
+  background-color: var(--grey);
+  color: var(--cyan);
+  font-size: 1rem;
+  font-weight: 600;
+  height: 100%;
+  width: 4.25rem;
+  padding: 0.25rem 1rem;
+  text-align: center;
+}
+
+.input-button:hover {
+  opacity: 0.65;
+}
+
+.input-button:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.input-button-selected {
+  border: 1px solid var(--column-border);
+  outline: 0px;
+  border-radius: 1rem;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  background-color: var(--cyan);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 100%;
+  width: 4.25rem;
+  padding: 0.25rem 1rem;
+  text-align: center;
+}
+
+.input-button-selected:hover {
+  opacity: 0.65;
+}
+
+.input-button-selected:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.general-field-large {
+  border: 1px solid var(--column-border);
+  outline: 0px;
+  border-radius: 1rem;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  background-color: var(--background-color);
+  color: var(--light-purple);
+  font-size: 1rem;
+  height: 100%;
+  width: 5.6rem;
+  padding: 0.25rem 1rem;
+  text-align: center;
+}
+
+.general-field-large:focus {
+  box-shadow: var(--purple) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+}
+
+.input-fields {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.3rem;
+}
+
+.input-fields p {
+  color: var(--cyan);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.default-settings {
+  display: flex;
+  align-items: baseline;
+}
+
+.general-field-small {
+  border: 1px solid var(--column-border);
+  outline: 0px;
+  border-radius: 1rem;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  background-color: var(--background-color);
+  color: var(--light-purple);
+  font-size: 1rem;
+  height: 2rem;
+  width: 3.06rem;
+  text-align: center;
+}
+
+.input-set {
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgb(238, 234, 244);
+  border-radius: 1.5rem;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  cursor: pointer;
+  display: inline-flex;
+  height: 2rem;
+  position: relative;
+  transition: background-color 200ms ease 0s;
+  width: 3.5rem;
+}
+
+.input-set2 {
+  cursor: pointer;
+  opacity: 0;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+}
+
+.input-set3 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 1.625rem;
+  left: 0.188rem;
+  position: absolute;
+  top: 0.188rem;
+  transition: left 200ms ease-in 0s;
+  width: 1.625rem;
+  z-index: 1;
+}
+
+.checked {
+  background-color: var(--green);
+}
+
+.checked .input-set3 {
+  left: calc(100% - 1.875rem);
+}
+
+.input-set3:hover {
+  box-shadow: var(--purple) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
 }
