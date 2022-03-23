@@ -63,14 +63,7 @@
 
 .bunny {
   width: 100%;
-  animation-duration: 3.5s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: cta-img;
+  animation: 3.5s ease-in-out 0s infinite normal none running cta-img;
 }
 
 @keyframes cta-img {
@@ -95,36 +88,15 @@
 }
 
 .star1 {
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: cta-stars;
+  animation: 2s ease-in-out 1s infinite normal none running cta-stars;
 }
 
 .star2 {
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.66s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: cta-stars;
+  animation: 5s ease-in-out 0.66s infinite normal none running cta-stars;
 }
 
 .star3 {  
-  animation-duration: 2.5s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.33s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: cta-stars;
+  animation: 2.5s ease-in-out 0.33s infinite normal none running cta-stars;
 }
 
 @keyframes cta-stars {
@@ -257,10 +229,14 @@
 /* -- SEC 2 > TRADE ANYTHING --*/
 .sec2 .sec-left {
   margin-right: 4rem;
+  flex: 1 1 0%;
 }
 
 .sec2 .sec-right {
   position: relative;
+  height: 12rem;
+  width: 12rem;
+  margin-bottom: 1.5rem;
 }
 
 .bnb-token,
@@ -271,14 +247,7 @@
 }
 
 .bnb-token {
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: bnb;
+  animation: 3s ease-in-out 1s infinite normal none running bnb;
 }
 
 @keyframes bnb {
@@ -293,14 +262,7 @@
 }
 
 .btc-cake-token {
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.66s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: btc-cake;
+  animation: 3s ease-in-out 0.66s infinite normal none running btc-cake;
 }
 
 @keyframes btc-cake {
@@ -327,12 +289,22 @@
   position: relative;
 }
 
-.sec3 .sec-right {
-  margin-left: 64px;
+.sec3 .sec-container {
+  flex-direction: column;
+  width: 100%;
 }
 
 .sec3 .sec-left {
   position: relative;
+  height: 12rem;
+  width: 12rem;
+  margin-bottom: 1.5rem;
+  align-self: flex-end;
+}
+
+.sec3 .sec-right {
+  flex-direction: column;
+  align-self: flex-start;
 }
 
 .pie-chart,
@@ -343,62 +315,16 @@
   left: 0;
 }
 
-.pie-chart {
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.66s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: pie-chart;
-}
-
-@keyframes pie-chart {
-  0%,
-  100% {
-    transform: translate(0px, 0px);
-  }
-
-  50% {
-    transform: translate(3px, 15px);
-  }
-}
-
+.pie-chart,
 .stocks-chart {
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.66s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: stocks-chart;
-}
-
-@keyframes stocks-chart {
-  0%,
-  100% {
-    transform: translate(0px, 0px);
-  }
-
-  50% {
-    transform: translate(3px, 15px);
-  }
+  animation: 3s ease-in-out 0.66s infinite normal none running folder-stocks-pie-chart;
 }
 
 .folder-cake-token {
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.33s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: folder-cake-token;
+  animation: 3s ease-in-out 0.33s infinite normal none running folder-stocks-pie-chart;
 }
 
-@keyframes folder-cake-token {
+@keyframes folder-stocks-pie-chart {
   0%,
   100% {
     transform: translate(0px, 0px);
@@ -409,6 +335,8 @@
   }
 }
 
+
+/*--da trasformare in un componente >>>>> --*/
 .earn-data-container {
   margin-top: 24px;
   width: 100%;
@@ -417,6 +345,7 @@
   flex-flow: column nowrap;
   align-items: flex-start;
   max-width: 968px;
+  overflow: hidden; /* temporaneo*/
 }
 
 .earn-data-title {
@@ -485,6 +414,8 @@
   border-left: 1px solid var(--column-border);
   padding-left: 1rem;
 }
+/* <<<<< fino a qui*/
+
 
 /* -- SEC 4 > WIN --*/
 .sec4 {
@@ -861,16 +792,13 @@
 }
 
 /* -- UTILITIES -- */
-.no-style-button {
-  border: none;
-  background-color: transparent;
-}
-
 .icons-button {
   display: flex;
   height: 100%;
   align-items: center;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 .icons-button:hover {
@@ -885,7 +813,7 @@
 
 .divider-top {
   position: absolute;
-  top: 0;
+  top: -0.25rem;
   z-index: 10;
   width: 100%;
   overflow: hidden;
@@ -897,28 +825,25 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .sec-container {
-  width: 100%;
-  max-width: 60.5rem;
-  height: 100%;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column-reverse;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
-.sec-left,
-.sec-right {
+.sec-left {
   display: flex;
   flex-flow: column nowrap;
-  flex: 1 1 0%;
-  justify-content: center;
-  height: 100%;
-  min-height: 26.875rem;
-  width: 100%;
+  align-self: flex-start;
+  vertical-align: baseline;
+}
+
+.sec-right {
+  display: flex;
 }
 
 .sec-img {
@@ -958,14 +883,7 @@
 
 /* animazioni generiche */
 .svg-animation-1 {
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: animation1;
+  animation: 3s ease-in-out 1s infinite normal none running animation1;
 }
 
 @keyframes animation1 {
@@ -980,14 +898,7 @@
 }
 
 .svg-animation-2 {
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.66s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: animation2;
+  animation: 3s ease-in-out 0.66s infinite normal none running animation2;
 }
 
 @keyframes animation2 {
@@ -1002,14 +913,7 @@
 }
 
 .svg-animation-3 {
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.33s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: animation3;
+  animation: 3s ease-in-out 0.33s infinite normal none running animation3;
 }
 
 @keyframes animation3 {
@@ -1085,6 +989,52 @@
 
   .stats-icons {
     position: static;
+  }
+
+  .sec-wrapper {
+    justify-content: center;
+  }
+
+  .sec-container {
+    width: 100%;
+    max-width: 60.5rem;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .sec-left {
+    justify-content: center;
+    height: 100%;
+    min-height: 26.875rem;
+    width: 100%;
+  }
+
+  .sec-right {
+    flex-flow: column nowrap;
+    flex: 1 1 0%;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    min-height: 26.875rem;
+    margin-bottom: 0;
+  }
+
+  .sec3 .sec-container {
+    flex-direction: row;
+  }
+
+  .sec3 .sec-right {
+    margin-left: 4rem;
+  }
+
+  .sec3 .sec-left {
+    margin-bottom: 0;
+    justify-content: center;
+    height: 100%;
+    min-height: 26.875rem;
+    width: 100%;
+    flex: 1 1 0%;
   }
 }
 

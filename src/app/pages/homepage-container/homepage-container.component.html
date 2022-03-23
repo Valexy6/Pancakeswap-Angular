@@ -136,9 +136,9 @@
   <img class="mb-4" src="./assets/icons/bunny-purple.svg" />
   <h3 class="h2 subtitle-sec">Used by millions.</h3>
   <h3 class="h2 subtitle-sec">Trusted with billions.</h3>
-  <p class="p-light-purple">PancakeSwap has the most users of any decentralized platform, ever.</p>
-  <p class="p-light-purple">And those users are now entrusting the platform with over $12 billion in funds.</p>
-  <p class="p-light-purple">Will you join them?</p>
+  <p class="p-light-purple text-center">PancakeSwap has the most users of any decentralized platform, ever.</p>
+  <p class="p-light-purple text-center">And those users are now entrusting the platform with over $12 billion in funds.</p>
+  <p class="p-light-purple text-center">Will you join them?</p>
 
   <div class="stats-card">
     <div class="solid-shadow">
@@ -269,7 +269,7 @@
   
   <!--DIVIDER 2-->
   <div class="divider-top">
-    <svg viewBox="0 0 1660 48" preserveAspectRatio="none" color="text" width="20px" xmlns="http://www.w3.org/2000/svg" class="divider divider2">
+    <svg viewBox="0 0 1660 48" preserveAspectRatio="none" width="20px" xmlns="http://www.w3.org/2000/svg" class="divider divider2">
       <path d="M-346 48C174.985 46.1887 977.744 15.2453 1314 0H-346V48Z">
       </path>
     </svg>
@@ -344,21 +344,21 @@
     </div>
 
     <div class="sec-right">
-      <h3 class="h2 sec-h"><span>Earn</span> passive income with crypto.</h3>
-      <p class="p sec-p">PancakeSwap makes it easy to make your crypto work for you.</p>
+      <h3 class="h2 subtitle-sec mb-4"><span>Earn</span> passive income with crypto.</h3>
+      <p class="p-light-purple sec-p">PancakeSwap makes it easy to make your crypto work for you.</p>
 
       <div class="cta-buttons">
-        <button class="buttonStandard sec-button">Explore</button>
+        <app-general-button [button]="{ class: 'button-small', text: 'Explore', imgVisible: false}"></app-general-button>
         <a href="#" class="link">Learn</a>
       </div>            
     </div>
 
   </div>
-
+<!--da trasformare in un componente-->
   <div class="earn-data-container">
     <div class="earn-data-title">
       <h3 class="h3">Top <span id="earn-table-title">Syrup Pools</span></h3>
-      <button type="button" class="no-style-button icons-button switcher-earn"><img id='switch-icon' src="assets/icons/arrow.svg" /></button>
+      <button type="button" class="icons-button switcher-earn"><img id='switch-icon' src="assets/icons/arrow-up-down-light-purple.svg" /></button>
     </div>
 
     <div class="earn-data">
@@ -428,6 +428,7 @@
     </div>
 
   </div>
+  <!--fino a qui-->
 
 </section>
 
