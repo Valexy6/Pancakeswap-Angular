@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: '', component: HomepageContainerComponent },
   { path: 'home', component: HomepageContainerComponent },
   { path: 'earn', component: EarnComponent, children: [
+    { path: '', redirectTo: 'farms', pathMatch: 'full'},
     { path: 'farms', component: EarnFarmsComponent },
     { path: 'pools', component: EarnPoolsComponent },
   ]},

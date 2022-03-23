@@ -23,6 +23,7 @@ import { HomepageContainerComponent } from './pages/homepage-container/homepage-
 import { EarnComponent } from './pages/earn/earn.component';
 import { EarnFarmsComponent } from './pages/earn-farms/earn-farms.component';
 import { EarnPoolsComponent } from './pages/earn-pools/earn-pools.component';
+import { SecondaryMenuComponent } from './shared/secondary-menu/secondary-menu.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { EarnPoolsComponent } from './pages/earn-pools/earn-pools.component';
     EarnComponent,
     EarnFarmsComponent,
     EarnPoolsComponent,
+    SecondaryMenuComponent,
   ],
   imports: [
     BrowserModule,

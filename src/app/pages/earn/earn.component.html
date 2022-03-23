@@ -1,7 +1,4 @@
-<div id="container" style="margin-top: 4rem;">
-  <nav class="d-flex align-items-center justify-content-center">
-    <a routerLink="farms" class="me-3" routerLinkActive="active">Farms</a>
-    <a routerLink="pools" routerLinkActive="active">Pools</a>
-  </nav>
+<div id="container">
+  <app-secondary-menu [items]="menuItems"></app-secondary-menu>
   <router-outlet></router-outlet>
 </div>
