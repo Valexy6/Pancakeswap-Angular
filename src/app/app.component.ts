@@ -1,4 +1,4 @@
-import { Component, EventEmitter, HostListener } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,15 +8,15 @@ import { Component, EventEmitter, HostListener } from '@angular/core';
 export class AppComponent {
   title = 'pancakeswap';
 
-  cache!: number;
+  private _cache!: number;
   scrollDeltaY!: number;
   langSelected: string = 'en';
 
   @HostListener('window:scroll')
   detectScroll() {
     let scroll: number = window.scrollY;
-    this.scrollDeltaY = scroll - this.cache;
-    this.cache = scroll;
+    this.scrollDeltaY = scroll - this._cache;
+    this._cache = scroll;
   }
 
   setLang(value: string) {

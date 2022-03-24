@@ -1,14 +1,14 @@
 .switcher {
   align-items: center;
-  background-color: rgb(189, 194, 196);
-  border-radius: 24px;
+  background-color: var(--switcher-bcg);
+  border-radius: 1.5rem;
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
   cursor: pointer;
   display: inline-flex;
-  height: 32px;
+  height: 2rem;
   position: relative;
   transition: background-color 200ms ease 0s;
-  width: 56px;
+  width: 3.5rem;
 }
 
 .switcher-input {
@@ -20,32 +20,27 @@
   cursor: pointer;
 }
 
-.switcher-sun-container {
-  background-color: rgb(255, 255, 255);
+.switcher-icon-container {
+  background-color: white;
   border-radius: 50%;
   cursor: pointer;
-  height: 26px;
+  height: 1.625rem;
   left: 3px;
   position: absolute;
   top: 3px;
   transition: left 200ms ease-in 0s;
-  width: 26px;
+  width: 1.625rem;
   z-index: 1;
 }
 
-.switcher-sun-wrap {
+.switcher-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
 }
 
-.sun-icon {
-  align-self: center;
-  fill: rgb(255, 178, 55);
-}
-
-.switcher-dark {
+.switcher-icon-bcg {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -53,49 +48,29 @@
   height: 100%;
 }
 
-.dark-icons {
-  align-self: center;
-  fill: rgb(255, 255, 255);
+.switcher-input:checked + .switcher-icon-container {
+  left: calc(100% - 30px);
 }
 
 .switcher-input:hover + .active-border,
 .switcher-input:focus + .active-border {
-  box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+  box-shadow: var(--purple) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
 }
 
 /* dark mode */
-.switcher-dark-on {
+.switcher-dark {
   align-items: center;
-  background-color: rgb(102, 97, 113);
-  border-radius: 24px;
+  background-color: var(--switcher-bcg-darkmode);
+  border-radius: 1.5rem;
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
   cursor: pointer;
   display: inline-flex;
-  height: 32px;
+  height: 2rem;
   position: relative;
   transition: background-color 200ms ease 0s;
-  width: 56px;
+  width: 3.5rem;
 }
 
-.sun-container-dark {
-  background-color: rgb(39, 38, 44);
-  border-radius: 50%;
-  cursor: pointer;
-  height: 26px;
-  left: 3px;
-  position: absolute;
-  top: 3px;
-  transition: left 200ms ease-in 0s;
-  width: 26px;
-  z-index: 1;
-}
-
-.dark-icons-on {
-  align-self: center;
-  fill: rgb(39, 38, 44);
-}
-
-.moon-dark-on {
-  align-self: center;
-  fill: rgb(154, 106, 255);
+.icon-container-dark {
+  background-color: var(--footer-bcg);
 }
