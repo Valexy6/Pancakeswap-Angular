@@ -27,6 +27,7 @@
   --gradient-dark: radial-gradient(103.12% 50% at 50% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%);
   --gradient-purple: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
   --gradient-pink-blue: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+  --gradient-blue: linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%);
 }
 
 /* -- GENERIC -- */
@@ -134,7 +135,7 @@ a {
 }
 
 .h4 {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /*24px*/
   font-weight: 600;
   margin: 0px;
   padding: 0px;

@@ -419,61 +419,22 @@
 
 /* -- SEC 4 > WIN --*/
 .sec4 {
-  background: linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%);
+  background: var(--gradient-blue);
   position: relative;
   overflow: hidden;
   width: 100%;
 }
 
-.sec4-svg {
-  position: absolute;
-  bottom: -64px;
-}
-
-.sec4-svg-box {
-  position: relative;
-  height: 100%;
-  min-height: 512px;
-}
-
-.sec4-svg-right {
-  position: absolute;
-  top: -64px;
-  width: 100%;
-}
-
-.sec4-svg-box-right {
-  position: relative;
-}
-
-.sec4-svg-box img {
-  position: absolute;
-  width: 100%;
-  min-width: 512px;
-}
-
-.sec4-svg-box-right img {
-  position: absolute;
-  width: 100%;
-  max-width: 512px;
-  top: 0px;
-  right: 0px;
-}
-
-.sec-wrapper2 {
-  padding: 5.1rem 1.5rem;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+.sec4 .sec-wrapper {
   justify-content: center;
 }
 
 .win-container {
-  padding: 40px 40px 50px 40px;
+  padding: 2.5rem 2.5rem 3.125rem 2.5rem;
   background: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgb(231, 227, 235);
-  backdrop-filter: blur(12px);
-  border-radius: 72px;
+  border: 1px solid var(--grey-border);
+  backdrop-filter: blur(0.75rem);
+  border-radius: 4.5rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -485,123 +446,98 @@
 }
 
 /* Card in Home prediction */
+.sec4 .sec-container {
+  width: 100%;
+}
+
 .wrapper-prediction {
   font-family: Kanit, sans-serif;
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
-.container {
+.container-card {
   display: flex;
-  flex-flow: row nowrap;
-  max-width: 600px;
-  width: 100%;
+  flex-flow: column nowrap;
+  max-width: 17.188rem;
   justify-content: space-between;
 }
 
-.firstcard {
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-  width: 285px;
-  height: 350px;
-  background-color: rgb(255, 178, 55) ;
+.solid-shadow-card {
+  flex: 1 1 0%;
   border-radius: 24px;
-  box-shadow: 0px 4px 2px rgba(20, 19, 19, 0.5), 0px 1px 1px rgb(26, 24, 24);
-  transform: rotate(-2.5deg);  
+  height: fit-content;
+  padding: 0.063rem 0.063rem 0.25rem;
 }
 
-.firstcard > img {
-  margin-left: 200px;
-  width: 38px;
-  height: 38px;
+.card-prediction {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 24px;
+}
+
+.card-prediction > img {
+  align-self: flex-end;
+  width: 2.375rem;
+  height: 2.375rem;
+}
+
+.card-prediction h3 {
+  font-size: 1.125rem;
+}
+
+.card-prediction p:first-of-type {
+  font-size: 2.25rem;
+  margin-top: 0.438rem;
+}
+
+.card-prediction .p {
+  font-size: 1rem;
+  margin-top: 1.25rem;
+}
+
+.card-prediction .p:last-of-type {
+  margin-bottom: 2.5rem;
+}
+
+.solid-shadow-card:first-of-type {
+  background-color: var(--yellow);
+  margin-bottom: 2rem;
+}
+
+.firstcard {
+  background: linear-gradient(rgb(255, 178, 55) 0%, rgb(255, 205, 81) 51.17%, rgb(255, 231, 106) 100%);
+}
+
+.card-text {
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 1.125rem;
+  margin-bottom: 0;
+}
+
+.firstcard .card-text {
+  color: var(--dark-purple);
+}
+
+.solid-shadow-card:nth-of-type(2) {
+  background-color: rgb(60, 23, 134);
 }
 
 .secondcard {
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-  width: 285px;
-  height: 350px;
-  background-color: rgb(60, 23, 134);
-  border-radius: 24px;
-  box-shadow: 0px 4px 2px rgba(20, 19, 19, 0.5), 0px 1px 1px rgb(26, 24, 24);
-  transform: rotate(2.5deg);
+  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
 }
 
-.secondcard > img {
-  width: 38px;
-  height: 38px;
-  margin-left: 200px;
-}
-
-.firstcard > h3 {
-  color: rgb(40, 13, 95);
-  font-weight: 600;
-  line-height: 1.5;
-  font-size: 18px;
-  font-family: Kanit, sans-serif;
-}
-
-.firstcard > p {
-  color: rgb(40, 13, 95);
-  font-weight: 700;
-  line-height: 1.5;
-  font-size: 36px;
-  font-family: Kanit, sans-serif;
-  margin-top: 7px;
-}
-
-.subtitle > p {
-  color: rgb(40, 13, 95);
-  line-height: 1.5;
-  font-size: 16px;
-  font-family: Kanit, sans-serif;
-  margin-top: 20px;
-}
-
-.firstspan {  
-  color: rgb(40, 13, 95);
-  font-weight: 600;
-  line-height: 1.5;
-  font-size: 16px;
-  font-family: Kanit, sans-serif;
-}
-
-.secondspan {
-  color: var(--white);
-  font-weight: 600;
-  line-height: 1.5;
-  font-size: 16px;
-  font-family: Kanit, sans-serif;
-}
-
-.secondsubtitle > p { 
-  color: rgb(221, 219, 226);
-  margin-top: 20px;
-  line-height: 1.5;
-  font-size: 16px;
-  font-family: Kanit, sans-serif;
-}
-
-.secondcard > h3 {
-  top: 80px;
-  left: 20px;
-  color: rgb(221, 219, 226);
-  font-weight: 600;
-  line-height: 1.5;
-  font-size: 18px;
-  font-family: Kanit, sans-serif;
-}
-
-.secondcard > p { 
+.secondcard .card-text:nth-child(3) {
   color: var(--yellow);
-  font-weight: 700;
-  line-height: 1.5;
-  font-size: 36px;
-  font-family: Kanit, sans-serif;
+}
+
+.secondcard .card-text,
+.secondcard .p {
+  color: white;
 }
 
 /* -- SEC 5 > CAKE -- */
@@ -973,7 +909,6 @@
 
   .solid-shadow:nth-child(2) {
     margin: 0 1rem;
-
   }
 
   .stats-card {
@@ -1036,6 +971,25 @@
     width: 100%;
     flex: 1 1 0%;
   }
+
+  .container-card {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    max-width: 37.5rem;
+    justify-content: space-between;
+  }
+
+  .solid-shadow-card:first-of-type {
+    margin-right: 1.5rem;
+    transform: rotate(-2.5deg);
+    margin-bottom: 0;
+  }
+
+  .solid-shadow-card:nth-of-type(2) {
+    transform: rotate(2.5deg);
+  }
+  
 }
 
 @media all and (min-width: 576px) {
