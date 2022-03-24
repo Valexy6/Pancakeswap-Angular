@@ -20,6 +20,7 @@ import { FooterContainerComponent } from './core/footer-container/footer-contain
 import { DarkModeComponent } from './shared/dark-mode/dark-mode.component';
 import { PancakeTradeComponent } from './shared/pancake-trade/pancake-trade.component';
 import { GeneralButtonComponent } from './shared/general-button/general-button.component';
+import { ModalClockComponent } from './shared/modal-clock/modal-clock.component';
 import { HomepageContainerComponent } from './pages/homepage-container/homepage-container.component';
 
 @NgModule({
@@ -40,6 +41,7 @@ import { HomepageContainerComponent } from './pages/homepage-container/homepage-
     DarkModeComponent,
     PancakeTradeComponent,
     GeneralButtonComponent,
+    ModalClockComponent,
     HomepageContainerComponent,
   ],
   imports: [
