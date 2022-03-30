@@ -21,6 +21,9 @@ import { DarkModeComponent } from './shared/dark-mode/dark-mode.component';
 import { PancakeTradeComponent } from './shared/pancake-trade/pancake-trade.component';
 import { GeneralButtonComponent } from './shared/general-button/general-button.component';
 import { HomepageContainerComponent } from './pages/homepage-container/homepage-container.component';
+import { TradeContainerComponent } from './pages/trade-container/trade-container.component';
+import { TradeSwapComponent } from './pages/trade-swap/trade-swap.component';
+import { TradeLiquidityComponent } from './pages/trade-liquidity/trade-liquidity.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +44,9 @@ import { HomepageContainerComponent } from './pages/homepage-container/homepage-
     PancakeTradeComponent,
     GeneralButtonComponent,
     HomepageContainerComponent,
+    TradeContainerComponent,
+    TradeSwapComponent,
+    TradeLiquidityComponent,
   ],
   imports: [
     BrowserModule,
