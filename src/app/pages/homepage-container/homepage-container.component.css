@@ -554,7 +554,7 @@
 .sec5-grid-box {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(2, auto);
 }
 
 .sec5-grid-column {
@@ -969,7 +969,10 @@
   .sec5 .sec-right {
     min-height: 24.5rem;
   }
-  
+
+  .sec5-grid-box {
+    grid-template-columns: repeat(4, auto);
+  }
 }
 
 @media all and (min-width: 576px) {
@@ -981,5 +984,5 @@
 @media all and (min-width: 370px) {
   .hero-container {
     padding: 2rem 1.5rem;
-  }
+  }  
 }
