@@ -184,7 +184,7 @@
     <app-pancake-trade [colorLink]="colorLink"></app-pancake-trade>
     <app-language-selector [isNavbar]="isNavbar" (navLangSelected)="setLang.emit($event)"></app-language-selector>
     <app-modal-settings></app-modal-settings>
-    <app-modal-connect-wallet></app-modal-connect-wallet>
+    <app-modal-connect-wallet [isNavbar]="isNavbar"></app-modal-connect-wallet>
 
   </div>
 

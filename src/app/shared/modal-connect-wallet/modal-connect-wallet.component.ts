@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -8,7 +8,8 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ModalConnectWalletComponent implements OnInit {
   closeResult!: string;
-
+  @Input() isNavbar!: boolean;
+  
   constructor(private modalService: NgbModal) { }
     
   ngOnInit(): void {

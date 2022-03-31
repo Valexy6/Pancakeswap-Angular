@@ -541,53 +541,28 @@
 }
 
 /* -- SEC 5 > CAKE -- */
-.sec-left-sec5 {
-  display: flex;
-  flex-flow: column nowrap;
-  flex: 1 1 0%;
-  justify-content: center;
-  height: 100%;
-  min-height: 392px;
-  width: 100%;
-}
-
-.sec-right-sec5 {
-  display: flex;  
-  flex: 1 1 0%;
-  height: 100%;
-  min-height: 392px;
-  width: 100%;
-  flex-flow: column nowrap;
-  justify-content: center;
-}
-
-.sec2 .sec-left-sec5 {
-  margin-right: 64px;
-}
-
-.sec2 .sec-right-sec5 {
-  position: relative;
+.sec5 .sec-left {
+  margin-right: 4rem;
 }
 
 .sec5-grid-container {
-  margin-top: 24px;
+  margin-top: 1.5rem;
   width: 100%;
-  max-width: 968px;
+  max-width: 60.5rem;
 }
 
 .sec5-grid-box {
   display: grid;
-  gap: 32px;
+  gap: 2rem;
   grid-template-columns: repeat(4, auto);
 }
 
 .sec5-grid-column {
-  padding: 0px 16px;
+  padding: 0 1rem;
 }
 
-.sec5-grid-column p {
+.sec5-grid-column .p-light-purple {
   line-height: 1.5;
-
 }
 
 .sec5-grid-column .h4 {
@@ -595,7 +570,7 @@
   color: var(--dark-purple);
 }
 
-/* -- SEC 6 > CAKE -- */
+/* -- SEC 6 > CTA FOOTER -- */
 .sec6-wrapper {
   position: relative;
   background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
@@ -988,6 +963,11 @@
 
   .solid-shadow-card:nth-of-type(2) {
     transform: rotate(2.5deg);
+  }
+
+  .sec5 .sec-left,
+  .sec5 .sec-right {
+    min-height: 24.5rem;
   }
   
 }
