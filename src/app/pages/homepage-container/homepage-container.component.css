@@ -1,4 +1,4 @@
--- HERO SECTION --
+/* -- HERO SECTION -- */
 .hero-section {
   background: var(--gradient);
   display: flex;
@@ -289,7 +289,6 @@
 
 .sec3 .sec-container {
   flex-direction: column;
-  width: 100%;
 }
 
 .sec3 .sec-left {
@@ -335,10 +334,10 @@
 
 .sec3-grid-wrapper {
   width: 100%;
-  padding: 0 1.5rem;
+  max-width: 60.5rem;
+  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 
 
@@ -371,10 +370,6 @@
 }
 
 /* Card in Home prediction */
-.sec4 .sec-container {
-  width: 100%;
-}
-
 .wrapper-prediction {
   font-family: Kanit, sans-serif;
   width: 100%;
@@ -482,10 +477,6 @@
   grid-template-columns: repeat(2, auto);
 }
 
-.sec5-grid-column {
-  padding: 0 1rem;
-}
-
 .sec5-grid-column .p-light-purple {
   line-height: 1.5;
 }
@@ -521,6 +512,7 @@
   width: 350%;
   align-self: center;
   fill: var(--dark-purple);
+  flex-shrink: 0;
 }
 
 .sec6-text {
@@ -614,6 +606,10 @@
   opacity: 0.65;
 }
 
+.column-border {
+  border-left: 1px solid var(--column-border);
+}
+
 /* -- divider --*/
 .divider {
   height: 100%;
@@ -642,6 +638,7 @@
   flex-direction: column-reverse;
   justify-content: center;
   align-items: flex-end;
+  width: 100%;
 }
 
 .sec-left {
@@ -871,6 +868,11 @@
 
   .sec5-grid-box {
     grid-template-columns: repeat(4, auto);
+  }
+
+  .sec5-grid-column:nth-of-type(3) {
+    border-left: 1px solid var(--column-border);
+    padding: 0 1rem;
   }
 
   .sec6-svg-container {

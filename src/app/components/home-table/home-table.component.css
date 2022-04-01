@@ -1,23 +1,16 @@
-.earn-data-wrapper {
-  width: 100%;
-  max-width: 968px;
-  display: flex;
-  left: 0;
-}
-
 .earn-data-container {
-  margin-top: 24px;
-  width: 100%;
-  color: var(--dark-purple);
+  width: calc(100vw - 3rem);
+  max-width: 60.5rem;
+  margin-top: 1.5rem;
   display: flex;
   flex-flow: column nowrap;
-  align-items: flex-start;
+  color: var(--dark-purple);
 }
 
 .earn-data-title {
   display: flex;
-  flex-flow: row nowrap;
-  margin-bottom: 24px;
+  flex-direction: row;
+  margin-bottom: 1.5rem;
 }
 
 .earn-data-title span {
@@ -25,23 +18,19 @@
 }
 
 .switcher-earn {
-  width: 48px;
+  width: 3rem;
   display: flex;
   justify-content: center;
 }
 
 .earn-data {
-  height: 80px;
+  height: 15rem;
   width: 100%;
-  position: relative;
 }
 
 .earn-data-grid {
-  position: absolute;
-  top: 0px;
-  left: 0;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 32px;
   height: 100%;
   width: 100%;
@@ -49,7 +38,6 @@
 
 .earn-table-hide {
   opacity: 0;
-  margin-top: 50%;
   transition-property: opacity, margin-top, all;
   transition-duration: 0s, 0s, 0.4s;
   transition-timing-function: ease, ease, ease-out;
@@ -57,26 +45,54 @@
 
 .earn-table-show {
   opacity: 1;
-  margin-top: 0px;
+  margin-top: 0;
   transition-property: opacity, margin-top, all;
   transition-duration: 0s, 0s, 0.4s;
   transition-timing-function: ease, ease, ease-out;
 }
 
 .earn-data-column {
-  padding-right: 1rem;
-  width: fit-content;
+  padding-right: 0.5rem;
 }
 
 .earn-data-column p:first-child {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .earn-data-column p:last-child {
   line-height: 1.5;
 }
 
-.column-border {
-  border-left: 1px solid var(--column-border);
-  padding-left: 1rem;
+.p-small {
+  color: var(--purple);
+}
+
+/* -- UTILITIES -- */
+.icons-button {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.icons-button:hover {
+  opacity: 0.65;
+}
+
+/* -- RESPONSIVE -- */
+@media all and (min-width: 576px) {
+  .earn-data {
+    height: 5rem;
+  }
+
+  .earn-data-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .column-border {
+    border-left: 1px solid var(--column-border);
+    padding-left: 0.5rem;
+  }
 }
