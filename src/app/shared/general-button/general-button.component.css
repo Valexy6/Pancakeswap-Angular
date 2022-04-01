@@ -12,7 +12,6 @@
   background-color: var(--cyan);
   color: white;
   box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-  cursor: var(--pointer);
   letter-spacing: 0.03em;
   line-height: 1;
   width: 10.313rem; /*165px*/
@@ -43,7 +42,6 @@
   background-color: var(--cyan);
   color: white;
   box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-  cursor: pointer;
   letter-spacing: 0.03em;
   line-height: 1;
   width: 100%;
@@ -84,7 +82,6 @@
   border: 2px solid var(--cyan);
   box-shadow: none;
   letter-spacing: 0.03em;
-  cursor: pointer;
 }
 
 .button-medium:hover {
@@ -112,7 +109,6 @@
   background-color: var(--cyan);
   color: white;
   box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-  cursor: pointer;
   letter-spacing: 0.03em;
   line-height: 1;
   height: 3rem; /*48px*/

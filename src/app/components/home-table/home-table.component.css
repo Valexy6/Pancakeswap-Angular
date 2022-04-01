@@ -1,0 +1,82 @@
+.earn-data-wrapper {
+  width: 100%;
+  max-width: 968px;
+  display: flex;
+  left: 0;
+}
+
+.earn-data-container {
+  margin-top: 24px;
+  width: 100%;
+  color: var(--dark-purple);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+
+.earn-data-title {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 24px;
+}
+
+.earn-data-title span {
+  color: var(--purple);
+}
+
+.switcher-earn {
+  width: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.earn-data {
+  height: 80px;
+  width: 100%;
+  position: relative;
+}
+
+.earn-data-grid {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px;
+  height: 100%;
+  width: 100%;
+}
+
+.earn-table-hide {
+  opacity: 0;
+  margin-top: 50%;
+  transition-property: opacity, margin-top, all;
+  transition-duration: 0s, 0s, 0.4s;
+  transition-timing-function: ease, ease, ease-out;
+}
+
+.earn-table-show {
+  opacity: 1;
+  margin-top: 0px;
+  transition-property: opacity, margin-top, all;
+  transition-duration: 0s, 0s, 0.4s;
+  transition-timing-function: ease, ease, ease-out;
+}
+
+.earn-data-column {
+  padding-right: 1rem;
+  width: fit-content;
+}
+
+.earn-data-column p:first-child {
+  margin-bottom: 8px;
+}
+
+.earn-data-column p:last-child {
+  line-height: 1.5;
+}
+
+.column-border {
+  border-left: 1px solid var(--column-border);
+  padding-left: 1rem;
+}

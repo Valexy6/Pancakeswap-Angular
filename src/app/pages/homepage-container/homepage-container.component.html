@@ -352,85 +352,13 @@
         <a href="#" class="link">Learn</a>
       </div>            
     </div>
-
   </div>
-<!--da trasformare in un componente-->
-  <div class="earn-data-container">
-    <div class="earn-data-title">
-      <h3 class="h3">Top <span id="earn-table-title">Syrup Pools</span></h3>
-      <button type="button" class="icons-button switcher-earn"><img id='switch-icon' src="assets/icons/arrow-up-down-light-purple.svg" /></button>
-    </div>
 
-    <div class="earn-data">
-      <div id="grid-data1" class="earn-data-grid earn-table-show">
-        <div class="earn-data-column">
-          <p class="p-small">CCAR-BNB LP</p>
-          <p class="p-dark">528.970%</p>
-          <p class="p">APR</p>
-        </div>
-
-        <div class="earn-data-column column-border">
-          <p class="p-small">DPT-BNB LP</p>
-          <p class="p-dark">391.263%</p>
-          <p class="p">APR</p>
-        </div>
-
-        <div class="earn-data-column column-border">
-          <p class="p-small">KART-BNB</p>
-          <p class="p-dark">212.280%</p>
-          <p class="p">APR</p>
-        </div>
-
-        <div class="earn-data-column column-border">
-          <p class="p-small">ETERNAL-BNB LP</p>
-          <p class="p-dark">174.440%</p>
-          <p class="p">APR</p>
-        </div>
-
-        <div class="earn-data-column column-border">
-          <p class="p-small">FINA-BUSD LP</p>
-          <p class="p-dark">171.916%</p>
-          <p class="p">APR</p>
-        </div>
-      </div>
-
-      <div id="grid-data2" class="earn-data-grid earn-table-hide">
-        <div class="earn-data-column">
-          <p class="p-small">Stake CAKE - Earn CCAR</p>
-          <p class="p-dark">104.009%</p>
-          <p class="p">APR</p>
-        </div>
-
-        <div class="earn-data-column column-border">
-          <p class="p-small">Stake CAKE - Earn DPT</p>
-          <p class="p-dark">76.697%</p>
-          <p class="p">APR</p>
-        </div>
-
-        <div class="earn-data-column column-border">
-          <p class="p-small">IFO CAKE</p>
-          <p class="p-dark">70.303%</p>
-          <p class="p">APR</p>
-        </div>
-
-        <div class="earn-data-column column-border">
-          <p class="p-small">Auto CAKE</p>
-          <p class="p-dark">68.962%</p>
-          <p class="p">APR</p>
-        </div>
-
-        <div class="earn-data-column column-border">
-          <p class="p-small">Stake CAKE - Earn FINA</p>
-          <p class="p-dark">67.796%</p>
-          <p class="p">APR</p>
-        </div>
-      </div>
-    </div>
-
+  <div class="sec3-grid-wrapper">
+    <app-home-table></app-home-table>
   </div>
-  <!--fino a qui-->
-
 </section>
+
 
 <!--SEC 4 > WIN-->
 <section class="sec4">
@@ -579,10 +507,9 @@
     <div class="sec6-text">
       <h3 class="h2">Start in seconds.</h3>
       <p>Connect your crypto wallet to start using the app in seconds.<span>No registration needed.</span></p>
-      <a href="#" class="link">Learn how to start</a>
-      <div class="sec6-button">
-        <button class="buttonStandard">Connect Wallet</button>
-      </div>
+      <a href="#" class="link mb-4">Learn how to start</a>
+
+      <app-modal-connect-wallet [buttonClass]="'button-standard'"></app-modal-connect-wallet>
     </div>
     
     <div class="sec6-svg-container">
@@ -601,88 +528,88 @@
             src="https://pancakeswap.finance/images/home/flying-pancakes/1-bottom.png"
             alt="Pancake flying on the bottom" />
           </picture>
-          </div>
+        </div>
           
-          <div class="sec6-svg svg-animation-2">
-            <picture>
-              <source type="image/webp" srcset="
-                https://pancakeswap.finance/images/home/flying-pancakes/1-left.webp 512w,
-                https://pancakeswap.finance/images/home/flying-pancakes/1-left@1.5x.webp 768w,
-                https://pancakeswap.finance/images/home/flying-pancakes/1-left@2x.webp 1024w," />
-              <source type="image/png" srcset="
-                https://pancakeswap.finance/images/home/flying-pancakes/1-left.png 512w,
-                https://pancakeswap.finance/images/home/flying-pancakes/1-left@1.5x.png 768w,
-                https://pancakeswap.finance/images/home/flying-pancakes/1-left@2x.png 1024w," />
-              <img
-              src="https://pancakeswap.finance/images/home/flying-pancakes/1-left.png"
-              alt="Pancake flying on the left" />
-            </picture>
-          </div>
+        <div class="sec6-svg svg-animation-2">
+          <picture>
+            <source type="image/webp" srcset="
+              https://pancakeswap.finance/images/home/flying-pancakes/1-left.webp 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/1-left@1.5x.webp 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/1-left@2x.webp 1024w," />
+            <source type="image/png" srcset="
+              https://pancakeswap.finance/images/home/flying-pancakes/1-left.png 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/1-left@1.5x.png 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/1-left@2x.png 1024w," />
+            <img
+            src="https://pancakeswap.finance/images/home/flying-pancakes/1-left.png"
+            alt="Pancake flying on the left" />
+          </picture>
+        </div>
           
-          <div class="sec6-svg svg-animation-3">
-            <picture>
-              <source type="image/webp" srcset="
-                https://pancakeswap.finance/images/home/flying-pancakes/1-top.webp 512w,
-                https://pancakeswap.finance/images/home/flying-pancakes/1-top@1.5x.webp 768w,
-                https://pancakeswap.finance/images/home/flying-pancakes/1-top@2x.webp 1024w," />
-              <source type="image/png" srcset="
-                https://pancakeswap.finance/images/home/flying-pancakes/1-top.png 512w,
-                https://pancakeswap.finance/images/home/flying-pancakes/1-top@1.5x.png 768w,
-                https://pancakeswap.finance/images/home/flying-pancakes/1-top@2x.png 1024w," />
-              <img
-              src="https://pancakeswap.finance/images/home/flying-pancakes/1-top.png"
-              alt="Pancake flying on the top" />
-            </picture>
-          </div>
-          </div>
+        <div class="sec6-svg svg-animation-3">
+          <picture>
+            <source type="image/webp" srcset="
+              https://pancakeswap.finance/images/home/flying-pancakes/1-top.webp 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/1-top@1.5x.webp 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/1-top@2x.webp 1024w," />
+            <source type="image/png" srcset="
+              https://pancakeswap.finance/images/home/flying-pancakes/1-top.png 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/1-top@1.5x.png 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/1-top@2x.png 1024w," />
+            <img
+            src="https://pancakeswap.finance/images/home/flying-pancakes/1-top.png"
+            alt="Pancake flying on the top" />
+          </picture>
+        </div>
+      </div>
           
-          <div class="sec6-svg-right">
-            <div class="sec6-svg-r svg-animation-1">
-              <picture>
-                <source type="image/webp" srcset="
-                  https://pancakeswap.finance/images/home/flying-pancakes/2-bottom.webp 512w,
-                  https://pancakeswap.finance/images/home/flying-pancakes/2-bottom@1.5x.webp 768w,
-                  https://pancakeswap.finance/images/home/flying-pancakes/2-bottom@2x.webp 1024w," />
-                <source type="image/png" srcset="
-                  /images/home/flying-pancakes/2-bottom.png 512w,
-                  https://pancakeswap.finance/images/home/flying-pancakes/2-bottom@1.5x.png 768w,
-                  https://pancakeswap.finance/images/home/flying-pancakes/2-bottom@2x.png 1024w,">
-                <img
-                  src="https://pancakeswap.finance/images/home/flying-pancakes/2-bottom.png"
-                  alt="Pancake flying on the bottom" />
-              </picture>
-            </div>
-          
-            <div class="sec6-svg-r svg-animation-2">
-              <picture>
-                <source type="image/webp" srcset="
-                  https://pancakeswap.finance/images/home/flying-pancakes/2-top.webp 512w,
-                  https://pancakeswap.finance/images/home/flying-pancakes/2-top@1.5x.webp 768w,
-                  https://pancakeswap.finance/images/home/flying-pancakes/2-top@2x.webp 1024w," />
-                <source type="image/png" srcset="
-                  https://pancakeswap.finance/images/home/flying-pancakes/2-top.png 512w,
-                  https://pancakeswap.finance/images/home/flying-pancakes/2-top@1.5x.png 768w,
-                  https://pancakeswap.finance/images/home/flying-pancakes/2-top@2x.png 1024w," />
-                <img
-                src="https://pancakeswap.finance/images/home/flying-pancakes/2-top.png"
-                alt="Pancake flying on the top" />
-              </picture>
-            </div>
-          
-            <div class="sec6-svg-r svg-animation-3">
-              <picture>
-                <source type="image/webp" srcset="
-                  https://pancakeswap.finance/images/home/flying-pancakes/2-right.webp 512w,
-                  https://pancakeswap.finance/images/home/flying-pancakes/2-right@1.5x.webp 768w,
-                  https://pancakeswap.finance/images/home/flying-pancakes/2-right@2x.webp 1024w," />
-                <source type="image/png" srcset="
-                  https://pancakeswap.finance/images/home/flying-pancakes/2-right.png 512w,
-                  https://pancakeswap.finance/images/home/flying-pancakes/2-right@1.5x.png 768w,
-                  https://pancakeswap.finance/images/home/flying-pancakes/2-right@2x.png 1024w," />
-                <img
-                src="https://pancakeswap.finance/images/home/flying-pancakes/2-right.png"
-                alt="Pancake flying on the right" />
-              </picture>
+      <div class="sec6-svg-right">
+        <div class="sec6-svg svg-animation-1">
+          <picture>
+            <source type="image/webp" srcset="
+              https://pancakeswap.finance/images/home/flying-pancakes/2-bottom.webp 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-bottom@1.5x.webp 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-bottom@2x.webp 1024w," />
+            <source type="image/png" srcset="
+              /images/home/flying-pancakes/2-bottom.png 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-bottom@1.5x.png 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-bottom@2x.png 1024w,">
+            <img
+              src="https://pancakeswap.finance/images/home/flying-pancakes/2-bottom.png"
+              alt="Pancake flying on the bottom" />
+          </picture>
+        </div>
+      
+        <div class="sec6-svg svg-animation-2">
+          <picture>
+            <source type="image/webp" srcset="
+              https://pancakeswap.finance/images/home/flying-pancakes/2-top.webp 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-top@1.5x.webp 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-top@2x.webp 1024w," />
+            <source type="image/png" srcset="
+              https://pancakeswap.finance/images/home/flying-pancakes/2-top.png 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-top@1.5x.png 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-top@2x.png 1024w," />
+            <img
+            src="https://pancakeswap.finance/images/home/flying-pancakes/2-top.png"
+            alt="Pancake flying on the top" />
+          </picture>
+        </div>
+      
+        <div class="sec6-svg svg-animation-3">
+          <picture>
+            <source type="image/webp" srcset="
+              https://pancakeswap.finance/images/home/flying-pancakes/2-right.webp 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-right@1.5x.webp 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-right@2x.webp 1024w," />
+            <source type="image/png" srcset="
+              https://pancakeswap.finance/images/home/flying-pancakes/2-right.png 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-right@1.5x.png 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-right@2x.png 1024w," />
+            <img
+            src="https://pancakeswap.finance/images/home/flying-pancakes/2-right.png"
+            alt="Pancake flying on the right" />
+          </picture>
         </div>
       </div>
 

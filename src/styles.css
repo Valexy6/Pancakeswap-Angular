@@ -28,6 +28,7 @@
   --gradient-purple: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
   --gradient-pink-blue: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
   --gradient-blue: linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%);
+  --gradient-dark-purple: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
 }
 
 /* -- GENERIC -- */
@@ -121,7 +122,7 @@ a {
 }
 
 .h2 {
-  font-size: 2.5rem; /*40px*/
+  font-size: 2rem; /*40px*/
   font-weight: 600;
   margin: 0px;
   padding: 0px;

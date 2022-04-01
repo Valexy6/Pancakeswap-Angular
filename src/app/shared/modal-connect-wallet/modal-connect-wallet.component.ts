@@ -8,7 +8,8 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ModalConnectWalletComponent implements OnInit {
   closeResult!: string;
-  @Input() isNavbar!: boolean;
+
+  @Input() buttonClass?: 'button-standard' | 'button-small' | 'button-medium' | 'button-large' | 'button-squashed';
   
   constructor(private modalService: NgbModal) { }
     

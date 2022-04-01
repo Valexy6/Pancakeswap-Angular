@@ -1,0 +1,56 @@
+{
+  "farms": [
+    {
+      "name": "CCAR-BNB LP",
+      "value": 528970,
+      "abbreviation": "apr"
+    },
+    {
+      "name": "DPT-BNB LP",
+      "value": 391263,
+      "abbreviation": "apr"
+    },
+    {
+      "name": "KART-BNB",
+      "value": 212280,
+      "abbreviation": "apr"
+    },
+    {
+      "name": "ETERNAL-BNB LP",
+      "value": 174440,
+      "abbreviation": "apr"
+    },
+    {
+      "name": "FINA-BUSD LP",
+      "value": 171916,
+      "abbreviation": "apr"
+    }
+  ],
+  "syrup pools": [
+    {
+      "name": "Stake CAKE - Earn CCAR",
+      "value": 104009,
+      "abbreviation": "apr"
+    },
+    {
+      "name": "Stake CAKE - Earn DPT",
+      "value": 104009,
+      "abbreviation": "apr"
+    },
+    {
+      "name": "IFO CAKE",
+      "value": 70303,
+      "abbreviation": "apr"
+    },
+    {
+      "name": "Auto CAKE",
+      "value": 68962,
+      "abbreviation": "apr"
+    },
+    {
+      "name": "Stake CAKE - Earn FINA",
+      "value": 67796,
+      "abbreviation": "apr"
+    }
+  ]
+}
