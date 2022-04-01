@@ -20,6 +20,7 @@ import { FooterContainerComponent } from './core/footer-container/footer-contain
 import { DarkModeComponent } from './shared/dark-mode/dark-mode.component';
 import { PancakeTradeComponent } from './shared/pancake-trade/pancake-trade.component';
 import { GeneralButtonComponent } from './shared/general-button/general-button.component';
+import { ModalClockComponent } from './shared/modal-clock/modal-clock.component';
 import { HomepageContainerComponent } from './pages/homepage-container/homepage-container.component';
 import { HomeTableComponent } from './components/home-table/home-table.component';
 
@@ -41,6 +42,7 @@ import { HomeTableComponent } from './components/home-table/home-table.component
     DarkModeComponent,
     PancakeTradeComponent,
     GeneralButtonComponent,
+    ModalClockComponent,
     HomepageContainerComponent,
     HomeTableComponent,
   ],
