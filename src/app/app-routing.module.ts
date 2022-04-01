@@ -5,11 +5,13 @@ import { HomepageContainerComponent } from './pages/homepage-container/homepage-
 import { TradeContainerComponent } from './pages/trade-container/trade-container.component';
 import { TradeSwapComponent } from './pages/trade-swap/trade-swap.component';
 import { TradeLiquidityComponent } from './pages/trade-liquidity/trade-liquidity.component';
+import { TradeAddComponent } from './pages/trade-add/trade-add.component';
 
 const routes: Routes = [
-  { path: '', component: HomepageContainerComponent},
+  { path: '', component: HomepageContainerComponent, pathMatch: 'full'},
   { path: 'home', component: HomepageContainerComponent},
   { path: 'design-system', component: DesignSystemComponent},
+  { path: 'add', component: TradeAddComponent},
   { path: 'trade', component: TradeContainerComponent, children: [
     { path: 'swap', component: TradeSwapComponent},
     { path: 'liquidity', component: TradeLiquidityComponent},

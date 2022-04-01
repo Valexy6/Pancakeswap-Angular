@@ -2,49 +2,33 @@
 <div class="main-page">
   <div class="main-page-box">
     <div class="middle-page">
-     <!-- CARD LIQUIDITY -->
-      <div class="card-liquidity">
-        <div class="card-liquidity-box">
-          
-          <div class="section-top">
-            
-            <div class="left-section-top">
-              <div class="left-text-top">
-                <h2>Your Liquidity</h2>
-                <div class="left-text-top-box">
-                  <div class="left-text-top-2">Remove liquidity to receive tokens back</div>
+
+      <!-- CARD ADD -->
+      <div class="pb-4">
+        <div class="generic-box-container container p-4">
+          <div class="d-flex justify-content-center">
+            <div class="section-top">
+              <a routerLink="/trade/liquidity" routerLinkActive="active">
+                <img src="assets/icons/big-arrow-left.svg" alt="arrow go back" style="width: 3rem; height: 2rem;">
+              </a>
+
+              <div class="text-section-top">
+                <h2>Add Liquidity</h2>
+                <div class="tooltip-container">
+                  <div class="tooltip-text">
+                    Add liquidity to receive LP tokens
+                  </div>
                 </div>
               </div>
+
+              <div>
+                <app-modal-settings class="button-top"></app-modal-settings>
+              </div>
             </div>
-
-            <div class="right-section-top">
-              <span class="first-button-top">
-                <div class="first-button-top-box">
-                  <app-modal-settings></app-modal-settings>
-                </div>
-              </span>
-
-              <button class="second-button-top">
-                <img src="assets/icons/circle-clock-lightpurple.svg" alt="reset-transaction">
-              </button>
-            </div>
-
           </div>
-
-          <div class="section-middle">
-            <div class="section-middle-text">Connect to a wallet to view your liquidity.</div>
-          </div>
-
-          <div class="section-bottom">
-            <a class="section-bottom-link" routerLink="/add" routerLinkActive="active">
-              <img src="assets/icons/plus-sign-white.svg" alt="plus-icon">
-              Add Liquidity
-            </a>
-          </div>
-
-
         </div>
       </div>
+    </div>
 
       <div class="divisore"></div>
        <!-- SECOND SECTION BOTTOM -->
@@ -81,4 +65,3 @@
 
     </div>
   </div>
-</div>

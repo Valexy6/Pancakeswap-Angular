@@ -25,6 +25,7 @@ import { HomepageContainerComponent } from './pages/homepage-container/homepage-
 import { TradeContainerComponent } from './pages/trade-container/trade-container.component';
 import { TradeSwapComponent } from './pages/trade-swap/trade-swap.component';
 import { TradeLiquidityComponent } from './pages/trade-liquidity/trade-liquidity.component';
+import { TradeAddComponent } from './pages/trade-add/trade-add.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { TradeLiquidityComponent } from './pages/trade-liquidity/trade-liquidity
     TradeContainerComponent,
     TradeSwapComponent,
     TradeLiquidityComponent,
+    TradeAddComponent,
   ],
   imports: [
     BrowserModule,

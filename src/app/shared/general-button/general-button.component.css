@@ -46,7 +46,7 @@
   cursor: pointer;
   letter-spacing: 0.03em;
   line-height: 1;
-  width: 15rem; /*240px*/
+  width: 100%; /*240px*/
   height: 3rem; /*48px*/
   opacity: 1;
   display: flex;

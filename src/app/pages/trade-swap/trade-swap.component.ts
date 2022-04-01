@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./trade-swap.component.css']
 })
 export class TradeSwapComponent implements OnInit {
+  isNavbar: boolean = false;
 
   constructor() { }
 

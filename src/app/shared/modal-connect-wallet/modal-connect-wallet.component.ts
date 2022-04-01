@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -8,6 +8,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ModalConnectWalletComponent implements OnInit {
   closeResult!: string;
+  @Input() buttonClass?: 'button-standard' | 'button-small' | 'button-medium' | 'button-large' | 'button-squashed';
 
   constructor(private modalService: NgbModal) { }
     
@@ -17,4 +18,5 @@ export class ModalConnectWalletComponent implements OnInit {
   open(content: any) {
     this.modalService.open(content, { windowClass: 'ps-modal-centered',modalDialogClass: 'modal-container' });
   }
+
 }
