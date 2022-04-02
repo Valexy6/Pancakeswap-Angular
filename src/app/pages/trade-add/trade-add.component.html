@@ -2,66 +2,166 @@
 <div class="main-page">
   <div class="main-page-box">
     <div class="middle-page">
-
       <!-- CARD ADD -->
-      <div class="pb-4">
-        <div class="generic-box-container container p-4">
-          <div class="d-flex justify-content-center">
+      <div class="container-card-add">
+        <div class="generic-box-container">
+          <div class="section-top-container">
             <div class="section-top">
-              <a routerLink="/trade/liquidity" routerLinkActive="active">
-                <img src="assets/icons/big-arrow-left.svg" alt="arrow go back" style="width: 3rem; height: 2rem;">
+              <a
+                style="width: 3rem; padding: 0px"
+                routerLink="/trade/liquidity"
+                routerLinkActive="active"
+              >
+                <img
+                  src="assets/icons/big-arrow-left.svg"
+                  alt="arrow go back"
+                />
               </a>
 
               <div class="text-section-top">
                 <h2>Add Liquidity</h2>
                 <div class="tooltip-container">
-                  <div class="tooltip-text">
-                    Add liquidity to receive LP tokens
+                  <div style="margin-right: 0.25rem">
+                    <div>
+                      <img
+                        src="assets/icons/questionMark-light-purple.svg"
+                        alt=""
+                      />
+                    </div>
                   </div>
+                  <div class="tooltip-text">Add liquidity to receive LP tokens</div>
+                </div>
+              </div>
+            </div>
+            <div class="button-top-container">
+              <app-modal-settings class="button-top"></app-modal-settings>
+              <app-modal-clock
+                style="margin-left: 1rem; padding: 0px"
+              ></app-modal-clock>
+            </div>
+          </div>
+
+
+          
+          <div style="padding: 24px">
+            <div class="second-section-card">
+            <div class="select-currency-container">
+              <div class="select-currency">
+                <div class="select-currency-input">
+                  <button class="button-currency">
+                    <div>Select a currency</div>
+                    <img
+                      src="assets/icons/arrow-little-down.svg"
+                      alt="arrow little down"
+                    />
+                  </button>
                 </div>
               </div>
 
               <div>
-                <app-modal-settings class="button-top"></app-modal-settings>
+                <div>
+                  <div class="general-field-big-container">
+                    <input
+                      class="general-field-big"
+                      type="text"
+                      pattern="^[0-9]*[.,]?[0-9]*$"
+                      placeholder="0.0"
+                      minlength="1"
+                      maxlength="79"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
+
+            <div class="plus-div">
+              <img src="assets/icons/plus-sign.svg" alt="plus sign" width="16px" />
+            </div>
+
+            <div class="select-currency-container">
+              <div class="select-currency">
+                <div class="select-currency-input">
+                  <button class="button-currency">
+                    <div>Select a currency</div>
+                    <img
+                      src="assets/icons/arrow-little-down.svg"
+                      alt="arrow little down"
+                    />
+                  </button>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <div class="general-field-big-container">
+                    <input
+                      class="general-field-big"
+                      type="text"
+                      pattern="^[0-9]*[.,]?[0-9]*$"
+                      placeholder="0.0"
+                      minlength="1"
+                      maxlength="79"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+              <app-modal-connect-wallet
+                [buttonClass]="'button-large'"
+              ></app-modal-connect-wallet>
+            
           </div>
         </div>
+        </div>
       </div>
-    </div>
-
       <div class="divisore"></div>
-       <!-- SECOND SECTION BOTTOM -->
+      <!-- SECOND SECTION BOTTOM -->
       <div class="main-bottom">
         <div class="main-bottom-box">
-          
           <div class="main-bottom-left">
             <div class="bottom-left-button">
               <button class="switch-v1">V2</button>
               <a class="switch-old" href="">V1 (old)</a>
             </div>
 
-            <a class="link-convert" href="https://docs.binance.org/smart-chain/guides/cross-chain.html">
+            <a
+              class="link-convert"
+              href="https://docs.binance.org/smart-chain/guides/cross-chain.html"
+            >
               Convert ERC-20 to BEP-20
-              <img src="assets/icons/arrow-oblique-cyan.svg" alt="convert-link">
+              <img
+                src="assets/icons/arrow-oblique-cyan.svg"
+                alt="convert-link"
+              />
             </a>
-
           </div>
 
           <div class="main-bottom-right">
             <div class="need-help">
-              <a href="https://docs.pancakeswap.finance/products/pancakeswap-exchange">Need help?</a>
-              <svg viewBox="0 0 16 16" color="text" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M0 16V0C0 0 3 1 6 1C9 1 16 -2 16 3.5C16 10.5 7.5 16 0 16Z"></path></svg>
+              <a
+                href="https://docs.pancakeswap.finance/products/pancakeswap-exchange"
+                >Need help?</a
+              >
+              <svg
+                viewBox="0 0 16 16"
+                color="text"
+                width="20px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 16V0C0 0 3 1 6 1C9 1 16 -2 16 3.5C16 10.5 7.5 16 0 16Z"
+                ></path>
+              </svg>
             </div>
 
             <div class="img-bottom-right">
-              <img src="assets/img/help.png" alt="need-help-png">
+              <img src="assets/img/help.png" alt="need-help-png" />
             </div>
-          
           </div>
-        
         </div>
       </div>
-
     </div>
   </div>
+</div>

@@ -1,3 +1,7 @@
+.mr-1-2 {
+  margin-right: 0.75rem;
+}
+
 .wallet {
   margin: 1.5rem;
   display: flex;
@@ -16,8 +20,8 @@
   cursor: var(--pointer);
   letter-spacing: 0.03em;
   line-height: 1;
-  width: 18.313rem; /*165px*/
-  height: 3.05rem; /*48px*/
+  width: 18.313rem;
+  height: 3.05rem;
   opacity: 1;
 }
 
@@ -32,8 +36,9 @@
 }
 
 .button-clock {
-  background-color: none;
   border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .button-clock:hover {
