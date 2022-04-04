@@ -27,6 +27,8 @@
   --gradient-dark: radial-gradient(103.12% 50% at 50% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%);
   --gradient-purple: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
   --gradient-pink-blue: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+  --gradient-blue: linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%);
+  --gradient-dark-purple: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
 }
 
 /* -- GENERIC -- */
@@ -40,6 +42,7 @@
 
 body {
   overflow: overlay;
+  background-color: var(--white);
 }
 
 a {
@@ -112,40 +115,54 @@ a {
 
 /* -- TYPOGRAPHY -- */
 .h1 {
-  font-size: 4rem;
+  font-size: 4rem; /*64px*/
   font-weight: 600;
+  margin: 0px;
+  padding: 0px;
 }
 
 .h2 {
-  font-size: 2.5rem;
+  font-size: 2rem; /*40px*/
   font-weight: 600;
+  margin: 0px;
+  padding: 0px;
 }
 
 .h3 {
   font-size: 1.25rem; /*20px*/
   font-weight: 600;
+  margin: 0px;
+  padding: 0px;
 }
 
 .h4 {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /*24px*/
   font-weight: 600;
+  margin: 0px;
+  padding: 0px;
 }
 
 .p {
   font-size: 1rem;
   font-weight: 400;
+  margin: 0px;
+  padding: 0px;
 }
 
 .p-light-purple {
   font-size: 1rem;
   font-weight: 400;
   color: var(--light-purple);
+  margin: 0px;
+  padding: 0px;
 }
 
 .p-small {
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 1.5;
+  margin: 0px;
+  padding: 0px;
 }
 
 .p-dark {
@@ -153,6 +170,8 @@ a {
   font-weight: 600;
   color: var(--dark-purple);
   line-height: 1.1;
+  margin: 0px;
+  padding: 0px;
 }
 
 .key-words {

@@ -1,5 +1,5 @@
-<button class="button-clock" (click)="open(content)">
-  <img src="../../assets/icons/cirle-clock-lightpurple.svg" alt="" />
+<button class="button-clock mr-1-2 ml-1 d-flex align-items-center h-100"  type="button">
+  <img src="assets/icons/circle-clock-lightpurple.svg" alt="" (click)="open(content)"/>
 </button>
 
 <ng-template #content let-modal>
@@ -12,11 +12,11 @@
         aria-label="Close"
         (click)="modal.close('Cross click')"
       >
-        <img src="../../../assets/icons/exit.svg" alt="exit">
+      <img src="assets/icons/exit.svg" alt="exit">
       </button>
     </div>
     <div class="wallet">
-      <button class="button-standard">Connect Wallet</button>
+      <app-modal-connect-wallet [buttonClass]="'button-large'"></app-modal-connect-wallet>
     </div>
   </div>
 </ng-template>

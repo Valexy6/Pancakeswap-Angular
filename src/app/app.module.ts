@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -22,6 +23,8 @@ import { PancakeTradeComponent } from './shared/pancake-trade/pancake-trade.comp
 import { GeneralButtonComponent } from './shared/general-button/general-button.component';
 import { ModalClockComponent } from './shared/modal-clock/modal-clock.component';
 import { HomepageContainerComponent } from './pages/homepage-container/homepage-container.component';
+import { HomeTableComponent } from './components/home-table/home-table.component';
+import { HomeTableColumnsComponent } from './components/home-table-columns/home-table-columns.component';
 
 @NgModule({
   declarations: [
@@ -43,12 +46,15 @@ import { HomepageContainerComponent } from './pages/homepage-container/homepage-
     GeneralButtonComponent,
     ModalClockComponent,
     HomepageContainerComponent,
+    HomeTableComponent,
+    HomeTableColumnsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

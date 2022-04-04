@@ -17,8 +17,6 @@ export class ModalClockComponent implements OnInit  {
     this.modalService.open(content, { windowClass: 'ps-modal-centered',modalDialogClass: 'modal-container' });
   }
 
-  
-
   ngOnInit(): void {
   }
 

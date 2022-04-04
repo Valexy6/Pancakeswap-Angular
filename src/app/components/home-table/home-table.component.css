@@ -1,0 +1,72 @@
+.earn-data-container {
+  width: calc(100vw - 3rem);
+  max-width: 60.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  color: var(--dark-purple);
+}
+
+.earn-data-title {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.5rem;
+}
+
+.earn-data-title span {
+  color: var(--purple);
+}
+
+.switcher-earn {
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.earn-data {
+  height: 15rem;
+  width: 100%;
+  position: relative;
+}
+
+.earn-table{
+  position: absolute;
+  width: 100%;
+}
+
+.earn-table-hide {
+  opacity: 0;
+  margin-top: 10%;
+  transition-property: opacity, margin-top, all;
+  transition-duration: 0s, 0s, 0.4s;
+  transition-timing-function: ease, ease, ease-out;
+}
+
+.earn-table-show {
+  opacity: 1;
+  margin-top: 0;
+  transition-property: opacity, margin-top, all;
+  transition-duration: 0s, 0s, 0.4s;
+  transition-timing-function: ease, ease, ease-out;
+}
+
+/* -- UTILITIES -- */
+.icons-button {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.icons-button:hover {
+  opacity: 0.65;
+}
+
+/* -- RESPONSIVE -- */
+@media all and (min-width: 576px) {
+  .earn-data {
+    height: 5rem;
+  }
+}
