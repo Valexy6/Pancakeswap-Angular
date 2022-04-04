@@ -1,56 +1,66 @@
 {
   "farms": [
     {
+      "id": 1,
       "name": "CCAR-BNB LP",
-      "value": 528970,
-      "abbreviation": "apr"
+      "value": 1528.970,
+      "abbr": "apr"
     },
     {
+      "id": 2,
       "name": "DPT-BNB LP",
-      "value": 391263,
-      "abbreviation": "apr"
+      "value": 391.263,
+      "abbr": "apr"
     },
     {
+      "id": 3,
       "name": "KART-BNB",
-      "value": 212280,
-      "abbreviation": "apr"
+      "value": 212.280,
+      "abbr": "apr"
     },
     {
+      "id": 4,
       "name": "ETERNAL-BNB LP",
-      "value": 174440,
-      "abbreviation": "apr"
+      "value": 174.440,
+      "abbr": "apr"
     },
     {
+      "id": 5,
       "name": "FINA-BUSD LP",
-      "value": 171916,
-      "abbreviation": "apr"
+      "value": 171.916,
+      "abbr": "apr"
     }
   ],
-  "syrup pools": [
+  "syrup-pools": [
     {
+      "id": 1,
       "name": "Stake CAKE - Earn CCAR",
-      "value": 104009,
-      "abbreviation": "apr"
+      "value": 104.009,
+      "abbr": "apr"
     },
     {
+      "id": 2,
       "name": "Stake CAKE - Earn DPT",
-      "value": 104009,
-      "abbreviation": "apr"
+      "value": 2104.009,
+      "abbr": "apr"
     },
     {
+      "id": 3,
       "name": "IFO CAKE",
-      "value": 70303,
-      "abbreviation": "apr"
+      "value": 70.303,
+      "abbr": "apr"
     },
     {
+      "id": 4,
       "name": "Auto CAKE",
-      "value": 68962,
-      "abbreviation": "apr"
+      "value": 68.962,
+      "abbr": "apr"
     },
     {
+      "id": 5,
       "name": "Stake CAKE - Earn FINA",
-      "value": 67796,
-      "abbreviation": "apr"
+      "value": 67.796,
+      "abbr": "apr"
     }
   ]
 }

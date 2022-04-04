@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IHomeTable } from 'src/app/models/HomeTable';
 
 @Component({
   selector: 'app-home-table',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-table.component.css']
 })
 export class HomeTableComponent implements OnInit {
+  @Input() dataTableFarm: IHomeTable[] = [];
+  @Input() dataTableSyrup: IHomeTable[] = [];
 
   constructor() { }
 
