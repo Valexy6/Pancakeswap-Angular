@@ -26,18 +26,17 @@
 .earn-data {
   height: 15rem;
   width: 100%;
+  position: relative;
 }
 
-.earn-data-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
-  height: 100%;
+.earn-table{
+  position: absolute;
   width: 100%;
 }
 
 .earn-table-hide {
   opacity: 0;
+  margin-top: 10%;
   transition-property: opacity, margin-top, all;
   transition-duration: 0s, 0s, 0.4s;
   transition-timing-function: ease, ease, ease-out;
@@ -49,19 +48,6 @@
   transition-property: opacity, margin-top, all;
   transition-duration: 0s, 0s, 0.4s;
   transition-timing-function: ease, ease, ease-out;
-}
-
-.earn-data-column {
-  padding-right: 0.5rem;
-}
-
-.earn-data-column p:first-child {
-  margin-bottom: 0.5rem;
-  color: var(--purple);
-}
-
-.earn-data-column p:last-child {
-  line-height: 1.5;
 }
 
 /* -- UTILITIES -- */
@@ -82,19 +68,5 @@
 @media all and (min-width: 576px) {
   .earn-data {
     height: 5rem;
-  }
-
-  .earn-data-grid {
-    grid-template-columns: repeat(5, 1fr);
-  }
-
-  .earn-data-column:nth-of-type(1) {
-    border-left: none;
-    padding-left: 0;
-  }
-  
-  .earn-data-column {
-    border-left: 1px solid var(--column-border);
-    padding-left: 1rem;
   }
 }
