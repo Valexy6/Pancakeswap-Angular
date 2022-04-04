@@ -1,27 +1,22 @@
+<div class="earn-data-container">
 
-  <div class="earn-data-container">
-    <div class="earn-data-title">
-      <h3 class="h3">Top <span id="earn-table-title">Syrup Pools</span></h3>
-      <button type="button" class="icons-button switcher-earn"><img id='switch-icon' src="assets/icons/arrow-up-down-light-purple.svg" /></button>
+  <div class="earn-data-title">
+    <h3 class="h3">Top <span>{{ isTableVisible ? 'Farms' : 'Syrup Pools' }}</span></h3>
+    <button type="button" class="icons-button switcher-earn" (click)="toggleTableVisibility()">
+      <img id='switch-icon' src="assets/icons/arrow-up-down-light-purple.svg" />
+    </button>
+  </div>
+
+  <div class="earn-data">
+
+    <div class="earn-table" [class]="isTableVisible ? 'earn-table-show' : 'earn-table-hide'">
+      <app-home-table-columns [dataTable]="dataTableFarm"></app-home-table-columns>
     </div>
 
-    <div class="earn-data">
-      <div id="grid-data1" class="earn-data-grid earn-table-show">
-        <div *ngFor="let data of dataTableFarm" class="earn-data-column">
-          <p class="p-small">{{ data.name }}</p>
-          <p class="p-dark">{{ data.value | number:'0.3-3' }}%</p>
-          <p class="p-light-purple">{{ data.abbr | uppercase }}</p>
-        </div>
-      </div>
-
-      <div id="grid-data2" class="earn-data-grid earn-table-hide">
-        <div *ngFor="let data of dataTableFarm" class="earn-data-column">
-          <p class="p-small">{{ data.name }}</p>
-          <p class="p-dark">{{ data.value | number:'0.0-3' }}%</p>
-          <p class="p-light-purple">{{ data.abbr | uppercase }}</p>
-        </div>
-      </div>
+    <div class="earn-table" [class]="isTableVisible ? 'earn-table-hide' : 'earn-table-show'">
+      <app-home-table-columns [dataTable]="dataTableSyrup"></app-home-table-columns>
     </div>
 
   </div>
 
+</div>

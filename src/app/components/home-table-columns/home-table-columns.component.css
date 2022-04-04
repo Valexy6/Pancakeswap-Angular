@@ -1,0 +1,36 @@
+.earn-data-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  height: 100%;
+  width: 100%;
+}
+
+.earn-data-column {
+  padding-right: 0.5rem;
+}
+
+.earn-data-column p:first-child {
+  margin-bottom: 0.5rem;
+  color: var(--purple);
+}
+
+.earn-data-column p:last-child {
+  line-height: 1.5;
+}
+
+@media all and (min-width: 576px) {
+  .earn-data-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .earn-data-column:nth-of-type(1) {
+    border-left: none;
+    padding-left: 0;
+  }
+  
+  .earn-data-column {
+    border-left: 1px solid var(--column-border);
+    padding-left: 1rem;
+  }
+}

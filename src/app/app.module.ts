@@ -24,6 +24,7 @@ import { GeneralButtonComponent } from './shared/general-button/general-button.c
 import { ModalClockComponent } from './shared/modal-clock/modal-clock.component';
 import { HomepageContainerComponent } from './pages/homepage-container/homepage-container.component';
 import { HomeTableComponent } from './components/home-table/home-table.component';
+import { HomeTableColumnsComponent } from './components/home-table-columns/home-table-columns.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { HomeTableComponent } from './components/home-table/home-table.component
     GeneralButtonComponent,
     ModalClockComponent,
     HomepageContainerComponent,
-    HomeTableComponent
+    HomeTableComponent,
+    HomeTableColumnsComponent
   ],
   imports: [
     BrowserModule,
