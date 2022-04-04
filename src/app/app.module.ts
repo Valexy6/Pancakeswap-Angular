@@ -25,6 +25,10 @@ import { ModalClockComponent } from './shared/modal-clock/modal-clock.component'
 import { HomepageContainerComponent } from './pages/homepage-container/homepage-container.component';
 import { HomeTableComponent } from './components/home-table/home-table.component';
 import { HomeTableColumnsComponent } from './components/home-table-columns/home-table-columns.component';
+import { TradeContainerComponent } from './pages/trade-container/trade-container.component';
+import { TradeSwapComponent } from './pages/trade-swap/trade-swap.component';
+import { TradeLiquidityComponent } from './pages/trade-liquidity/trade-liquidity.component';
+import { TradeAddComponent } from './pages/trade-add/trade-add.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +51,11 @@ import { HomeTableColumnsComponent } from './components/home-table-columns/home-
     ModalClockComponent,
     HomepageContainerComponent,
     HomeTableComponent,
-    HomeTableColumnsComponent
+    HomeTableColumnsComponent,
+    TradeContainerComponent,
+    TradeSwapComponent,
+    TradeLiquidityComponent,
+    TradeAddComponent,
   ],
   imports: [
     BrowserModule,

@@ -6,7 +6,7 @@ import { interval, Observable, PartialObserver, tap } from 'rxjs';
 })
 export class UtilitiesService {
   
-  timer():Observable<number> {
+  timer(): Observable<number> {
     return interval(6000).pipe(
       tap(() => console.log(`timer value emitted`))
     );

@@ -2,12 +2,6 @@
   margin-right: 0.75rem;
 }
 
-.wallet {
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem 1.5rem;
-}
-
 .button-standard {
   border-radius: 1rem;
   border: 0px;
@@ -19,8 +13,8 @@
   cursor: var(--pointer);
   letter-spacing: 0.03em;
   line-height: 1;
-  width: 18.313rem;
-  height: 3.05rem;
+  width: 18.313rem; /*165px*/
+  height: 3.05rem; /*48px*/
   opacity: 1;
 }
 
