@@ -1,4 +1,5 @@
 import { Component,  OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-modal-settings',
@@ -6,15 +7,22 @@ import { Component,  OnInit } from '@angular/core';
   styleUrls: ['./modal-settings.component.css']
 })
 export class ModalSettingsComponent implements OnInit {
-  isVisible: boolean = false;
+  closeResult!: string;
 
-  constructor() { }
+  expertActive = false;
+  disableMultihopsActive = false;
+  subGraphHealthIndicatorActive = false;
+  flippySoundsActive = false;
+
+  constructor(private modalService: NgbModal) { }
     
   ngOnInit(): void {
   }
 
-  modalToggle() {
-    this.isVisible = !this.isVisible;
+  open(content: any) {
+    this.modalService.open(content, { windowClass: 'ps-modal-centered',modalDialogClass: 'modal-container-settings' });
   }
 
 }
+
+

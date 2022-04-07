@@ -14,6 +14,8 @@
   --background-color: rgb(238, 234, 244);
   --grey-border: rgb(231, 227, 235);
   --column-border: rgb(215, 202, 236);
+  --switcher-bcg: rgb(189, 194, 196);
+  --switcher-bcg-darkmode: rgb(102, 97, 113);
   --mauve: rgb(184, 173, 210);
   --title-footer: rgb(154, 106, 255);
   --light-purple: rgb(122, 110, 170);
@@ -22,8 +24,11 @@
   --dark-purple-overlay: rgba(40, 13, 95, 0.6);
   --footer-bcg: rgb(39, 38, 44);
   --gradient: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
+  --gradient-dark: radial-gradient(103.12% 50% at 50% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%);
   --gradient-purple: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
   --gradient-pink-blue: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+  --gradient-blue: linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%);
+  --gradient-dark-purple: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
 }
 
 /* -- GENERIC -- */
@@ -37,13 +42,14 @@
 
 body {
   overflow: overlay;
+  background-color: var(--white);
 }
 
 a {
   text-decoration: none;
 }
 
-/* -- MODAL -- */
+/* -- MODALS -- */
 .modal-backdrop {
   background-color: var(--dark-purple);
 }
@@ -54,6 +60,8 @@ a {
 
 .ps-modal-centered {
   display: flex !important;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-container {
@@ -66,11 +74,21 @@ a {
 
 .modal-content {
   z-index: 99;
-  width: 20rem; /*320px*/
+  width: fit-content;
+  min-width: 20rem; /*320px*/
   max-height: 90vh;
   background-color: white;
   border-radius: 2rem;
   overflow: auto;
+}
+
+.modal-container-settings {
+  width: auto;
+  min-width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .modal.fade .modal-dialog {
@@ -85,7 +103,7 @@ a {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: rgb(238 234 244) 0px 0px 5px inset;
+  box-shadow: var(--background-color) 0px 0px 5px inset;
   border-radius: 10px;
 }
 
@@ -97,40 +115,54 @@ a {
 
 /* -- TYPOGRAPHY -- */
 .h1 {
-  font-size: 4rem;
+  font-size: 4rem; /*64px*/
   font-weight: 600;
+  margin: 0px;
+  padding: 0px;
 }
 
 .h2 {
-  font-size: 2.5rem;
+  font-size: 2rem; /*40px*/
   font-weight: 600;
+  margin: 0px;
+  padding: 0px;
 }
 
 .h3 {
   font-size: 1.25rem; /*20px*/
   font-weight: 600;
+  margin: 0px;
+  padding: 0px;
 }
 
 .h4 {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /*24px*/
   font-weight: 600;
+  margin: 0px;
+  padding: 0px;
 }
 
 .p {
   font-size: 1rem;
   font-weight: 400;
+  margin: 0px;
+  padding: 0px;
 }
 
 .p-light-purple {
   font-size: 1rem;
   font-weight: 400;
   color: var(--light-purple);
+  margin: 0px;
+  padding: 0px;
 }
 
 .p-small {
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 1.5;
+  margin: 0px;
+  padding: 0px;
 }
 
 .p-dark {
@@ -138,6 +170,8 @@ a {
   font-weight: 600;
   color: var(--dark-purple);
   line-height: 1.1;
+  margin: 0px;
+  padding: 0px;
 }
 
 .key-words {
@@ -156,6 +190,6 @@ a {
 /* -- RESPONSIVE -- */
 @media screen and (min-width: 576px) {
   .modal-content {
-    width: 21.25rem;
+    min-width: 21.25rem;
   }
 }

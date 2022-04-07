@@ -130,6 +130,8 @@
           <hr />
           <a href="#">Blog<img src="assets/icons/link-darkpurple.svg" /></a>
           <a href="#">Docs<img src="assets/icons/link-darkpurple.svg" /></a>
+          <hr />
+          <a routerLink="/design-system">Design System</a>
         </div>
       </div>
     </div>
@@ -141,7 +143,7 @@
     <app-pancake-trade [colorLink]="colorLink"></app-pancake-trade>
     <app-language-selector [isNavbar]="isNavbar" (navLangSelected)="setLang.emit($event)"></app-language-selector>
     <app-modal-settings></app-modal-settings>
-    <app-modal-connect-wallet></app-modal-connect-wallet>
+    <app-modal-connect-wallet [buttonClass]="'button-squashed'"></app-modal-connect-wallet>
 
   </div>
 
@@ -221,6 +223,8 @@
         <hr />
         <a href="#">Blog<img src="assets/icons/link-darkpurple.svg" /></a>
         <a href="#">Docs<img src="assets/icons/link-darkpurple.svg" /></a>
+        <hr />
+        <a routerLink="/design-system">Design System</a>
       </div>
     </div>
   </div>

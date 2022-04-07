@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 import { DesignSystemComponent } from './pages/design-system/design-system.component';
 import { FaqComponent } from './shared/faq/faq.component';
 import { FaqRowComponent } from './shared/faq-row/faq-row.component';
@@ -19,11 +21,14 @@ import { FooterContainerComponent } from './core/footer-container/footer-contain
 import { DarkModeComponent } from './shared/dark-mode/dark-mode.component';
 import { PancakeTradeComponent } from './shared/pancake-trade/pancake-trade.component';
 import { GeneralButtonComponent } from './shared/general-button/general-button.component';
+import { ModalClockComponent } from './shared/modal-clock/modal-clock.component';
 import { HomepageContainerComponent } from './pages/homepage-container/homepage-container.component';
 import { EarnComponent } from './pages/earn/earn.component';
 import { EarnFarmsComponent } from './pages/earn-farms/earn-farms.component';
 import { EarnPoolsComponent } from './pages/earn-pools/earn-pools.component';
 import { SecondaryMenuComponent } from './shared/secondary-menu/secondary-menu.component';
+import { HomeTableComponent } from './components/home-table/home-table.component';
+import { HomeTableColumnsComponent } from './components/home-table-columns/home-table-columns.component';
 
 @NgModule({
   declarations: [
@@ -43,16 +48,21 @@ import { SecondaryMenuComponent } from './shared/secondary-menu/secondary-menu.c
     DarkModeComponent,
     PancakeTradeComponent,
     GeneralButtonComponent,
+    ModalClockComponent,
     HomepageContainerComponent,
     EarnComponent,
     EarnFarmsComponent,
     EarnPoolsComponent,
     SecondaryMenuComponent,
+    HomeTableComponent,
+    HomeTableColumnsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

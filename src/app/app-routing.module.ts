@@ -7,7 +7,6 @@ import { EarnComponent } from './pages/earn/earn.component';
 import { HomepageContainerComponent } from './pages/homepage-container/homepage-container.component';
 
 const routes: Routes = [
-  { path: '', component: HomepageContainerComponent },
   { path: 'home', component: HomepageContainerComponent },
   { path: 'earn', component: EarnComponent, children: [
     { path: '', redirectTo: 'farms', pathMatch: 'full'},
@@ -15,6 +14,8 @@ const routes: Routes = [
     { path: 'pools', component: EarnPoolsComponent },
   ]},
   { path: 'design-system', component: DesignSystemComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/home'}
 ];
 
 @NgModule({

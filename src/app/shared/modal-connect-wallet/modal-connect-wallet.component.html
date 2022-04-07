@@ -1,34 +1,34 @@
 <!-- Button trigger modal connect wallet -->
 <app-general-button
-[button]="{ class: 'button-squashed', text: 'Connect Wallet', imgVisible: false}" (click)="open(content)"
+[button]="{ class: buttonClass, text: 'Connect Wallet', imgVisible: false}" (click)="open(content)"
 ></app-general-button>
 
 <!-- Modal -->
 <ng-template #content let-modal>
-  <div>
+  <div class="modal-box-connect">
     <div class="modal-wallet-header">
       <h3 class="h3 m-0">Connect Wallet</h3>
       <button type="button" class="close-btn" (click)="modal.close('Close click')">
-        <img src="../../../assets/icons/exit.svg" />
+        <img src="assets/icons/exit.svg" />
       </button>
     </div>
     
     <div class="modal-wallet-body">
       <div class="modal-content-grid">
         <button class="btn-link">
-          <img src="../../../assets/icons/wallet-connect.svg"/>
+          <img src="assets/icons/wallet-connect.svg"/>
           <p class="subtitle m-0">Coinbase Wallet</p>
         </button>
         <button class="btn-link">
-          <img src="../../../assets/icons/metamask.svg"/>
+          <img src="assets/icons/metamask.svg"/>
           <p class="subtitle m-0">Metamask</p>
         </button>
         <button class="btn-link">
-          <img src="../../../assets/icons/binance-wallet.svg"/>
+          <img src="assets/icons/binance-wallet.svg"/>
           <p class="subtitle m-0">Binance Wallet</p>
         </button>
         <button class="btn-link">
-          <img src="../../../assets/icons/big-dots.svg"/>
+          <img src="assets/icons/big-dots.svg"/>
           <p class="subtitle m-0">More</p>
         </button>
       </div>
