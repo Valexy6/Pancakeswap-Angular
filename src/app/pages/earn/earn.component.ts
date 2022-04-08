@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ISecondaryMenuItem } from 'src/app/models/SecondaryMenuItem';
+import { ILink } from 'src/app/models/SecondaryMenuItem';
 
 @Component({
   selector: 'app-earn',
@@ -7,5 +7,5 @@ import { ISecondaryMenuItem } from 'src/app/models/SecondaryMenuItem';
   styleUrls: ['./earn.component.css']
 })
 export class EarnComponent {
-  menuItems: ISecondaryMenuItem[] = [{ name: 'Farms', url: 'farms' }, { name: 'Pools', url: 'pools' }]
+  menuItems: ILink[] = [{ name: 'Farms', url: 'farms' }, { name: 'Pools', url: 'pools' }]
 }

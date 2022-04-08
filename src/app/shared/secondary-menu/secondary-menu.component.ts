@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ISecondaryMenuItem } from 'src/app/models/SecondaryMenuItem';
+import { ILink } from 'src/app/models/SecondaryMenuItem';
 
 @Component({
   selector: 'app-secondary-menu',
@@ -7,5 +7,5 @@ import { ISecondaryMenuItem } from 'src/app/models/SecondaryMenuItem';
   styleUrls: ['./secondary-menu.component.css']
 })
 export class SecondaryMenuComponent {
-  @Input() items: ISecondaryMenuItem[] = [];
+  @Input() items: ILink[] = [];
 }
