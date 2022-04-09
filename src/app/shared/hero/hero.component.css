@@ -1,0 +1,20 @@
+.hero-container {
+  background: var(--gradient);
+}
+
+h1 {
+  color: var(--purple);
+  padding-top: 48px;
+  padding-bottom: 24px;
+}
+
+h4 {
+  color: var(--dark-purple);
+
+
+}
+
+a {
+  color: var(--cyan);
+  padding-top: 23px;
+}
