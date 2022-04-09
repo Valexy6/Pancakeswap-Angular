@@ -9,11 +9,21 @@
       </div>
     </label>
     <p>Stacked only</p>
-    <label class="input-set" [ngClass]="{ checked: Active }">
+    <!-- <label class="input-set-live" [ngClass]="{ checked: Active }">Live
       <input type="checkbox" class="input-set2" [(ngModel)]="Active">
-      <div class="input-set3">
+      <div class="input-set-live2">Finished
       </div>
-    </label>
+    </label> -->
+
+    <div class="uno">
+      <a class="due" [ngClass]="{ checked: Active }" href="">Live</a>
+      <span class="tre">
+        <a class="quattro" [(ngModel)]="Active" href="">Finished</a>
+        <span class="cinque">
+
+        </span>
+      </span>
+    </div>
   </div>
 
   <div class="d-flex align-items-center">

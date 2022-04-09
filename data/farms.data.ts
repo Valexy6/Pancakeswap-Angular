@@ -31,4 +31,36 @@ export const FarmsData: IFarm[] = [
     cakeEarned: 0,
     type: 'farm-auction'
   },
+
+  {
+    name: 'HOTCROSS-BNB',
+    imgUrl: 'assets/images/waves-table-img.svg',
+    earned: 0,
+    apr: 19.98,
+    liquidity: 1.393845,
+    multiplier: 0.1,
+    cakeEarned: 0,
+    type: 'farm-auction'
+  },
+
+  {
+    name: 'PEX-BNB',
+    imgUrl: 'assets/images/pear-table-img.svg',
+    earned: 0,
+    apr: 198.16,
+    liquidity: 556.56,
+    multiplier: 0.5,
+    cakeEarned: 0,
+    type: 'core'
+  },
+  {
+    name: 'GMI-BNB',
+    imgUrl: 'assets/images/g-table-img.svg',
+    earned: 0,
+    apr: 354.46,
+    liquidity: 969867,
+    multiplier: 1,
+    cakeEarned: 0,
+    type: 'core'
+  },
 ]

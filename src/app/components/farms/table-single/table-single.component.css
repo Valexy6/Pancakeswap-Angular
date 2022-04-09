@@ -1,0 +1,54 @@
+.title-name {
+  color: var(--dark-purple);
+}
+
+img {
+  height: 26px;
+  width: 26px;
+}
+
+.icons {
+  width: 20px;
+}
+
+.title-date {
+  color: var(--light-purple);
+}
+
+.figures {
+  color: var(--dark-purple);
+}
+
+a {
+  color: var(--cyan);
+}
+
+.button-large {
+  border-radius: 1rem;
+  border: 0px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--cyan);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 18.625rem;
+  height: 3rem;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: white;
+}
+
+.button-large:hover {
+  background-color: var(--hover-color);
+}
+
+.button-large:active {
+  background-color: var(--active-color);
+  transform: translateY(1px);
+  box-shadow: none;
+}
