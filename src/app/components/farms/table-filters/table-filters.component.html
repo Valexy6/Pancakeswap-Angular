@@ -1,20 +1,33 @@
 <div class="d-flex align-items-center justify-content-between w-100">
   <div class="d-flex align-items-center">
-    <button class="btn">Griglia</button>
-    <button class="btn">List</button>
+    <button class="btn"><img src="assets/icons/six.square-cyan.svg" /></button>
+    <button class="btn"><img src="assets/icons/rectangles-cyan.svg" /></button>
 
-    toggle - Stacked only
+    <label class="input-set" [ngClass]="{ checked: Active }">
+      <input type="checkbox" class="input-set2" [(ngModel)]="Active">
+      <div class="input-set3">
+      </div>
+    </label>
+    <p>Stacked only</p>
 
     toggle - Live - Finished
   </div>
 
   <div class="d-flex align-items-center">
-    <select name="" id="" class="me-3">
+    <select name="" id="" class="me-3 drop-down">
+      <option value="">Hot</option>
       <option value="">Apr</option>
       <option value="">Multiplier</option>
       <option value="">Earned</option>
+      <option value="">Liquidity</option>
+      <option value="">Latest</option>
     </select>
 
-    <input type="search" placeholder="Search Farms">
+    <div class="me-4 mb-4">
+      <h3 class="h5 mb-3">Search</h3>
+      <div>
+        <input class="search-field" type="text" placeholder="Search Farms" />
+      </div>
+    </div>
   </div>
 </div>

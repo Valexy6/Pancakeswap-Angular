@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TableFiltersComponent implements OnInit {
 
+  Active = false;
+
   constructor() { }
 
   ngOnInit(): void {
