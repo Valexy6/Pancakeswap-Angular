@@ -47,46 +47,44 @@
 
 /* Toogle Live-Finished */
 
-/* .input-set-live {
+
+
+.input-set-live {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.input-set-live2 {
   background-color: rgb(238, 234, 244);
-  border-radius: 16px;
+  border-radius: 1rem;
   display: inline-flex;
   border: 1px solid rgb(215, 202, 236);
   width: auto;
 }
 
-.input-set-live2 {
-  -webkit-box-align: center;
-  align-items: center;
-  border: 0px;
-  border-radius: 16px;
-  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 600;
-  -webkit-box-pack: center;
-  justify-content: center;
-  letter-spacing: 0.03em;
-  line-height: 1;
-  opacity: 1;
-  outline: 0px;
-  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-  height: 32px;
-  padding: 0px 16px;
-  background-color: rgb(122, 110, 170);
-  color: rgb(255, 255, 255);
-
+.input-set-live a {
   padding-left: 12px;
   padding-right: 12px;
+}
+
+.input-set-live2>button,
+.input-set-live2 a {
+  box-shadow: none;
+}
+
+.input-set-live2>button,
+.input-set-live2>a {
+  flex: 1 1 auto;
 }
 
 .input-set-live3 {
   -webkit-box-align: center;
   align-items: center;
   border: 0px;
-  border-radius: 16px;
+  border-radius: 1rem;
   box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
   cursor: pointer;
   display: inline-flex;
@@ -100,80 +98,33 @@
   opacity: 1;
   outline: 0px;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-  height: 32px;
-  padding: 0px 16px;
-  background-color: rgb(122, 110, 170);
-  color: rgb(255, 255, 255);
-} */
-
-.uno {
-  background-color: rgb(238, 234, 244);
-  border-radius: 16px;
-  display: inline-flex;
-  border: 1px solid rgb(215, 202, 236);
-  width: auto;
-}
-
-.due {
-  padding-left: 12px;
-  padding-right: 12px;
-  -webkit-box-align: center;
-  align-items: center;
-  border: 0px;
-  border-radius: 16px;
-  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 600;
-  -webkit-box-pack: center;
-  justify-content: center;
-  letter-spacing: 0.03em;
-  line-height: 1;
-  opacity: 1;
-  outline: 0px;
-  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-  height: 32px;
+  height: 2rem;
   padding: 0px 16px;
   background-color: rgb(122, 110, 170);
   color: rgb(255, 255, 255);
 }
 
-.tre {
+.input-set-live4 {
   display: inline-flex;
   position: relative;
 }
 
-.quattro {
-  -webkit-box-align: center;
-  align-items: center;
-  border: 0px;
-  border-radius: 16px;
-  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 600;
-  -webkit-box-pack: center;
-  justify-content: center;
-  letter-spacing: 0.03em;
-  line-height: 1;
-  opacity: 1;
-  outline: 0px;
-  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-  height: 32px;
-  padding: 0px 16px;
-  background-color: rgb(122, 110, 170);
-  color: rgb(255, 255, 255);
-  background-color: transparent;
-  color: rgb(122, 110, 170);
-  padding-left: 12px;
-  padding-right: 12px;
+.input-set-live a {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
-.cinque {
+.input-set-live2>button,
+.input-set-live2 a {
+  box-shadow: none;
+}
+
+.input-set-live5 {
+  background-color: transparent;
+  color: rgb(122, 110, 170);
+}
+
+.input-set-live6 {
   display: none;
   position: absolute;
   top: 0px;
@@ -186,13 +137,6 @@
   background-color: rgb(237, 75, 158);
 }
 
-
-
-
-
-
-
-
 .drop-down {
   width: 100%;
   height: 40px;
@@ -204,12 +148,10 @@
   padding: 0px 16px;
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
   border: 1px solid rgb(215, 202, 236);
-  border-radius: 16px;
+  border-radius: 1rem;
   background: rgb(238, 234, 244);
   transition: border-radius 0.15s ease 0s;
 }
-
-
 
 .search-field {
   border: 1px solid var(--column-border);
@@ -229,4 +171,14 @@
 
 .search-field:focus {
   box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+}
+
+h3 {
+  color: rgb(40, 13, 95);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 0;
 }

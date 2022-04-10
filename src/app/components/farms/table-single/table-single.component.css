@@ -3,12 +3,12 @@
 }
 
 img {
-  height: 26px;
-  width: 26px;
+  height: 1.625rem;
+  width: 1.625rem;
 }
 
 .icons {
-  width: 20px;
+  width: 1.25rem;
 }
 
 .title-date {
@@ -51,4 +51,21 @@ a {
   background-color: var(--active-color);
   transform: translateY(1px);
   box-shadow: none;
+}
+
+.back-img {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  z-index: 1;
+  top: 0;
+}
+
+.top-img {
+  z-index: 2;
+  width: 1.625rem;
+  height: 1.625rem;
+  position: absolute;
+  top: 6px;
+  left: 6px;
 }

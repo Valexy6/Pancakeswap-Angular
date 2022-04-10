@@ -1,43 +1,43 @@
-<div class="d-flex align-items-center justify-content-between w-100">
+<div class="d-flex align-items-center justify-content-between w-100 my-5">
   <div class="d-flex align-items-center">
-    <button class="btn"><img src="assets/icons/six.square-cyan.svg" /></button>
+    <button class="btn"><img src="assets/icons/six-square-gray.svg" /></button>
     <button class="btn"><img src="assets/icons/rectangles-cyan.svg" /></button>
 
-    <label class="input-set" [ngClass]="{ checked: Active }">
-      <input type="checkbox" class="input-set2" [(ngModel)]="Active">
+    <label class="input-set" [ngClass]="{ checked: active }">
+      <input type="checkbox" class="input-set2" [(ngModel)]="active">
       <div class="input-set3">
       </div>
     </label>
-    <p>Stacked only</p>
-    <!-- <label class="input-set-live" [ngClass]="{ checked: Active }">Live
-      <input type="checkbox" class="input-set2" [(ngModel)]="Active">
-      <div class="input-set-live2">Finished
-      </div>
-    </label> -->
+    <p class="mb-0 mx-3">Stacked only</p>
 
-    <div class="uno">
-      <a class="due" [ngClass]="{ checked: Active }" href="">Live</a>
-      <span class="tre">
-        <a class="quattro" [(ngModel)]="Active" href="">Finished</a>
-        <span class="cinque">
-
+    <div class=" input-set-live" (click)="activeLive = !activeLive">
+      <div class="input-set-live2">
+        <a class="input-set-live3" [ngClass]="{ 'input-set-live5': activeLive }">Live</a>
+        <span class="input-set-live4">
+          <a class="input-set-live3" [ngClass]="{ 'input-set-live5': !activeLive }">Finished</a>
+          <span class="input-set-live6"></span>
         </span>
-      </span>
+      </div>
     </div>
+
+
+
   </div>
 
   <div class="d-flex align-items-center">
-    <select name="" id="" class="me-3 drop-down">
-      <option value="">Hot</option>
-      <option value="">Apr</option>
-      <option value="">Multiplier</option>
-      <option value="">Earned</option>
-      <option value="">Liquidity</option>
-      <option value="">Latest</option>
-    </select>
-
-    <div class="me-4 mb-4">
-      <h3 class="h5 mb-3">Search</h3>
+    <div class="d-flex flex-column me-3">
+      <h3>Sort by</h3>
+      <select name="" id="" class="me-3 drop-down">
+        <option value="">Hot</option>
+        <option value="">Apr</option>
+        <option value="">Multiplier</option>
+        <option value="">Earned</option>
+        <option value="">Liquidity</option>
+        <option value="">Latest</option>
+      </select>
+    </div>
+    <div class="">
+      <h3>Search</h3>
       <div>
         <input class="search-field" type="text" placeholder="Search Farms" />
       </div>

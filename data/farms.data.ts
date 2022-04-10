@@ -2,7 +2,7 @@ import { IFarm } from "src/app/models/Farms";
 
 export const FarmsData: IFarm[] = [
   {
-    name: 'Cake-bnb',
+    name: 'Cakes-bnb',
     imgUrl: 'assets/images/bunny-table-img.svg',
     earned: 0,
     apr: 38.06,
@@ -12,7 +12,7 @@ export const FarmsData: IFarm[] = [
     type: 'core'
   },
   {
-    name: 'Busd-bnb',
+    name: 'Busde-bnb',
     imgUrl: 'assets/images/square-yellow-table-img.svg',
     earned: 0,
     apr: 17.83,
@@ -22,7 +22,7 @@ export const FarmsData: IFarm[] = [
     type: 'core'
   },
   {
-    name: 'Yel-bnb',
+    name: 'Yelov-bnb',
     imgUrl: 'assets/images/helmet-table-img.svg',
     earned: 0,
     apr: 255.16,
@@ -33,7 +33,7 @@ export const FarmsData: IFarm[] = [
   },
 
   {
-    name: 'HOTCROSS-BNB',
+    name: 'Hotec-bnb',
     imgUrl: 'assets/images/waves-table-img.svg',
     earned: 0,
     apr: 19.98,
@@ -44,7 +44,7 @@ export const FarmsData: IFarm[] = [
   },
 
   {
-    name: 'PEX-BNB',
+    name: 'Pexis-bnb',
     imgUrl: 'assets/images/pear-table-img.svg',
     earned: 0,
     apr: 198.16,
@@ -54,7 +54,7 @@ export const FarmsData: IFarm[] = [
     type: 'core'
   },
   {
-    name: 'GMI-BNB',
+    name: 'Gmire-bnb',
     imgUrl: 'assets/images/g-table-img.svg',
     earned: 0,
     apr: 354.46,

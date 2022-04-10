@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TableFiltersComponent implements OnInit {
 
-  Active = false;
+  active = false;
+  activeLive=false;
 
   constructor() { }
 
