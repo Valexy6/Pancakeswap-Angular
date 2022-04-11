@@ -41,8 +41,16 @@
   z-index: 99;
   border-radius: 0.25rem;
   box-shadow: rgb(25 19 38 / 10%) 0px 2px 12px -8px, rgb(25 19 38 / 5%) 0px 1px 1px;
-  background-color: white;
+
   overflow-y: auto;
+}
+
+.lang-selector-dark {
+  background-color: var(--footer-bcg);
+}
+
+.lang-selector-light {
+  background-color: white;
 }
 
 .lang-selector-top {
@@ -65,7 +73,6 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: var(--dark-purple);
   padding: 0px 0.5rem;
   border-radius: 0.5rem;
   width: 100%;

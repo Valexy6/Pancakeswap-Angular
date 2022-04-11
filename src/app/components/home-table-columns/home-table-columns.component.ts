@@ -8,6 +8,7 @@ import { IHomeTable } from 'src/app/models/HomeTable';
 })
 export class HomeTableColumnsComponent implements OnInit {
   @Input() dataTable: IHomeTable[] = [];
+  @Input() isDarkModeOn!: boolean;
 
   constructor() { }
 

@@ -1,20 +1,26 @@
 <div class="earn-data-container">
 
   <div class="earn-data-title">
-    <h3 class="h3">Top <span>{{ isTableVisible ? 'Farms' : 'Syrup Pools' }}</span></h3>
+    <h3 class="h3" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">Top <span [ngClass]="isDarkModeOn ? 'text-purple-footer' : 'text-purple'">{{ isTableVisible ? 'Farms' : 'Syrup Pools' }}</span></h3>
     <button type="button" class="icons-button switcher-earn" (click)="toggleTableVisibility()">
-      <img id='switch-icon' src="assets/icons/arrow-up-down-light-purple.svg" />
+      <img id='switch-icon' [src]="isDarkModeOn ? 'assets/icons/arrow-up-down-mauve.svg' : 'assets/icons/arrow-up-down-light-purple.svg'" />
     </button>
   </div>
 
   <div class="earn-data">
 
     <div class="earn-table" [class]="isTableVisible ? 'earn-table-show' : 'earn-table-hide'">
-      <app-home-table-columns [dataTable]="dataTableFarm"></app-home-table-columns>
+      <app-home-table-columns
+        [dataTable]="dataTableFarm"
+        [isDarkModeOn]="isDarkModeOn">
+      </app-home-table-columns>
     </div>
 
     <div class="earn-table" [class]="isTableVisible ? 'earn-table-hide' : 'earn-table-show'">
-      <app-home-table-columns [dataTable]="dataTableSyrup"></app-home-table-columns>
+      <app-home-table-columns
+        [dataTable]="dataTableSyrup"
+        [isDarkModeOn]="isDarkModeOn">
+      </app-home-table-columns>
     </div>
 
   </div>

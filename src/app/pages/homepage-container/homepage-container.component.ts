@@ -3,6 +3,7 @@ import { Subject, takeUntil } from 'rxjs';
 import { IHomeTable } from 'src/app/models/HomeTable';
 import { HomeDataTableService } from './home-data-table.service';
 import { UtilitiesService } from '../../services/utilities.service';
+import { DarkModeService } from 'src/app/shared/dark-mode/dark-mode.service';
 
 @Component({
   selector: 'app-homepage-container',
@@ -15,8 +16,9 @@ export class HomepageContainerComponent implements OnInit, OnDestroy {
   dataTableSyrup!: IHomeTable[];
   destroy$: Subject<boolean> = new Subject<boolean>();
   isTableVisible: boolean = true;
+  isDarkModeOn!: boolean;
 
-  constructor(private homeDataTableService: HomeDataTableService, private timer: UtilitiesService) { }
+  constructor(private homeDataTableService: HomeDataTableService, private timer: UtilitiesService, private darkmodeService: DarkModeService) { }
 
   ngOnInit(): void {
     this.homeDataTableService.getAllFarm()
@@ -30,6 +32,10 @@ export class HomepageContainerComponent implements OnInit, OnDestroy {
     this.timer.timer()
     .pipe(takeUntil(this.destroy$))
     .subscribe(() => this.isTableVisible = !this.isTableVisible);
+
+    this.darkmodeService.darkModeState$
+    .pipe(takeUntil(this.destroy$))
+    .subscribe((res) => this.isDarkModeOn = res);
   }
 
   ngOnDestroy(): void {
