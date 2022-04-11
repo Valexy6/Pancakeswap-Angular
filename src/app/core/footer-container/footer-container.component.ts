@@ -1,19 +1,17 @@
-import { Component, Input, OnDestroy, OnInit } from '@angular/core';
-import { Subject, takeUntil } from 'rxjs';
-import { DarkModeService } from 'src/app/shared/dark-mode/dark-mode.service';
+import { Component, Input, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-footer-container',
   templateUrl: './footer-container.component.html',
   styleUrls: ['./footer-container.component.css']
 })
-export class FooterContainerComponent implements OnInit, OnDestroy {
+export class FooterContainerComponent implements OnInit {
   @Input() langSelected!: string;
-  
+  @Input() isDarkModeOn!: boolean;
+
   colorLink: string = 'var(--mauve)';
   isFooter: boolean = true;
-  isDarkModeOn!: boolean;
-  destroy$: Subject<boolean> = new Subject<boolean>();
   
   languages: string[] = [
     "English",
@@ -33,16 +31,7 @@ export class FooterContainerComponent implements OnInit, OnDestroy {
     "Announcements",
   ]
 
-  constructor(private darkmodeService: DarkModeService) { }
+  constructor() { }
 
-  ngOnInit(): void {
-    this.darkmodeService.darkModeState$
-    .pipe(takeUntil(this.destroy$))
-    .subscribe((res) => this.isDarkModeOn = res);
-  }
-
-  ngOnDestroy(): void {
-    this.destroy$.next(true);
-    this.destroy$.unsubscribe();
-  }
+  ngOnInit(): void { }
 }

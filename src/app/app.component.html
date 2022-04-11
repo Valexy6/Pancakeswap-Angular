@@ -1,7 +1,7 @@
 <div [ngClass]="isDarkModeOn ? 'darkmode' : 'lightmode'" (scroll)="detectScroll()">
-  <app-navbar [scrollDeltaY] = "scrollDeltaY" (setLang)="setLang($event)"></app-navbar>
+  <app-navbar [isDarkModeOn]="isDarkModeOn" [scrollDeltaY] = "scrollDeltaY" (setLang)="setLang($event)"></app-navbar>
 
   <router-outlet></router-outlet>
 
-  <app-footer-container [langSelected]="langSelected"></app-footer-container>
+  <app-footer-container [isDarkModeOn]="isDarkModeOn" [langSelected]="langSelected"></app-footer-container>
 </div>

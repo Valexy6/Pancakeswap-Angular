@@ -1,28 +1,21 @@
-import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
-import { Subject, takeUntil } from 'rxjs';
-import { DarkModeService } from 'src/app/shared/dark-mode/dark-mode.service';
+import { Component, EventEmitter, Input,OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit, OnDestroy {
+export class NavbarComponent implements OnInit {
   @Input() scrollDeltaY!: number;
+  @Input() isDarkModeOn!: boolean;
   @Output() setLang = new EventEmitter<string>();
   
   isNavbar: boolean = true;
   isSubmenuVisible: boolean = false;
-  isDarkModeOn!: boolean;
-  destroy$: Subject<boolean> = new Subject<boolean>();
+  
+  constructor() {}
 
-  constructor(private darkmodeService: DarkModeService) {}
-
-  ngOnInit(): void {
-    this.darkmodeService.darkModeState$
-    .pipe(takeUntil(this.destroy$))
-    .subscribe((res) => this.isDarkModeOn = res);
-  }
+  ngOnInit(): void { }
 
   openBottomNavbar() {
     document.body.style.overflow = 'hidden';
@@ -32,10 +25,5 @@ export class NavbarComponent implements OnInit, OnDestroy {
   closeBottomNavbar() {
     document.body.style.overflow = 'overlay';
     this.isSubmenuVisible = false;
-  }
-
-  ngOnDestroy(): void {
-    this.destroy$.next(true);
-    this.destroy$.unsubscribe();
   }
 }
