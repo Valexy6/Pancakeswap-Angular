@@ -93,29 +93,31 @@ a {
 
 
 .button-small {
-  border-radius: 1rem;
+  align-items: center;
   border: 0px;
+  border-radius: 1rem;
+  display: inline-flex;
+  font-family: inherit;
   font-size: 1rem;
   font-weight: 600;
-  background-color: var(--cyan);
-  color: white;
-  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-  cursor: pointer;
+  -webkit-box-pack: center;
+  justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;
-  width: 6.75rem;
-  /*108px*/
-  height: 3rem;
-  /*48px*/
   opacity: 1;
-}
-
-.button-small:hover {
-  background-color: var(--hover-color);
-}
-
-.button-small:active {
-  background-color: var(--active-color);
-  transform: translateY(1px);
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 3rem;
+  padding: 0px 24px;
+  margin-left: 4px;
+  background-color: rgb(233, 234, 235);
+  border-color: rgb(233, 234, 235);
   box-shadow: none;
+  color: rgb(189, 194, 196);
+  cursor: not-allowed;
+}
+
+
+.button-small:hover:enabled {
+  background-color: var(--hover-color);
 }
