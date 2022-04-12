@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input,OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,17 +7,15 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   @Input() scrollDeltaY!: number;
+  @Input() isDarkModeOn!: boolean;
   @Output() setLang = new EventEmitter<string>();
   
-  colorLink: string = 'var(--light-purple)';
   isNavbar: boolean = true;
-
   isSubmenuVisible: boolean = false;
-
+  
   constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   openBottomNavbar() {
     document.body.style.overflow = 'hidden';
@@ -28,5 +26,4 @@ export class NavbarComponent implements OnInit {
     document.body.style.overflow = 'overlay';
     this.isSubmenuVisible = false;
   }
-
 }

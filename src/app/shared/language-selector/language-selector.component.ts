@@ -11,6 +11,7 @@ export class LanguageSelectorComponent implements OnInit {
   @Input() isNavbar: boolean = false;
   @Input() isFooter: boolean = false;
   @Input() langSelected: string = 'en';
+  @Input() isDarkModeOn: boolean = false;
   @Output() navLangSelected = new EventEmitter<string>();
 
   languages: ILanguage[] = []
@@ -21,7 +22,7 @@ export class LanguageSelectorComponent implements OnInit {
     this.languages = this.languageService.getAll();
   }
 
-  setLang(value: string) {
+  setLang(value: string): string {
     this.langSelected = value;
     this.navLangSelected.emit(this.langSelected);
     return this.langSelected;

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { interval, Observable, PartialObserver, tap } from 'rxjs';
+import { interval, Observable, tap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'

@@ -42,7 +42,6 @@
   z-index: 20;
   position: fixed;
   left: 0;
-  border-bottom: 1px solid var(--grey-border);
   height: 3.5rem;
   display: flex;
   flex-flow: row nowrap;
@@ -50,7 +49,6 @@
   align-items: center;
   padding: 0 1rem 0 1rem;
   width: 100%;
-  background-color: white;
 }
 
 .collapse-nav {
@@ -109,8 +107,6 @@
   justify-content: center;
   align-items: center;
   border: none;
-  background-color: transparent;
-  color: var(--light-purple);
 }
 
 .a-nav {
@@ -122,7 +118,6 @@
 
 .dropbtn-nav a:hover,
 .dropbtn-nav a:active {
-  background: var(--grey);
   border-radius: 1rem;
   cursor: pointer;
 }
@@ -130,8 +125,6 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: white;
-  border: 1px solid var(--grey-border);
   border-radius: 1rem;
   padding: 0.25rem 0;
   width: 17.5rem;
@@ -145,31 +138,16 @@
   align-items: center;
   width: 100%;
   height: 3rem;
-  color: var(--light-purple);
   white-space: nowrap;
   padding: 0 1rem;
 }
 
-.dropdown-content a:hover {
-  background-color: var(--grey);
-}
-
 .dropdown-content a:active {
-  color: var(--purple);
   opacity: 0.85;
   transform: translateY(1px);
 }
 
-.dropdown-content a:link {
-  color: var(--light-purple);
-}
-
-.dropdown-content a:visited {
-  color: var(--light-purple);
-}
-
 .dropdown-content hr {
-  border-color: var(--grey-border);
   border-style: solid;
   border-width: 1px 0 0;
   margin: 0.25rem 0;
@@ -184,13 +162,11 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  border-bottom: 1px solid var(--grey-border);
   height: 3rem;
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
   padding: 0.313rem 0.5rem 0;
-  background-color: white;
 }
 
 .navlink-bottom {
@@ -214,7 +190,6 @@
 }
 
 .dropdown-content-bottom {
-  /* display: none; */
   position: fixed;
   bottom: 3rem;
   left: 0;
@@ -233,7 +208,6 @@
   left: 0;
   width: 100vw;
   height: calc(100vh - 3rem);
-  background-color: rgba(40, 13, 95, 0.57);
   z-index: 18;
 }
 

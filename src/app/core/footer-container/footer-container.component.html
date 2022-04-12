@@ -48,22 +48,14 @@
           <a class="f-row2-links" href="#"><img src="assets/icons/telegram-mauve.svg" /></a>
         </div>
 
-        <div class="telegram-links">
-          <a href="#" target="_blanck">English</a>
-          <a href="#" target="_blanck">Bahasa Indonesia</a>
-          <a href="#" target="_blanck">中文</a>
-          <a href="#" target="_blanck">Tiếng Việt</a>
-          <a href="#" target="_blanck">Italiano</a>
-          <a href="#" target="_blanck">русский</a>
-          <a href="#" target="_blanck">Türkiye</a>
-          <a href="#" target="_blanck">Português</a>
-          <a href="#" target="_blanck">Español</a>
-          <a href="#" target="_blanck">日本語</a>
-          <a href="#" target="_blanck">Français</a>
-          <a href="#" target="_blanck">Datch</a>
-          <a href="#" target="_blanck">Filipino</a>
-          <a href="#" target="_blanck">ქართული ენა</a>
-          <a href="#" target="_blanck">Announcements</a>
+        <div class="telegram-links" [ngClass]="isDarkModeOn ? 'bcg-footer text-mauve' : 'bcg-white text-lightpurple'">
+          <a
+            href="#"
+            target="_blanck"
+            *ngFor="let language of languages"
+            [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">
+            {{ language }}
+          </a>
         </div>
       </div>
 
@@ -78,7 +70,7 @@
     <div class="f-row3">
       <div class="d-flex justify-content-center align-items-center">
         <app-dark-mode></app-dark-mode>
-        <app-language-selector [isFooter]="isFooter" [langSelected]="langSelected"></app-language-selector>
+        <app-language-selector [isDarkModeOn]="isDarkModeOn" [isFooter]="isFooter" [langSelected]="langSelected"></app-language-selector>
       </div>
 
       <div class="pancake-trade">

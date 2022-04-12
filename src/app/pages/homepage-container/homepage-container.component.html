@@ -1,15 +1,15 @@
 <!--HERO SECTION-->
-<section class="hero-section">
+<section class="hero-section" [ngClass]="isDarkModeOn ? 'bcg-gradient-purple-black' : 'bcg-gradient'">
   <div class="hero-container">
     <div class="cta-hero">
       <h2 class="h2">The moon is made of pancakes.</h2>
-      <h3 class="h3">
+      <h3 class="h3" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">
         Trade, earn, and win crypto on the most popular decentralized
         platform in the galaxy.
       </h3>
 
       <div class="cta-buttons">
-        <app-general-button [button]="{ class: 'button-standard', text: 'Connect Wallet', imgVisible: false}" ></app-general-button>
+        <app-modal-connect-wallet [buttonClass]="'button-standard'" [isDarkModeOn]="isDarkModeOn"></app-modal-connect-wallet>
         <app-general-button [button]="{ class: 'button-medium', text: 'Trade Now', imgVisible: false}" ></app-general-button>
       </div>
     </div>
@@ -98,7 +98,7 @@
     </div>
   </div>
 
-  <div class="cta-divider">
+  <div class="cta-divider" *ngIf="!isDarkModeOn, else divider1Darkmode">
     <svg
       viewBox="0 0 1660 339"
       width="100%"
@@ -129,47 +129,52 @@
       </defs>
     </svg>
   </div>
+  <ng-template #divider1Darkmode>
+    <div class="cta-divider">
+      <svg viewBox="0 0 1660 339" width="100%" color="text" xmlns="http://www.w3.org/2000/svg"><path d="M804 166.523C520.5 166.523 267.5 290.022 0 304V338.5H1660V0C1358.83 0 1104 166.523 804 166.523Z" fill="url(#paint0_linear_dark)"></path><defs><linearGradient id="paint0_linear_dark" x1="830" y1="83.5" x2="830" y2="338.5" gradientUnits="userSpaceOnUse"><stop stop-color="#08060B" stop-opacity="0.2"></stop><stop offset="0.545554" stop-color="#08060B" stop-opacity="0.5"></stop><stop offset="1" stop-color="#08060B"></stop></linearGradient></defs></svg>
+    </div>
+  </ng-template>
 </section>
 
 <!--SEC 1 > USED BY MILLIONS-->
-<section class="home-sec1 sec-wrapper">
+<section class="sec1 sec-wrapper" [ngClass]="isDarkModeOn ? 'bcg-gradient-purple-darkmode' : 'bcg-gradient-purple'">
   <img class="mb-4" src="./assets/icons/bunny-purple.svg" />
-  <h3 class="h2 subtitle-sec">Used by millions.</h3>
-  <h3 class="h2 subtitle-sec">Trusted with billions.</h3>
-  <p class="p-light-purple text-center">PancakeSwap has the most users of any decentralized platform, ever.</p>
-  <p class="p-light-purple text-center">And those users are now entrusting the platform with over $12 billion in funds.</p>
-  <p class="p-light-purple text-center">Will you join them?</p>
+  <h3 class="h2 subtitle-sec" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">Used by millions.</h3>
+  <h3 class="h2 subtitle-sec" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">Trusted with billions.</h3>
+  <p class="p text-center" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">PancakeSwap has the most users of any decentralized platform, ever.</p>
+  <p class="p text-center" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">And those users are now entrusting the platform with over $12 billion in funds.</p>
+  <p class="p text-center" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Will you join them?</p>
 
   <div class="stats-card">
-    <div class="solid-shadow">
-      <div class="stats-container">
+    <div class="solid-shadow" [ngClass]="isDarkModeOn ? 'bcg-dark-shadow' : 'bcg-grey'">
+      <div class="stats-container" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
         <img class="stats-icons" src="./assets/icons/users-purple.svg" />
         <div class="stats-text">
-          <h3 class="h2">3 million</h3>
+          <h3 class="h2" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">3 million</h3>
           <h3 class="h2 key-word1 mb-4">users</h3>
-          <p class="p-light-purple">in the last 30 days</p>
+          <p class="p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">in the last 30 days</p>
         </div>
       </div>
     </div>
 
-    <div class="solid-shadow">
-      <div class="stats-container">
+    <div class="solid-shadow" [ngClass]="isDarkModeOn ? 'bcg-dark-shadow' : 'bcg-grey'">
+      <div class="stats-container" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
         <img class="stats-icons" src="./assets/icons/trades-cyan.svg" />
         <div class="stats-text">
-          <h3 class="h2">43 million</h3>
+          <h3 class="h2" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">43 million</h3>
           <h3 class="h2 key-word2 mb-4">trades</h3>
-          <p class="p-light-purple">made in the last 30 days</p>
+          <p class="p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">made in the last 30 days</p>
         </div>
       </div>
     </div>
 
-    <div class="solid-shadow">
-      <div class="stats-container">
+    <div class="solid-shadow" [ngClass]="isDarkModeOn ? 'bcg-dark-shadow' : 'bcg-grey'">
+      <div class="stats-container" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
         <img class="stats-icons" src="./assets/icons/staked-fuchsia.svg" />
         <div class="stats-text">
-          <h3 class="h2">$12 billion</h3>
+          <h3 class="h2" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">$12 billion</h3>
           <h3 class="h2 key-word3 mb-4">staked</h3>
-          <p class="p-light-purple">Total Value Locked</p>
+          <p class="p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Total Value Locked</p>
         </div>
       </div>
     </div>
@@ -177,19 +182,19 @@
 </section>
 
 <!--DIVIDER 1-->
-<div class="divider1">
+<div class="divider1" [ngClass]="isDarkModeOn ? 'fill-dark' : 'fill-column-border'">
   <svg viewBox="0 0 1660 48" preserveAspectRatio="none" width="20px" xmlns="http://www.w3.org/2000/svg" class="divider">
     <path d="M1660 48C1139.02 46.1887 336.256 15.2453 0 0H1660V48Z"></path>
   </svg>
 </div>
 
 <!--SEC 2 > TRADE ANYTHING-->
-<section class="sec-wrapper sec2">
+<section class="sec-wrapper sec2" [ngClass]="{'bcg-dark': isDarkModeOn}">
   <div class="sec-container">
     
     <div class="sec-left">
-      <h3 class="h2 subtitle-sec mb-4"><span>Trade</span> anything. No registration, no hassle.</h3>
-      <p class="p-light-purple sec-p">Trade any token on Binance Smart Chain in seconds, just by connecting your wallet.</p>
+      <h3 class="h2 subtitle-sec mb-4" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'"><span>Trade</span> anything. No registration, no hassle.</h3>
+      <p class="p sec-p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Trade any token on Binance Smart Chain in seconds, just by connecting your wallet.</p>
 
       <div class="cta-buttons">
         <app-general-button [button]="{ class: 'button-small', text: 'Trade Now', imgVisible: false}"></app-general-button>
@@ -265,10 +270,10 @@
 </section>
 
 <!--SEC 3 > EARN PASSIVE-->
-<section class="sec-wrapper sec3">
+<section class="sec-wrapper sec3" [ngClass]="isDarkModeOn ? 'bcg-gradient-dark' : 'bcg-gradient-pink-blue'">
   
   <!--DIVIDER 2-->
-  <div class="divider-top">
+  <div class="divider-top" [ngClass]="isDarkModeOn ? 'fill-black' : 'fill-white'">
     <svg viewBox="0 0 1660 48" preserveAspectRatio="none" width="20px" xmlns="http://www.w3.org/2000/svg" class="divider divider2">
       <path d="M-346 48C174.985 46.1887 977.744 15.2453 1314 0H-346V48Z">
       </path>
@@ -343,8 +348,8 @@
     </div>
 
     <div class="sec-right">
-      <h3 class="h2 subtitle-sec mb-4"><span>Earn</span> passive income with crypto.</h3>
-      <p class="p-light-purple sec-p">PancakeSwap makes it easy to make your crypto work for you.</p>
+      <h3 class="h2 subtitle-sec mb-4" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'"><span>Earn</span> passive income with crypto.</h3>
+      <p class="p sec-p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">PancakeSwap makes it easy to make your crypto work for you.</p>
 
       <div class="cta-buttons">
         <app-general-button [button]="{ class: 'button-small', text: 'Explore', imgVisible: false}"></app-general-button>
@@ -354,20 +359,24 @@
   </div>
 
   <div class="sec3-grid-wrapper">
-    <app-home-table [dataTableFarm]="dataTableFarm" [dataTableSyrup]="dataTableSyrup" [isTableVisible]="isTableVisible"></app-home-table>
+    <app-home-table
+      [dataTableFarm]="dataTableFarm"
+      [dataTableSyrup]="dataTableSyrup"
+      [isTableVisible]="isTableVisible"
+      [isDarkModeOn]="isDarkModeOn">
+    </app-home-table>
   </div>
 </section>
 
-
 <!--SEC 4 > WIN-->
-<section class="sec4">
+<section class="sec4" [ngClass]="isDarkModeOn ? 'bcg-gradient-dark-blue' : 'bcg-gradient-blue'">
 
   <div class="sec-wrapper">
     <div class="sec-container">
-      <div class="win-container">
-        <h2 class="h2 subtitle-sec mb-4"><span>Win </span>millions in prizes</h2>
-        <p class="p-light-purple">Provably fair, on-chain games.</p>
-        <p class="p-light-purple">Win big with PancakeSwap.</p>
+      <div class="win-container" [ngClass]="isDarkModeOn ? 'bcg-black-transparent border-dark' : 'bcg-white-transparent border-grey'">
+        <h2 class="h2 subtitle-sec mb-4" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'"><span>Win </span>millions in prizes</h2>
+        <p class="p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Provably fair, on-chain games.</p>
+        <p class="p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Win big with PancakeSwap.</p>
 
         <!-- Card in Home prediction -->
         <div class="wrapper-prediction">
@@ -403,11 +412,11 @@
 </section>
 
 <!--SEC 5 > CAKE-->
-<section class="sec-wrapper sec2 sec5">
+<section class="sec-wrapper sec2 sec5"  [ngClass]="{'bcg-dark': isDarkModeOn}">
   <div class="sec-container">          
     <div class="sec-left">
-      <h3 class="h2 subtitle-sec mb-4"><span>CAKE</span> makes our world go round.</h3>
-      <p class="p-light-purple sec-p">CAKE token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!</p>
+      <h3 class="h2 subtitle-sec mb-4" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'"><span>CAKE</span> makes our world go round.</h3>
+      <p class="p sec-p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">CAKE token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!</p>
 
       <div class="cta-buttons">
         <app-general-button [button]="{ class: 'button-small', text: 'Buy CAKE', imgVisible: false}"></app-general-button>
@@ -470,23 +479,23 @@
   <div class="sec5-grid-container">
     <div class="sec5-grid-box">
       <div class="sec5-grid-column">
-        <p class="p-light-purple">Total supply</p>
-        <p class="h4">251,792,762</p>
+        <p class="p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Total supply</p>
+        <p class="h4" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">251,792,762</p>
       </div>
 
       <div class="sec5-grid-column px-3 column-border">
-        <p class="p-light-purple">Burned to date</p>
-        <p class="h4">318,897,425</p>
+        <p class="p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Burned to date</p>
+        <p class="h4" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">318,897,425</p>
       </div>
 
       <div class="sec5-grid-column">
-        <p class="p-light-purple">Market cap</p>
-        <p class="h4">$3 billion</p>
+        <p class="p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Market cap</p>
+        <p class="h4" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">$3 billion</p>
       </div>
 
       <div class="sec5-grid-column px-3 column-border">
-        <p class="p-light-purple">Current emissions</p>
-        <p class="h4">14.25/block</p>
+        <p class="p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Current emissions</p>
+        <p class="h4" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">14.25/block</p>
       </div>
     </div>
   </div>
@@ -508,7 +517,7 @@
       <p>Connect your crypto wallet to start using the app in seconds.<span>No registration needed.</span></p>
       <a href="#" class="link mb-4">Learn how to start</a>
 
-      <app-modal-connect-wallet [buttonClass]="'button-standard'"></app-modal-connect-wallet>
+      <app-modal-connect-wallet [buttonClass]="'button-standard'" [isDarkModeOn]="isDarkModeOn"></app-modal-connect-wallet>
     </div>
     
     <div class="sec6-svg-container">

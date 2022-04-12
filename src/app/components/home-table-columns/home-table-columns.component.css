@@ -12,7 +12,6 @@
 
 .earn-data-column p:first-child {
   margin-bottom: 0.5rem;
-  color: var(--purple);
 }
 
 .earn-data-column p:last-child {
@@ -30,7 +29,6 @@
   }
   
   .earn-data-column {
-    border-left: 1px solid var(--column-border);
     padding-left: 1rem;
   }
 }
