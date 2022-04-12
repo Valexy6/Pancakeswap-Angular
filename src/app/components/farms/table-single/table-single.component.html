@@ -52,27 +52,33 @@
     <ng-template ngbPanelContent>
       <div class="d-flex align-items-center justify-content-between">
         <div class="d-flex flex-column">
-          <a routerLink="add">Get {{ farm.name | titlecase }} LP</a>
-          <a href="">View Contract</a>
-          <a href="">See Pair Info</a>
-
-          <label>{{ farm.type | titlecase }}</label>
+          <a routerLink="add">Get {{ farm.name | titlecase }} LP<img src="assets/icons/arrow-oblique-cyan.svg"></a>
+          <a href="">View Contract<img src="assets/icons/arrow-oblique-cyan.svg"></a>
+          <a href="">See Pair Info<img src="assets/icons/arrow-oblique-cyan.svg"></a>
+          <div class="core-border d-flex align-items-center justify-content-between">
+            <label><img class="check-icon" src="assets/icons/check-purple.svg">{{ farm.type | titlecase }}</label>
+          </div>
         </div>
-
-        <div class="d-flex flex-column earned">
-          <h5>Cake Earned</h5>
-          <div class="d-flex justify-content-center align-items-center">
-            <h6>{{ farm.cakeEarned }}</h6>
-            <button class="btn">Harvest</button>
+        <div class="bord">
+          <div class="d-flex flex-column earned">
+            <h5 class="p-small">CAKE EARNED</h5>
+            <div class="d-flex justify-content-center align-items-center">
+              <h6>{{ farm.cakeEarned }}</h6>
+              <button disabled class="button-small">
+                <div>Harvest</div>
+              </button>
+            </div>
           </div>
         </div>
 
-        <div class="d-flex flex-column farming">
-          <h5>Start farming</h5>
-          <div>
-            <button class="button-large">
-              <div>Connect Wallet</div>
-            </button>
+        <div class="bord">
+          <div class="d-flex flex-column farming">
+            <h5 class="p-small">START FARMING</h5>
+            <div>
+              <button class="button-large">
+                <div>Connect Wallet</div>
+              </button>
+            </div>
           </div>
         </div>
       </div>
