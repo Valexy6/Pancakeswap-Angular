@@ -1,10 +1,10 @@
-<button class="button-clock" (click)="open(content)">
-  <img src="../../assets/icons/cirle-clock-lightpurple.svg" alt="" />
+<button class="button-clock mr-1-2 ml-1 d-flex align-items-center h-100" type="button">
+  <img src="assets/icons/circle-clock-lightpurple.svg" alt="" (click)="open(content)"/>
 </button>
 
 <ng-template #content let-modal>
   <div >
-    <div class="text">
+    <div class="text" [ngClass]="isDarkModeOn ? 'bcg-dark-modal text-white-footer boreder-bottom-dark' : 'bcg-gradient-pink-blue text-darkpurple boreder-bottom-grey'">
       <h5>Recent Transactions</h5>
       <button
         type="button"
@@ -12,11 +12,11 @@
         aria-label="Close"
         (click)="modal.close('Cross click')"
       >
-        <img src="../../../assets/icons/exit.svg" alt="exit">
+      <img src="assets/icons/exit.svg" alt="exit">
       </button>
     </div>
-    <div class="wallet">
-      <button class="button-standard">Connect Wallet</button>
+    <div class="p-4" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
+      <app-modal-connect-wallet [buttonClass]="'button-large'"[isDarkModeOn]="isDarkModeOn"></app-modal-connect-wallet>
     </div>
   </div>
 </ng-template>
