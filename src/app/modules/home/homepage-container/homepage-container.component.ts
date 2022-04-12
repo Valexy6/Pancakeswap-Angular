@@ -2,8 +2,9 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
 import { IHomeTable } from 'src/app/models/HomeTable';
 import { HomeDataTableService } from './home-data-table.service';
-import { UtilitiesService } from '../../services/utilities.service';
-import { DarkModeService } from 'src/app/shared/dark-mode/dark-mode.service';
+import { UtilitiesService } from '../../../services/utilities.service';
+import { DarkModeService } from 'src/app/modules/shared/components/dark-mode/dark-mode.service';
+
 
 @Component({
   selector: 'app-homepage-container',

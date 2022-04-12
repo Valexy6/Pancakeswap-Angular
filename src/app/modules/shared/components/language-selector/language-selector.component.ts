@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { LanguageService } from 'src/app/shared/language-selector/language.service';
+
 import { ILanguage } from 'src/app/models/Language';
+import { LanguageService } from './language.service';
 
 @Component({
   selector: 'app-language-selector',
