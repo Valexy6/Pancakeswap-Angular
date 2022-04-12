@@ -49,7 +49,7 @@
             <div class="select-currency-container">
               <div class="select-currency">
                 <div class="select-currency-input">
-                  <button class="button-currency">
+                  <button class="button-currency" (click)="open(content)">
                     <div>Select a currency</div>
                     <img
                       src="assets/icons/arrow-little-down.svg"
@@ -82,7 +82,7 @@
             <div class="select-currency-container">
               <div class="select-currency">
                 <div class="select-currency-input">
-                  <button class="button-currency">
+                  <button class="button-currency" (click)="open(content)">
                     <div>Select a currency</div>
                     <img
                       src="assets/icons/arrow-little-down.svg"
@@ -166,3 +166,45 @@
     </div>
   </div>
 </div>
+
+<!-- Modal -->
+<!-- Modal -->
+<ng-template #content let-modal>
+  <div class="modal-box-connect">
+    <div class="modal-wallet-header">
+      <h3 class="h3 m-0">Select a Token</h3>
+      <button type="button" class="close-btn" (click)="modal.close('Close click')">
+        <img src="assets/icons/exit.svg" />
+      </button>
+    </div>
+
+    
+
+    </div>
+
+    <div class="modal-section">
+      <div>
+        <input class="search-field" type="text" placeholder="Search name or paste address" [formControl]="filter"/>
+
+        <div class="modal-currency">
+          <div class="modal-currency-container">
+            <div class="box-currency">
+              <div class="container-ciclo-currency" *ngFor="let currencyModals of currency$ | async; index as i">
+                <img src="{{ currencyModals.img }}" alt="" style="width: 24px; align-self: center;">
+                <div class="label-container">
+                  <div class="label-currency-1"> <ngb-highlight [result]="currencyModals.label1" [term]="filter.value"></ngb-highlight> </div>
+                  <div class="label-currency-2"> <ngb-highlight [result]="currencyModals.label2" [term]="filter.value"></ngb-highlight> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-currency-modal">
+        <button> Manage Tokens</button>
+      </div>
+
+      
+    </div>
+</ng-template>

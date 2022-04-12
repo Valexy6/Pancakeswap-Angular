@@ -3,7 +3,7 @@
   <!-- CARD EXCHANGE -->
   <div class="box-card-exchange">
 
-    <div class="card-1-exchange">
+    <div *ngIf="!isShown" class="card-1-exchange">
       <div class="top-card-1-exchange">
         <div class="left-side-card-1">
           <div class="icons-left-card-1">
@@ -63,8 +63,17 @@
               
               <div class="top-card-2">
                 <div class="box-top-card-2">
-                  <button class="button-left-card-2 button-zoom">
-                    <img src="assets/icons/staked-slash-light-purple.svg" alt="staked staked slash light purple">
+                  <button (click)="divShow()" class="button-left-card-2 button-zoom">
+                    <img
+                    *ngIf="!isShown"
+                    src="assets/icons/staked-slash-light-purple.svg"
+                    alt="icon arrow down"
+                  />
+                  <img
+                    *ngIf="isShown"
+                    src="assets/icons/staked-light-purple.svg"
+                    alt="icon arrow up"
+                  />
                   </button>
 
                   <div class="top-card-text">
@@ -91,7 +100,7 @@
               <div class="mid-card-2">
                 <div class="tokens-trade">
                     <div class="tokens-trade-crypto">
-                      <button class="tokens-trade-button">
+                      <button class="tokens-trade-button" (click)="open(content)">
                         <div class="tokens-trade-crypto-select">
                           <img src="assets/icons/bnb-token.svg" alt="bnb-icon" style="margin-right: 8px;">
                           <div class="text-left-card-1">BNB</div>
@@ -117,7 +126,7 @@
                     </div>
 
                     <div class="tokens-trade-crypto">
-                      <button class="tokens-trade-button">
+                      <button class="tokens-trade-button" (click)="open(content)">
                         <div class="tokens-trade-crypto-select">
                           <img src="assets/icons/pancakes.svg" alt="pancakes-icon" style="margin-right: 8px;">
                           <div class="text-left-card-1">CAKE</div>
@@ -182,3 +191,44 @@
     </div>
   </div>
 </div>
+
+<!-- Modal -->
+<ng-template #content let-modal>
+  <div class="modal-box-connect">
+    <div class="modal-wallet-header">
+      <h3 class="h3 m-0">Select a Token</h3>
+      <button type="button" class="close-btn" (click)="modal.close('Close click')">
+        <img src="assets/icons/exit.svg" />
+      </button>
+    </div>
+
+    
+
+    </div>
+
+    <div class="modal-section">
+      <div>
+        <input class="search-field" type="text" placeholder="Search name or paste address" [formControl]="filter"/>
+
+        <div class="modal-currency">
+          <div class="modal-currency-container">
+            <div class="box-currency">
+              <div class="container-ciclo-currency" *ngFor="let currencyModals of currency$ | async; index as i">
+                <img src="{{ currencyModals.img }}" alt="" style="width: 24px; align-self: center;">
+                <div class="label-container">
+                  <div class="label-currency-1"> <ngb-highlight [result]="currencyModals.label1" [term]="filter.value"></ngb-highlight> </div>
+                  <div class="label-currency-2"> <ngb-highlight [result]="currencyModals.label2" [term]="filter.value"></ngb-highlight> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-currency">
+        <button> Manage Tokens</button>
+      </div>
+
+      
+    </div>
+</ng-template>
