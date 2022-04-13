@@ -70,6 +70,11 @@ a {
   left: 6px;
 }
 
+a {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
 .bord {
   padding: 16px;
   border: 2px solid var(--background-color);
@@ -82,6 +87,7 @@ a {
 
 .check-icon {
   width: 14px;
+  margin-right: 4px;
 }
 
 .core-border {
@@ -120,4 +126,11 @@ a {
 
 .button-small:hover:enabled {
   background-color: var(--hover-color);
+}
+
+h6 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--dark-purple);
 }
