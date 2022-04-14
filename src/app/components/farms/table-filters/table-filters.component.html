@@ -25,65 +25,28 @@
   </div>
 
   <div class="d-flex align-items-center">
-    <div class="d-flex flex-column me-3">
+
+    <div class="box">
       <h3 class="h5">Sort by</h3>
-      <div class="custom-select">
-        <select name="" id="" class="me-3 drop-down">
-          <option value="">Hot</option>
-          <option value="">Apr</option>
-          <option value="">Multiplier</option>
-          <option value="">Earned</option>
-          <option value="">Liquidity</option>
-          <option value="">Latest</option>
-        </select>
+
+      <div class="mr-3">
+        <div class="sort-by-container" [ngStyle]="{'border-radius': !isVisible ? '16px' : '16px 16px 0 0'}">
+          <div class="sort-by-head" (click)="showOptions()" >
+            <p class="p">{{ optionSelected }}</p>
+            <img src="assets/icons/arrow-sort.svg" />
+          </div>
+
+          <div class="sort-by-list" *ngIf="isVisible">
+            <ul class="m-0 p-0">
+              <li *ngFor="let option of optionsList" (click)="selectOption(option)">{{ option }}</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
 
-
-
-
-
-
-
-
-    <!-- <div class="sc-c4ec0fdf-0 sc-d42adf18-2 dGKbaC HURQs">
-    <div class="sc-d42adf18-0 hvSPns">
-      <div color="text" class="sc-be365e-0 jHwFXK">Hot</div>
-    </div><svg viewBox="0 0 24 24" color="text" width="20px" xmlns="http://www.w3.org/2000/svg"
-      class="sc-5a69fd5e-0 fIBjTm">
-      <path
-        d="M8.71005 11.71L11.3001 14.3C11.6901 14.69 12.3201 14.69 12.7101 14.3L15.3001 11.71C15.9301 11.08 15.4801 10 14.5901 10H9.41005C8.52005 10 8.08005 11.08 8.71005 11.71Z">
-      </path>
-    </svg>
-    <div class="sc-d42adf18-1 dOsQBd">
-      <ul class="sc-d42adf18-3 fxFHHh">
-        <li class="sc-d42adf18-4 jAEmUH">
-          <div color="text" class="sc-be365e-0 jHwFXK">APR</div>
-        </li>
-        <li class="sc-d42adf18-4 jAEmUH">
-          <div color="text" class="sc-be365e-0 jHwFXK">Multiplier</div>
-        </li>
-        <li class="sc-d42adf18-4 jAEmUH">
-          <div color="text" class="sc-be365e-0 jHwFXK">Earned</div>
-        </li>
-        <li class="sc-d42adf18-4 jAEmUH">
-          <div color="text" class="sc-be365e-0 jHwFXK">Liquidity</div>
-        </li>
-        <li class="sc-d42adf18-4 jAEmUH">
-          <div color="text" class="sc-be365e-0 jHwFXK">Latest</div>
-        </li>
-      </ul>
-    </div>
-  </div> -->
-
-
-
-
-
-
-
-    <div class="">
+    <div class="mx-3">
       <h3>Search</h3>
       <div>
         <input class="search-field" type="text" placeholder="Search Farms" />
