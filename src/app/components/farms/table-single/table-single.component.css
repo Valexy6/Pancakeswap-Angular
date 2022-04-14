@@ -97,7 +97,6 @@ a {
   height: 24px;
 }
 
-
 .button-small {
   align-items: center;
   border: 0px;
@@ -121,11 +120,6 @@ a {
   box-shadow: none;
   color: rgb(189, 194, 196);
   cursor: not-allowed;
-}
-
-
-.button-small:hover:enabled {
-  background-color: var(--hover-color);
 }
 
 h6 {
