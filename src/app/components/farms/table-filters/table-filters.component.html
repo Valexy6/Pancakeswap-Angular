@@ -42,9 +42,10 @@
     </div>
 
     <div class="mx-3">
-      <h3>Search</h3>
+      <h3 [ngClass]="isDarkModeOn ? 'text-white-footer' : 'dark-purple'">Search</h3>
       <div>
-        <input class="search-field" type="text" placeholder="Search Farms" />
+        <input class="search-field" type="text" placeholder="Search Farms"
+          [ngClass]="isDarkModeOn ? 'bcg-hover-a' : 'background-color'" />
       </div>
     </div>
   </div>
