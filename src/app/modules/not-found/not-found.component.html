@@ -1,0 +1,8 @@
+<div class="container-404 d-flex flex-column justify-content-center align-items-center" [ngClass]="isDarkModeOn ? 'bcg-dark text-white-footer' : 'bcg-white-grey text-darkpurple'">
+  <img src="assets/icons/bunny-big.svg" alt="pancakeswap logo" class="mb-2" />
+  <h2 class="h2">404</h2>
+  <p class="p mb-3">Oops, page not found.</p>
+  <app-general-button
+    [button]="{ class: 'button-squashed', text: 'Back Home', link: '/home', imgVisible: false }"
+  ></app-general-button>
+</div>

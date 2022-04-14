@@ -1,6 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
-import { DarkModeService } from './modules/shared/components/dark-mode/dark-mode.service';
+import { DarkModeService } from './modules/shared/services/dark-mode.service';
 
 @Component({
   selector: 'app-root',

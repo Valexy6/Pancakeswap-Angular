@@ -1,17 +1,17 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
 import { IHomeTable } from 'src/app/models/HomeTable';
-import { HomeDataTableService } from './home-data-table.service';
-import { UtilitiesService } from '../../../services/utilities.service';
-import { DarkModeService } from 'src/app/modules/shared/components/dark-mode/dark-mode.service';
 
+import { UtilitiesService } from 'src/app/services/utilities.service';
+import { DarkModeService } from '../../shared/services/dark-mode.service';
+import { HomeDataTableService } from '../services/home-data-table.service';
 
 @Component({
-  selector: 'app-homepage-container',
-  templateUrl: './homepage-container.component.html',
-  styleUrls: ['./homepage-container.component.css']
+  selector: 'app-homepage',
+  templateUrl: './homepage.component.html',
+  styleUrls: ['./homepage.component.css']
 })
-export class HomepageContainerComponent implements OnInit, OnDestroy {
+export class HomepageComponent implements OnInit, OnDestroy {
 
   dataTableFarm!: IHomeTable[];
   dataTableSyrup!: IHomeTable[];

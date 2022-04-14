@@ -10,8 +10,7 @@ import { DesignSystemComponent } from "./design-system/design-system.component";
     RouterModule.forChild([
       { path: '', component: DesignSystemComponent},
     ])
-  ],
-  exports: [DesignSystemComponent]
+  ]
 })
 export class DesignSystemModule {
 

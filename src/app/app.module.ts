@@ -15,7 +15,7 @@ import { HomeModule } from './modules/home/home.module';
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterContainerComponent,
+    FooterContainerComponent
   ],
   imports: [
     BrowserModule,
