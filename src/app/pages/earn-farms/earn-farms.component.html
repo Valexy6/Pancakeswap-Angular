@@ -1,0 +1,8 @@
+<app-hero [title]="'Farms'" [description]="'Stake LP tokens to earn.'"
+  [link]="{ name: 'Community Auctions', url: 'auction' }">
+</app-hero>
+
+<div class="container">
+  <app-table-filters></app-table-filters>
+  <app-table [isDarkModeOn]="isDarkModeOn" [farms]="farms"></app-table>
+</div>

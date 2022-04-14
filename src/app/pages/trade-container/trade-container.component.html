@@ -1,7 +1,4 @@
-<div id="container" style="margin-top: 4rem;" [ngClass]="isDarkModeOn ? 'bcg-gradient-purple-black' : 'bcg-gradient'">
-  <nav class="d-flex align-items-center justify-content-center" >
-    <a routerLink="swap" class="me-3" routerLinkActive="active">Swap</a>
-    <a routerLink="liquidity" routerLinkActive="active">Liquidity</a>
-  </nav>
+<div style="margin-top: 4rem;" [ngClass]="isDarkModeOn ? 'bcg-gradient-purple-black' : 'bcg-white-grey'">
+  <app-secondary-menu [items]="menuItems"></app-secondary-menu>
   <router-outlet></router-outlet>
 </div>

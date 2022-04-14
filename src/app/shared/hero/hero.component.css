@@ -1,0 +1,24 @@
+.hero-container {
+  background: var(--gradient);
+}
+
+h1 {
+  color: var(--purple);
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  margin-left: 3rem;
+}
+
+h4 {
+  color: var(--dark-purple);
+  margin-left: 3rem;
+  margin-bottom: 0.5rem;
+
+
+}
+
+a {
+  color: var(--cyan);
+  margin-left: 3rem;
+  margin-bottom: 1.5rem;
+}
