@@ -26,9 +26,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--gradient-pink-blue);
-  border-bottom: 1px solid var(--grey-border);
-  color: var(--dark-purple);
 }
 
 .close-btn {
@@ -39,11 +36,6 @@
 
 .modal-settings-body {
   padding: 1.5rem;
-}
-
-.sub-title {
-  color: var(--purple);
-  padding: 0rem 1.5rem;
 }
 
 /* squashed button */
@@ -85,7 +77,6 @@
   border: 0px;
   font-size: 1rem;
   font-weight: 600;
-  background-color: var(--grey);
   color: var(--cyan);
   cursor: pointer;
   letter-spacing: 0.03em;
@@ -110,7 +101,6 @@
   border: 0px;
   font-size: 1rem;
   font-weight: 600;
-  background-color: var(--grey);
   color: var(--cyan);
   cursor: pointer;
   letter-spacing: 0.03em;
@@ -140,22 +130,19 @@
   cursor: pointer;
 }
 
-hr {
-  border-top: 1px solid var(--grey-borders)
+.hr-light {
+  border-top: 1px solid var(--fill-dark)
 }
 
-p {
-  color: var(--dark-purple);
+.hr-dark {
+  border-top: 1px solid var(--dark-solid-shadow)
 }
 
 /* general inputs */
-
-
 .input-button {
   border: none;
   outline: 0px;
   border-radius: 1rem;
-  background-color: var(--grey);
   color: var(--cyan);
   font-size: 1rem;
   font-weight: 600;

@@ -1,4 +1,4 @@
-import { Component,  OnInit } from '@angular/core';
+import { Component,  Input,  OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -7,6 +7,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./modal-settings.component.css']
 })
 export class ModalSettingsComponent implements OnInit {
+  @Input() isDarkModeOn!: boolean;
   closeResult!: string;
 
   expertActive = false;

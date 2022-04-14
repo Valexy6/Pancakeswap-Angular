@@ -215,7 +215,7 @@
       </div>
 
       <h3 class="h5 mb-3 mt-3">Gradients</h3>
-      <div class="row row-cols-auto gx-5 mb-4">
+      <div class="row row-cols-auto mb-4">
 
         <div>
           <div class="box-color" style="background: var(--gradient);"></div>
@@ -241,26 +241,26 @@
   <div class="container p-4">
     <div class="card p-4 shadow border-0">
       <h2 class="h2 mb-5">Typograhy</h2>
-      <div class="row row-cols-auto gx-5 mb-4">
+      <div class="d-flex flex-column justify-content-start mb-4">
 
-        <div class="mb-4 me-4 h1" style="line-height: 1;">
-          H1<br>Kanit<br>64px
+        <div class="mb-5 h1" style="line-height: 1;">
+          H1 - Kanit 64px
         </div>
 
-        <div class="mb-4 me-4 h2" style="line-height: 1;">
-          H2<br>Kanit<br>40px
+        <div class="mb-5 h2" style="line-height: 1;">
+          H2 - Kanit 40px
         </div>
 
-        <div class="mb-4 me-4 h3" style="line-height: 1;">
-          H3<br>Kanit<br>20px
+        <div class="mb-5 h3" style="line-height: 1;">
+          H3 - Kanit 20px
         </div>
 
-        <div class="mb-4 me-4 p" style="line-height: 1;">
-          Texts<br>Kanit<br>16px
+        <div class="mb-5 p" style="line-height: 1;">
+          Texts - Kanit 16px
         </div>
 
-        <div class="mb-4 me-4 p-small" style="line-height: 1;">
-          Small titles<br>Kanit<br>12px
+        <div class="mb-4 p-small" style="line-height: 1;">
+          Small titles - Kanit 12px
         </div>
 
       </div>
@@ -394,11 +394,18 @@
   </div>
 
   <hr>
+
   <span class="m-4">
     <app-faq></app-faq>
   </span>
   <app-table-base></app-table-base>
   <app-pagination></app-pagination>
+
+
+  <span class="m-4"><app-faq></app-faq></span>
+  <app-table-base></app-table-base>
+  <app-pagination></app-pagination>
+  
 
   <!--Generic-Box-->
   <div class="pb-4">
@@ -408,8 +415,18 @@
       </div>
     </div>
 
+
     <!--Generic-Card-->
     <div class="m-4">
       <app-generic-card></app-generic-card>
     </div>
   </div>
+
+  </div>
+</div>
+
+<!--Modal Clock-->
+<div class="container p-4">
+  <app-modal-clock></app-modal-clock>
+</div>
+

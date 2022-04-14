@@ -1,4 +1,6 @@
 import { Component, HostListener } from '@angular/core';
+import { Subject, takeUntil } from 'rxjs';
+import { DarkModeService } from './shared/dark-mode/dark-mode.service';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +13,16 @@ export class AppComponent {
   private _cache!: number;
   scrollDeltaY!: number;
   langSelected: string = 'en';
+  destroy$: Subject<boolean> = new Subject<boolean>();
+  isDarkModeOn!: boolean;
+
+  constructor(private darkmodeService: DarkModeService) { }
+
+  ngOnInit(): void {
+    this.darkmodeService.darkModeState$
+    .pipe(takeUntil(this.destroy$))
+    .subscribe((res) => this.isDarkModeOn = res);
+  }
 
   @HostListener('window:scroll')
   detectScroll() {
@@ -23,4 +35,8 @@ export class AppComponent {
     this.langSelected = value;
   }
 
+  ngOnDestroy(): void {
+    this.destroy$.next(true);
+    this.destroy$.unsubscribe();
+  }
 }

@@ -1,5 +1,5 @@
 export interface IButton {
-  class: string;
+  class: 'button-standard' | 'button-small' | 'button-medium' | 'button-large' | 'button-squashed';
   text: string;
   link?: string;
   imgVisible: boolean

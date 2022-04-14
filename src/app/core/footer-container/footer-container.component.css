@@ -93,7 +93,6 @@ ul {
   transform: translate(-50%, 0px);
   width: max-content;
   max-height: 25rem;
-  background-color: white;
   box-shadow: rgb(25 19 38 / 10%) 0px 2px 12px -8px, rgb(25 19 38 / 5%) 0px 1px 1px;
   border-radius: 4px;
   padding: 1rem;
@@ -109,7 +108,6 @@ ul {
   display: flex;
   align-items: center;
   width: fit-content;
-  color: var(--light-purple);
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
@@ -118,6 +116,7 @@ ul {
 
 .telegram-links a:hover {
   text-decoration: underline;
+  color: inherit;
 }
 
 .f-row3 {

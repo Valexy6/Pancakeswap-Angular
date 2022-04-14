@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PancakeTradeComponent implements OnInit {
   @Input() colorLink!: string;
+  @Input() isDarkModeOn!: boolean;
 
   constructor() { }
 
