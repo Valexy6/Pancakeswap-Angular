@@ -61,7 +61,6 @@ import { HomeTableColumnsComponent } from './components/home-table-columns/home-
     TradeAddComponent,
     HomeTableComponent,
     HomeTableColumnsComponent
-
   ],
   imports: [
     BrowserModule,

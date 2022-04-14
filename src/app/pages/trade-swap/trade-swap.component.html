@@ -86,8 +86,7 @@
                         <app-modal-settings></app-modal-settings>
                       </div>
                     </span>
-
-
+                    
                       <app-modal-clock></app-modal-clock>
 
                   </div>
@@ -100,7 +99,7 @@
               <div class="mid-card-2">
                 <div class="tokens-trade">
                     <div class="tokens-trade-crypto">
-                      <button class="tokens-trade-button" (click)="open(content)">
+                      <button class="tokens-trade-button" (click)="open(content); selectedToken(token1)">
                         <div class="tokens-trade-crypto-select">
                           <img src="assets/icons/bnb-token.svg" alt="bnb-icon" style="margin-right: 8px;">
                           <div class="text-left-card-1">{{ token1 }}</div>
@@ -118,7 +117,7 @@
                         <div class="tokens-trade-space"></div>
                       </div>
 
-                    <div class="change-crypto-box">
+                    <div class="change-crypto-box" (click)="swapTokens()">
                       <button class="change-crypto-button">
                         <img src="assets/icons/arrow-down-cyan.svg" alt="change-crypto-button" class="icon-crypto-down">
                         <img src="assets/icons/arrow-up-down-white.svg" alt="change-crypto-icon-2" class="icon-crypto-up-down">
@@ -126,7 +125,7 @@
                     </div>
 
                     <div class="tokens-trade-crypto">
-                      <button class="tokens-trade-button" (click)="open(content)">
+                      <button class="tokens-trade-button" (click)="open(content); selectedToken(token2)">
                         <div class="tokens-trade-crypto-select">
                           <img src="assets/icons/pancakes.svg" alt="pancakes-icon" style="margin-right: 8px;">
                           <div class="text-left-card-1">{{ token2 }}</div>
@@ -148,9 +147,6 @@
                 <div class="pt-4">
                   <app-modal-connect-wallet [buttonClass]="'button-large'"></app-modal-connect-wallet>
                 </div>
-                
-
-
               </div>
 
             </div>
@@ -202,8 +198,6 @@
       </button>
     </div>
 
-    
-
     </div>
 
     <div class="modal-section">
@@ -213,7 +207,7 @@
         <div class="modal-currency">
           <div class="modal-currency-container">
             <div class="box-currency">
-              <div class="container-ciclo-currency" *ngFor="let currencyModals of currency$ | async; index as i">
+              <div class="container-ciclo-currency" *ngFor="let currencyModals of currency$ | async; index as i" (click)="selectNewTokens(currencyModals.label1); modal.close('Close click')">
                 <img src="{{ currencyModals.img }}" alt="" style="width: 24px; align-self: center;">
                 <div class="label-container">
                   <button class="label-currency-1"> <ngb-highlight [result]="currencyModals.label1" [term]="filter.value"></ngb-highlight> </button>
