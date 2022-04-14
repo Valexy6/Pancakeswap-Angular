@@ -8,7 +8,7 @@ import { IFarm } from 'src/app/models/Farms';
 })
 export class TableComponent implements OnInit {
   @Input() farms: IFarm[] = [];
-  @Input() isDarkModeOn!: boolean;
+  @Input() isDarkModeOn = false;
 
   constructor() { }
 

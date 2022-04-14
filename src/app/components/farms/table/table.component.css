@@ -1,1 +1,17 @@
+.table {
+  filter: drop-shadow(rgba(25, 19, 38, 0.15) 0px 1px 4px);
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border-radius: 16px;
+  margin: 16px 0px;
+}
 
+a {
+  color: var(--cyan);
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}

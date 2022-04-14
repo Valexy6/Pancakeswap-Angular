@@ -8,4 +8,5 @@ import { ILink } from 'src/app/models/SecondaryMenuItem';
 })
 export class SecondaryMenuComponent {
   @Input() items: ILink[] = [];
+  @Input() isDarkModeOn = false;
 }

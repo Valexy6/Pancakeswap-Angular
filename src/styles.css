@@ -235,6 +235,7 @@ a {
 .bcg-hover-a {
   background-color: var(--hover-a);
 }
+
 .bcg-gradient {
   background: var(--gradient);
 }
@@ -314,7 +315,8 @@ a {
 .modal-content {
   z-index: 99;
   width: fit-content;
-  min-width: 20rem; /*320px*/
+  min-width: 20rem;
+  /*320px*/
   max-height: 90vh;
   background-color: transparent;
   border-radius: 2rem;
@@ -354,28 +356,32 @@ a {
 
 /* -- TYPOGRAPHY -- */
 .h1 {
-  font-size: 4rem; /*64px*/
+  font-size: 4rem;
+  /*64px*/
   font-weight: 600;
   margin: 0px;
   padding: 0px;
 }
 
 .h2 {
-  font-size: 2rem; /*40px*/
+  font-size: 2rem;
+  /*40px*/
   font-weight: 600;
   margin: 0px;
   padding: 0px;
 }
 
 .h3 {
-  font-size: 1.25rem; /*20px*/
+  font-size: 1.25rem;
+  /*20px*/
   font-weight: 600;
   margin: 0px;
   padding: 0px;
 }
 
 .h4 {
-  font-size: 1.5rem; /*24px*/
+  font-size: 1.5rem;
+  /*24px*/
   font-weight: 600;
   margin: 0px;
   padding: 0px;
@@ -447,4 +453,12 @@ a {
   .lightmode .earn-data-column {
     border-left: 1px solid var(--column-border);
   }
+}
+
+
+/* -- Accordion -- */
+.accordion-item {
+  border: none !important;
+  border-radius: 0 !important;
+  border-bottom: 2px solid var(--grey-border) !important;
 }

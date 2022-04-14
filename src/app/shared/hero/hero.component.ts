@@ -1,5 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnDestroy } from '@angular/core';
+import { Subject, takeUntil } from 'rxjs';
 import { ILink } from 'src/app/models/SecondaryMenuItem';
+import { DarkModeService } from '../dark-mode/dark-mode.service';
 
 @Component({
   selector: 'app-hero',
@@ -10,6 +12,5 @@ export class HeroComponent {
   @Input() title: string = '';
   @Input() description: string = '';
   @Input() link: ILink = { name: '', url: '' };
-
-  constructor() { }
+  @Input() isDarkModeOn = false;
 }

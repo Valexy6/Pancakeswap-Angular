@@ -1,8 +1,8 @@
 <div class="hero-container">
-  <div class="">
+  <div [ngClass]="isDarkModeOn ? 'bcg-dark-modal' : 'bcg-gradient'">
     <h1 class="h1">{{ title }}</h1>
 
-    <h4 class="h4">{{ description }}</h4>
+    <h4 class="h4" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'darkpurple'">{{ description }}</h4>
     <div class="d-flex flex-row">
       <a [routerLink]="link.url" class="p">{{ link.name }}
         <img src="assets/icons/arrow-right-cyan.svg">
