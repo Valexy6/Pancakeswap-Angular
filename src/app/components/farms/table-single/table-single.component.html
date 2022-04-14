@@ -59,24 +59,26 @@
             <label><img class="check-icon" src="assets/icons/check-purple.svg">{{ farm.type | titlecase }}</label>
           </div>
         </div>
-        <div class="bord">
-          <div class="d-flex flex-column earned">
-            <h5 class="p-small">CAKE EARNED</h5>
-            <div class="d-flex justify-content-center align-items-center">
-              <h6>{{ farm.cakeEarned }}</h6>
-              <button disabled type="button" class="button-small">
-                <div>Harvest</div>
-              </button>
+        <div class="farm-row-buttons d-flex mx-4 ">
+          <div class="bord mx-5">
+            <div class="d-flex flex-column earned ">
+              <h5 class="p-small">CAKE EARNED</h5>
+              <div class="d-flex justify-content-center align-items-center justify-content-between">
+                <h6>{{ farm.cakeEarned }}</h6>
+                <button disabled type="button" class="button-small">
+                  <div>Harvest</div>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="bord">
-          <div class="d-flex flex-column farming">
-            <h5 class="p-small">START FARMING</h5>
-            <div class="button-size">
+          <div class="bord">
+            <div class="d-flex flex-column farming">
+              <h5 class="p-small">START FARMING</h5>
+
               <app-modal-connect-wallet [buttonClass]="'button-large'" [isDarkModeOn]="isDarkModeOn">
               </app-modal-connect-wallet>
+
             </div>
           </div>
         </div>
