@@ -743,6 +743,9 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
+  border: none;
+  background: transparent;
+  text-align: left;
 }
 
 .label-currency-2 {
@@ -754,6 +757,9 @@
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 200px;
+  border: none;
+  background: transparent;
+  text-align: left;
 }
 
 .button-currency {

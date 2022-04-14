@@ -102,7 +102,8 @@ function search(text: string, pipe: PipeTransform): ICurrencyModal[] {
   providers: [DecimalPipe]
 })
 export class TradeSwapComponent implements OnInit {
-  isNavbar: boolean = false;
+  token1!: string;
+  token2!: string;
   isShown: boolean = false ;
 
   currency$: Observable<ICurrencyModal[]>;

@@ -183,17 +183,10 @@
   <!--right side-->
   <div class="d-flex align-items-center h-100">
 
-<<<<<<< HEAD
-    <app-pancake-trade [colorLink]="colorLink"></app-pancake-trade>
-    <app-language-selector [isNavbar]="isNavbar" (navLangSelected)="setLang.emit($event)"></app-language-selector>
-    <app-modal-settings></app-modal-settings>
-    <app-modal-connect-wallet [buttonClass]="'button-squashed'"></app-modal-connect-wallet>
-=======
     <app-pancake-trade [colorLink]="isDarkModeOn ? 'var(--mauve)' : 'var(--light-purple)'" [isDarkModeOn]="isDarkModeOn"></app-pancake-trade>
     <app-language-selector [isNavbar]="isNavbar" [isDarkModeOn]="isDarkModeOn" (navLangSelected)="setLang.emit($event)"></app-language-selector>
     <app-modal-settings [isDarkModeOn]="isDarkModeOn"></app-modal-settings>
     <app-modal-connect-wallet [buttonClass]="'button-squashed'"  [isDarkModeOn]="isDarkModeOn"></app-modal-connect-wallet>
->>>>>>> develop
 
   </div>
 

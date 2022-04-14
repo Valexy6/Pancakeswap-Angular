@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-trade-liquidity',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./trade-liquidity.component.css']
 })
 export class TradeLiquidityComponent implements OnInit {
+  @Input() isDarkModeOn!: boolean;
 
   constructor() { }
 

@@ -44,11 +44,7 @@
   box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
   letter-spacing: 0.03em;
   line-height: 1;
-<<<<<<< HEAD
-  width: 100%; /*240px*/
-=======
   width: 100%;
->>>>>>> develop
   height: 3rem; /*48px*/
   opacity: 1;
   display: flex;

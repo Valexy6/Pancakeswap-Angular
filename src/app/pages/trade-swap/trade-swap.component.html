@@ -103,7 +103,7 @@
                       <button class="tokens-trade-button" (click)="open(content)">
                         <div class="tokens-trade-crypto-select">
                           <img src="assets/icons/bnb-token.svg" alt="bnb-icon" style="margin-right: 8px;">
-                          <div class="text-left-card-1">BNB</div>
+                          <div class="text-left-card-1">{{ token1 }}</div>
                           <img src="assets/icons/arrow-little-down.svg" alt="dropdown-crypto-icon">
                         </div>
                       </button>
@@ -129,7 +129,7 @@
                       <button class="tokens-trade-button" (click)="open(content)">
                         <div class="tokens-trade-crypto-select">
                           <img src="assets/icons/pancakes.svg" alt="pancakes-icon" style="margin-right: 8px;">
-                          <div class="text-left-card-1">CAKE</div>
+                          <div class="text-left-card-1">{{ token2 }}</div>
                           <img src="assets/icons/arrow-little-down.svg" alt="dropdown-crypto-icon">
                         </div>
                       </button>
@@ -216,8 +216,8 @@
               <div class="container-ciclo-currency" *ngFor="let currencyModals of currency$ | async; index as i">
                 <img src="{{ currencyModals.img }}" alt="" style="width: 24px; align-self: center;">
                 <div class="label-container">
-                  <div class="label-currency-1"> <ngb-highlight [result]="currencyModals.label1" [term]="filter.value"></ngb-highlight> </div>
-                  <div class="label-currency-2"> <ngb-highlight [result]="currencyModals.label2" [term]="filter.value"></ngb-highlight> </div>
+                  <button class="label-currency-1"> <ngb-highlight [result]="currencyModals.label1" [term]="filter.value"></ngb-highlight> </button>
+                  <button class="label-currency-2"> <ngb-highlight [result]="currencyModals.label2" [term]="filter.value"></ngb-highlight> </button>
                 </div>
               </div>
             </div>

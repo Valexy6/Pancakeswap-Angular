@@ -11,7 +11,6 @@ export class ModalConnectWalletComponent implements OnInit {
   @Input() buttonClass?: 'button-standard' | 'button-small' | 'button-medium' | 'button-large' | 'button-squashed';
 
   @Input() isDarkModeOn!: boolean;
-  @Input() buttonClass?: 'button-standard' | 'button-small' | 'button-medium' | 'button-large' | 'button-squashed';
   
   constructor(private modalService: NgbModal) { }
     
