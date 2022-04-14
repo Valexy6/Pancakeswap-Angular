@@ -1,7 +1,10 @@
 <div class="earn-data-grid">
   <div *ngFor="let data of dataTable" class="earn-data-column">
-    <p class="p-small">{{ data.name }}</p>
-    <p class="p-dark">{{ data.value | number:'0.3-3' }}%</p>
-    <p class="p-light-purple">{{ data.abbr | uppercase }}</p>
+
+    <p class="p-small" [ngClass]="isDarkModeOn ? 'text-purple-footer' : 'text-purple'">{{ data.name }}</p>
+
+    <p class="p-bold" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">{{ data.value | number:'0.3-3' }}%</p>
+
+    <p class="p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">{{ data.abbr | uppercase }}</p>
   </div>
 </div>

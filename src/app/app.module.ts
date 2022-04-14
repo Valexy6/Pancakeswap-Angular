@@ -29,10 +29,11 @@ import { EarnPoolsComponent } from './pages/earn-pools/earn-pools.component';
 import { SecondaryMenuComponent } from './shared/secondary-menu/secondary-menu.component';
 import { HomeTableComponent } from './components/home-table/home-table.component';
 import { HomeTableColumnsComponent } from './components/home-table-columns/home-table-columns.component';
-import { HeroComponent } from './shared/hero/hero.component';
 import { TableFiltersComponent } from './components/farms/table-filters/table-filters.component';
 import { TableComponent } from './components/farms/table/table.component';
+import { HeroComponent } from './shared/hero/hero.component';
 import { TableSingleComponent } from './components/farms/table-single/table-single.component';
+
 
 @NgModule({
   declarations: [

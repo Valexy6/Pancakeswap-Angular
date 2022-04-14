@@ -74,10 +74,9 @@
         <div class="bord">
           <div class="d-flex flex-column farming">
             <h5 class="p-small">START FARMING</h5>
-            <div>
-              <button type="button" class="button-large">
-                <div>Connect Wallet</div>
-              </button>
+            <div class="button-size">
+              <app-modal-connect-wallet [buttonClass]="'button-large'" [isDarkModeOn]="isDarkModeOn">
+              </app-modal-connect-wallet>
             </div>
           </div>
         </div>

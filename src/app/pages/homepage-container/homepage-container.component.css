@@ -1,6 +1,5 @@
 /* -- HERO SECTION -- */
 .hero-section {
-  background: var(--gradient);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -39,7 +38,6 @@
 
 .cta-hero h3 {
   margin-bottom: 1.5rem;
-  color: var(--dark-purple);
   line-height: 1.1;
 }
 
@@ -49,7 +47,7 @@
   justify-content: flex-start;
 }
 
-.cta-buttons app-general-button:first-child {
+.cta-buttons app-modal-connect-wallet {
   margin-right: 0.5rem;
 }
 
@@ -124,13 +122,8 @@
 }
 
 /* -- SECTION 1 -- */
-.home-sec1 {
-  background: var(--gradient-purple);
-}
-
 .subtitle-sec {
   line-height: 1.1;
-  color: var(--dark-purple);
 }
 
 .subtitle-sec:nth-child(2) {
@@ -141,14 +134,14 @@
   margin-bottom: 2rem;
 }
 
-.home-sec1 .p-light-purple {
+.sec1 .p {
   line-height: 1.5;
   margin: 0;
 }
 
-.home-sec1 .p-light-purple:nth-child(6) {
+.sec1 .p:nth-child(6) {
   margin-top: 1.25rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
@@ -164,9 +157,7 @@
   padding: 0.063rem 0.063rem 0.25rem;
   box-sizing: border-box;
   margin-bottom: 0;
-  background: var(--grey-border);
   border-radius: 1.5rem;
-  color: var(--dark-purple);
   overflow: hidden;
 }
 
@@ -181,7 +172,6 @@
   flex-flow: column nowrap;
   border-radius: 1.5rem;
   padding: 1.5rem;
-  background-color: white;
 }
 
 .stats-icons {
@@ -214,8 +204,6 @@
 
 /* -- DIVIDER 1 --*/
 .divider1 {
-  fill: var(--column-border);
-  background-color: var(--white);
   width: 100%;
 }
 
@@ -276,14 +264,12 @@
 
 /* -- DIVIDER 2 --*/
 .divider2 {
-  fill: var(--white);
   width: 150%;
   height: 100%;
 }
 
 /* -- SEC 3 > EARN PASSIVE --*/
 .sec3 {
-  background: var(--gradient-pink-blue);
   position: relative;
 }
 
@@ -343,7 +329,6 @@
 
 /* -- SEC 4 > WIN --*/
 .sec4 {
-  background: var(--gradient-blue);
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -355,8 +340,6 @@
 
 .win-container {
   padding: 2.5rem 2.5rem 3.125rem 2.5rem;
-  background: rgba(255, 255, 255, 0.6);
-  border: 1px solid var(--grey-border);
   backdrop-filter: blur(0.75rem);
   border-radius: 4.5rem;
   display: flex;
@@ -477,13 +460,12 @@
   grid-template-columns: repeat(2, auto);
 }
 
-.sec5-grid-column .p-light-purple {
+.sec5-grid-column .p {
   line-height: 1.5;
 }
 
 .sec5-grid-column .h4 {
   line-height: 1.1;
-  color: var(--dark-purple);
 }
 
 /* -- SEC 6 > CTA FOOTER -- */
@@ -626,7 +608,7 @@
 
 /* 2 column sections */
 .sec-wrapper {
-  padding: 6rem 1.5rem;
+  padding: 4rem 1.5rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;

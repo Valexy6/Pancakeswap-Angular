@@ -1,19 +1,37 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-footer-container',
   templateUrl: './footer-container.component.html',
   styleUrls: ['./footer-container.component.css']
 })
 export class FooterContainerComponent implements OnInit {
+  @Input() langSelected!: string;
+  @Input() isDarkModeOn!: boolean;
+
   colorLink: string = 'var(--mauve)';
   isFooter: boolean = true;
-
-  @Input() langSelected!: string;
   
+  languages: string[] = [
+    "English",
+    "Bahasa Indonesia",
+    "中文",
+    "Tiếng Việt",
+    "Italiano",
+    "русский",
+    "Türkiye",
+    "Português",
+    "Español",
+    "日本語",
+    "Français",
+    "Datch",
+    "Filipino",
+    "ქართული ენა",
+    "Announcements",
+  ]
+
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void { }
 }

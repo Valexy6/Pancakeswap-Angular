@@ -97,29 +97,8 @@ a {
   height: 24px;
 }
 
-.button-small {
-  align-items: center;
-  border: 0px;
-  border-radius: 1rem;
-  display: inline-flex;
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: 600;
-  -webkit-box-pack: center;
-  justify-content: center;
-  letter-spacing: 0.03em;
-  line-height: 1;
-  opacity: 1;
-  outline: 0px;
-  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-  height: 3rem;
-  padding: 0px 24px;
-  margin-left: 4px;
-  background-color: rgb(233, 234, 235);
-  border-color: rgb(233, 234, 235);
-  box-shadow: none;
-  color: rgb(189, 194, 196);
-  cursor: not-allowed;
+.button-size {
+  width: 100%;
 }
 
 h6 {

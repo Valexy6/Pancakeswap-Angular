@@ -21,7 +21,6 @@ export class DarkModeComponent implements OnInit, OnDestroy {
 
   toggleTheme() {
     this.isDarkModeOn = !this.isDarkModeOn;
-
     this.darkModeService.setDarkMode(this.isDarkModeOn);
   }
 

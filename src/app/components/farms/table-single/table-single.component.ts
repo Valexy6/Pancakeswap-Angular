@@ -8,7 +8,7 @@ import { IFarm } from 'src/app/models/Farms';
 })
 export class TableSingleComponent implements OnInit {
   @Input() farm: IFarm | null = null;
-
+  @Input() isDarkModeOn!: boolean;
   constructor() { }
 
   ngOnInit(): void {

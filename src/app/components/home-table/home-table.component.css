@@ -4,17 +4,12 @@
   margin-top: 1.5rem;
   display: flex;
   flex-flow: column nowrap;
-  color: var(--dark-purple);
 }
 
 .earn-data-title {
   display: flex;
   flex-direction: row;
   margin-bottom: 1.5rem;
-}
-
-.earn-data-title span {
-  color: var(--purple);
 }
 
 .switcher-earn {

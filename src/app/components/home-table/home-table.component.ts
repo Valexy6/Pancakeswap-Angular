@@ -10,6 +10,7 @@ export class HomeTableComponent implements OnInit {
   @Input() dataTableFarm: IHomeTable[] = [];
   @Input() dataTableSyrup: IHomeTable[] = [];
   @Input() isTableVisible!: boolean;
+  @Input() isDarkModeOn!: boolean;
 
   constructor() { }
 
