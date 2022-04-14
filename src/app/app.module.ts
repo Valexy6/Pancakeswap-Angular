@@ -21,7 +21,11 @@ import { FooterContainerComponent } from './core/footer-container/footer-contain
 import { DarkModeComponent } from './shared/dark-mode/dark-mode.component';
 import { PancakeTradeComponent } from './shared/pancake-trade/pancake-trade.component';
 import { GeneralButtonComponent } from './shared/general-button/general-button.component';
+
+import { GenericCardComponent } from './shared/generic-card/generic-card.component';
+
 import { ModalClockComponent } from './shared/modal-clock/modal-clock.component';
+
 import { HomepageContainerComponent } from './pages/homepage-container/homepage-container.component';
 import { HomeTableComponent } from './components/home-table/home-table.component';
 import { HomeTableColumnsComponent } from './components/home-table-columns/home-table-columns.component';
@@ -39,6 +43,7 @@ import { HomeTableColumnsComponent } from './components/home-table-columns/home-
     ModalSettingsComponent,
     LanguageSelectorComponent,
     ModalConnectWalletComponent,
+    GenericCardComponent,
     PaginationComponent,
     FooterContainerComponent,
     DarkModeComponent,
