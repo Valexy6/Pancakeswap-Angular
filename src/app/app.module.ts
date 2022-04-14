@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -26,6 +27,8 @@ import { TradeContainerComponent } from './pages/trade-container/trade-container
 import { TradeSwapComponent } from './pages/trade-swap/trade-swap.component';
 import { TradeLiquidityComponent } from './pages/trade-liquidity/trade-liquidity.component';
 import { TradeAddComponent } from './pages/trade-add/trade-add.component';
+import { HomeTableComponent } from './components/home-table/home-table.component';
+import { HomeTableColumnsComponent } from './components/home-table-columns/home-table-columns.component';
 
 @NgModule({
   declarations: [
@@ -51,13 +54,17 @@ import { TradeAddComponent } from './pages/trade-add/trade-add.component';
     TradeSwapComponent,
     TradeLiquidityComponent,
     TradeAddComponent,
+    HomeTableComponent,
+    HomeTableColumnsComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

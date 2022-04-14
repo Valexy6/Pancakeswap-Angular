@@ -8,7 +8,7 @@ import { TradeLiquidityComponent } from './pages/trade-liquidity/trade-liquidity
 import { TradeAddComponent } from './pages/trade-add/trade-add.component';
 
 const routes: Routes = [
-  { path: '', component: HomepageContainerComponent, pathMatch: 'full'},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomepageContainerComponent},
   { path: 'design-system', component: DesignSystemComponent},
   { path: 'add', component: TradeAddComponent},
@@ -16,6 +16,7 @@ const routes: Routes = [
     { path: 'swap', component: TradeSwapComponent},
     { path: 'liquidity', component: TradeLiquidityComponent},
   ]},
+  { path: '**', redirectTo: '/home'}
 ];
 
 @NgModule({

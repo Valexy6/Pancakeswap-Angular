@@ -10,13 +10,16 @@ export class ModalConnectWalletComponent implements OnInit {
   closeResult!: string;
   @Input() buttonClass?: 'button-standard' | 'button-small' | 'button-medium' | 'button-large' | 'button-squashed';
 
+  @Input() isDarkModeOn!: boolean;
+  @Input() buttonClass?: 'button-standard' | 'button-small' | 'button-medium' | 'button-large' | 'button-squashed';
+  
   constructor(private modalService: NgbModal) { }
     
   ngOnInit(): void {
   }
 
   open(content: any) {
-    this.modalService.open(content, { windowClass: 'ps-modal-centered',modalDialogClass: 'modal-container' });
+    this.modalService.open(content, { windowClass: 'ps-modal-centered', modalDialogClass: 'modal-container' });
   }
 
 }

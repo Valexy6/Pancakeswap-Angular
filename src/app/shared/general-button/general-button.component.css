@@ -12,7 +12,6 @@
   background-color: var(--cyan);
   color: white;
   box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-  cursor: var(--pointer);
   letter-spacing: 0.03em;
   line-height: 1;
   width: 10.313rem; /*165px*/
@@ -43,10 +42,13 @@
   background-color: var(--cyan);
   color: white;
   box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-  cursor: pointer;
   letter-spacing: 0.03em;
   line-height: 1;
+<<<<<<< HEAD
   width: 100%; /*240px*/
+=======
+  width: 100%;
+>>>>>>> develop
   height: 3rem; /*48px*/
   opacity: 1;
   display: flex;
@@ -73,9 +75,10 @@
   align-items: center;
   border-radius: 1rem;
   font-size: 1rem;
+  font-weight: 600;
   opacity: 1;
   color: var(--cyan);
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
   letter-spacing: 0.03em;
   line-height: 1;
   width: 8.25rem; /*132px*/
@@ -83,16 +86,15 @@
   border: 2px solid var(--cyan);
   box-shadow: none;
   letter-spacing: 0.03em;
-  cursor: pointer;
 }
 
 .button-medium:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
   opacity: 0.65;
 }
 
 .button-medium:active {
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
   transform: translateY(1px);
   box-shadow: none;
   opacity: 0.85;
@@ -111,12 +113,11 @@
   background-color: var(--cyan);
   color: white;
   box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-  cursor: pointer;
   letter-spacing: 0.03em;
   line-height: 1;
-  width: 6.75rem; /*108px*/
   height: 3rem; /*48px*/
   opacity: 1;
+  padding: 0 1.5rem;
 }
 
 .button-small:hover {

@@ -1,21 +1,21 @@
 <!-- Button trigger modal setting -->
 <button class="button-gear mr-1-2 ml-1 d-flex align-items-center h-100" type="button">
-  <img src="assets/icons/gear-lightpurple.svg" (click)="open(content)" />
+  <img [src]="isDarkModeOn ? 'assets/icons/gear-mauve.svg' : 'assets/icons/gear-lightpurple.svg'" (click)="open(content)" />
 </button>
 
 <!-- Modal -->
 <ng-template #content let-modal>
-  <div>
+  <div [ngClass]="isDarkModeOn ? 'bcg-footer text-white-footer' : 'bcg-white text-darkpurple'">
 
-    <div class="modal-settings-header">
-      <h3 class="h3 m-0">Settings</h3>
+    <div class="modal-settings-header" [ngClass]="isDarkModeOn ? 'bcg-gradient-dark boreder-bottom-dark' : 'bcg-gradient-pink-blue boreder-bottom-grey'">
+      <h3 class="h3 m-0" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">Settings</h3>
       <button class="close-btn" type="button" (click)="modal.close('Close click')"><img src="assets/icons/exit.svg">
       </button>
     </div>
 
     <div class="modal-settings-body d-flex flex-column justify-content-between">
       <div>
-        <h3 class="p-small key-words global">GLOBAL</h3>
+        <h3 class="p-small mb-3" [ngClass]="isDarkModeOn ? 'text-purple-footer' : 'text-purple'">GLOBAL</h3>
       </div>
       <div class="d-flex justify-content-between align-items-baseline">
         <p>Dark mode</p>
@@ -30,12 +30,12 @@
 
       <div class="default-buttons">
         <button class="button-squashed-standard">Standard (5)</button>
-        <button class="button-squashed-fast">Fast (6)</button>
-        <button class="button-squashed-instant">Instant (7)</button>
+        <button class="button-squashed-fast" [ngClass]="isDarkModeOn ? 'bcg-hover-a' : 'bcg-grey-light'">Fast (6)</button>
+        <button class="button-squashed-instant" [ngClass]="isDarkModeOn ? 'bcg-hover-a' : 'bcg-grey-light'">Instant (7)</button>
       </div>
-      <hr>
-      <div class="p-small key-words swaps">
-        <h3 class="p-small key-words global">SWAPS & LIQUIDITY</h3>
+      <hr [ngClass]="isDarkModeOn ? 'hr-dark' : 'hr-light'">
+      <div>
+        <h3 class="p-small mb-3" [ngClass]="isDarkModeOn ? 'text-purple-footer' : 'text-purple'">SWAPS & LIQUIDITY</h3>
       </div>
       <div class="default-settings">
         <p>Slippage Tolerance</p>
@@ -44,9 +44,9 @@
       </div>
 
       <div class="input-fields">
-        <button class="input-button" type="button">0.1%</button>
+        <button class="input-button" [ngClass]="isDarkModeOn ? 'bcg-hover-a' : 'bcg-grey-light'" type="button">0.1%</button>
         <button class="input-button-selected" type="button">0.5%</button>
-        <button class="input-button" type="button">1.0%</button>
+        <button class="input-button" [ngClass]="isDarkModeOn ? 'bcg-hover-a' : 'bcg-grey-light'" type="button">1.0%</button>
         <input class="general-field-large" type="text" pattern="^[0-9]+$" value="1.00" />
         <p>%</p>
       </div>
@@ -99,7 +99,7 @@
           </label>
         </div>
 
-        <div class="d-flex align-items-center justify-content-between my-4">
+        <div class="d-flex align-items-center justify-content-between">
           <div class="d-flex align-items-center">
             <p class="mb-0 pe-2">Flippy sounds</p>
             <img src="assets/icons/questionMark-light-purple.svg"
