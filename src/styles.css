@@ -34,6 +34,7 @@
   --bcg-dark: rgb(8, 6, 11);
   --dark-solid-shadow: rgb(56, 50, 65);
   --hover-a: rgb(53, 53, 71);
+  --input-dark: rgb(55, 47, 71);
   --fill-dark: rgb(32, 19, 53);
   --fill-black: rgb(8, 6, 11);
   --black-transparent: rgb(8, 6, 11, 0.6);
@@ -270,6 +271,14 @@ a {
 
 .bcg-dark-modal {
   background: var(--gradient-dark-modal);
+}
+
+.bcg-input-dark {
+  background: var(--input-dark);
+}
+
+.bcg-background-color {
+  background: var(--background-color);
 }
 
 /*border*/

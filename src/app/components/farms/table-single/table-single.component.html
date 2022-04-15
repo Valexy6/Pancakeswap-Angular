@@ -8,18 +8,20 @@
             <img [src]="farm.imgUrl" alt="" class="top-img">
           </div>
 
-          <h3 class="p title-name">{{ farm.name }}</h3>
+          <h3 class="p title-name" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">{{ farm.name }}
+          </h3>
         </div>
 
         <div class="d-flex flex-column">
-          <h4 class="p-small title-date">Earned</h4>
-          <p class="p figures">{{ farm.earned }}</p>
+          <h4 class="p-small title-date" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">Earned</h4>
+          <p class="p figures" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">{{ farm.earned }}</p>
         </div>
 
         <div class="d-flex flex-column">
           <h4 class="p-small title-date">Apr</h4>
           <div class="d-flex">
-            <p class="p figures me-2">{{ farm.apr }}%</p>
+            <p class="p figures me-2" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">{{ farm.apr }}%
+            </p>
             <img class="icons" src="assets/icons/calculator-light-purple.svg">
           </div>
         </div>
@@ -27,7 +29,8 @@
         <div class="d-flex flex-column">
           <h4 class="p-small title-date">Liquidity</h4>
           <div class="d-flex">
-            <p class="p figures me-2">${{ farm.liquidity }}</p>
+            <p class="p figures me-2" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">
+              ${{ farm.liquidity }}</p>
             <img class="icons" src="assets/icons/questionMark-light-purple.svg"
               ngbTooltip="Total value of the funds in this farm’s liquidity pool">
 
@@ -37,7 +40,8 @@
         <div class="d-flex flex-column">
           <h4 class="p-small title-date">Multiplier</h4>
           <div class="d-flex">
-            <p class="p figures">{{ farm.multiplier }}x</p>
+            <p class="p figures" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">
+              {{ farm.multiplier }}x</p>
 
           </div>
         </div>

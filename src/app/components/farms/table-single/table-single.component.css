@@ -1,6 +1,4 @@
-.title-name {
-  color: var(--dark-purple);
-}
+.title-name {}
 
 img {
   height: 1.625rem;
@@ -11,13 +9,7 @@ img {
   width: 1.25rem;
 }
 
-.title-date {
-  color: var(--light-purple);
-}
-
-.figures {
-  color: var(--dark-purple);
-}
+.figures {}
 
 a {
   color: var(--cyan);
