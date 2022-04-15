@@ -167,10 +167,8 @@
 }
 
 .box-right-card-middle {
-  background-color: rgb(239, 244, 245);
   border-radius: 16px;
   display: inline-flex;
-  border: 1px solid rgb(233, 234, 235);
   width: auto;
 }
 

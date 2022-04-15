@@ -35,6 +35,7 @@
 
   --border-darkmode: rgb(38, 33, 48);
   --bcg-dark: rgb(8, 6, 11);
+  --bcg-shadow: rgba(39, 38, 44, 0.5);
   --dark-solid-shadow: rgb(56, 50, 65);
   --hover-a: rgb(53, 53, 71);
   --fill-dark: rgb(32, 19, 53);
@@ -193,6 +194,10 @@ a {
 /*bcg*/
 .bcg-base {
   background-color: var(--background-color);
+}
+
+.bcg-shadow {
+  background-color: var(--bcg-shadow);
 }
 
 .bcg-dark {

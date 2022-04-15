@@ -12,10 +12,15 @@
                 routerLink="/trade/liquidity"
                 routerLinkActive="active"
               >
-                <img
-                  src="assets/icons/big-arrow-left.svg"
-                  alt="arrow go back"
-                />
+              <img *ngIf="!isDarkModeOn"
+              src="assets/icons/big-arrow-left.svg"
+              alt="icon arrow down"
+            />
+            <img
+              *ngIf="isDarkModeOn"
+              src="assets/icons/big-arrow-left-white.svg"
+              alt="icon arrow up"
+            />
               </a>
 
               <div class="text-section-top">
@@ -75,7 +80,7 @@
                       placeholder="0.0"
                       minlength="1"
                       maxlength="79"
-                      [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'"
+                      [ngClass]="isDarkModeOn ? 'text-black' : 'text-white'"
                     />
                   </div>
                 </div>

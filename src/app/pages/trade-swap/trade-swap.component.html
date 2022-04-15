@@ -3,7 +3,7 @@
   <!-- CARD EXCHANGE -->
   <div class="box-card-exchange">
 
-    <div *ngIf="!isShown" class="card-1-exchange">
+    <div *ngIf="!isShown" class="card-1-exchange" [ngClass]="isDarkModeOn ? 'bcg-shadow' : 'bcg-white'">
       <div class="top-card-1-exchange">
         <div class="left-side-card-1">
           <div class="icons-left-card-1">
@@ -23,7 +23,16 @@
         </div>
 
           <button class="button-zoom">
-            <img src="assets/icons/zoom-arrow.svg" alt="zoom.icon" fill="rgb(40, 13, 95)">
+            <img
+        *ngIf="!isDarkModeOn"
+        src="assets/icons/zoom-arrow.svg"
+        alt="icon arrow down"
+      />
+      <img
+        *ngIf="isDarkModeOn"
+        src="assets/icons/zoom-arrow-ligh-purple.svg"
+        alt="icon arrow up"
+      />
           </button>
       </div>
 
@@ -38,7 +47,7 @@
           <div class="mid-text-4">Dec 24, 2021, 11:50 AM</div>
         </div>
 
-          <div class="box-right-card-middle">
+          <div class="box-right-card-middle" [ngClass]="isDarkModeOn ? 'bcg-hover-a' : 'bcg-gradient'">
             <button class="button-middle-right-1">24H</button>
             <button class="button-middle-right-1 middle-right-2">1W</button>
             <button class="button-middle-right-1 middle-right-2">1M</button>
