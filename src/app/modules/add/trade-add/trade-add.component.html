@@ -1,43 +1,159 @@
 <!-- PAGE TRADE LIQUIDITY -->
 <div class="main-page">
   <div class="main-page-box">
-    <div class="middle-page">
-
+    <div class="middle-page" [ngClass]="isDarkModeOn ? 'bcg-gradient-light-purple' : 'bcg-gradient'">
       <!-- CARD ADD -->
-      <div class="pb-4">
-        <div class="generic-box-container container p-4">
-          <div class="d-flex justify-content-center">
+      <div class="container-card-add">
+        <div class="generic-box-container" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
+          <div class="section-top-container">
             <div class="section-top">
-              <a routerLink="/trade/liquidity" routerLinkActive="active">
-                <img src="assets/icons/big-arrow-left.svg" alt="arrow go back" style="width: 3rem; height: 2rem;">
+              <a
+                style="width: 3rem; padding: 0px"
+                routerLink="/trade/liquidity"
+                routerLinkActive="active"
+              >
+              <img *ngIf="!isDarkModeOn"
+              src="assets/icons/big-arrow-left.svg"
+              alt="icon arrow down"
+            />
+            <img
+              *ngIf="isDarkModeOn"
+              src="assets/icons/big-arrow-left-white.svg"
+              alt="icon arrow up"
+            />
               </a>
 
               <div class="text-section-top">
-                <h2>Add Liquidity</h2>
+                <h2 [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'">Add Liquidity</h2>
                 <div class="tooltip-container">
-                  <div class="tooltip-text">
-                    Add liquidity to receive LP tokens
+                  <div style="margin-right: 0.25rem">
+                    <div>
+                      <img
+                        src="assets/icons/questionMark-light-purple.svg"
+                        alt=""
+                        ngbTooltip="Liquidity providers earn a 0.17% trading fee on all trades made for that token pair, proportional to their share of the liquidity pool."
+                      />
+                    </div>
                   </div>
+                  <div class="tooltip-text" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Add liquidity to receive LP tokens</div>
+                </div>
+              </div>
+            </div>
+            <div class="button-top-container">
+              <app-modal-settings class="button-top"></app-modal-settings>
+              <app-modal-clock
+                style="margin-left: 1rem; padding: 0px"
+              ></app-modal-clock>
+            </div>
+          </div>
+
+
+          
+          <div style="padding: 24px">
+            <div class="second-section-card">
+            <div class="select-currency-container">
+              <div class="select-currency">
+                <div class="select-currency-input">
+                  <button class="button-currency" (click)="open(content)">
+                    <div [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'">Select a currency</div>
+                    <img
+        *ngIf="!isDarkModeOn"
+        src="assets/icons/arrow-little-down.svg"
+        alt="icon arrow down"
+      />
+      <img
+        *ngIf="isDarkModeOn"
+        src="assets/icons/arrow-little-down-white.svg"
+        alt="icon arrow up"
+      />
+                  </button>
                 </div>
               </div>
 
               <div>
-                <app-modal-settings class="button-top"></app-modal-settings>
+                <div>
+                  <div class="general-field-big-container" [ngClass]="isDarkModeOn ? 'bcg-dark-button' : 'bcg-base'">
+                    <input
+                      class="general-field-big"
+                      type="text"
+                      pattern="^[0-9]*[.,]?[0-9]*$"
+                      placeholder="0.0"
+                      minlength="1"
+                      maxlength="79"
+                      [ngClass]="isDarkModeOn ? 'text-black' : 'text-white'"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
+
+            <div class="plus-div">
+              <img
+        *ngIf="!isDarkModeOn"
+        src="assets/icons/plus-sign.svg"
+        alt="icon arrow down"
+      />
+      <img
+        *ngIf="isDarkModeOn"
+        src="assets/icons/plus-sign-white.svg"
+        alt="icon arrow up"
+      />
+            </div>
+
+            <div class="select-currency-container">
+              <div class="select-currency">
+                <div class="select-currency-input">
+                  <button class="button-currency" (click)="open(content)">
+                    <div [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'">Select a currency</div>
+                    <img
+        *ngIf="!isDarkModeOn"
+        src="assets/icons/arrow-little-down.svg"
+        alt="icon arrow down"
+      />
+      <img
+        *ngIf="isDarkModeOn"
+        src="assets/icons/arrow-little-down-white.svg"
+        alt="icon arrow up"
+      />
+                  </button>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <div class="general-field-big-container" [ngClass]="isDarkModeOn ? 'bcg-dark-button' : 'bcg-base'">
+                    <input
+                      class="general-field-big"
+                      type="text"
+                      pattern="^[0-9]*[.,]?[0-9]*$"
+                      placeholder="0.0"
+                      minlength="1"
+                      maxlength="79"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+              <app-modal-connect-wallet
+                [buttonClass]="'button-large'"
+              ></app-modal-connect-wallet>
+            
           </div>
         </div>
+        </div>
       </div>
-    </div>
-
       <div class="divisore"></div>
-       <!-- SECOND SECTION BOTTOM -->
+      <!-- SECOND SECTION BOTTOM -->
       <div class="main-bottom">
         <div class="main-bottom-box">
           
           <div class="main-bottom-left">
-            <div class="bottom-left-button">
-              <button class="switch-v1">V2</button>
+            <div class="bottom-left-button" [ngClass]="isDarkModeOn ? 'bcg-dark-button' : 'bcg-base'">
+              <button class="switch-v1" [ngClass]="isDarkModeOn ? 'bcg-mauve' : 'bcg-lightpurple'" >
+                <p [ngClass]="isDarkModeOn ? 'text-black' : 'text-white'" style="margin-bottom: 0rem;">V2</p>
+              </button>
               <a class="switch-old" href="">V1 (old)</a>
             </div>
 
@@ -49,8 +165,10 @@
           </div>
 
           <div class="main-bottom-right">
-            <div class="need-help">
-              <a href="https://docs.pancakeswap.finance/products/pancakeswap-exchange">Need help?</a>
+            <div class="need-help" >
+              <a href="https://docs.pancakeswap.finance/products/pancakeswap-exchange" [ngClass]="isDarkModeOn ? 'bcg-mauve' : 'bcg-lightpurple'">
+                <p [ngClass]="isDarkModeOn ? 'text-black' : 'text-white'" style="margin-bottom: 0rem;">Need help?</p>
+              </a>
               <svg viewBox="0 0 16 16" color="text" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M0 16V0C0 0 3 1 6 1C9 1 16 -2 16 3.5C16 10.5 7.5 16 0 16Z"></path></svg>
             </div>
 
@@ -62,6 +180,48 @@
         
         </div>
       </div>
-
     </div>
   </div>
+</div>
+
+<!-- Modal -->
+<!-- Modal -->
+<ng-template #content let-modal>
+  <div class="modal-box-connect">
+    <div class="modal-wallet-header">
+      <h3 class="h3 m-0">Select a Token</h3>
+      <button type="button" class="close-btn" (click)="modal.close('Close click')">
+        <img src="assets/icons/exit.svg" />
+      </button>
+    </div>
+
+    
+
+    </div>
+
+    <div class="modal-section">
+      <div>
+        <input class="search-field" type="text" placeholder="Search name or paste address" [formControl]="filter"/>
+
+        <div class="modal-currency">
+          <div class="modal-currency-container">
+            <div class="box-currency">
+              <div class="container-ciclo-currency" *ngFor="let currencyModals of currency$ | async; index as i">
+                <img src="{{ currencyModals.img }}" alt="" style="width: 24px; align-self: center;">
+                <div class="label-container">
+                  <div class="label-currency-1"> <ngb-highlight [result]="currencyModals.label1" [term]="filter.value"></ngb-highlight> </div>
+                  <div class="label-currency-2"> <ngb-highlight [result]="currencyModals.label2" [term]="filter.value"></ngb-highlight> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-currency-modal">
+        <button> Manage Tokens</button>
+      </div>
+
+      
+    </div>
+</ng-template>

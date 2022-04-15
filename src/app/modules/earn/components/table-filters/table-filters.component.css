@@ -1,0 +1,205 @@
+.sort-by-container {
+  cursor: pointer;
+  width: 100%;
+  min-width: 10rem;
+  height: 2.5rem;
+  position: relative;
+  border: 1px solid rgb(215, 202, 236);
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  outline: none;
+  font-size: 1rem;
+  transition: border-radius 0.15s ease 0s;
+}
+
+.sort-by-head {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  color: var(--dark-purple);
+}
+
+.sort-by-list {
+  height: auto;
+  width: 100%;
+  min-width: 10rem;
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid rgb(215, 202, 236);
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: rgb(0 0 0 / 20%) 0px 0px 2px,
+    rgb(14 14 44 / 10%) 0px 4px 12px -8px;
+  overflow: hidden;
+  z-index: 10;
+  left: -1px;
+}
+
+.sort-by-list li {
+  list-style-type: none;
+  padding: 0.5rem 1rem;
+  margin: 0px;
+  line-height: 1.5;
+}
+
+.input-set {
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 1.5rem;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  cursor: pointer;
+  display: inline-flex;
+  height: 1.25rem;
+  position: relative;
+  transition: background-color 200ms ease 0s;
+  width: 2.25rem;
+}
+
+.input-set2 {
+  cursor: pointer;
+  opacity: 0;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+}
+
+.input-set3 {
+  border-radius: 50%;
+  cursor: pointer;
+  height: 1rem;
+  left: 0.125rem;
+  position: absolute;
+  top: 0.125rem;
+  transition: left 200ms ease-in 0s;
+  width: 1rem;
+  z-index: 1;
+}
+
+.checked {
+  background-color: var(--green);
+}
+
+.checked .input-set3 {
+  left: calc(100% - 1.125rem);
+}
+
+.input-set3:hover {
+  box-shadow: var(--purple) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+}
+
+/* Toogle Live-Finished */
+.input-set-live {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.input-set-live2 {
+  background-color: rgb(238, 234, 244);
+  border-radius: 1rem;
+  display: inline-flex;
+  border: 1px solid rgb(215, 202, 236);
+  width: auto;
+}
+
+.input-set-live a {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.input-set-live2>button,
+.input-set-live2 a {
+  box-shadow: none;
+}
+
+.input-set-live2>button,
+.input-set-live2>a {
+  flex: 1 1 auto;
+}
+
+.input-set-live3 {
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 1rem;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 2rem;
+  padding: 0 1rem;
+  background-color: rgb(122, 110, 170);
+  color: rgb(255, 255, 255);
+}
+
+.input-set-live4 {
+  display: inline-flex;
+  position: relative;
+}
+
+.input-set-live a {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.input-set-live2>button,
+.input-set-live2 a {
+  box-shadow: none;
+}
+
+.input-set-live5 {
+  background-color: transparent;
+  color: rgb(122, 110, 170);
+}
+
+.input-set-live6 {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 0.625rem;
+  height: 0.625rem;
+  pointer-events: none;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  background-color: rgb(237, 75, 158);
+}
+
+.search-field {
+  border: 1px solid var(--column-border);
+  outline: 0px;
+  border-radius: 1rem;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  color: var(--light-purple);
+  font-size: 1rem;
+  height: 2.5rem;
+  padding: 0rem 1rem;
+}
+
+.search-field::placeholder {
+  color: var(--light-purple);
+}
+
+.search-field:focus {
+  box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-bottom: 0;
+}

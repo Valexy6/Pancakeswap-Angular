@@ -1,0 +1,10 @@
+<app-hero [title]="'Farms'" [description]="'Stake LP tokens to earn.'"
+  [link]="{ name: 'Community Auctions', url: 'auction' }" [isDarkModeOn]="isDarkModeOn">
+</app-hero>
+
+<div class="container-fluid m-0 p-0" [ngClass]="isDarkModeOn ? 'bcg-dark' : 'bcg-white-grey'">
+  <div class="container">
+    <app-table-filters [isDarkModeOn]="isDarkModeOn"></app-table-filters>
+    <app-table [isDarkModeOn]="isDarkModeOn" [farms]="farms"></app-table>
+  </div>
+</div>

@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { FooterContainerComponent } from './layout/footer-container/footer-container.component';
-
-import { SharedModule } from './modules/shared/shared.module';
 import { HomeModule } from './modules/home/home.module';
+import { SharedModule } from './modules/shared/shared.module';
+
+
 
 @NgModule({
   declarations: [

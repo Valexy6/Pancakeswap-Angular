@@ -1,9 +1,9 @@
-<div class="middle-page-exchange">
+<div class="middle-page-exchange" [ngClass]="isDarkModeOn ? 'bcg-gradient-light-purple' : 'bcg-gradient'">
 
   <!-- CARD EXCHANGE -->
   <div class="box-card-exchange">
 
-    <div class="card-1-exchange">
+    <div *ngIf="!isShown" class="card-1-exchange" [ngClass]="isDarkModeOn ? 'bcg-shadow' : 'bcg-white'">
       <div class="top-card-1-exchange">
         <div class="left-side-card-1">
           <div class="icons-left-card-1">
@@ -11,7 +11,7 @@
             <img alt="CAKE logo" src="assets/icons/pancakes.svg">
           </div>
 
-          <div class="text-left-card-1">BNB/CAKE</div>
+          <div class="text-left-card-1" [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'">BNB/CAKE</div>
 
           <button class="button-left-card-1">
             <img src="assets/icons/double-arrow.svg" alt="double-arrow">
@@ -23,7 +23,16 @@
         </div>
 
           <button class="button-zoom">
-            <img src="assets/icons/zoom-arrow.svg" alt="zoom.icon" fill="rgb(40, 13, 95)">
+            <img
+        *ngIf="!isDarkModeOn"
+        src="assets/icons/zoom-arrow.svg"
+        alt="icon arrow down"
+      />
+      <img
+        *ngIf="isDarkModeOn"
+        src="assets/icons/zoom-arrow-ligh-purple.svg"
+        alt="icon arrow up"
+      />
           </button>
       </div>
 
@@ -31,14 +40,14 @@
 
         <div class="left-side-card-middle">
           <div class="text-box-mid">
-            <div class="mid-text-1">44.20</div>
-            <div class="mid-text-2">BNB/CAKE</div>
+            <div class="mid-text-1" [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'">44.20</div>
+            <div class="mid-text-2" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">BNB/CAKE</div>
             <div class="mid-text-3">+0.892 (2.06%)</div>
           </div>
           <div class="mid-text-4">Dec 24, 2021, 11:50 AM</div>
         </div>
 
-          <div class="box-right-card-middle">
+          <div class="box-right-card-middle" [ngClass]="isDarkModeOn ? 'bcg-hover-a' : 'bcg-gradient'">
             <button class="button-middle-right-1">24H</button>
             <button class="button-middle-right-1 middle-right-2">1W</button>
             <button class="button-middle-right-1 middle-right-2">1M</button>
@@ -59,16 +68,25 @@
       <div class="card-2-exchange-box">
         <div class="card-2-exchange-box-2">
           <div class="card-2-exchange-box-3">
-            <div class="card-2-exchange-box-4">
+            <div class="card-2-exchange-box-4" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
               
               <div class="top-card-2">
                 <div class="box-top-card-2">
-                  <button class="button-left-card-2 button-zoom">
-                    <img src="assets/icons/staked-slash-light-purple.svg" alt="staked staked slash light purple">
+                  <button (click)="divShow()" class="button-left-card-2 button-zoom">
+                    <img
+                    *ngIf="!isShown"
+                    src="assets/icons/staked-slash-light-purple.svg"
+                    alt="icon arrow down"
+                  />
+                  <img
+                    *ngIf="isShown"
+                    src="assets/icons/staked-light-purple.svg"
+                    alt="icon arrow up"
+                  />
                   </button>
 
                   <div class="top-card-text">
-                    <h2>Swap</h2>
+                    <h2 [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'">Swap</h2>
                   </div>
 
                   <div class="card-2-icons-right">
@@ -84,23 +102,32 @@
                   </div>
                 </div>
                 <div class="top-card-text-2">
-                  <div class="top-card-text-3">Trade tokens in an instant</div>
+                  <div class="top-card-text-3" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Trade tokens in an instant</div>
                 </div>
               </div>
 
               <div class="mid-card-2">
                 <div class="tokens-trade">
                     <div class="tokens-trade-crypto">
-                      <button class="tokens-trade-button">
+                      <button class="tokens-trade-button" (click)="open(content)">
                         <div class="tokens-trade-crypto-select">
                           <img src="assets/icons/bnb-token.svg" alt="bnb-icon" style="margin-right: 8px;">
-                          <div class="text-left-card-1">BNB</div>
-                          <img src="assets/icons/arrow-little-down.svg" alt="dropdown-crypto-icon">
+                          <div class="text-left-card-1">{{ token1 }}</div>
+                          <img
+        *ngIf="!isDarkModeOn"
+        src="assets/icons/arrow-little-down.svg"
+        alt="icon arrow down"
+      />
+      <img
+        *ngIf="isDarkModeOn"
+        src="assets/icons/arrow-little-down-white.svg"
+        alt="icon arrow up"
+      />
                         </div>
                       </button>
                     </div>
 
-                      <div class="tokens-trade-input">
+                      <div class="tokens-trade-input" [ngClass]="isDarkModeOn ? 'bcg-dark-button' : 'bcg-base'">
                         <div class="tokens-trade-input-3">
                           <div class="tokens-trade-input-4">
                             <input class="tokens-trade-input-5" inputmode="decimal" title="Token Amount" autocomplete="off" autocorrect="off" type="text" pattern="^[0-9]*[.,]?[0-9]*$" placeholder="0.0" minlength="1" maxlength="79" spellcheck="false">
@@ -109,24 +136,33 @@
                         <div class="tokens-trade-space"></div>
                       </div>
 
-                    <div class="change-crypto-box">
-                      <button class="change-crypto-button">
+                    <div class="change-crypto-box" >
+                      <button class="change-crypto-button" [ngClass]="isDarkModeOn ? 'bcg-dark-button' : 'bcg-base'">
                         <img src="assets/icons/arrow-down-cyan.svg" alt="change-crypto-button" class="icon-crypto-down">
                         <img src="assets/icons/arrow-up-down-white.svg" alt="change-crypto-icon-2" class="icon-crypto-up-down">
                       </button>
                     </div>
 
                     <div class="tokens-trade-crypto">
-                      <button class="tokens-trade-button">
+                      <button class="tokens-trade-button" (click)="open(content)" >
                         <div class="tokens-trade-crypto-select">
                           <img src="assets/icons/pancakes.svg" alt="pancakes-icon" style="margin-right: 8px;">
-                          <div class="text-left-card-1">CAKE</div>
-                          <img src="assets/icons/arrow-little-down.svg" alt="dropdown-crypto-icon">
+                          <div class="text-left-card-1">{{ token2 }}</div>
+                          <img
+        *ngIf="!isDarkModeOn"
+        src="assets/icons/arrow-little-down.svg"
+        alt="icon arrow down"
+      />
+      <img
+        *ngIf="isDarkModeOn"
+        src="assets/icons/arrow-little-down-white.svg"
+        alt="icon arrow up"
+      />
                         </div>
                       </button>
                     </div>
 
-                      <div class="tokens-trade-input">
+                      <div class="tokens-trade-input" [ngClass]="isDarkModeOn ? 'bcg-dark-button' : 'bcg-base'">
                         <div class="tokens-trade-input-3">
                           <div class="tokens-trade-input-4">
                             <input class="tokens-trade-input-5" inputmode="decimal" title="Token Amount" autocomplete="off" autocorrect="off" type="text" pattern="^[0-9]*[.,]?[0-9]*$" placeholder="0.0" minlength="1" maxlength="79" spellcheck="false">
@@ -151,30 +187,35 @@
 
   </div>
 
+  <!-- SECOND SECTION BOTTOM -->
   <div class="main-bottom">
     <div class="main-bottom-box">
       
       <div class="main-bottom-left">
-        <div class="bottom-left-button">
-          <button class="switch-v1">V2</button>
+        <div class="bottom-left-button" [ngClass]="isDarkModeOn ? 'bcg-dark-button' : 'bcg-base'">
+          <button class="switch-v1" [ngClass]="isDarkModeOn ? 'bcg-mauve' : 'bcg-lightpurple'" >
+            <p [ngClass]="isDarkModeOn ? 'text-black' : 'text-white'" style="margin-bottom: 0rem;">V2</p>
+          </button>
           <a class="switch-old" href="">V1 (old)</a>
         </div>
 
-        <a class="link-convert" href="https://docs.binance.org/smart-chain/guides/cross-chain.html" target="_blank">
+        <a class="link-convert" href="https://docs.binance.org/smart-chain/guides/cross-chain.html">
           Convert ERC-20 to BEP-20
-          <img src="assets/icons/arrow-oblique-cyan.svg" alt="convert-link-icon">
+          <img src="assets/icons/arrow-oblique-cyan.svg" alt="convert-link">
         </a>
 
       </div>
 
       <div class="main-bottom-right">
-        <div class="need-help">
-          <a href="https://docs.pancakeswap.finance/products/pancakeswap-exchange" target="_blank">Need help?</a>
+        <div class="need-help" >
+          <a href="https://docs.pancakeswap.finance/products/pancakeswap-exchange" [ngClass]="isDarkModeOn ? 'bcg-mauve' : 'bcg-lightpurple'">
+            <p [ngClass]="isDarkModeOn ? 'text-black' : 'text-white'" style="margin-bottom: 0rem;">Need help?</p>
+          </a>
           <svg viewBox="0 0 16 16" color="text" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M0 16V0C0 0 3 1 6 1C9 1 16 -2 16 3.5C16 10.5 7.5 16 0 16Z"></path></svg>
         </div>
 
         <div class="img-bottom-right">
-          <img src="assets/img/help.png" alt="need-help-svg">
+          <img src="assets/img/help.png" alt="need-help-png">
         </div>
       
       </div>
@@ -182,3 +223,44 @@
     </div>
   </div>
 </div>
+
+<!-- Modal -->
+<ng-template #content let-modal>
+  <div class="modal-box-connect">
+    <div class="modal-wallet-header">
+      <h3 class="h3 m-0">Select a Token</h3>
+      <button type="button" class="close-btn" (click)="modal.close('Close click')">
+        <img src="assets/icons/exit.svg" />
+      </button>
+    </div>
+
+    
+
+    </div>
+
+    <div class="modal-section">
+      <div>
+        <input class="search-field" type="text" placeholder="Search name or paste address" [formControl]="filter"/>
+
+        <div class="modal-currency">
+          <div class="modal-currency-container">
+            <div class="box-currency">
+              <div class="container-ciclo-currency" *ngFor="let currencyModals of currency$ | async; index as i">
+                <img src="{{ currencyModals.img }}" alt="" style="width: 24px; align-self: center;">
+                <div class="label-container">
+                  <button class="label-currency-1"> <ngb-highlight [result]="currencyModals.label1" [term]="filter.value"></ngb-highlight> </button>
+                  <button class="label-currency-2"> <ngb-highlight [result]="currencyModals.label2" [term]="filter.value"></ngb-highlight> </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-currency">
+        <button> Manage Tokens</button>
+      </div>
+
+      
+    </div>
+</ng-template>

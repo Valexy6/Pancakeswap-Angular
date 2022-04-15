@@ -9,12 +9,14 @@ import { FaqRowComponent } from "./components/faq-row/faq-row.component";
 import { FaqComponent } from "./components/faq/faq.component";
 import { GeneralButtonComponent } from "./components/general-button/general-button.component";
 import { GenericCardComponent } from "./components/generic-card/generic-card.component";
+import { HeroComponent } from "./components/hero/hero.component";
 import { LanguageSelectorComponent } from "./components/language-selector/language-selector.component";
 import { ModalClockComponent } from "./components/modal-clock/modal-clock.component";
 import { ModalConnectWalletComponent } from "./components/modal-connect-wallet/modal-connect-wallet.component";
 import { ModalSettingsComponent } from "./components/modal-settings/modal-settings.component";
 import { PaginationComponent } from "./components/pagination/pagination.component";
 import { PancakeTradeComponent } from "./components/pancake-trade/pancake-trade.component";
+import { SecondaryMenuComponent } from "./components/secondary-menu/secondary-menu.component";
 import { TableBaseRowComponent } from "./components/table-base-row/table-base-row.component";
 import { TableBaseTitleComponent } from "./components/table-base-title/table-base-title.component";
 import { TableBaseComponent } from "./components/table-base/table-base.component";
@@ -34,7 +36,9 @@ import { TableBaseComponent } from "./components/table-base/table-base.component
     PancakeTradeComponent,
     ModalClockComponent,
     DarkModeComponent,
-    GenericCardComponent
+    GenericCardComponent,
+    SecondaryMenuComponent,
+    HeroComponent
   ],
   imports: [
     CommonModule,
@@ -57,7 +61,9 @@ import { TableBaseComponent } from "./components/table-base/table-base.component
     PancakeTradeComponent,
     ModalClockComponent,
     DarkModeComponent,
-    GenericCardComponent
+    GenericCardComponent,
+    SecondaryMenuComponent,
+    HeroComponent
   ]
 })
 export class SharedModule {
