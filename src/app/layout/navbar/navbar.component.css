@@ -232,6 +232,15 @@
   width: calc(100vw - 2rem);
 }
 
+/* -- disabled link -- */
+.disabled:hover,
+.disabled:active,
+.disabled {
+  cursor: not-allowed;
+  color: var(--grey-border) !important;
+  transform: translateY(0px) !important;
+}
+
 /* -- RESPONSIVE -- */
 @media all and (min-width: 967px) {
   .mobile-logo {

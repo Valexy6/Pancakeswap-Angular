@@ -15,15 +15,22 @@ export class ModalSettingsComponent implements OnInit {
   subGraphHealthIndicatorActive = false;
   flippySoundsActive = false;
 
+  percentages: string[] = ['0.1', '0.5', '1.0'];
+  slippagePercentage: string = '0.5';
+  clicked: boolean = true;
+
   constructor(private modalService: NgbModal) { }
     
   ngOnInit(): void {
   }
 
-  open(content: any) {
-    this.modalService.open(content, { windowClass: 'ps-modal-centered',modalDialogClass: 'modal-container-settings' });
+  openScrollableContent(content: any) {
+    this.modalService.open(content, { windowClass: 'ps-modal-centered',modalDialogClass: 'modal-container-settings', scrollable: true });
   }
 
+  changeSlippage(value: string) {
+    this.slippagePercentage = value;
+  }
 }
 
 

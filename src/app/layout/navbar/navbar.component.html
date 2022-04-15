@@ -120,59 +120,59 @@
     <div class="navlink-left">
       <div class="dropdown-nav">
         <div class="dropbtn-nav">
-          <a class="a-nav" href="#">Trade</a>
+          <a class="a-nav" routerLink="/home">Trade</a>
         </div>
         <div class="dropdown-content">
-          <a href="#">Exchange</a>
-          <a href="#">Liquidity</a>
+          <a routerLink="/home">Exchange</a>
+          <a routerLink="/home">Liquidity</a>
         </div>
       </div>
 
       <div class="dropdown-nav">
         <div class="dropbtn-nav">
-          <a class="a-nav" href="#" >Earn</a>
+          <a class="a-nav" routerLink="/home" >Earn</a>
         </div>
         <div class="dropdown-content">
-          <a href="#">Farms</a>
-          <a href="#">Pools</a>
+          <a routerLink="/home">Farms</a>
+          <a class="disabled">Pools</a>
         </div>
       </div>
 
       <div class="dropdown-nav">
         <div class="dropbtn-nav">
-          <a class="a-nav" href="#" >Win</a>
+          <a class="a-nav" routerLink="/home" >Win</a>
         </div>
         <div class="dropdown-content">
-          <a href="#">Perdiction (BETA)</a>
-          <a href="#">Lottery</a>
+          <a class="disabled">Perdiction (BETA)</a>
+          <a class="disabled">Lottery</a>
         </div>
       </div>
 
       <div class="dropdown-nav">
         <div class="dropbtn-nav">
-          <a class="a-nav" href="#" >NFT</a>
+          <a class="a-nav">NFT</a>
         </div>
         <div class="dropdown-content">
-          <a href="#">Overview</a>
-          <a href="#">Collections</a>
+          <a class="disabled">Overview</a>
+          <a class="disabled">Collections</a>
         </div>
       </div>
 
       <div class="dropdown-nav">
         <div class="dropbtn-nav">
-          <a class="a-nav" href="#" >
+          <a class="a-nav disabled">
             <img class="dot-color" [src]="isDarkModeOn ? 'assets/icons/dotdotdot-mauve.svg' : 'assets/icons/dotdotdot-lightpurple.svg'" />
           </a>
         </div>
         <div class="dropdown-content">
-          <a href="#">Info</a>
-          <a href="#">IFO</a>
-          <a href="#">Voting</a>
+          <a class="disabled">Info</a>
+          <a class="disabled">IFO</a>
+          <a class="disabled">Voting</a>
           <hr />
-          <a href="#">Leaderboard</a>
+          <a class="disabled">Leaderboard</a>
           <hr />
-          <a href="#">Blog<img [src]="isDarkModeOn ? 'assets/icons/link-mauve.svg' : 'assets/icons/link-darkpurple.svg'" /></a>
-          <a href="#">Docs<img [src]="isDarkModeOn ? 'assets/icons/link-mauve.svg' : 'assets/icons/link-darkpurple.svg'" /></a>
+          <a class="disabled">Blog<img [src]="isDarkModeOn ? 'assets/icons/link-mauve.svg' : 'assets/icons/link-darkpurple.svg'" /></a>
+          <a class="disabled">Docs<img [src]="isDarkModeOn ? 'assets/icons/link-mauve.svg' : 'assets/icons/link-darkpurple.svg'" /></a>
           <hr />
           <a routerLink="/design-system">Design System</a>
         </div>
@@ -207,65 +207,65 @@
 
   <div class="dropdown-nav" (mouseleave)="closeBottomNavbar()">
     <div class="dropbtn-nav" (mouseover)="openBottomNavbar()">
-      <a class="a-nav-bottom" href="#">
+      <a class="a-nav-bottom" routerLink="/home">
         <img class="mb-1" [src]="isDarkModeOn ? 'assets/icons/earn-mauve.svg' : 'assets/icons/earn-lightpurple.svg'" />
         Earn
       </a>
     </div>
     <div class="dropdown-content-bottom">
       <div class="dropdown-content earn">
-        <a href="#">Farms</a>
-        <a href="#">Pools</a>
+        <a routerLink="/home">Farms</a>
+        <a class="disabled">Pools</a>
       </div>
     </div>
   </div>
 
   <div class="dropdown-nav" (mouseleave)="closeBottomNavbar()">
     <div class="dropbtn-nav" (mouseover)="openBottomNavbar()">
-      <a class="a-nav-bottom" href="#">
+      <a class="a-nav-bottom" routerLink="/home">
         <img class="mb-1" [src]="isDarkModeOn ? 'assets/icons/cup2-mauve.svg' : 'assets/icons/cup2-lightpurple.svg'" />
         Win
       </a>
     </div>
     <div class="dropdown-content-bottom">
       <div class="dropdown-content win">
-        <a href="#">Perdiction (BETA)</a>
-        <a href="#">Lottery</a>
+        <a class="disabled">Perdiction (BETA)</a>
+        <a class="disabled">Lottery</a>
       </div>
     </div>
   </div>
 
   <div class="dropdown-nav" (mouseleave)="closeBottomNavbar()">
     <div class="dropbtn-nav" (mouseover)="openBottomNavbar()">
-      <a class="a-nav-bottom" href="#" >
+      <a class="a-nav-bottom" routerLink="/home" >
         <img class="mb-1" [src]="isDarkModeOn ? 'assets/icons/geometric-forms-mauve.svg' : 'assets/icons/geometric-forms-lightpurple.svg'" />
         NFT
       </a>
     </div>
     <div class="dropdown-content-bottom hide">
       <div class="dropdown-content nft">
-        <a href="#">Overview</a>
-        <a href="#">Collections</a>
+        <a class="disabled">Overview</a>
+        <a class="disabled">Collections</a>
       </div>
     </div>
   </div>
 
   <div class="dropdown-nav" (mouseleave)="closeBottomNavbar()">
     <div class="dropbtn-nav" (mouseover)="openBottomNavbar()">
-      <a class="a-nav-bottom" href="#" >
+      <a class="a-nav-bottom" routerLink="/home" >
         <img class="dot-color" [src]="isDarkModeOn ? 'assets/icons/dotdotdot-mauve.svg' : 'assets/icons/dotdotdot-lightpurple.svg'" />
       </a>
     </div>
     <div class="dropdown-content-bottom">
       <div class="dropdown-content dots">
-        <a href="#">Info</a>
-        <a href="#">IFO</a>
-        <a href="#">Voting</a>
+        <a class="disabled">Info</a>
+        <a class="disabled">IFO</a>
+        <a class="disabled">Voting</a>
         <hr />
-        <a href="#">Leaderboard</a>
+        <a class="disabled">Leaderboard</a>
         <hr />
-        <a href="#">Blog<img [src]="isDarkModeOn ? 'assets/icons/link-mauve.svg' : 'assets/icons/link-darkpurple.svg'" /></a>
-        <a href="#">Docs<img [src]="isDarkModeOn ? 'assets/icons/link-mauve.svg' : 'assets/icons/link-darkpurple.svg'" /></a>
+        <a class="disabled">Blog<img [src]="isDarkModeOn ? 'assets/icons/link-mauve.svg' : 'assets/icons/link-darkpurple.svg'" /></a>
+        <a class="disabled">Docs<img [src]="isDarkModeOn ? 'assets/icons/link-mauve.svg' : 'assets/icons/link-darkpurple.svg'" /></a>
         <hr />
         <a routerLink="/design-system">Design System</a>
       </div>

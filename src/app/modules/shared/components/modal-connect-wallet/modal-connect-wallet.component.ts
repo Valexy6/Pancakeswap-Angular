@@ -17,7 +17,7 @@ export class ModalConnectWalletComponent implements OnInit {
   }
 
   open(content: any) {
-    this.modalService.open(content, { windowClass: 'ps-modal-centered', modalDialogClass: 'modal-container' });
+    this.modalService.open(content, { windowClass: 'ps-modal-centered', modalDialogClass: 'modal-container', scrollable: true  });
   }
 
 }
