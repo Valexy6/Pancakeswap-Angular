@@ -64,9 +64,9 @@ a {
 }
 
 .bord {
-  padding: 16px;
+  padding: 1rem;
   border: 2px solid var(--background-color);
-  border-radius: 16px;
+  border-radius: 1rem;
   flex-grow: 1;
   flex-basis: 0px;
 }
@@ -82,9 +82,9 @@ a {
 
 .core-border {
   border: 2px solid var(--purple);
-  border-radius: 16px;
-  width: 64px;
-  height: 24px;
+  border-radius: 1rem;
+  width: 4rem;
+  height: 1.5rem;
 }
 
 .button-small {
@@ -103,7 +103,7 @@ a {
   outline: 0px;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
   height: 3rem;
-  padding: 0px 24px;
+  padding: 0 1.5rem;
   margin-left: 4px;
   background-color: rgb(233, 234, 235);
   border-color: rgb(233, 234, 235);
@@ -113,7 +113,7 @@ a {
 }
 
 h6 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.1;
   color: var(--dark-purple);

@@ -1,16 +1,16 @@
 .table {
   filter: drop-shadow(rgba(25, 19, 38, 0.15) 0px 1px 4px);
   width: 100%;
-  border-radius: 16px;
-  margin: 16px 0px;
+  border-radius: 1rem;
+  margin: 1rem 0rem;
 }
 
 a {
   color: var(--cyan);
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 0.03em;
   line-height: 1;
-  height: 48px;
+  height: 3rem;
   display: flex;
   align-items: center;
 }
