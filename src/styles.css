@@ -24,7 +24,10 @@
   --dark-purple-overlay: rgba(40, 13, 95, 0.6);
   --footer-bcg: rgb(39, 38, 44);
   --white-transparent: rgba(255, 255, 255, 0.6);
+  --black: rgb(16, 12, 24);
+  --background-dark: rgb(55, 47, 71);
   --gradient: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
+  --gradient-light-purple: linear-gradient(139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%);
   --gradient-purple: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
   --gradient-pink-blue: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
   --gradient-blue: linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%);
@@ -32,6 +35,7 @@
 
   --border-darkmode: rgb(38, 33, 48);
   --bcg-dark: rgb(8, 6, 11);
+  --bcg-shadow: rgba(39, 38, 44, 0.5);
   --dark-solid-shadow: rgb(56, 50, 65);
   --hover-a: rgb(53, 53, 71);
   --input-dark: rgb(55, 47, 71);
@@ -190,6 +194,14 @@ a {
 }
 
 /*bcg*/
+.bcg-base {
+  background-color: var(--background-color);
+}
+
+.bcg-shadow {
+  background-color: var(--bcg-shadow);
+}
+
 .bcg-dark {
   background-color: var(--bcg-dark);
 }
@@ -216,6 +228,14 @@ a {
 
 .bcg-grey {
   background-color: var(--grey-border);
+}
+
+.bcg-black {
+  background-color: var(--black);
+}
+
+.bcg-dark-button {
+  background-color: var(--background-dark);
 }
 
 .bcg-white {
@@ -248,6 +268,10 @@ a {
 
 .bcg-gradient {
   background: var(--gradient);
+}
+
+.bcg-gradient-light-purple {
+  background: var(--gradient-light-purple)
 }
 
 .bcg-gradient-purple-black {
