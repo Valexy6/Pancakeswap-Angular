@@ -10,7 +10,7 @@
 
       <div class="cta-buttons">
         <app-modal-connect-wallet [buttonClass]="'button-standard'" [isDarkModeOn]="isDarkModeOn"></app-modal-connect-wallet>
-        <app-general-button [button]="{ class: 'button-medium', text: 'Trade Now', imgVisible: false}" ></app-general-button>
+        <app-general-button [button]="{ class: 'button-medium', text: 'Trade Now', imgVisible: false, link: '/trade/swap'}" ></app-general-button>
       </div>
     </div>
 
@@ -197,7 +197,7 @@
       <p class="p sec-p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Trade any token on Binance Smart Chain in seconds, just by connecting your wallet.</p>
 
       <div class="cta-buttons">
-        <app-general-button [button]="{ class: 'button-small', text: 'Trade Now', imgVisible: false}"></app-general-button>
+        <app-general-button [button]="{ class: 'button-small', text: 'Trade Now', imgVisible: false, link: '/trade/swap'}"></app-general-button>
         <a routerLink="/home" class="link">Learn</a>
       </div>
     </div>
@@ -352,7 +352,7 @@
       <p class="p sec-p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">PancakeSwap makes it easy to make your crypto work for you.</p>
 
       <div class="cta-buttons">
-        <app-general-button [button]="{ class: 'button-small', text: 'Explore', imgVisible: false}"></app-general-button>
+        <app-general-button [button]="{ class: 'button-small', text: 'Explore', imgVisible: false, link: '/earn/farms'}"></app-general-button>
         <a routerLink="/home" class="link">Learn</a>
       </div>            
     </div>
@@ -419,7 +419,7 @@
       <p class="p sec-p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">CAKE token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!</p>
 
       <div class="cta-buttons">
-        <app-general-button [button]="{ class: 'button-small', text: 'Buy CAKE', imgVisible: false}"></app-general-button>
+        <app-general-button [button]="{ class: 'button-small', text: 'Buy CAKE', imgVisible: false, link: '/trade/swap'}"></app-general-button>
         <a routerLink="/home" class="link">Learn</a>
       </div>
     </div>
@@ -515,7 +515,7 @@
     <div class="sec6-text">
       <h3 class="h2">Start in seconds.</h3>
       <p>Connect your crypto wallet to start using the app in seconds.<span>No registration needed.</span></p>
-      <a href="#" class="link mb-4">Learn how to start</a>
+      <a routerLink="/home" class="link mb-4">Learn how to start</a>
 
       <app-modal-connect-wallet [buttonClass]="'button-standard'" [isDarkModeOn]="isDarkModeOn"></app-modal-connect-wallet>
     </div>
