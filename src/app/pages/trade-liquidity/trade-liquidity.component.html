@@ -1,10 +1,10 @@
 <!-- PAGE TRADE LIQUIDITY -->
 <div class="main-page" >
   <div class="main-page-box">
-    <div class="middle-page">
+    <div class="middle-page" [ngClass]="isDarkModeOn ? 'bcg-gradient-light-purple' : 'bcg-gradient'">
      <!-- CARD LIQUIDITY -->
       <div class="card-liquidity">
-        <div class="card-liquidity-box">
+        <div class="card-liquidity-box" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
           
           <div class="section-top">
             
@@ -12,7 +12,7 @@
               <div class="left-text-top">
                 <h2 [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">Your Liquidity</h2>
                 <div class="left-text-top-box">
-                  <div class="left-text-top-2">Remove liquidity to receive tokens back</div>
+                  <div class="left-text-top-2" >Remove liquidity to receive tokens back</div>
                 </div>
               </div>
             </div>
@@ -29,7 +29,7 @@
 
           </div>
 
-          <div class="section-middle">
+          <div class="section-middle" [ngClass]="isDarkModeOn ? 'bcg-black' : 'bcg-grey'">
             <div class="section-middle-text">Connect to a wallet to view your liquidity.</div>
           </div>
 
@@ -50,8 +50,10 @@
         <div class="main-bottom-box">
           
           <div class="main-bottom-left">
-            <div class="bottom-left-button">
-              <button class="switch-v1">V2</button>
+            <div class="bottom-left-button" [ngClass]="isDarkModeOn ? 'bcg-dark-button' : 'bcg-base'">
+              <button class="switch-v1" [ngClass]="isDarkModeOn ? 'bcg-mauve' : 'bcg-lightpurple'" >
+                <p [ngClass]="isDarkModeOn ? 'text-black' : 'text-white'" style="margin-bottom: 0rem;">V2</p>
+              </button>
               <a class="switch-old" href="">V1 (old)</a>
             </div>
 
@@ -63,8 +65,10 @@
           </div>
 
           <div class="main-bottom-right">
-            <div class="need-help">
-              <a href="https://docs.pancakeswap.finance/products/pancakeswap-exchange">Need help?</a>
+            <div class="need-help" >
+              <a href="https://docs.pancakeswap.finance/products/pancakeswap-exchange" [ngClass]="isDarkModeOn ? 'bcg-mauve' : 'bcg-lightpurple'">
+                <p [ngClass]="isDarkModeOn ? 'text-black' : 'text-white'" style="margin-bottom: 0rem;">Need help?</p>
+              </a>
               <svg viewBox="0 0 16 16" color="text" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M0 16V0C0 0 3 1 6 1C9 1 16 -2 16 3.5C16 10.5 7.5 16 0 16Z"></path></svg>
             </div>
 

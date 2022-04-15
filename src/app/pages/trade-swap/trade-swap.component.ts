@@ -1,8 +1,9 @@
 import { DecimalPipe } from '@angular/common';
-import { Component, OnInit, Pipe, PipeTransform } from '@angular/core';
+import { Component, OnDestroy, OnInit, Pipe, PipeTransform } from '@angular/core';
 import { FormControl} from '@angular/forms';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { map, Observable,startWith} from 'rxjs';
+import { map, Observable,startWith, Subject, takeUntil} from 'rxjs';
+import { DarkModeService } from 'src/app/shared/dark-mode/dark-mode.service';
 
 export interface ICurrencyModal {
   img: string;
@@ -88,12 +89,8 @@ const currencyModal:ICurrencyModal [] = [
   }
 ]
 
-function search(text: string, pipe: PipeTransform): ICurrencyModal[] {
-  return currencyModal.filter(currency => {
-    const term = text.toLowerCase();
-    return currency.label1.toLowerCase().includes(term)
-  });
-}
+
+
 
 @Component({
   selector: 'app-trade-swap',
@@ -101,7 +98,9 @@ function search(text: string, pipe: PipeTransform): ICurrencyModal[] {
   styleUrls: ['./trade-swap.component.css'],
   providers: [DecimalPipe]
 })
-export class TradeSwapComponent implements OnInit {
+export class TradeSwapComponent implements OnInit, OnDestroy {
+  isDarkModeOn!: boolean;
+  destroy$: Subject<boolean> = new Subject<boolean>();
   token1!: string;
   token2!: string;
   isShown: boolean = false ;
@@ -111,14 +110,17 @@ export class TradeSwapComponent implements OnInit {
 
   
 
-  constructor(private modalService: NgbModal, pipe: DecimalPipe) { 
+  constructor(private modalService: NgbModal, pipe: DecimalPipe, private darkmodeService: DarkModeService) { 
     this.currency$ = this.filter.valueChanges.pipe(
       startWith(''),
-      map(text => search(text, pipe))
+      map(text => this.search(text, pipe))
     );
   }
 
   ngOnInit(): void {
+    this.darkmodeService.darkModeState$
+    .pipe(takeUntil(this.destroy$))
+    .subscribe((res) => this.isDarkModeOn = res);
   }
 
   divShow() {
@@ -129,6 +131,16 @@ export class TradeSwapComponent implements OnInit {
     this.modalService.open(content, { windowClass: 'ps-modal-centered',modalDialogClass: 'modal-container'});
   }
 
+  search(text: string, pipe: PipeTransform): ICurrencyModal[] {
+    return currencyModal.filter(currency => {
+      const term = text.toLowerCase();
+      return currency.label1.toLowerCase().includes(term)
+    });
+  }
 
+  ngOnDestroy(): void {
+    this.destroy$.next(true);
+    this.destroy$.unsubscribe();
+  }
 
 }

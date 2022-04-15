@@ -20,7 +20,6 @@
   -webkit-box-align: center;
   align-items: center;
   width: 100%;
-  background: var(--gradient);
 }
 
 /* CARD LIQUIDITY */
@@ -29,7 +28,6 @@
   max-width: 436px;
   width: 100%;
   z-index: 1;
-  background: var(--grey-border);
   color: var(--dark-purple);
   overflow: hidden;
   position: relative;
@@ -41,7 +39,6 @@
   width: 100%;
   height: 100%;
   overflow: inherit;
-  background: rgb(255, 255, 255);
   border-radius: 24px;
 }
 
@@ -53,7 +50,6 @@
   justify-content: space-between;
   padding: 24px;
   width: 100%;
-  border-bottom: 1px solid rgb(231, 227, 235);
   font-family: 'Kanit', sans-serif;
 }
 
@@ -73,7 +69,6 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 1.1;
-  color: var(--dark-purple);
 }
 
 .left-text-top-box {
@@ -83,10 +78,10 @@
 }
 
 .left-text-top-2 {
-  color: var(--light-purple);
   font-weight: 400;
   line-height: 1.5;
   font-size: 14px;
+  color: var(--light-purple);
 }
 
 .right-section-top {
@@ -160,22 +155,20 @@
 }
 
 .section-middle {
-  background-color: rgb(238, 238, 238);
   padding: 24px;
   font-family: 'Kanit', sans-serif;
 }
 
 .section-middle-text {
-  color: var(--light-purple);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   text-align: center;
+  color: var(--light-purple);
 }
 
 .section-bottom {
   text-align: center;
-  border-top: 1px solid rgb(231, 227, 235);
   padding: 24px;
 }
 
@@ -249,7 +242,6 @@
 }
 
 .bottom-left-button {
-  background-color: rgb(238, 234, 244);
   border-radius: 16px;
   display: inline-flex;
   border: 1px solid rgb(215, 202, 236);
@@ -261,17 +253,14 @@
 }
 
 .switch-v1 {
-  -webkit-box-align: center;
   align-items: center;
   border: 0px;
   border-radius: 16px;
-  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
   cursor: pointer;
   display: inline-flex;
   font-family: inherit;
   font-size: 16px;
   font-weight: 600;
-  -webkit-box-pack: center;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -280,13 +269,9 @@
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
   height: 32px;
   padding: 0px 16px;
-  background-color: rgb(122, 110, 170);
-  color: rgb(255, 255, 255);
 }
 
 .switch-old {
-  background-color: transparent;
-  color: rgb(122, 110, 170);    
   -webkit-box-align: center;
   align-items: center;
   border: 0px;
@@ -364,7 +349,6 @@
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
   height: 48px;
   padding: 0px 24px;
-  background-color: var(--light-purple);
   color: rgb(255, 255, 255);
   text-decoration: none;
 }

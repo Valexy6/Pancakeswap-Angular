@@ -4,7 +4,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background: var(--gradient);
 }
 
 .box-card-exchange {
@@ -17,8 +16,6 @@
 
 .card-1-exchange {
   padding-top: 8px;
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgb(231, 227, 235);
   border-radius: 16px;
   width: 50%;
   height: 484px;
@@ -48,7 +45,6 @@
 }
 
 .text-left-card-1 {
-  color: var(--dark-purple);
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
@@ -140,7 +136,6 @@
 }
 
 .mid-text-1 {
-  color: var(--dark-purple);
   font-weight: 600;
   line-height: 1.5;
   margin-right: 8px;
@@ -148,7 +143,6 @@
 }
 
 .mid-text-2 {
-  color: var(--light-purple);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
@@ -259,8 +253,7 @@
 .card-2-exchange-box-3 {
   border-radius: 24px;
   max-width: 436px;
-  width: 100%;   
-  background: rgb(231, 227, 235);
+  width: 100%;
   color: var(--dark-purple);
   padding: 1px 1px 3px;
 }
@@ -268,7 +261,6 @@
 .card-2-exchange-box-4 {
   width: 100%;
   height: 100%;
-  background: rgb(255, 255, 255);
   border-radius: 24px;
 }
 
@@ -321,7 +313,6 @@
 }
 
 .top-card-text-3 {
-  color: var(--light-purple);
   font-weight: 400;
   line-height: 1.5;
   font-size: 14px;
@@ -397,7 +388,6 @@
 
 .tokens-trade-input {
   border-radius: 16px;
-  background-color: rgb(238, 234, 244);
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
 }
 
@@ -439,7 +429,6 @@
   justify-content: center;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
   height: 32px;
-  background-color: rgb(238, 234, 244);
 }
 
 .change-crypto-button:hover {
@@ -504,7 +493,6 @@
 }
 
 .bottom-left-button {
-  background-color: rgb(238, 234, 244);
   border-radius: 16px;
   display: inline-flex;
   border: 1px solid rgb(215, 202, 236);
@@ -526,7 +514,6 @@
   letter-spacing: 0.03em;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
   padding: 0px 16px;
-  background-color: rgb(122, 110, 170);
   color: rgb(255, 255, 255);
 }
 
@@ -583,7 +570,6 @@
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
   height: 48px;
   padding: 0px 24px;
-  background-color: var(--light-purple);
   color: rgb(255, 255, 255);
 }
 

@@ -1,10 +1,10 @@
 <!-- PAGE TRADE LIQUIDITY -->
 <div class="main-page">
   <div class="main-page-box">
-    <div class="middle-page">
+    <div class="middle-page" [ngClass]="isDarkModeOn ? 'bcg-gradient-light-purple' : 'bcg-gradient'">
       <!-- CARD ADD -->
       <div class="container-card-add">
-        <div class="generic-box-container">
+        <div class="generic-box-container" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
           <div class="section-top-container">
             <div class="section-top">
               <a
@@ -19,7 +19,7 @@
               </a>
 
               <div class="text-section-top">
-                <h2>Add Liquidity</h2>
+                <h2 [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'">Add Liquidity</h2>
                 <div class="tooltip-container">
                   <div style="margin-right: 0.25rem">
                     <div>
@@ -30,7 +30,7 @@
                       />
                     </div>
                   </div>
-                  <div class="tooltip-text">Add liquidity to receive LP tokens</div>
+                  <div class="tooltip-text" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Add liquidity to receive LP tokens</div>
                 </div>
               </div>
             </div>
@@ -50,18 +50,24 @@
               <div class="select-currency">
                 <div class="select-currency-input">
                   <button class="button-currency" (click)="open(content)">
-                    <div>Select a currency</div>
+                    <div [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'">Select a currency</div>
                     <img
-                      src="assets/icons/arrow-little-down.svg"
-                      alt="arrow little down"
-                    />
+        *ngIf="!isDarkModeOn"
+        src="assets/icons/arrow-little-down.svg"
+        alt="icon arrow down"
+      />
+      <img
+        *ngIf="isDarkModeOn"
+        src="assets/icons/arrow-little-down-white.svg"
+        alt="icon arrow up"
+      />
                   </button>
                 </div>
               </div>
 
               <div>
                 <div>
-                  <div class="general-field-big-container">
+                  <div class="general-field-big-container" [ngClass]="isDarkModeOn ? 'bcg-dark-button' : 'bcg-base'">
                     <input
                       class="general-field-big"
                       type="text"
@@ -69,6 +75,7 @@
                       placeholder="0.0"
                       minlength="1"
                       maxlength="79"
+                      [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'"
                     />
                   </div>
                 </div>
@@ -76,25 +83,40 @@
             </div>
 
             <div class="plus-div">
-              <img src="assets/icons/plus-sign.svg" alt="plus sign" width="16px" />
+              <img
+        *ngIf="!isDarkModeOn"
+        src="assets/icons/plus-sign.svg"
+        alt="icon arrow down"
+      />
+      <img
+        *ngIf="isDarkModeOn"
+        src="assets/icons/plus-sign-white.svg"
+        alt="icon arrow up"
+      />
             </div>
 
             <div class="select-currency-container">
               <div class="select-currency">
                 <div class="select-currency-input">
                   <button class="button-currency" (click)="open(content)">
-                    <div>Select a currency</div>
+                    <div [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'">Select a currency</div>
                     <img
-                      src="assets/icons/arrow-little-down.svg"
-                      alt="arrow little down"
-                    />
+        *ngIf="!isDarkModeOn"
+        src="assets/icons/arrow-little-down.svg"
+        alt="icon arrow down"
+      />
+      <img
+        *ngIf="isDarkModeOn"
+        src="assets/icons/arrow-little-down-white.svg"
+        alt="icon arrow up"
+      />
                   </button>
                 </div>
               </div>
 
               <div>
                 <div>
-                  <div class="general-field-big-container">
+                  <div class="general-field-big-container" [ngClass]="isDarkModeOn ? 'bcg-dark-button' : 'bcg-base'">
                     <input
                       class="general-field-big"
                       type="text"
@@ -121,46 +143,36 @@
       <!-- SECOND SECTION BOTTOM -->
       <div class="main-bottom">
         <div class="main-bottom-box">
+          
           <div class="main-bottom-left">
-            <div class="bottom-left-button">
-              <button class="switch-v1">V2</button>
+            <div class="bottom-left-button" [ngClass]="isDarkModeOn ? 'bcg-dark-button' : 'bcg-base'">
+              <button class="switch-v1" [ngClass]="isDarkModeOn ? 'bcg-mauve' : 'bcg-lightpurple'" >
+                <p [ngClass]="isDarkModeOn ? 'text-black' : 'text-white'" style="margin-bottom: 0rem;">V2</p>
+              </button>
               <a class="switch-old" href="">V1 (old)</a>
             </div>
 
-            <a
-              class="link-convert"
-              href="https://docs.binance.org/smart-chain/guides/cross-chain.html"
-            >
+            <a class="link-convert" href="https://docs.binance.org/smart-chain/guides/cross-chain.html">
               Convert ERC-20 to BEP-20
-              <img
-                src="assets/icons/arrow-oblique-cyan.svg"
-                alt="convert-link"
-              />
+              <img src="assets/icons/arrow-oblique-cyan.svg" alt="convert-link">
             </a>
+
           </div>
 
           <div class="main-bottom-right">
-            <div class="need-help">
-              <a
-                href="https://docs.pancakeswap.finance/products/pancakeswap-exchange"
-                >Need help?</a
-              >
-              <svg
-                viewBox="0 0 16 16"
-                color="text"
-                width="20px"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 16V0C0 0 3 1 6 1C9 1 16 -2 16 3.5C16 10.5 7.5 16 0 16Z"
-                ></path>
-              </svg>
+            <div class="need-help" >
+              <a href="https://docs.pancakeswap.finance/products/pancakeswap-exchange" [ngClass]="isDarkModeOn ? 'bcg-mauve' : 'bcg-lightpurple'">
+                <p [ngClass]="isDarkModeOn ? 'text-black' : 'text-white'" style="margin-bottom: 0rem;">Need help?</p>
+              </a>
+              <svg viewBox="0 0 16 16" color="text" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M0 16V0C0 0 3 1 6 1C9 1 16 -2 16 3.5C16 10.5 7.5 16 0 16Z"></path></svg>
             </div>
 
             <div class="img-bottom-right">
-              <img src="assets/img/help.png" alt="need-help-png" />
+              <img src="assets/img/help.png" alt="need-help-png">
             </div>
+          
           </div>
+        
         </div>
       </div>
     </div>
