@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DesignSystemComponent } from './pages/design-system/design-system.component';
-import { HomepageContainerComponent } from './pages/homepage-container/homepage-container.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomepageContainerComponent},
-  { path: 'design-system', component: DesignSystemComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: '**', redirectTo: '/home'}
+  { path: 'design-system', loadChildren: () => import('./modules/design-system/design-system.module').then( m => m.DesignSystemModule)},
+  { path: 'add', loadChildren: () => import('./modules/add/add.module').then( m => m.AddModule)},
+  { path: 'trade', loadChildren: () => import('./modules/trade/trade.module').then( m => m.TradeModule)},
+  { path: 'page-not-found', loadChildren: () => import('./modules/not-found/not-found.module').then( m => m.NotFound)},
+  { path: '**', redirectTo: '/page-not-found' },
 ];
 
 @NgModule({

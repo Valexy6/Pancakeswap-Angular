@@ -37,6 +37,7 @@
   --fill-dark: rgb(32, 19, 53);
   --fill-black: rgb(8, 6, 11);
   --black-transparent: rgb(8, 6, 11, 0.6);
+  --input-dark: rgb(55, 47, 71);
   --gradient-purple-black: radial-gradient(103.12% 50% at 50% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%);
   --gradient-purple-darkmode: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
   --gradient-dark: linear-gradient(166.77deg, rgb(59, 65, 85) 0%, rgb(58, 48, 69) 100%);
@@ -235,6 +236,15 @@ a {
 .bcg-hover-a {
   background-color: var(--hover-a);
 }
+
+.bcg-input-dark {
+  background-color: var(--input-dark);
+}
+
+.bcg-background-color {
+  background-color: var(--background-color);
+}
+
 .bcg-gradient {
   background: var(--gradient);
 }
@@ -288,6 +298,14 @@ a {
   border-bottom: 1px solid var(--dark-solid-shadow);
 }
 
+.boreder-column {
+  border: 1px solid var(--column-border);
+}
+
+.boreder-none {
+  border: 0px;
+}
+
 /* -- MODALS -- */
 .modal-backdrop {
   background-color: var(--dark-purple);
@@ -318,7 +336,7 @@ a {
   max-height: 90vh;
   background-color: transparent;
   border-radius: 2rem;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .modal-container-settings {
