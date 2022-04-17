@@ -1,7 +1,7 @@
 .sort-by-container {
   cursor: pointer;
   width: 100%;
-  min-width: 1rem;
+  min-width: 10rem;
   height: 2.5rem;
   position: relative;
   border: 1px solid rgb(215, 202, 236);
@@ -23,7 +23,7 @@
 .sort-by-list {
   height: auto;
   width: 100%;
-  min-width: 1rem;
+  min-width: 10rem;
   position: absolute;
   overflow: hidden;
   border: 1px solid rgb(215, 202, 236);
