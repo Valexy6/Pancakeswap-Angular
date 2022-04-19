@@ -29,6 +29,7 @@ import { TradeLiquidityComponent } from './pages/trade-liquidity/trade-liquidity
 import { TradeAddComponent } from './pages/trade-add/trade-add.component';
 import { HomeTableComponent } from './components/home-table/home-table.component';
 import { HomeTableColumnsComponent } from './components/home-table-columns/home-table-columns.component';
+import { SecondaryMenuComponent } from './shared/secondary-menu/secondary-menu.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { HomeTableColumnsComponent } from './components/home-table-columns/home-
     TradeLiquidityComponent,
     TradeAddComponent,
     HomeTableComponent,
-    HomeTableColumnsComponent
+    HomeTableColumnsComponent,
+    SecondaryMenuComponent
 
   ],
   imports: [

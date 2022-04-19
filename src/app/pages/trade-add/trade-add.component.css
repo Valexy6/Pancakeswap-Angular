@@ -380,7 +380,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid var(--grey-border);
   color: var(--dark-purple);
 }
 
@@ -403,17 +402,15 @@
 }
 
 .search-field {
-  background-color: var(--background-color);
   border-radius: 16px;
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
-  color: var(--dark-purple);
   display: block;
   font-size: 16px;
   height: 48px;
   outline: 0px;
   padding: 0px 16px;
   width: 100%;
-  border: 1px solid var(--column-border);
+  border: none;
 }
 
 .search-field::placeholder {
@@ -470,14 +467,12 @@
 }
 
 .label-currency-1 {
-  color: var(--dark-purple);
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
 }
 
 .label-currency-2 {
-  color: var(--light-purple);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;

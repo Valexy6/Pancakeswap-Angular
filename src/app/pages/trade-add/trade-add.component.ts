@@ -30,7 +30,7 @@ const currencyModal:ICurrencyModal [] = [
   {
     img: 'https://pancakeswap.finance/images/tokens/0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c.png',
     label1: 'BTCB',
-    label2: 'Btcb Token',
+    label2: 'BTCB Token',
   },
   {
     img: 'https://pancakeswap.finance/images/tokens/0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51.png',
@@ -40,7 +40,7 @@ const currencyModal:ICurrencyModal [] = [
   {
     img: 'https://pancakeswap.finance/images/tokens/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56.png',
     label1: 'BUSD',
-    label2: 'Busd Token',
+    label2: 'BUSD Token',
   },
   {
     img: 'assets/icons/pancakes.svg',
@@ -80,7 +80,7 @@ const currencyModal:ICurrencyModal [] = [
   {
     img: 'https://pancakeswap.finance/images/tokens/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c.png',
     label1: 'WBNB',
-    label2: 'Wbnb Token',
+    label2: 'WBNB Token',
   },
   {
     img: 'https://pancakeswap.finance/images/tokens/0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63.png',

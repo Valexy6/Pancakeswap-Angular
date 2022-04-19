@@ -1,25 +1,21 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
 import { ILink } from 'src/app/models/SecondaryMenuItem';
-import { DarkModeService } from 'src/app/shared/dark-mode/dark-mode.service';
+import { DarkModeService } from '../dark-mode/dark-mode.service';
 
 @Component({
-  selector: 'app-trade-container',
-  templateUrl: './trade-container.component.html',
-  styleUrls: ['./trade-container.component.css']
+  selector: 'app-secondary-menu',
+  templateUrl: './secondary-menu.component.html',
+  styleUrls: ['./secondary-menu.component.css']
 })
-export class TradeContainerComponent implements OnInit, OnDestroy {
+export class SecondaryMenuComponent implements OnInit, OnDestroy {
+  @Input() items: ILink[] = [];
   destroy$: Subject<boolean> = new Subject<boolean>();
   isDarkModeOn!: boolean;
-  menuItems: ILink[] = [
-    { name: 'Swap', url: 'swap' },
-    { name: 'Liquidity', url: 'liquidity' },
-  ];
 
   constructor(private darkmodeService: DarkModeService) { }
 
   ngOnInit(): void {
-
     this.darkmodeService.darkModeState$
     .pipe(takeUntil(this.destroy$))
     .subscribe((res) => this.isDarkModeOn = res);
@@ -30,4 +26,4 @@ export class TradeContainerComponent implements OnInit, OnDestroy {
     this.destroy$.unsubscribe();
   }
 
-  }
+}

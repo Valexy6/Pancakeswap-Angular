@@ -40,7 +40,7 @@
               </div>
             </div>
             <div class="button-top-container">
-              <app-modal-settings class="button-top"></app-modal-settings>
+              <app-modal-settings class="button-top" [isDarkModeOn]="isDarkModeOn"></app-modal-settings>
               <app-modal-clock
                 style="margin-left: 1rem; padding: 0px"
               ></app-modal-clock>
@@ -154,7 +154,7 @@
               <button class="switch-v1" [ngClass]="isDarkModeOn ? 'bcg-mauve' : 'bcg-lightpurple'" >
                 <p [ngClass]="isDarkModeOn ? 'text-black' : 'text-white'" style="margin-bottom: 0rem;">V2</p>
               </button>
-              <a class="switch-old" href="">V1 (old)</a>
+              <a class="switch-old" href="" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">V1 (old)</a>
             </div>
 
             <a class="link-convert" href="https://docs.binance.org/smart-chain/guides/cross-chain.html">
@@ -185,11 +185,10 @@
 </div>
 
 <!-- Modal -->
-<!-- Modal -->
-<ng-template #content let-modal>
-  <div class="modal-box-connect">
+<ng-template #content let-modal >
+  <div class="modal-box-connect" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
     <div class="modal-wallet-header">
-      <h3 class="h3 m-0">Select a Token</h3>
+      <h3 class="h3 m-0" [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'">Select a Token</h3>
       <button type="button" class="close-btn" (click)="modal.close('Close click')">
         <img src="assets/icons/exit.svg" />
       </button>
@@ -199,9 +198,9 @@
 
     </div>
 
-    <div class="modal-section">
+    <div class="modal-section" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
       <div>
-        <input class="search-field" type="text" placeholder="Search name or paste address" [formControl]="filter"/>
+        <input class="search-field" type="text" placeholder="Search name or paste address" [formControl]="filter" [ngClass]="isDarkModeOn ? 'bcg-dark-button' : 'bcg-base'"/>
 
         <div class="modal-currency">
           <div class="modal-currency-container">
@@ -209,8 +208,8 @@
               <div class="container-ciclo-currency" *ngFor="let currencyModals of currency$ | async; index as i">
                 <img src="{{ currencyModals.img }}" alt="" style="width: 24px; align-self: center;">
                 <div class="label-container">
-                  <div class="label-currency-1"> <ngb-highlight [result]="currencyModals.label1" [term]="filter.value"></ngb-highlight> </div>
-                  <div class="label-currency-2"> <ngb-highlight [result]="currencyModals.label2" [term]="filter.value"></ngb-highlight> </div>
+                  <div class="label-currency-1" [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'"> <ngb-highlight [result]="currencyModals.label1" [term]="filter.value"></ngb-highlight> </div>
+                  <div class="label-currency-2" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'"> <ngb-highlight [result]="currencyModals.label2" [term]="filter.value"></ngb-highlight> </div>
                 </div>
               </div>
             </div>

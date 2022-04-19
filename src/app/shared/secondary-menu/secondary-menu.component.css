@@ -1,0 +1,6 @@
+.active {
+  border-bottom: 4px solid var(--cyan);
+  border-radius: 2px;
+  color: var(--purple);
+  font-weight: 600;
+}
