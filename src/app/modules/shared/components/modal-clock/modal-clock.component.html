@@ -15,8 +15,8 @@
       <img src="assets/icons/exit.svg" alt="exit">
       </button>
     </div>
-    <div class="p-4" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
-      <app-modal-connect-wallet [buttonClass]="'button-large'"[isDarkModeOn]="isDarkModeOn"></app-modal-connect-wallet>
+    <div class="p-4" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'" (click)="modal.close('Cross click')">
+      <app-modal-connect-wallet [buttonClass]="'button-large'"[isDarkModeOn]="isDarkModeOn" ></app-modal-connect-wallet>
     </div>
   </div>
 </ng-template>

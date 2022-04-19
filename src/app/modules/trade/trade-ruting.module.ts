@@ -5,6 +5,7 @@ import { TradeSwapComponent } from "./components/trade-swap/trade-swap.component
 import { TradeContainerComponent } from "./pages/trade-container/trade-container.component";
 
 const routes: Routes = [
+  { path: '', redirectTo: 'swap', pathMatch: 'full'},
   { path: '', component: TradeContainerComponent, children: [
     { path: 'swap', component: TradeSwapComponent},
     { path: 'liquidity', component: TradeLiquidityComponent},

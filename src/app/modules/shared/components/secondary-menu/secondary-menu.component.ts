@@ -6,7 +6,11 @@ import { ILink } from 'src/app/models/SecondaryMenuItem';
   templateUrl: './secondary-menu.component.html',
   styleUrls: ['./secondary-menu.component.css']
 })
-export class SecondaryMenuComponent {
+export class SecondaryMenuComponent implements OnInit {
   @Input() items: ILink[] = [];
   @Input() isDarkModeOn = false;
+
+  ngOnInit(): void {
+    
+  }
 }

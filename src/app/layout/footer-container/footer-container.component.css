@@ -50,6 +50,7 @@ ul {
   color: var(--text-footer);
   line-height: 1.5;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .f-link a:hover {
@@ -78,6 +79,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
 }
 
 .telegram-container {
@@ -98,6 +100,7 @@ ul {
   padding: 1rem;
   z-index: 15;
   overflow-y: auto;
+  cursor: pointer;
 }
 
 .telegram-container:hover .telegram-links {
