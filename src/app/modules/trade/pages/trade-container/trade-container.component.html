@@ -1,9 +1,4 @@
-<div style="margin-top: 3.5rem;" [ngClass]="isDarkModeOn ? 'bcg-gradient-purple-black' : 'bcg-white-grey'">
-  <!-- <nav class="d-flex align-items-center justify-content-center" >
-    <a routerLink="swap" class="me-3" routerLinkActive="active" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lighpurple'">Swap</a>
-    <a routerLink="liquidity" routerLinkActive="active" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lighpurple'">Liquidity</a>
-  </nav> -->
-
+<div style="padding-top: 4rem;" [ngClass]="isDarkModeOn ? 'bcg-dark' : 'bcg-white-grey'">
   <app-secondary-menu [items]="menuItems"></app-secondary-menu>
   <router-outlet></router-outlet>
 </div>

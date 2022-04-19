@@ -1,4 +1,4 @@
-<div id="container">
+<div style="padding-top: 4rem;" [ngClass]="isDarkModeOn ? 'bcg-dark' : 'bcg-white-grey'">
   <app-secondary-menu [items]="menuItems" [isDarkModeOn]="isDarkModeOn"></app-secondary-menu>
   <router-outlet></router-outlet>
 </div>

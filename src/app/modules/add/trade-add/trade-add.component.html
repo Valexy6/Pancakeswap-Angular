@@ -42,6 +42,7 @@
             <div class="button-top-container">
               <app-modal-settings class="button-top" [isDarkModeOn]="isDarkModeOn"></app-modal-settings>
               <app-modal-clock
+                [isDarkModeOn]="isDarkModeOn"
                 style="margin-left: 1rem; padding: 0px"
               ></app-modal-clock>
             </div>
@@ -137,6 +138,7 @@
 
             
               <app-modal-connect-wallet
+                [isDarkModeOn]="isDarkModeOn"
                 [buttonClass]="'button-large'"
               ></app-modal-connect-wallet>
             
@@ -157,7 +159,7 @@
               <a class="switch-old" [ngClass]="isDarkModeOn ? 'darkmode' : 'lightmode'">V1 (old)</a>
             </div>
 
-            <a class="link-convert" href="https://docs.binance.org/smart-chain/guides/cross-chain.html">
+            <a class="link-convert" routerLink="/add">
               Convert ERC-20 to BEP-20
               <img src="assets/icons/arrow-oblique-cyan.svg" alt="convert-link">
             </a>
@@ -166,7 +168,7 @@
 
           <div class="main-bottom-right">
             <div class="need-help" >
-              <a href="https://docs.pancakeswap.finance/products/pancakeswap-exchange" [ngClass]="isDarkModeOn ? 'bcg-mauve' : 'bcg-lightpurple'">
+              <a routerLink="/add" [ngClass]="isDarkModeOn ? 'bcg-mauve' : 'bcg-lightpurple'">
                 <p [ngClass]="isDarkModeOn ? 'text-darkpurple' : 'text-white'" style="margin-bottom: 0rem;">Need help?</p>
               </a>
               <svg viewBox="0 0 16 16" color="text" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M0 16V0C0 0 3 1 6 1C9 1 16 -2 16 3.5C16 10.5 7.5 16 0 16Z"></path></svg>

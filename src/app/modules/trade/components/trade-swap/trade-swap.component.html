@@ -434,6 +434,7 @@
               <div class="pt-4">
                 <app-modal-connect-wallet
                   [buttonClass]="'button-large'"
+                  [isDarkModeOn]="isDarkModeOn"
                 ></app-modal-connect-wallet>
               </div>
             </div>
@@ -467,7 +468,7 @@
 
         <a
           class="link-convert"
-          href="https://docs.binance.org/smart-chain/guides/cross-chain.html"
+          routerLink="/trade/swap"
         >
           Convert ERC-20 to BEP-20
           <img src="assets/icons/arrow-oblique-cyan.svg" alt="convert-link" />
@@ -477,7 +478,7 @@
       <div class="main-bottom-right">
         <div class="need-help">
           <a
-            href="https://docs.pancakeswap.finance/products/pancakeswap-exchange"
+            routerLink="/trade/swap"
             [ngClass]="isDarkModeOn ? 'bcg-mauve' : 'bcg-lightpurple'"
           >
             <p
