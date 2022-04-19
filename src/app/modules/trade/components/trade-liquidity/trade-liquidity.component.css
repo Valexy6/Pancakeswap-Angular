@@ -290,6 +290,15 @@
   padding: 0px 16px;
 }
 
+
+.darkmode.switch-old {
+  color: var(--mauve);
+}
+
+.lightmode.switch-old{
+  color: var(--light-purple);
+}
+
 .link-convert {
   display: flex;
   -webkit-box-align: center;

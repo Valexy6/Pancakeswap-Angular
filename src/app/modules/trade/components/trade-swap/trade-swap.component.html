@@ -22,7 +22,7 @@
 
           <div
             class="text-left-card-1"
-            [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'"
+            [ngClass]="isDarkModeOn ? 'text-white' : 'text-darkpurple'"
           >
             BNB/CAKE
           </div>
@@ -55,7 +55,7 @@
           <div class="text-box-mid">
             <div
               class="mid-text-1"
-              [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'"
+              [ngClass]="isDarkModeOn ? 'text-white' : 'text-darkpurple'"
             >
               44.20
             </div>
@@ -285,7 +285,7 @@
                 </button>
 
                 <div class="top-card-text">
-                  <h2 [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'">
+                  <h2 [ngClass]="isDarkModeOn ? 'text-white' : 'text-darkpurple'">
                     Swap
                   </h2>
                 </div>
@@ -322,7 +322,7 @@
                         alt="bnb-icon"
                         style="margin-right: 8px"
                       />
-                      <div class="text-left-card-1" [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'">{{ token1 }}</div>
+                      <div class="text-left-card-1" [ngClass]="isDarkModeOn ? 'text-white' : 'text-darkpurple'">{{ token1 }}</div>
                       <img
                         *ngIf="!isDarkModeOn"
                         src="assets/icons/arrow-little-down.svg"
@@ -339,7 +339,7 @@
 
                 <div
                   class="tokens-trade-input"
-                  [ngClass]="isDarkModeOn ? 'bcg-dark-button' : 'bcg-base'"
+                  [ngClass]="isDarkModeOn ? 'bcg-dark-button darkmode' : 'bcg-base lightmode'"
                 >
                   <div class="tokens-trade-input-3">
                     <div class="tokens-trade-input-4">
@@ -355,6 +355,7 @@
                         minlength="1"
                         maxlength="79"
                         spellcheck="false"
+                        [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'"
                       />
                     </div>
                   </div>
@@ -390,7 +391,7 @@
                         alt="pancakes-icon"
                         style="margin-right: 8px"
                       />
-                      <div class="text-left-card-1" [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'">{{ token2 }}</div>
+                      <div class="text-left-card-1" [ngClass]="isDarkModeOn ? 'text-white' : 'text-darkpurple'">{{ token2 }}</div>
                       <img
                         *ngIf="!isDarkModeOn"
                         src="assets/icons/arrow-little-down.svg"
@@ -407,7 +408,7 @@
 
                 <div
                   class="tokens-trade-input"
-                  [ngClass]="isDarkModeOn ? 'bcg-dark-button' : 'bcg-base'"
+                  [ngClass]="isDarkModeOn ? 'bcg-dark-button darkmode' : 'bcg-base lightmode'"
                 >
                   <div class="tokens-trade-input-3">
                     <div class="tokens-trade-input-4">
@@ -455,13 +456,13 @@
             [ngClass]="isDarkModeOn ? 'bcg-mauve' : 'bcg-lightpurple'"
           >
             <p
-              [ngClass]="isDarkModeOn ? 'text-black' : 'text-white'"
+              [ngClass]="isDarkModeOn ? 'text-darkpurple' : 'text-white'"
               style="margin-bottom: 0rem"
             >
               V2
             </p>
           </button>
-          <a class="switch-old" href="">V1 (old)</a>
+          <a class="switch-old" [ngClass]="isDarkModeOn ? 'darkmode' : 'lightmode'">V1 (old)</a>
         </div>
 
         <a
@@ -480,7 +481,7 @@
             [ngClass]="isDarkModeOn ? 'bcg-mauve' : 'bcg-lightpurple'"
           >
             <p
-              [ngClass]="isDarkModeOn ? 'text-black' : 'text-white'"
+              [ngClass]="isDarkModeOn ? 'text-darkpurple' : 'text-white'"
               style="margin-bottom: 0rem"
             >
               Need help?
@@ -508,9 +509,10 @@
 
 <!-- Modal -->
 <ng-template #content let-modal>
-  <div class="modal-box-connect">
+  <div [ngClass]="isDarkModeOn ? 'darkmode' : 'lightmode'">
+  <div class="modal-box-connect" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
     <div class="modal-wallet-header">
-      <h3 class="h3 m-0">Select a Token</h3>
+      <h3 class="h3 m-0" [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'">Select a Token</h3>
       <button type="button" class="close-btn" (click)="modal.close('Close click')">
         <img src="assets/icons/exit.svg" />
       </button>
@@ -520,18 +522,22 @@
 
     </div>
 
-    <div class="modal-section">
+    <div class="modal-section" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
       <div>
-        <input class="search-field" type="text" placeholder="Search name or paste address" [formControl]="filter"/>
+        <input class="search-field" type="text" placeholder="Search name or paste address" [formControl]="filter" [ngClass]="isDarkModeOn ? 'bcg-dark-button' : 'bcg-base'"/>
 
         <div class="modal-currency">
           <div class="modal-currency-container">
             <div class="box-currency">
-              <div class="container-ciclo-currency" *ngFor="let currencyModals of currency$ | async; index as i">
+              <div class="container-ciclo-currency" *ngFor="let currencyModals of currency$ | async; index as i"
+              (click)="
+                selectNewTokens(currencyModals.label1);
+                modal.close('Close click')
+              ">
                 <img src="{{ currencyModals.img }}" alt="" style="width: 24px; align-self: center;">
                 <div class="label-container">
-                  <button class="label-currency-1"> <ngb-highlight [result]="currencyModals.label1" [term]="filter.value"></ngb-highlight> </button>
-                  <button class="label-currency-2"> <ngb-highlight [result]="currencyModals.label2" [term]="filter.value"></ngb-highlight> </button>
+                  <div class="label-currency-1" [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'"> <ngb-highlight [result]="currencyModals.label1" [term]="filter.value"></ngb-highlight> </div>
+                  <div class="label-currency-2" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'"> <ngb-highlight [result]="currencyModals.label2" [term]="filter.value"></ngb-highlight> </div>
                 </div>
               </div>
             </div>
@@ -539,10 +545,11 @@
         </div>
       </div>
 
-      <div class="button-currency">
+      <div class="button-currency-modal">
         <button> Manage Tokens</button>
       </div>
 
       
     </div>
+  </div>
 </ng-template>
