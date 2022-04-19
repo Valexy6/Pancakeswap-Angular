@@ -77,27 +77,49 @@
     <div class="navlink-left">
       <div class="dropdown-nav">
         <div class="dropbtn-nav">
-          <a class="a-nav" routerLink="/trade/swap">Trade</a>
+          <a
+            class="a-nav"
+            routerLink="/trade"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: false }"
+          >Trade</a>
         </div>
         <div class="dropdown-content">
-          <a routerLink="/trade/swap">Swap</a>
-          <a routerLink="/trade/liquidity">Liquidity</a>
+          <a
+            routerLink="/trade/swap"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >Swap</a>
+          <a
+            routerLink="/trade/liquidity"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Liquidity</a>
         </div>
       </div>
 
       <div class="dropdown-nav">
         <div class="dropbtn-nav">
-          <a class="a-nav" routerLink="/earn/farms" >Earn</a>
+          <a
+            class="a-nav"
+            routerLink="/earn/farms"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Earn</a>
         </div>
         <div class="dropdown-content">
-          <a routerLink="/earn/farms">Farms</a>
+          <a
+            routerLink="/earn/farms"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Farms</a>
           <a class="disabled">Pools</a>
         </div>
       </div>
 
       <div class="dropdown-nav">
         <div class="dropbtn-nav">
-          <a class="a-nav" routerLink="/home" >Win</a>
+          <a class="a-nav" routerLink="/home">Win</a>
         </div>
         <div class="dropdown-content">
           <a class="disabled">Perdiction (BETA)</a>
@@ -131,7 +153,11 @@
           <a class="disabled">Blog<img [src]="isDarkModeOn ? 'assets/icons/link-mauve.svg' : 'assets/icons/link-darkpurple.svg'" /></a>
           <a class="disabled">Docs<img [src]="isDarkModeOn ? 'assets/icons/link-mauve.svg' : 'assets/icons/link-darkpurple.svg'" /></a>
           <hr />
-          <a routerLink="/design-system">Design System</a>
+          <a
+            routerLink="/design-system"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >Design System</a>
         </div>
       </div>
     </div>

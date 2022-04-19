@@ -127,6 +127,25 @@ a {
   border-color: var(--grey-border);
 }
 
+.darkmode .dropbtn-nav a.active,
+.darkmode .dropdown-content a.active,
+.darkmode .dropdown-content a.active:active,
+.darkmode .dropdown-content a.active:link,
+.darkmode .dropdown-content a.active:visited {
+  color: var(--title-footer);
+  font-weight: 600;
+}
+
+.lightmode .dropbtn-nav a.active,
+.lightmode .dropdown-content a.active,
+.lightmode .dropdown-content a.active:active,
+.lightmode .dropdown-content a.active:link,
+.lightmode .dropdown-content a.active:visited {
+  color: var(--purple);
+  font-weight: 600;
+}
+
+
 /* -- bottom navbar -- */
 .darkmode .nav-bottom {
   background-color: var(--footer-bcg);

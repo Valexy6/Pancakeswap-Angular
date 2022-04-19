@@ -8,13 +8,12 @@ import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 })
 
 export class ModalClockComponent implements OnInit  {
-  closeResult!: string;
   @Input() isDarkModeOn!: boolean;
   
   constructor(private modalService: NgbModal) {}
   
   open(content: any) {
-    this.modalService.open(content, { windowClass: 'ps-modal-centered',modalDialogClass: 'modal-container' });
+    this.modalService.open(content, { windowClass: 'ps-modal-centered', modalDialogClass: 'modal-container' });
   }
 
   ngOnInit(): void {

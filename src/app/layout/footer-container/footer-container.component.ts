@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -31,7 +32,7 @@ export class FooterContainerComponent implements OnInit {
     "Announcements",
   ]
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void { }
 }

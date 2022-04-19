@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -7,11 +8,11 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./modal-connect-wallet.component.css']
 })
 export class ModalConnectWalletComponent implements OnInit {
-  closeResult!: string;
   @Input() isDarkModeOn!: boolean;
   @Input() buttonClass?: 'button-standard' | 'button-small' | 'button-medium' | 'button-large' | 'button-squashed';
+  currentRoute: string = this.router.url;
   
-  constructor(private modalService: NgbModal) { }
+  constructor(private modalService: NgbModal, private router: Router) { }
     
   ngOnInit(): void {
   }
