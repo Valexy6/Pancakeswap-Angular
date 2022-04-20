@@ -4,7 +4,6 @@
   min-width: 10rem;
   height: 2.5rem;
   position: relative;
-  border: 1px solid rgb(215, 202, 236);
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
   outline: none;
   font-size: 1rem;
@@ -26,7 +25,6 @@
   min-width: 10rem;
   position: absolute;
   overflow: hidden;
-  border: 1px solid rgb(215, 202, 236);
   border-radius: 0 0 1rem 1rem;
   box-shadow: rgb(0 0 0 / 20%) 0px 0px 2px,
     rgb(14 14 44 / 10%) 0px 4px 12px -8px;
@@ -177,7 +175,6 @@
 }
 
 .search-field {
-  border: 1px solid var(--column-border);
   outline: 0px;
   border-radius: 1rem;
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
@@ -202,4 +199,26 @@ h3 {
   text-transform: uppercase;
   font-size: 0.75rem;
   margin-bottom: 0;
+}
+
+.filters-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 2rem;
+  flex-flow: column wrap;
+}
+
+/* -- RESPONSIVE -- */
+@media all and (min-width: 968px) {
+  .filters-container {
+    flex-flow: row nowrap;
+  }
+}
+
+@media all and (min-width: 370px) {
+  .container-filters {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }

@@ -12,6 +12,7 @@
   --text-footer: rgb(244, 238, 255);
   --grey: rgb(239, 244, 245);
   --background-color: rgb(238, 234, 244);
+  --button-grey: rgb(233, 234, 235);
   --grey-border: rgb(231, 227, 235);
   --column-border: rgb(215, 202, 236);
   --switcher-bcg: rgb(189, 194, 196);
@@ -33,6 +34,8 @@
   --gradient-blue: linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%);
   --gradient-dark-purple: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
 
+  --button-dark: rgb(60, 55, 66);
+  --text-button-dark: rgb(102, 97, 113);
   --border-darkmode: rgb(38, 33, 48);
   --bcg-dark: rgb(8, 6, 11);
   --bcg-shadow: rgba(39, 38, 44, 0.5);
@@ -42,7 +45,6 @@
   --fill-dark: rgb(32, 19, 53);
   --fill-black: rgb(8, 6, 11);
   --black-transparent: rgb(8, 6, 11, 0.6);
-  --input-dark: rgb(55, 47, 71);
   --gradient-purple-black: radial-gradient(103.12% 50% at 50% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%);
   --gradient-purple-darkmode: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
   --gradient-dark: linear-gradient(166.77deg, rgb(59, 65, 85) 0%, rgb(58, 48, 69) 100%);
@@ -354,8 +356,16 @@ a {
   border: 1px solid var(--column-border);
 }
 
+.boreder-input {
+  border: 2px solid var(--input-dark);
+}
+
 .boreder-none {
   border: 0px;
+}
+
+.border-bold {
+  border: 2px solid var(--background-color);
 }
 
 /* -- MODALS -- */
@@ -384,8 +394,7 @@ a {
 .modal-content {
   z-index: 99;
   width: fit-content;
-  min-width: 20rem;
-  /*320px*/
+  min-width: 20rem;  /*320px*/
   max-height: 90vh;
   background-color: transparent;
   border-radius: 2rem;
@@ -403,6 +412,15 @@ a {
 
 .modal.fade .modal-dialog {
   transform: none;
+}
+
+/* -- PANEL -- */
+.accordion-body {
+  padding: 0;
+}
+
+.table>:not(caption)>*>* {
+  padding: 0.5rem 0 0 0;
 }
 
 /* -- SCROLL BAR --*/
@@ -425,32 +443,28 @@ a {
 
 /* -- TYPOGRAPHY -- */
 .h1 {
-  font-size: 4rem;
-  /*64px*/
+  font-size: 4rem;  /*64px*/
   font-weight: 600;
   margin: 0px;
   padding: 0px;
 }
 
 .h2 {
-  font-size: 2rem;
-  /*40px*/
+  font-size: 2rem;  /*40px*/
   font-weight: 600;
   margin: 0px;
   padding: 0px;
 }
 
 .h3 {
-  font-size: 1.25rem;
-  /*20px*/
+  font-size: 1.25rem;  /*20px*/
   font-weight: 600;
   margin: 0px;
   padding: 0px;
 }
 
 .h4 {
-  font-size: 1.5rem;
-  /*24px*/
+  font-size: 1.5rem;  /*24px*/
   font-weight: 600;
   margin: 0px;
   padding: 0px;
@@ -529,5 +543,12 @@ a {
 .accordion-item {
   border: none !important;
   border-radius: 0 !important;
+}
+
+.lightmode .accordion-item {
   border-bottom: 2px solid var(--grey-border) !important;
+}
+
+.darkmode .accordion-item {
+  border-bottom: 1px solid var(--dark-solid-shadow) !important;
 }

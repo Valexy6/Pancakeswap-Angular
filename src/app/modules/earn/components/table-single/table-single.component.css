@@ -11,36 +11,6 @@ a {
   color: var(--cyan);
 }
 
-.button-large {
-  border-radius: 1rem;
-  border: 0px;
-  font-size: 1rem;
-  font-weight: 600;
-  background-color: var(--cyan);
-  color: white;
-  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-  cursor: pointer;
-  letter-spacing: 0.03em;
-  line-height: 1;
-  width: 18.625rem;
-  height: 3rem;
-  opacity: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  fill: white;
-}
-
-.button-large:hover {
-  background-color: var(--hover-color);
-}
-
-.button-large:active {
-  background-color: var(--active-color);
-  transform: translateY(1px);
-  box-shadow: none;
-}
-
 .back-img {
   position: absolute;
   width: 1rem;
@@ -63,18 +33,6 @@ a {
   font-size: 1rem;
 }
 
-.bord {
-  padding: 1rem;
-  border: 2px solid var(--background-color);
-  border-radius: 1rem;
-  flex-grow: 1;
-  flex-basis: 0px;
-}
-
-.p-small {
-  color: var(--light-purple);
-}
-
 .check-icon {
   width: 14px;
   margin-right: 4px;
@@ -85,6 +43,18 @@ a {
   border-radius: 1rem;
   width: 4rem;
   height: 1.5rem;
+}
+
+.button-small-dark {
+  background-color: var(--button-dark);
+  border-color: var(--button-dark);
+  color: var(--text-button-dark);
+}
+
+.button-small-light {
+  background-color: var(--button-grey);
+  border-color: var(--button-grey);
+  color: rgb(189, 194, 196);
 }
 
 .button-small {
@@ -105,10 +75,7 @@ a {
   height: 3rem;
   padding: 0 1.5rem;
   margin-left: 4px;
-  background-color: rgb(233, 234, 235);
-  border-color: rgb(233, 234, 235);
   box-shadow: none;
-  color: rgb(189, 194, 196);
   cursor: not-allowed;
 }
 
@@ -116,20 +83,6 @@ h6 {
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.1;
-  color: var(--dark-purple);
-}
-
-.farm-row-buttons {
-  flex-direction: row;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  flex-grow: 1;
-  flex-basis: 0px;
-}
-
-label {
-  color: var(--dark-purple);
 }
 
 .accordion-item {
@@ -138,4 +91,168 @@ label {
 
 .btn-check:focus+.btn, .btn:focus {
   box-shadow: 0 0 0 0 rgb(255, 255, 255);
+}
+
+.liquidity-col,
+.multiplier-col {
+  display: none;
+}
+
+.data-box {
+  width: 100%;
+  padding-right: 4rem;
+}
+
+.btn-link {
+  text-decoration: none;
+  color: var(--cyan);
+}
+
+.single-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.token {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+
+/* -- panel -- */
+.accordion-body {
+  padding: 0 !important;
+}
+
+.subrow {
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.subrow-col1 {
+  order: 3;
+  min-width: fit-content;
+}
+
+.subrow-col2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+  order: 1;
+}
+
+.farm-row-buttons {
+  flex-direction: column;
+  width: 100%;
+}
+
+.bord {
+  padding: 1rem;
+  border-radius: 1rem;
+  flex-grow: 1;
+  flex-basis: 0px;
+}
+
+.bord:first-of-type {
+  margin-bottom: 1rem;
+}
+
+.sub-panel {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  order: 2;
+  flex-direction: column;
+}
+
+/* -- RESPONSIVE -- */
+@media all and (min-width: 968px) {
+  .subrow {
+    flex-direction: row;
+  }
+
+  .subrow-col1 {
+    order: 1;
+  }
+
+  .subrow-col2 {
+    order: 2;
+  }
+
+  .bord:first-of-type {
+    margin-left: 4rem;
+  }
+
+  .multiplier-panel {
+    display: none;
+  }
+
+  .sub-panel {
+    display: none;
+  }
+}
+
+@media all and (min-width: 852px) {
+  .liquidity-col,
+  .multiplier-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .data-box {
+    width: 65%;
+    padding-right: 1.5rem;
+  }
+
+  .panel-toggle-text {
+    display: none;
+  }
+}
+
+@media all and (min-width: 576px) {
+  .data-box {
+    width: 60%;
+  }
+
+  .single-row {
+    flex-direction: row;
+  }
+
+  .subrow {
+    padding: 1rem 1.25rem;
+    align-items: flex-start;
+  }
+  
+  .subrow-col2 {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .bord:first-of-type {
+    margin-right: 3rem;
+    margin-bottom: 0;
+  }
+
+  .farm-row-buttons {
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-basis: 0px;
+  }
+}
+
+@media all and (min-width: 370px) {
+
 }

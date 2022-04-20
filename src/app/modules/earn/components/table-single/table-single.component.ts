@@ -10,8 +10,12 @@ export class TableSingleComponent implements OnInit {
   @Input() farm: IFarm | null = null;
   @Input() isDarkModeOn: boolean = false;
   constructor() { }
+  isArrowUp: boolean = true
 
   ngOnInit(): void {
   }
 
+  toggleArrow() {
+    this.isArrowUp = !this.isArrowUp;
+  }
 }

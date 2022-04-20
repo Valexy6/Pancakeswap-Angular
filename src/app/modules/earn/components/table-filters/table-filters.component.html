@@ -1,4 +1,4 @@
-<div class="d-flex flex-column flex-lg-row align-items-center justify-content-between w-100 py-5">
+<div class="filters-container w-100 pb-3 pt-5">
   <div class="d-flex align-items-center">
     <button class="btn"><img src="assets/icons/six-square-gray.svg" /></button>
     <button class="btn"><img src="assets/icons/rectangles-cyan.svg" /></button>
@@ -22,20 +22,20 @@
     </div>
   </div>
 
-  <div class="d-flex align-items-center mt-4 mt-lg-0">
+  <div class="d-flex align-items-center mt-lg-0">
     <div class="box">
       <h3 [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'" class="h5">Sort by</h3>
 
       <div class="mr-3">
         <div class="sort-by-container" [ngStyle]="{'border-radius': !isVisible ? '16px' : '16px 16px 0 0'}"
-          [ngClass]="isDarkModeOn ? 'bcg-input-dark' : 'bcg-background-color'">
+          [ngClass]="isDarkModeOn ? 'bcg-input-dark boreder-none' : 'bcg-background-color boreder-column'">
           <div class="sort-by-head" (click)="showOptions()">
             <p class="p" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">{{ optionSelected }}</p>
-            <img src="assets/icons/arrow-sort.svg" />
+            <img [src]="isDarkModeOn ? 'assets/icons/arrow-sort-textfooter.svg' : 'assets/icons/arrow-sort-darkpurple.svg'" />
           </div>
 
           <div class="sort-by-list" *ngIf="isVisible"
-            [ngClass]="isDarkModeOn ? 'bcg-input-dark' : 'bcg-background-color'">
+            [ngClass]="isDarkModeOn ? 'bcg-input-dark boreder-none' : 'bcg-background-color boreder-column'">
             <ul class="m-0 p-0">
               <li *ngFor="let option of optionsList" (click)="selectOption(option)"
                 [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">{{ option }}</li>
@@ -48,9 +48,12 @@
     <div class="mx-3">
       <h3 [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">Search</h3>
       <div>
-        <input class="search-field" type="text" placeholder="Search Farms"
-          [ngClass]="isDarkModeOn ? 'bcg-input-dark' : 'text-darkpurple'"
-          [ngClass]="isDarkModeOn ? 'bcg-input-dark' : 'bcg-background-color'" />
+        <input
+          class="search-field"
+          type="text"
+          placeholder="Search Farms"
+          [ngClass]="isDarkModeOn ? 'bcg-input-dark boreder-none' : 'text-darkpurple bcg-background-color boreder-column'"
+        />
       </div>
     </div>
   </div>

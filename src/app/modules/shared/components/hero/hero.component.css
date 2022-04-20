@@ -1,21 +1,29 @@
-.hero-container {
-  background: var(--gradient);
+.hero-title {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-h1 {
-  color: var(--purple);
+.h1 {
   padding-top: 3rem;
   padding-bottom: 1.5rem;
-  margin-left: 3rem;
+  font-size: 3rem;
 }
 
-h4 {
-  margin-left: 3rem;
+.h4 {
   margin-bottom: 0.5rem;
 }
 
 a {
+  font-weight: 600;
   color: var(--cyan);
-  margin-left: 3rem;
   margin-bottom: 1.5rem;
+}
+
+/* -- RESPONSIVE -- */
+@media all and (min-width: 968px) {
+  .h1 {
+    font-size: 4rem;
+  }
 }
