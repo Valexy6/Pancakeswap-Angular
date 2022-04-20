@@ -5,7 +5,7 @@
   margin: 1rem 0rem;
 }
 
-a {
+.to-top-text {
   color: var(--cyan);
   font-size: 1rem;
   letter-spacing: 0.03em;
@@ -13,4 +13,8 @@ a {
   height: 3rem;
   display: flex;
   align-items: center;
+}
+
+.to-top {
+  cursor: pointer;
 }

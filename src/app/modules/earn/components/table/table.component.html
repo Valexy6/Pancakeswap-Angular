@@ -1,7 +1,7 @@
 <div class="table" id="table-top" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
   <app-table-single *ngFor="let farm of farms" [isDarkModeOn]="isDarkModeOn" [farm]="farm"></app-table-single>
-  <div class="d-flex justify-content-center align-items-center border-0">
-    <a routerLink="/earn/farms" fragment="table-top">To Top</a>
+  <div class="to-top d-flex justify-content-center align-items-center border-0" (click)="scrollToTop()">
+    <a class="to-top-text">To Top</a>
     <img src="assets/icons/arrow-little-up-cyan.svg">
   </div>
 </div>

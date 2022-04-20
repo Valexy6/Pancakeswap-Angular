@@ -2,8 +2,8 @@
   [link]="{ name: 'Community Auctions', url: 'auction' }" [isDarkModeOn]="isDarkModeOn">
 </app-hero>
 
-<div class="container-fluid m-0 p-0" [ngClass]="isDarkModeOn ? 'bcg-dark' : 'bcg-white-grey'">
-  <div class="container">
+<div class="farms-container d-flex flex-column justify-content-center" [ngClass]="isDarkModeOn ? 'bcg-dark' : 'bcg-white-grey'">
+  <div class="container-filters">
     <app-table-filters [isDarkModeOn]="isDarkModeOn"></app-table-filters>
     <app-table [isDarkModeOn]="isDarkModeOn" [farms]="farms"></app-table>
   </div>

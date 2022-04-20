@@ -1,90 +1,124 @@
 <ngb-accordion #acc="ngbAccordion" *ngIf="farm">
-  <ngb-panel id="static-1">
+  <ngb-panel>
     <ng-template ngbPanelHeader let-opened="true">
-      <div class="d-flex align-items-center justify-content-between py-3">
-        <div class="d-flex align-items-center">
+      <div class="single-row py-3">
+        <div class="token">
           <div class="position-relative me-5 mb-4">
             <img src="assets/icons/coin.svg" class="back-img">
             <img [src]="farm.imgUrl" alt="" class="top-img">
           </div>
 
-          <h3 class="p title-name" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">{{ farm.name }}
+          <h3 class="p-bold title-name pt-2" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">{{ farm.name | uppercase }}
           </h3>
         </div>
 
-        <div class="d-flex flex-column">
-          <h4 class="p-small title-date" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">Earned</h4>
-          <p class="p figures" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">{{ farm.earned }}</p>
-        </div>
-
-        <div class="d-flex flex-column">
-          <h4 class="p-small title-date">Apr</h4>
-          <div class="d-flex">
-            <p class="p figures me-2" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">{{ farm.apr }}%
-            </p>
-            <img class="icons" src="assets/icons/calculator-light-purple.svg">
+        <div class="data-box d-flex justify-content-between align-items-center">
+          <div class="d-flex flex-column mx-3">
+            <h4 class="p-small title-date" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Earned</h4>
+            <p class="p figures" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">{{ farm.earned }}</p>
           </div>
-        </div>
 
-        <div class="d-flex flex-column">
-          <h4 class="p-small title-date">Liquidity</h4>
-          <div class="d-flex">
-            <p class="p figures me-2" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">
-              ${{ farm.liquidity }}</p>
-            <img class="icons" src="assets/icons/questionMark-light-purple.svg"
-              ngbTooltip="Total value of the funds in this farm’s liquidity pool">
-
+          <div class="d-flex flex-column mx-3">
+            <h4 class="p-small title-date" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Apr</h4>
+            <div class="d-flex">
+              <p class="p figures me-2" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">{{ farm.apr }}%
+              </p>
+              <img class="icons" src="assets/icons/calculator-light-purple.svg">
+            </div>
           </div>
-        </div>
 
-        <div class="d-flex flex-column">
-          <h4 class="p-small title-date">Multiplier</h4>
-          <div class="d-flex">
-            <p class="p figures" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">
-              {{ farm.multiplier }}x</p>
+          <div class="liquidity-col">
+            <h4 class="p-small title-date" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Liquidity</h4>
+            <div class="d-flex">
+              <p class="p figures me-2" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">
+                ${{ farm.liquidity }}</p>
+              <img class="icons" src="assets/icons/questionMark-light-purple.svg"
+                ngbTooltip="Total value of the funds in this farm’s liquidity pool">
 
+            </div>
           </div>
-        </div>
 
-        <button ngbPanelToggle class="btn btn-link p-0">
-          <img src="assets/icons/arrow-little-down-cyan.svg" alt="">
-        </button>
+          <div class="multiplier-col">
+            <h4 class="p-small title-date" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Multiplier</h4>
+            <div class="d-flex">
+              <p class="p figures" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">
+                {{ farm.multiplier }}x</p>
+            </div>
+          </div>
+
+          <button ngbPanelToggle class="btn btn-link p-0 d-flex align-items-center" (click)="toggleArrow()">
+            <span class="panel-toggle-text">Datails</span>
+            <img
+              [src]="isArrowUp ? '../../../assets/icons/arrow-little-down-cyan.svg': '../../../assets/icons/arrow-little-up-cyan.svg'"
+              alt="icon arrow down"
+            />
+          </button>
+        </div>
       </div>
     </ng-template>
 
 
     <ng-template ngbPanelContent>
-      <div class="d-flex align-items-center justify-content-between">
-        <div class="d-flex flex-column">
+      <div class="subrow" [ngClass]="isDarkModeOn ? 'bcg-dark' : 'bcg-white-grey'">
+
+        <div class="sub-panel">
+          <div class="d-flex justify-content-between w-100">
+            <p class="p figures" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">APR</p>
+            <p class="p figures" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">{{ farm.apr }}%
+            <img class="icons" src="assets/icons/calculator-light-purple.svg">
+          </p>
+          </div>
+
+          <div class="d-flex justify-content-between w-100">
+            <p class="p figures" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">Multiplier</p>
+            <p class="p figures" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">
+              {{ farm.multiplier }}x
+              <img class="icons" src="assets/icons/questionMark-light-purple.svg"
+              ngbTooltip="Total value of the funds in this farm’s liquidity pool"></p>
+          </div>
+
+          <div class="d-flex justify-content-between w-100">
+            <p class="p figures" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">Liquidity</p>
+            <p class="p figures" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">${{ farm.liquidity }}
+            <img class="icons" src="assets/icons/questionMark-light-purple.svg"
+              ngbTooltip="Total value of the funds in this farm’s liquidity pool"></p>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column subrow-col1">
           <a routerLink="add">Get {{ farm.name | titlecase }} LP<img src="assets/icons/arrow-oblique-cyan.svg"></a>
           <a href="">View Contract<img src="assets/icons/arrow-oblique-cyan.svg"></a>
           <a href="">See Pair Info<img src="assets/icons/arrow-oblique-cyan.svg"></a>
-          <div class="core-border d-flex align-items-center justify-content-between">
-            <label><img class="check-icon" src="assets/icons/check-purple.svg">{{ farm.type | titlecase }}</label>
+          <div class="core-border d-flex align-items-center justify-content-between px-1 mt-2">
+            <label [ngClass]="isDarkModeOn ? 'text-purple-footer' : 'text-purple'"><img class="check-icon" src="assets/icons/check-purple.svg">{{ farm.type | titlecase }}</label>
           </div>
         </div>
-        <div class="farm-row-buttons d-flex mx-4 ">
-          <div class="bord mx-5">
-            <div class="d-flex flex-column earned ">
-              <h5 class="p-small">CAKE EARNED</h5>
-              <div class="d-flex justify-content-center align-items-center justify-content-between">
-                <h6>{{ farm.cakeEarned }}</h6>
-                <button disabled type="button" class="button-small">
-                  <div>Harvest</div>
-                </button>
+
+        <div class="subrow-col2">
+          <div class="farm-row-buttons d-flex mx-4 ">
+            <div class="bord" [ngClass]="isDarkModeOn ? 'boreder-input' : 'border-bold'">
+              <div class="d-flex flex-column earned ">
+                <h5 class="p-small" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'"><span [ngClass]="isDarkModeOn ? 'text-purple-footer' : 'text-purple'">CAKE </span>EARNED</h5>
+                <div class="d-flex justify-content-center align-items-center justify-content-between">
+                  <h6 [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">{{ farm.cakeEarned }}</h6>
+                  <button disabled type="button" class="button-small" [ngClass]="isDarkModeOn ? 'button-small-dark' : 'button-small-light'">
+                    <div>Harvest</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="bord" [ngClass]="isDarkModeOn ? 'boreder-input' : 'border-bold'">
+              <div class="d-flex flex-column farming">
+                <h5 class="p-small" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">START FARMING</h5>
+
+                <app-modal-connect-wallet [buttonClass]="'button-large'" [isDarkModeOn]="isDarkModeOn">
+                </app-modal-connect-wallet>
+
               </div>
             </div>
           </div>
 
-          <div class="bord">
-            <div class="d-flex flex-column farming">
-              <h5 class="p-small">START FARMING</h5>
-
-              <app-modal-connect-wallet [buttonClass]="'button-large'" [isDarkModeOn]="isDarkModeOn">
-              </app-modal-connect-wallet>
-
-            </div>
-          </div>
         </div>
       </div>
     </ng-template>
