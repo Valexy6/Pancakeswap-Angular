@@ -1,0 +1,13 @@
+<div class="tableSection">
+  <div class="tableInside">
+    <div class="tableDeepInside">
+      <div class="textFaqs">
+        <h2>FAQs</h2>
+      </div>
+    </div>
+  </div>
+  <div class="tableContainer">
+    <span>
+      <app-faq-row *ngFor="let faqText of faqTexts" [faqTextInput]="faqText"></app-faq-row>
+    </span>
+</div>

@@ -1,0 +1,20 @@
+.table {
+  filter: drop-shadow(rgba(25, 19, 38, 0.15) 0px 1px 4px);
+  width: 100%;
+  border-radius: 1rem;
+  margin: 1rem 0rem;
+}
+
+.to-top-text {
+  color: var(--cyan);
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.to-top {
+  cursor: pointer;
+}

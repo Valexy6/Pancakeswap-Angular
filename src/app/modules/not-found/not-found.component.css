@@ -1,0 +1,13 @@
+.container-404 {
+  height: 100vh;
+}
+
+.h2 {
+  font-size: 3rem;;
+}
+
+@media all and (min-width: 968px) {
+  .h2 {
+    font-size: 4rem;
+  }
+}

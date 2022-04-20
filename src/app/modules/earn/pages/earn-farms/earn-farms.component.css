@@ -1,0 +1,16 @@
+.farms-container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.container-filters {
+  padding: 0;
+}
+
+/* -- RESPONSIVE -- */
+@media all and (min-width: 370px) {
+  .container-filters {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}

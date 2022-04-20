@@ -1,0 +1,18 @@
+<div class="switcher" [ngClass]="{'switcher-dark': isDarkModeOn == true}">
+  <input type="checkbox" class="switcher-input" (click)="toggleTheme()" [checked]="isDarkModeOn" />
+
+  <div class="switcher-icon-container active-border" [ngClass]="{'icon-container-dark': isDarkModeOn == true}">
+
+    <!--switcher icon-->
+    <div class="switcher-icon">
+      <img class="align-self-center" [src]="!isDarkModeOn ? 'assets/icons/sun-light-mode.svg' : 'assets/icons/moon-dark-mode.svg'" />
+    </div>
+
+  </div>
+
+  <!--switcher backgrond icons-->
+  <div class="switcher-icon-bcg">
+    <img class="align-self-center" src="assets/icons/sun-dark-mode.svg" />
+    <img class="align-self-center" src="assets/icons/moon-light-mode.svg" />
+  </div>
+</div>

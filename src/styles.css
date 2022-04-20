@@ -1,0 +1,554 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --hover-color: rgb(31, 199, 212, 0.65);
+  --active-color: rgb(31, 199, 212, 0.85);
+  --cyan: rgb(31, 199, 212);
+  --light-yellow: rgb(240, 185, 11);
+  --yellow: rgb(255, 178, 55);
+  --fuchsia: rgb(237, 75, 158);
+  --green: rgb(49, 208, 170);
+  --white: rgb(250, 249, 250);
+  --text-footer: rgb(244, 238, 255);
+  --grey: rgb(239, 244, 245);
+  --background-color: rgb(238, 234, 244);
+  --button-grey: rgb(233, 234, 235);
+  --grey-border: rgb(231, 227, 235);
+  --column-border: rgb(215, 202, 236);
+  --switcher-bcg: rgb(189, 194, 196);
+  --switcher-bcg-darkmode: rgb(102, 97, 113);
+  --mauve: rgb(184, 173, 210);
+  --title-footer: rgb(154, 106, 255);
+  --light-purple: rgb(122, 110, 170);
+  --purple: rgb(118, 69, 217);
+  --dark-purple: rgb(40, 13, 95);
+  --dark-purple-overlay: rgba(40, 13, 95, 0.6);
+  --footer-bcg: rgb(39, 38, 44);
+  --white-transparent: rgba(255, 255, 255, 0.6);
+  --black: rgb(16, 12, 24);
+  --background-dark: rgb(55, 47, 71);
+  --gradient: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
+  --gradient-light-purple: linear-gradient(139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%);
+  --gradient-purple: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
+  --gradient-pink-blue: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+  --gradient-blue: linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%);
+  --gradient-dark-purple: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+
+  --button-dark: rgb(60, 55, 66);
+  --text-button-dark: rgb(102, 97, 113);
+  --border-darkmode: rgb(38, 33, 48);
+  --bcg-dark: rgb(8, 6, 11);
+  --bcg-shadow: rgba(39, 38, 44, 0.5);
+  --dark-solid-shadow: rgb(56, 50, 65);
+  --hover-a: rgb(53, 53, 71);
+  --input-dark: rgb(55, 47, 71);
+  --fill-dark: rgb(32, 19, 53);
+  --fill-black: rgb(8, 6, 11);
+  --black-transparent: rgb(8, 6, 11, 0.6);
+  --gradient-purple-black: radial-gradient(103.12% 50% at 50% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%);
+  --gradient-purple-darkmode: linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%);
+  --gradient-dark: linear-gradient(166.77deg, rgb(59, 65, 85) 0%, rgb(58, 48, 69) 100%);
+  --gradient-dark-blue: linear-gradient(rgb(11, 69, 118) 0%, rgb(9, 17, 21) 100%);
+  --gradient-dark-modal: linear-gradient(139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%);
+}
+
+/* -- GENERIC -- */
+* {
+  text-decoration: none;
+  font-family: Kanit, sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  overflow: overlay;
+  background-color: var(--white);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -- DARKMODE -- */
+/* -- navbar -- */
+.darkmode .navbar-desktop {
+  background-color: var(--footer-bcg);
+  border-bottom: 1px solid var(--dark-solid-shadow);
+}
+
+.lightmode .navbar-desktop {
+  background-color: white;
+  border-bottom: 1px solid var(--grey-border);
+}
+
+.darkmode .dropbtn-nav a,
+.darkmode .dropdown-content a,
+.darkmode .dropdown-content a:active,
+.darkmode .dropdown-content a:link,
+.darkmode .dropdown-content a:visited {
+  color: var(--mauve);
+}
+
+.lightmode .dropbtn-nav a,
+.lightmode .dropdown-content a,
+.lightmode .dropdown-content a:active,
+.lightmode .dropdown-content a:link,
+.lightmode .dropdown-content a:visited {
+  color: var(--light-purple);
+}
+
+.darkmode .dropbtn-nav a:hover,
+.darkmode .dropbtn-nav a:active,
+.darkmode .dropdown-content a:hover {
+  background-color: var(--hover-a);
+}
+
+.lightmode .dropbtn-nav a:hover,
+.lightmode .dropbtn-nav a:active,
+.lightmode .dropdown-content a:hover,
+.lightmode .dropdown-content a:active {
+  background-color: var(--grey);
+}
+
+.darkmode .dropdown-content {
+  background-color: var(--footer-bcg);
+  border: 1px solid var(--dark-solid-shadow);
+}
+
+.lightmode .dropdown-content {
+  background-color: white;
+  border: 1px solid var(--grey-border);
+}
+
+.darkmode .dropdown-content hr {
+  border-color: var(--dark-solid-shadow);
+}
+
+.lightmode .dropdown-content hr {
+  border-color: var(--grey-border);
+}
+
+.darkmode .dropbtn-nav a.active,
+.darkmode .dropdown-content a.active,
+.darkmode .dropdown-content a.active:active,
+.darkmode .dropdown-content a.active:link,
+.darkmode .dropdown-content a.active:visited {
+  color: var(--title-footer);
+  font-weight: 600;
+}
+
+.lightmode .dropbtn-nav a.active,
+.lightmode .dropdown-content a.active,
+.lightmode .dropdown-content a.active:active,
+.lightmode .dropdown-content a.active:link,
+.lightmode .dropdown-content a.active:visited {
+  color: var(--purple);
+  font-weight: 600;
+}
+
+
+/* -- bottom navbar -- */
+.darkmode .nav-bottom {
+  background-color: var(--footer-bcg);
+  border-top: 1px solid var(--dark-solid-shadow);
+}
+
+.lightmode .nav-bottom {
+  background-color: white;
+  border-top: 1px solid var(--grey-border);
+}
+
+.darkmode .bcg {
+  background-color: rgba(244, 238, 255, 0.6);
+}
+
+.lightmode .bcg {
+  background-color: rgba(40, 13, 95, 0.57);
+}
+
+/* -- utilities darkmode -- */
+/*texts*/
+.text-darkpurple {
+  color: var(--dark-purple);
+}
+
+.text-white-footer {
+  color: var(--text-footer);
+}
+
+.text-mauve {
+  color: var(--mauve);
+}
+
+.text-lightpurple {
+  color: var(--light-purple);
+}
+
+.text-purple-footer {
+  color: var(--title-footer);
+}
+
+.text-purple {
+  color: var(--purple);
+}
+
+.text-dark {
+  color: var(--footer-bcg);
+}
+
+/*fill*/
+.fill-column-border {
+  fill: var(--column-border);
+}
+
+.fill-dark {
+  fill: var(--fill-dark);
+}
+
+.fill-black {
+  fill: var(--fill-black);
+}
+
+.fill-white {
+  fill: var(--white);
+}
+
+/*bcg*/
+.bcg-base {
+  background-color: var(--background-color);
+}
+
+.bcg-shadow {
+  background-color: var(--bcg-shadow);
+}
+
+.bcg-dark {
+  background-color: var(--bcg-dark);
+}
+
+.bcg-grey-light {
+  background-color: var(--grey);
+}
+
+.bcg-lightpurple {
+  background-color: var(--light-purple);
+}
+
+.bcg-mauve {
+  background-color: var(--mauve);
+}
+
+.bcg-footer {
+  background-color: var(--footer-bcg);
+}
+
+.bcg-dark-shadow {
+  background-color: var(--dark-solid-shadow);
+}
+
+.bcg-grey {
+  background-color: var(--grey-border);
+}
+
+.bcg-black {
+  background-color: var(--black);
+}
+
+.bcg-dark-button {
+  background-color: var(--background-dark);
+}
+
+.bcg-white {
+  background-color: white;
+}
+
+.bcg-white-grey {
+  background-color: var(--white);
+}
+
+.bcg-white-transparent {
+  background-color: var(--white-transparent);
+}
+
+.bcg-black-transparent {
+  background-color: var(--black-transparent);
+}
+
+.bcg-hover-a {
+  background-color: var(--hover-a);
+}
+
+.bcg-input-dark {
+  background-color: var(--input-dark);
+}
+
+.bcg-background-color {
+  background-color: var(--background-color);
+}
+
+.bcg-gradient {
+  background: var(--gradient);
+}
+
+.bcg-gradient-light-purple {
+  background: var(--gradient-light-purple)
+}
+
+.bcg-gradient-purple-black {
+  background: var(--gradient-purple-black);
+}
+
+.bcg-gradient-dark {
+  background: var(--gradient-dark);
+}
+
+.bcg-gradient-purple {
+  background: var(--gradient-purple);
+}
+
+.bcg-gradient-purple-darkmode {
+  background: var(--gradient-purple-darkmode);
+}
+
+.bcg-gradient-pink-blue {
+  background: var(--gradient-pink-blue);
+}
+
+.bcg-gradient-blue {
+  background: var(--gradient-blue);
+}
+
+.bcg-gradient-dark-blue {
+  background: var(--gradient-dark-blue);
+}
+
+.bcg-dark-modal {
+  background: var(--gradient-dark-modal);
+}
+
+.bcg-input-dark {
+  background: var(--input-dark);
+}
+
+.bcg-background-color {
+  background: var(--background-color);
+}
+
+/*border*/
+.border-dark {
+  border: 1px solid var(--dark-solid-shadow);
+}
+
+.border-grey {
+  border: 1px solid var(--grey-border);
+}
+
+.boreder-bottom-grey {
+  border-bottom: 1px solid var(--grey-border);
+}
+
+.boreder-bottom-dark {
+  border-bottom: 1px solid var(--dark-solid-shadow);
+}
+
+.boreder-column {
+  border: 1px solid var(--column-border);
+}
+
+.boreder-input {
+  border: 2px solid var(--input-dark);
+}
+
+.boreder-none {
+  border: 0px;
+}
+
+.border-bold {
+  border: 2px solid var(--background-color);
+}
+
+/* -- MODALS -- */
+.modal-backdrop {
+  background-color: var(--dark-purple);
+}
+
+.modal-backdrop.show {
+  opacity: 0.6;
+}
+
+.ps-modal-centered {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  z-index: 99;
+  width: fit-content;
+  min-width: 20rem;  /*320px*/
+  max-height: 90vh;
+  background-color: transparent;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.modal-container-settings {
+  width: auto;
+  min-width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.modal.fade .modal-dialog {
+  transform: none;
+}
+
+/* -- PANEL -- */
+.accordion-body {
+  padding: 0;
+}
+
+.table>:not(caption)>*>* {
+  padding: 0.5rem 0 0 0;
+}
+
+/* -- SCROLL BAR --*/
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: var(--background-color) 0px 0px 5px inset;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--light-purple);
+  border-radius: 0.5rem;
+}
+
+/* -- TYPOGRAPHY -- */
+.h1 {
+  font-size: 4rem;  /*64px*/
+  font-weight: 600;
+  margin: 0px;
+  padding: 0px;
+}
+
+.h2 {
+  font-size: 2rem;  /*40px*/
+  font-weight: 600;
+  margin: 0px;
+  padding: 0px;
+}
+
+.h3 {
+  font-size: 1.25rem;  /*20px*/
+  font-weight: 600;
+  margin: 0px;
+  padding: 0px;
+}
+
+.h4 {
+  font-size: 1.5rem;  /*24px*/
+  font-weight: 600;
+  margin: 0px;
+  padding: 0px;
+}
+
+.p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+}
+
+.p-light-purple {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--light-purple);
+  margin: 0px;
+  padding: 0px;
+}
+
+.p-small {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0px;
+  padding: 0px;
+}
+
+.p-bold {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0px;
+  padding: 0px;
+}
+
+.p-dark {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-purple);
+  line-height: 1.1;
+  margin: 0px;
+  padding: 0px;
+}
+
+.key-words {
+  color: var(--purple);
+}
+
+.page-link {
+  background-color: transparent !important;
+  border: none;
+}
+
+.page-link:focus {
+  box-shadow: none !important;
+}
+
+/* -- RESPONSIVE -- */
+@media screen and (min-width: 576px) {
+  .modal-content {
+    min-width: 21.25rem;
+  }
+
+  .darkmode .earn-data-column {
+    border-left: 1px solid var(--border-darkmode);
+  }
+
+  .lightmode .earn-data-column {
+    border-left: 1px solid var(--column-border);
+  }
+}
+
+
+/* -- Accordion -- */
+.accordion-item {
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.lightmode .accordion-item {
+  border-bottom: 2px solid var(--grey-border) !important;
+}
+
+.darkmode .accordion-item {
+  border-bottom: 1px solid var(--dark-solid-shadow) !important;
+}

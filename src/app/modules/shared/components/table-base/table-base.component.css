@@ -1,0 +1,15 @@
+.box {
+  margin: 1.87rem 1.87rem 1.87rem 1.87rem;
+}
+
+.card-info-tokens {
+  width: 100%;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+  border-radius: 1.5rem;
+  border: 1px solid rgb(231, 227, 235);
+  overflow: hidden;
+}

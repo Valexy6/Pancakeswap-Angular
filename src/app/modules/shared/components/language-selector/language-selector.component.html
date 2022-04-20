@@ -1,0 +1,18 @@
+<div class="language-container">
+  <button class="button-language d-flex align-items-center h-100" type="button">
+    <img [src]="isNavbar && isDarkModeOn ? 'assets/icons/language-mauve.svg' : isFooter || isDarkModeOn ? 'assets/icons/language-mauve.svg' : 'assets/icons/language-light-purple.svg'">
+    <p *ngIf="isFooter" class="lang-initials">{{ langSelected | uppercase }}</p>
+  </button>
+
+  <div class="lang-selector" [ngClass]="{'lang-selector-top': isNavbar, 'lang-selector-bottom': isFooter, 'lang-selector-dark': isDarkModeOn, 'lang-selector-light': !isDarkModeOn}">
+    <button
+      class="lang btn"
+      type="button"
+      (click)="setLang(lang.initials)"
+      *ngFor="let lang of languages"
+      [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">
+        {{lang.language}}
+    </button>
+  </div>
+
+</div>

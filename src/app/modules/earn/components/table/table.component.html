@@ -1,0 +1,10 @@
+<div class="table" id="table-top" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
+  <app-table-single *ngFor="let farm of farms" [isDarkModeOn]="isDarkModeOn" [farm]="farm"></app-table-single>
+  <div class="to-top d-flex justify-content-center align-items-center border-0" (click)="scrollToTop()">
+    <a class="to-top-text">To Top</a>
+    <img src="assets/icons/arrow-little-up-cyan.svg">
+  </div>
+</div>
+<div class="d-flex justify-content-center align-items-center border-0">
+  <img src="assets/images/3dpan.png" alt="pan and pancakes">
+</div>

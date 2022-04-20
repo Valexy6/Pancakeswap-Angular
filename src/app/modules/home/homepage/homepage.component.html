@@ -1,0 +1,626 @@
+<!--HERO SECTION-->
+<section class="hero-section" [ngClass]="isDarkModeOn ? 'bcg-gradient-purple-black' : 'bcg-gradient'">
+  <div class="hero-container">
+    <div class="cta-hero">
+      <h2 class="h2">The moon is made of pancakes.</h2>
+      <h3 class="h3" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">
+        Trade, earn, and win crypto on the most popular decentralized
+        platform in the galaxy.
+      </h3>
+
+      <div class="cta-buttons">
+        <app-modal-connect-wallet [buttonClass]="'button-standard'" [isDarkModeOn]="isDarkModeOn"></app-modal-connect-wallet>
+        <app-general-button [button]="{ class: 'button-medium', text: 'Trade Now', imgVisible: false, link: '/trade/swap'}" ></app-general-button>
+      </div>
+    </div>
+
+    <div class="img-cta-hero">
+      <div class="bunny">
+        <img
+          src="https://pancakeswap.finance/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbunny%402x.957fd943.png&w=1080&q=75"
+          alt="Lunar bunny"
+        />
+      </div>
+
+      <div class="stars star1">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              https://pancakeswap.finance/images/home/lunar-bunny/star-l.webp       512w,
+              https://pancakeswap.finance/images/home/lunar-bunny/star-l@1.5x.webp  768w,
+              https://pancakeswap.finance/images/home/lunar-bunny/star-l@2x.webp   1024w
+            "
+          />
+          <source
+            type="image/png"
+            srcset="
+              https://pancakeswap.finance/images/home/lunar-bunny/star-l.png       512w,
+              https://pancakeswap.finance/images/home/lunar-bunny/star-l@1.5x.png  768w,
+              https://pancakeswap.finance/images/home/lunar-bunny/star-l@2x.png   1024w
+            "
+          />
+          <img
+            src="https://pancakeswap.finance/images/home/lunar-bunny/star-l.png"
+          />
+        </picture>
+      </div>
+
+      <div class="stars star2">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              https://pancakeswap.finance/images/home/lunar-bunny/star-r.webp       512w,
+              https://pancakeswap.finance/images/home/lunar-bunny/star-r@1.5x.webp  768w,
+              https://pancakeswap.finance/images/home/lunar-bunny/star-r@2x.webp   1024w
+            "
+          />
+          <source
+            type="image/png"
+            srcset="
+              /images/home/lunar-bunny/star-r.png                                  512w,
+              https://pancakeswap.finance/images/home/lunar-bunny/star-r@1.5x.png  768w,
+              https://pancakeswap.finance/images/home/lunar-bunny/star-r@2x.png   1024w
+            "
+          />
+          <img
+            src="https://pancakeswap.finance/images/home/lunar-bunny/star-r.png"
+            alt="3D Star"
+          />
+        </picture>
+      </div>
+
+      <div class="stars star3">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              https://pancakeswap.finance/images/home/lunar-bunny/star-top-r.webp       512w,
+              https://pancakeswap.finance/images/home/lunar-bunny/star-top-r@1.5x.webp  768w,
+              https://pancakeswap.finance/images/home/lunar-bunny/star-top-r@2x.webp   1024w
+            "
+          />
+          <source
+            type="image/png"
+            srcset="
+              https://pancakeswap.finance/images/home/lunar-bunny/star-top-r.png       512w,
+              https://pancakeswap.finance/images/home/lunar-bunny/star-top-r@1.5x.png  768w,
+              https://pancakeswap.finance/images/home/lunar-bunny/star-top-r@2x.png   1024w
+            "
+          />
+          <img
+            src="https://pancakeswap.finance/images/home/lunar-bunny/star-top-r.png"
+            alt="3D Star"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-divider" *ngIf="!isDarkModeOn, else divider1Darkmode">
+    <svg
+      viewBox="0 0 1660 339"
+      width="100%"
+      color="text"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M804 167.023C520.5 167.023 267.5 290.522 0 304.5V339H1660V0.5C1358.83 0.5 1104 167.023 804 167.023Z"
+        fill="url(#paint0_linear_light)"
+      ></path>
+      <defs>
+        <linearGradient
+          id="paint0_linear_light"
+          x1="830"
+          y1="84"
+          x2="830"
+          y2="339"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="white" stop-opacity="0.48"></stop>
+          <stop
+            offset="0.566389"
+            stop-color="white"
+            stop-opacity="0.35"
+          ></stop>
+          <stop offset="1" stop-color="white"></stop>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+  <ng-template #divider1Darkmode>
+    <div class="cta-divider">
+      <svg viewBox="0 0 1660 339" width="100%" color="text" xmlns="http://www.w3.org/2000/svg"><path d="M804 166.523C520.5 166.523 267.5 290.022 0 304V338.5H1660V0C1358.83 0 1104 166.523 804 166.523Z" fill="url(#paint0_linear_dark)"></path><defs><linearGradient id="paint0_linear_dark" x1="830" y1="83.5" x2="830" y2="338.5" gradientUnits="userSpaceOnUse"><stop stop-color="#08060B" stop-opacity="0.2"></stop><stop offset="0.545554" stop-color="#08060B" stop-opacity="0.5"></stop><stop offset="1" stop-color="#08060B"></stop></linearGradient></defs></svg>
+    </div>
+  </ng-template>
+</section>
+
+<!--SEC 1 > USED BY MILLIONS-->
+<section class="sec1 sec-wrapper" [ngClass]="isDarkModeOn ? 'bcg-gradient-purple-darkmode' : 'bcg-gradient-purple'">
+  <img class="mb-4" src="./assets/icons/bunny-purple.svg" />
+  <h3 class="h2 subtitle-sec" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">Used by millions.</h3>
+  <h3 class="h2 subtitle-sec" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">Trusted with billions.</h3>
+  <p class="p text-center" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">PancakeSwap has the most users of any decentralized platform, ever.</p>
+  <p class="p text-center" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">And those users are now entrusting the platform with over $12 billion in funds.</p>
+  <p class="p text-center" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Will you join them?</p>
+
+  <div class="stats-card">
+    <div class="solid-shadow" [ngClass]="isDarkModeOn ? 'bcg-dark-shadow' : 'bcg-grey'">
+      <div class="stats-container" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
+        <img class="stats-icons" src="./assets/icons/users-purple.svg" />
+        <div class="stats-text">
+          <h3 class="h2" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">3 million</h3>
+          <h3 class="h2 key-word1 mb-4">users</h3>
+          <p class="p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">in the last 30 days</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="solid-shadow" [ngClass]="isDarkModeOn ? 'bcg-dark-shadow' : 'bcg-grey'">
+      <div class="stats-container" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
+        <img class="stats-icons" src="./assets/icons/trades-cyan.svg" />
+        <div class="stats-text">
+          <h3 class="h2" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">43 million</h3>
+          <h3 class="h2 key-word2 mb-4">trades</h3>
+          <p class="p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">made in the last 30 days</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="solid-shadow" [ngClass]="isDarkModeOn ? 'bcg-dark-shadow' : 'bcg-grey'">
+      <div class="stats-container" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
+        <img class="stats-icons" src="./assets/icons/staked-fuchsia.svg" />
+        <div class="stats-text">
+          <h3 class="h2" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">$12 billion</h3>
+          <h3 class="h2 key-word3 mb-4">staked</h3>
+          <p class="p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Total Value Locked</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--DIVIDER 1-->
+<div class="divider1" [ngClass]="isDarkModeOn ? 'fill-dark' : 'fill-column-border'">
+  <svg viewBox="0 0 1660 48" preserveAspectRatio="none" width="20px" xmlns="http://www.w3.org/2000/svg" class="divider">
+    <path d="M1660 48C1139.02 46.1887 336.256 15.2453 0 0H1660V48Z"></path>
+  </svg>
+</div>
+
+<!--SEC 2 > TRADE ANYTHING-->
+<section class="sec-wrapper sec2" [ngClass]="{'bcg-dark': isDarkModeOn}">
+  <div class="sec-container">
+    
+    <div class="sec-left">
+      <h3 class="h2 subtitle-sec mb-4" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'"><span>Trade</span> anything. No registration, no hassle.</h3>
+      <p class="p sec-p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Trade any token on Binance Smart Chain in seconds, just by connecting your wallet.</p>
+
+      <div class="cta-buttons">
+        <app-general-button [button]="{ class: 'button-small', text: 'Trade Now', imgVisible: false, link: '/trade/swap'}"></app-general-button>
+        <a routerLink="/home" class="link">Learn</a>
+      </div>
+    </div>
+
+    <div class="sec-right">
+      <div class="bnb-token">
+        <picture>
+          <source
+          type="image/webp"
+          srcset="
+          https://pancakeswap.finance/images/home/trade/BNB.webp 512w,
+          https://pancakeswap.finance/images/home/trade/BNB@1.5x.webp 768w,
+          https://pancakeswap.finance/images/home/trade/BNB@2x.webp 1024w,
+          ">
+          <source
+          type="image/png"
+          srcset="
+          https://pancakeswap.finance/images/home/trade/BNB.png 512w,
+          https://pancakeswap.finance/images/home/trade/BNB@1.5x.png 768w,
+          https://pancakeswap.finance/images/home/trade/BNB@2x.png 1024w,
+          ">
+          <img src="https://pancakeswap.finance/images/home/trade/BNB.png"
+          alt="BNB token" class="sec-img" />
+        </picture>
+      </div>
+
+      <div class="btc-cake-token">
+        <picture>
+          <source
+          type="image/webp"
+          srcset="
+          https://pancakeswap.finance/images/home/trade/BTC.webp 512w,
+          https://pancakeswap.finance/images/home/trade/BTC@1.5x.webp 768w,
+          https://pancakeswap.finance/images/home/trade/BTC@2x.webp 1024w,
+          ">
+          <source
+          type="image/png"
+          srcset="
+          https://pancakeswap.finance/images/home/trade/BTC.png 512w,
+          https://pancakeswap.finance/images/home/trade/BTC@1.5x.png 768w,
+          https://pancakeswap.finance/images/home/trade/BTC@2x.png 1024w,
+          ">
+          <img
+          src="https://pancakeswap.finance/images/home/trade/BTC.png"
+          alt="BTC token" class="sec-img" />
+        </picture>
+      </div>
+
+      <div class="btc-cake-token">
+        <picture>
+          <source
+          type="image/webp"
+          srcset="
+          https://pancakeswap.finance/images/home/trade/CAKE.webp 512w,
+          https://pancakeswap.finance/images/home/trade/CAKE@1.5x.webp 768w,
+          https://pancakeswap.finance/images/home/trade/CAKE@2x.webp 1024w,
+          ">
+          <source
+          type="image/png"
+          srcset="
+          https://pancakeswap.finance/images/home/trade/CAKE.png 512w,
+          https://pancakeswap.finance/images/home/trade/CAKE@1.5x.png 768w,
+          https://pancakeswap.finance/images/home/trade/CAKE@2x.png 1024w,
+          ">
+          <img src="https://pancakeswap.finance/images/home/trade/CAKE.png" alt="CAKE token" class="sec-img" />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--SEC 3 > EARN PASSIVE-->
+<section class="sec-wrapper sec3" [ngClass]="isDarkModeOn ? 'bcg-gradient-dark' : 'bcg-gradient-pink-blue'">
+  
+  <!--DIVIDER 2-->
+  <div class="divider-top" [ngClass]="isDarkModeOn ? 'fill-black' : 'fill-white'">
+    <svg viewBox="0 0 1660 48" preserveAspectRatio="none" width="20px" xmlns="http://www.w3.org/2000/svg" class="divider divider2">
+      <path d="M-346 48C174.985 46.1887 977.744 15.2453 1314 0H-346V48Z">
+      </path>
+    </svg>
+  </div>
+
+  <div class="sec-container">
+    <div class="sec-left">
+      <div class="pie-chart">
+        <picture>
+          <source
+          type="image/webp"
+          srcset="
+          https://pancakeswap.finance/images/home/earn/pie.webp 512w,
+          https://pancakeswap.finance/images/home/earn/pie@1.5x.webp 768w,
+          https://pancakeswap.finance/images/home/earn/pie@2x.webp 1024w,
+          ">
+          <source
+          type="image/png"
+          srcset="
+          https://pancakeswap.finance/images/home/earn/pie.png 512w,
+          https://pancakeswap.finance/images/home/earn/pie@1.5x.png 768w,
+          https://pancakeswap.finance/images/home/earn/pie@2x.png 1024w,
+          ">
+          <img
+          src="https://pancakeswap.finance/images/home/earn/pie.png"
+          alt="Pie chart" class="sec-img" /></picture>
+      </div>
+
+      <div class="stocks-chart">
+        <picture>
+          <source
+          type="image/webp"
+          srcset="
+          https://pancakeswap.finance/images/home/earn/stonks.webp 512w,
+          https://pancakeswap.finance/images/home/earn/stonks@1.5x.webp 768w,
+          https://pancakeswap.finance/images/home/earn/stonks@2x.webp 1024w,
+          ">
+          <source
+          type="image/png"
+          srcset="
+          https://pancakeswap.finance/images/home/earn/stonks.png 512w,
+          https://pancakeswap.finance/images/home/earn/stonks@1.5x.png 768w,
+          https://pancakeswap.finance/images/home/earn/stonks@2x.png 1024w,
+          ">
+          <img
+          src="https://pancakeswap.finance/images/home/earn/stonks.png"
+          alt="Stocks chart" class="sec-img" />
+        </picture>
+      </div>
+
+      <div class="folder-cake-token">
+        <picture>
+          <source
+          type="image/webp"
+          srcset="
+          https://pancakeswap.finance/images/home/earn/folder.webp 512w,
+          https://pancakeswap.finance/images/home/earn/folder@1.5x.webp 768w,
+          https://pancakeswap.finance/images/home/earn/folder@2x.webp 1024w,
+          ">
+          <source
+          type="image/png"
+          srcset="
+          https://pancakeswap.finance/images/home/earn/folder.png 512w,
+          https://pancakeswap.finance/images/home/earn/folder@1.5x.png 768w,
+          https://pancakeswap.finance/images/home/earn/folder@2x.png 1024w,
+          ">
+          <img src="https://pancakeswap.finance/images/home/earn/folder.png"
+          alt="Folder with cake token" class="sec-img" />
+        </picture>
+      </div>
+    </div>
+
+    <div class="sec-right">
+      <h3 class="h2 subtitle-sec mb-4" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'"><span>Earn</span> passive income with crypto.</h3>
+      <p class="p sec-p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">PancakeSwap makes it easy to make your crypto work for you.</p>
+
+      <div class="cta-buttons">
+        <app-general-button [button]="{ class: 'button-small', text: 'Explore', imgVisible: false, link: '/earn/farms'}"></app-general-button>
+        <a routerLink="/home" class="link">Learn</a>
+      </div>            
+    </div>
+  </div>
+
+  <div class="sec3-grid-wrapper">
+    <app-home-table
+      [dataTableFarm]="dataTableFarm"
+      [dataTableSyrup]="dataTableSyrup"
+      [isTableVisible]="isTableVisible"
+      [isDarkModeOn]="isDarkModeOn">
+    </app-home-table>
+  </div>
+</section>
+
+<!--SEC 4 > WIN-->
+<section class="sec4" [ngClass]="isDarkModeOn ? 'bcg-gradient-dark-blue' : 'bcg-gradient-blue'">
+
+  <div class="sec-wrapper">
+    <div class="sec-container">
+      <div class="win-container" [ngClass]="isDarkModeOn ? 'bcg-black-transparent border-dark' : 'bcg-white-transparent border-grey'">
+        <h2 class="h2 subtitle-sec mb-4" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'"><span>Win </span>millions in prizes</h2>
+        <p class="p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Provably fair, on-chain games.</p>
+        <p class="p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Win big with PancakeSwap.</p>
+
+        <!-- Card in Home prediction -->
+        <div class="wrapper-prediction">
+          <div class="container-card">
+
+            <div class="solid-shadow-card">
+              <div class="firstcard card-prediction">
+                <img src="assets/icons/prediction.svg" />
+                <h3 class="card-text">Prediction</h3>
+                <p class="card-text">$420 million</p>
+                <p class="card-text">in BNB won so far</p>
+                <p class="p">Will BNB price rise or fall? guess correctly to win!</p>
+                <app-general-button [button]="{ class: 'button-large', text: 'Play', imgVisible: true}"></app-general-button>
+              </div>
+            </div>
+
+            <div class="solid-shadow-card">
+              <div class="secondcard card-prediction">
+                <img src="assets/icons/lottery-white.svg" />
+                <h3 class="card-text">Lottery</h3>
+                <p class="card-text">$164,344</p>
+                <p class="card-text">in CAKE prizes this round</p>
+                <p class="p">Buy tickets with CAKE, win CAKE if your numbers match</p>
+                <app-general-button [button]="{ class: 'button-large', text: 'Buy Tickets', imgVisible: true}"></app-general-button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--SEC 5 > CAKE-->
+<section class="sec-wrapper sec2 sec5"  [ngClass]="{'bcg-dark': isDarkModeOn}">
+  <div class="sec-container">          
+    <div class="sec-left">
+      <h3 class="h2 subtitle-sec mb-4" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'"><span>CAKE</span> makes our world go round.</h3>
+      <p class="p sec-p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">CAKE token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!</p>
+
+      <div class="cta-buttons">
+        <app-general-button [button]="{ class: 'button-small', text: 'Buy CAKE', imgVisible: false, link: '/trade/swap'}"></app-general-button>
+        <a routerLink="/home" class="link">Learn</a>
+      </div>
+    </div>
+
+    <div class="sec-right">
+      <div class="bnb-token">
+        <picture>
+          <source type="image/webp" srcset="https://pancakeswap.finance/images/home/cake/bottom-right.webp 512w,
+          https://pancakeswap.finance/images/home/cake/bottom-right@1.5x.webp 768w,
+          https://pancakeswap.finance/images/home/cake/bottom-right@2x.webp 1024w,">
+          <source type="image/png" srcset="https://pancakeswap.finance/images/home/cake/bottom-right.png 512w,
+          https://pancakeswap.finance/images/home/cake/bottom-right@1.5x.png 768w,
+          https://pancakeswap.finance/images/home/cake/bottom-right@2x.png 1024w,">
+          <img src="https://pancakeswap.finance/images/home/cake/bottom-right.png" class="sec-img">
+        </picture>
+      </div>
+
+      <div class="btc-cake-token">
+        <picture>
+          <source type="image/webp" srcset="https://pancakeswap.finance/images/home/cake/top-right.webp 512w,
+          https://pancakeswap.finance/images/home/cake/top-right@1.5x.webp 768w,
+          https://pancakeswap.finance/images/home/cake/top-right@2x.webp 1024w,">
+          <source type="image/png" srcset="https://pancakeswap.finance/images/home/cake/top-right.png 512w,
+          https://pancakeswap.finance/images/home/cake/top-right@1.5x.png 768w,
+          https://pancakeswap.finance/images/home/cake/top-right@2x.png 1024w,">
+          <img src="https://pancakeswap.finance/images/home/cake/top-right.png" alt="Small 3d pancake" class="sec-img">
+        </picture>
+      </div>
+
+      <div class="btc-cake-token">
+        <picture>
+          <source type="image/webp" srcset="https://pancakeswap.finance/images/home/cake/coin.webp 512w,
+          https://pancakeswap.finance/images/home/cake/coin@1.5x.webp 768w,
+          https://pancakeswap.finance/images/home/cake/coin@2x.webp 1024w,">
+          <source type="image/png" srcset="https://pancakeswap.finance/images/home/cake/coin.png 512w,
+          https://pancakeswap.finance/images/home/cake/coin@1.5x.png 768w,
+          https://pancakeswap.finance/images/home/cake/coin@2x.png 1024w,">
+          <img src="https://pancakeswap.finance/images/home/cake/coin.png" alt="CAKE token" class="sec-img">
+        </picture>
+      </div>
+
+      <div class="bnb-token">
+        <picture>
+          <source type="image/webp" srcset="https://pancakeswap.finance/images/home/cake/top-left.webp 512w,
+          https://pancakeswap.finance/images/home/cake/top-left@1.5x.webp 768w,
+          https://pancakeswap.finance/images/home/cake/top-left@2x.webp 1024w,">
+          <source type="image/png" srcset="https://pancakeswap.finance/images/home/cake/top-left.png 512w,
+          https://pancakeswap.finance/images/home/cake/top-left@1.5x.png 768w,
+          https://pancakeswap.finance/images/home/cake/top-left@2x.png 1024w,">
+          <img src="https://pancakeswap.finance/images/home/cake/top-left.png" alt="Small 3d pancake" class="sec-img">
+        </picture>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="sec5-grid-container">
+    <div class="sec5-grid-box">
+      <div class="sec5-grid-column">
+        <p class="p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Total supply</p>
+        <p class="h4" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">251,792,762</p>
+      </div>
+
+      <div class="sec5-grid-column px-3 column-border">
+        <p class="p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Burned to date</p>
+        <p class="h4" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">318,897,425</p>
+      </div>
+
+      <div class="sec5-grid-column">
+        <p class="p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Market cap</p>
+        <p class="h4" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">$3 billion</p>
+      </div>
+
+      <div class="sec5-grid-column px-3 column-border">
+        <p class="p" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Current emissions</p>
+        <p class="h4" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">14.25/block</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--SEC 6 > CTA FOOTER-->
+<section>
+  <div class="sec6-wrapper">
+    <div class="sec6-bcg">
+      <svg viewBox="0 0 1956 1956" class="sec6-bcg-svg" width="20px" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_f)"><path d="M978 20L987.526 796.229L1078.14 25.248L1006.47 798.221L1177.18 40.9346L1025.11 802.182L1274.04 66.8879L1043.23 808.07L1367.65 102.823L1060.64 815.819L1457 148.348L1077.14 825.345L1541.1 202.962L1092.55 836.544L1619.03 266.067L1106.71 849.292L1689.93 336.973L1119.46 863.451L1753.04 414.902L1130.65 878.865L1807.65 499L1140.18 895.365L1853.18 588.346L1147.93 912.77L1889.11 681.962L1153.82 930.89L1915.07 778.821L1157.78 949.526L1930.75 877.862L1159.77 968.474L1936 978L1159.77 987.526L1930.75 1078.14L1157.78 1006.47L1915.07 1177.18L1153.82 1025.11L1889.11 1274.04L1147.93 1043.23L1853.18 1367.65L1140.18 1060.64L1807.65 1457L1130.65 1077.14L1753.04 1541.1L1119.46 1092.55L1689.93 1619.03L1106.71 1106.71L1619.03 1689.93L1092.55 1119.46L1541.1 1753.04L1077.14 1130.65L1457 1807.65L1060.64 1140.18L1367.65 1853.18L1043.23 1147.93L1274.04 1889.11L1025.11 1153.82L1177.18 1915.07L1006.47 1157.78L1078.14 1930.75L987.526 1159.77L978 1936L968.474 1159.77L877.862 1930.75L949.526 1157.78L778.821 1915.07L930.89 1153.82L681.962 1889.11L912.77 1147.93L588.346 1853.18L895.365 1140.18L499 1807.65L878.865 1130.65L414.902 1753.04L863.451 1119.46L336.973 1689.93L849.292 1106.71L266.067 1619.03L836.544 1092.55L202.962 1541.1L825.345 1077.14L148.348 1457L815.819 1060.64L102.823 1367.65L808.07 1043.23L66.8879 1274.04L802.182 1025.11L40.9346 1177.18L798.221 1006.47L25.248 1078.14L796.229 987.526L20 978L796.229 968.474L25.248 877.862L798.221 949.526L40.9346 778.821L802.182 930.89L66.8879 681.962L808.07 912.77L102.823 588.346L815.819 895.365L148.348 499L825.345 878.865L202.962 414.902L836.544 863.451L266.067 336.973L849.292 849.292L336.973 266.067L863.451 836.544L414.902 202.962L878.865 825.345L499 148.348L895.365 815.819L588.346 102.823L912.77 808.07L681.962 66.8879L930.89 802.182L778.821 40.9346L949.526 798.221L877.862 25.248L968.474 796.229L978 20Z" fill="url(#paint0_radial)" fill-opacity="0.1">
+      </path>
+    </g>
+    <defs>
+      <filter id="filter0_f" x="0" y="0" width="1956" height="1956" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur"></feGaussianBlur></filter><radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(978 978) rotate(90) scale(958)"><stop offset="0.114547" stop-color="white" stop-opacity="0"></stop><stop offset="0.374975" stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></radialGradient></defs></svg>
+    </div>
+
+    <div class="sec6-text">
+      <h3 class="h2">Start in seconds.</h3>
+      <p>Connect your crypto wallet to start using the app in seconds.<span>No registration needed.</span></p>
+      <a routerLink="/home" class="link mb-4">Learn how to start</a>
+
+      <app-modal-connect-wallet [buttonClass]="'button-standard'" [isDarkModeOn]="isDarkModeOn"></app-modal-connect-wallet>
+    </div>
+    
+    <div class="sec6-svg-container">
+      <div class="sec6-svg-left">
+        <div class="sec6-svg svg-animation-1">
+          <picture>
+            <source type="image/webp" srcset="
+              https://pancakeswap.finance/images/home/flying-pancakes/1-bottom.webp 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/1-bottom@1.5x.webp 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/1-bottom@2x.webp 1024w," />
+            <source type="image/png" srcset="
+              https://pancakeswap.finance/images/home/flying-pancakes/1-bottom.png 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/1-bottom@1.5x.png 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/1-bottom@2x.png 1024w," />
+            <img
+            src="https://pancakeswap.finance/images/home/flying-pancakes/1-bottom.png"
+            alt="Pancake flying on the bottom" />
+          </picture>
+        </div>
+          
+        <div class="sec6-svg svg-animation-2">
+          <picture>
+            <source type="image/webp" srcset="
+              https://pancakeswap.finance/images/home/flying-pancakes/1-left.webp 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/1-left@1.5x.webp 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/1-left@2x.webp 1024w," />
+            <source type="image/png" srcset="
+              https://pancakeswap.finance/images/home/flying-pancakes/1-left.png 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/1-left@1.5x.png 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/1-left@2x.png 1024w," />
+            <img
+            src="https://pancakeswap.finance/images/home/flying-pancakes/1-left.png"
+            alt="Pancake flying on the left" />
+          </picture>
+        </div>
+          
+        <div class="sec6-svg svg-animation-3">
+          <picture>
+            <source type="image/webp" srcset="
+              https://pancakeswap.finance/images/home/flying-pancakes/1-top.webp 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/1-top@1.5x.webp 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/1-top@2x.webp 1024w," />
+            <source type="image/png" srcset="
+              https://pancakeswap.finance/images/home/flying-pancakes/1-top.png 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/1-top@1.5x.png 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/1-top@2x.png 1024w," />
+            <img
+            src="https://pancakeswap.finance/images/home/flying-pancakes/1-top.png"
+            alt="Pancake flying on the top" />
+          </picture>
+        </div>
+      </div>
+          
+      <div class="sec6-svg-right">
+        <div class="sec6-svg svg-animation-1">
+          <picture>
+            <source type="image/webp" srcset="
+              https://pancakeswap.finance/images/home/flying-pancakes/2-bottom.webp 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-bottom@1.5x.webp 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-bottom@2x.webp 1024w," />
+            <source type="image/png" srcset="
+              /images/home/flying-pancakes/2-bottom.png 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-bottom@1.5x.png 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-bottom@2x.png 1024w,">
+            <img
+              src="https://pancakeswap.finance/images/home/flying-pancakes/2-bottom.png"
+              alt="Pancake flying on the bottom" />
+          </picture>
+        </div>
+      
+        <div class="sec6-svg svg-animation-2">
+          <picture>
+            <source type="image/webp" srcset="
+              https://pancakeswap.finance/images/home/flying-pancakes/2-top.webp 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-top@1.5x.webp 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-top@2x.webp 1024w," />
+            <source type="image/png" srcset="
+              https://pancakeswap.finance/images/home/flying-pancakes/2-top.png 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-top@1.5x.png 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-top@2x.png 1024w," />
+            <img
+            src="https://pancakeswap.finance/images/home/flying-pancakes/2-top.png"
+            alt="Pancake flying on the top" />
+          </picture>
+        </div>
+      
+        <div class="sec6-svg svg-animation-3">
+          <picture>
+            <source type="image/webp" srcset="
+              https://pancakeswap.finance/images/home/flying-pancakes/2-right.webp 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-right@1.5x.webp 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-right@2x.webp 1024w," />
+            <source type="image/png" srcset="
+              https://pancakeswap.finance/images/home/flying-pancakes/2-right.png 512w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-right@1.5x.png 768w,
+              https://pancakeswap.finance/images/home/flying-pancakes/2-right@2x.png 1024w," />
+            <img
+            src="https://pancakeswap.finance/images/home/flying-pancakes/2-right.png"
+            alt="Pancake flying on the right" />
+          </picture>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,25 @@
+<div class="lineContainer">
+  <div class="firstLine" (click)="changeBtn()" (click)="divShow()">
+    <div class="text1">{{ faqTextInput.title }}</div>
+    <div class="buttonTable">
+      <button class="buttonDetails" type="button">
+        {{ btnVal }}
+      </button>
+      <img
+        *ngIf="!isShown"
+        src="../../../assets/icons/arrow-little-down-cyan.svg"
+        alt="icon arrow down"
+      />
+      <img
+        *ngIf="isShown"
+        src="../../../assets/icons/arrow-little-up-cyan.svg"
+        alt="icon arrow up"
+      />
+    </div>
+  </div>
+  <div *ngIf="isShown" class="hiddenDiv1">{{ faqTextInput.description }}</div>
+  <div>
+    <a href="" *ngIf="isShown" class="hyperlink">{{ faqTextInput.link }}</a>
+  </div>
+  <div class="line"></div>
+</div>

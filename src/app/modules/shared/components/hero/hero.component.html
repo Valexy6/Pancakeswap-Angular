@@ -1,0 +1,13 @@
+<div [ngClass]="isDarkModeOn ? 'bcg-dark-modal' : 'bcg-gradient'">
+  <div class="hero-title">
+    <h1 class="h1" [ngClass]="isDarkModeOn ? 'text-purple-footer' : 'text-purple'">{{ title }}</h1>
+
+    <h4 class="h4" [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">{{ description }}</h4>
+    <div class="d-flex flex-row">
+      <a [routerLink]="link.url" class="p">{{ link.name }}
+        <img src="assets/icons/arrow-right-cyan.svg">
+      </a>
+    </div>
+
+  </div>
+</div>

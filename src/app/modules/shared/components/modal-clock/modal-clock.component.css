@@ -1,0 +1,36 @@
+.mr-1-2 {
+  margin-right: 0.75rem;
+}
+
+.button-clock {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-clock:hover {
+  background-color: transparent;
+}
+
+.escButton {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  left: 3.5rem;
+  bottom: 0.25rem;
+}
+
+.text {
+  width: 100%;
+  display: inline-flex;
+  height: 45%;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  padding: 1.63rem;
+}
+
+.text > h5 {
+  position: relative;
+  font-size: 1.25rem;
+  font-weight: 600;
+}

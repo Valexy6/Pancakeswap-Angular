@@ -1,0 +1,556 @@
+<div
+  class="middle-page-exchange"
+  [ngClass]="isDarkModeOn ? 'bcg-gradient-light-purple' : 'bcg-gradient'"
+>
+  <!-- CARD EXCHANGE -->
+  <div class="box-card-exchange">
+    <div
+      *ngIf="!isShown"
+      class="card-1-exchange"
+      [ngClass]="isDarkModeOn ? 'bcg-shadow' : 'bcg-white'"
+    >
+      <div class="top-card-1-exchange">
+        <div class="left-side-card-1">
+          <div class="icons-left-card-1">
+            <img
+              src="assets/icons/bnb-token.svg"
+              alt="bnb-icon"
+              style="margin-right: 4px"
+            />
+            <img alt="CAKE logo" src="assets/icons/pancakes.svg" />
+          </div>
+
+          <div
+            class="text-left-card-1"
+            [ngClass]="isDarkModeOn ? 'text-white' : 'text-darkpurple'"
+          >
+            BNB/CAKE
+          </div>
+
+          <button class="button-left-card-1">
+            <img src="assets/icons/double-arrow.svg" alt="double-arrow" />
+          </button>
+
+          <div class="button-text-card-1">
+            <button class="button-text-1">Basic</button>
+          </div>
+        </div>
+
+        <button class="button-zoom">
+          <img
+            *ngIf="!isDarkModeOn"
+            src="assets/icons/zoom-arrow.svg"
+            alt="icon arrow down"
+          />
+          <img
+            *ngIf="isDarkModeOn"
+            src="assets/icons/zoom-arrow-ligh-purple.svg"
+            alt="icon arrow up"
+          />
+        </button>
+      </div>
+
+      <div class="middle-card-1-exchange">
+        <div class="left-side-card-middle">
+          <div class="text-box-mid">
+            <div
+              class="mid-text-1"
+              [ngClass]="isDarkModeOn ? 'text-white' : 'text-darkpurple'"
+            >
+              44.20
+            </div>
+            <div
+              class="mid-text-2"
+              [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'"
+            >
+              BNB/CAKE
+            </div>
+            <div class="mid-text-3">+0.892 (2.06%)</div>
+          </div>
+          <div class="mid-text-4">Dec 24, 2021, 11:50 AM</div>
+        </div>
+
+        <div
+          class="box-right-card-middle"
+          [ngClass]="isDarkModeOn ? 'bcg-hover-a' : 'bcg-gradient'"
+        >
+          <button class="button-middle-right-1">24H</button>
+          <button class="button-middle-right-1 middle-right-2">1W</button>
+          <button class="button-middle-right-1 middle-right-2">1M</button>
+          <button class="button-middle-right-1 middle-right-2">1Y</button>
+        </div>
+      </div>
+
+      <div class="bottom-card-1-exchange">
+        <div class="bottom-card-1-exchange-box">
+          <div class="box-graphic">
+            <svg viewBox="0 0 698 278" version="1.1">
+              <defs>
+                <clipPath id="recharts170-clip">
+                  <rect x="0" y="5"></rect>
+                </clipPath>
+              </defs>
+              <defs>
+                <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
+                  <stop
+                    offset="5%"
+                    stop-color="#ED4B9E"
+                    stop-opacity="0.34"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#ED4B9E"
+                    stop-opacity="0"
+                  ></stop>
+                </linearGradient>
+              </defs>
+              <g
+                class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis"
+              >
+                <g class="recharts-cartesian-axis-ticks">
+                  <g class="recharts-layer recharts-cartesian-axis-tick">
+                    <text
+                      orientation="bottom"
+                      type="category"
+                      x="58.166666666666664"
+                      y="251"
+                      stroke="none"
+                      fill="#666"
+                      class="recharts-text recharts-cartesian-axis-tick-value"
+                      text-anchor="middle"
+                    >
+                      <tspan x="58.166666666666664" dy="0.71em">02:00 PM</tspan>
+                    </text>
+                  </g>
+                  <g class="recharts-layer recharts-cartesian-axis-tick">
+                    <text
+                      orientation="bottom"
+                      type="category"
+                      x="145.41666666666666"
+                      y="251"
+                      stroke="none"
+                      fill="#666"
+                      class="recharts-text recharts-cartesian-axis-tick-value"
+                      text-anchor="middle"
+                    >
+                      <tspan x="145.41666666666666" dy="0.71em">05:00 PM</tspan>
+                    </text>
+                  </g>
+                  <g class="recharts-layer recharts-cartesian-axis-tick">
+                    <text
+                      orientation="bottom"
+                      type="category"
+                      x="232.66666666666666"
+                      y="251"
+                      stroke="none"
+                      fill="#666"
+                      class="recharts-text recharts-cartesian-axis-tick-value"
+                      text-anchor="middle"
+                    >
+                      <tspan x="232.66666666666666" dy="0.71em">08:00 PM</tspan>
+                    </text>
+                  </g>
+                  <g class="recharts-layer recharts-cartesian-axis-tick">
+                    <text
+                      orientation="bottom"
+                      type="category"
+                      x="319.91666666666663"
+                      y="251"
+                      stroke="none"
+                      fill="#666"
+                      class="recharts-text recharts-cartesian-axis-tick-value"
+                      text-anchor="middle"
+                    >
+                      <tspan x="319.91666666666663" dy="0.71em">11:00 PM</tspan>
+                    </text>
+                  </g>
+                  <g class="recharts-layer recharts-cartesian-axis-tick">
+                    <text
+                      orientation="bottom"
+                      type="category"
+                      x="407.16666666666663"
+                      y="251"
+                      stroke="none"
+                      fill="#666"
+                      class="recharts-text recharts-cartesian-axis-tick-value"
+                      text-anchor="middle"
+                    >
+                      <tspan x="407.16666666666663" dy="0.71em">02:00 AM</tspan>
+                    </text>
+                  </g>
+                  <g class="recharts-layer recharts-cartesian-axis-tick">
+                    <text
+                      orientation="bottom"
+                      type="category"
+                      x="494.41666666666663"
+                      y="251"
+                      stroke="none"
+                      fill="#666"
+                      class="recharts-text recharts-cartesian-axis-tick-value"
+                      text-anchor="middle"
+                    >
+                      <tspan x="494.41666666666663" dy="0.71em">05:00 AM</tspan>
+                    </text>
+                  </g>
+                  <g class="recharts-layer recharts-cartesian-axis-tick">
+                    <text
+                      orientation="bottom"
+                      type="category"
+                      x="581.6666666666666"
+                      y="251"
+                      stroke="none"
+                      fill="#666"
+                      class="recharts-text recharts-cartesian-axis-tick-value"
+                      text-anchor="middle"
+                    >
+                      <tspan x="581.6666666666666" dy="0.71em">08:00 AM</tspan>
+                    </text>
+                  </g>
+                  <g class="recharts-layer recharts-cartesian-axis-tick">
+                    <text
+                      orientation="bottom"
+                      width="698"
+                      height="30"
+                      type="category"
+                      x="669.1812496185303"
+                      y="251"
+                      stroke="none"
+                      fill="#666"
+                      class="recharts-text recharts-cartesian-axis-tick-value"
+                      text-anchor="middle"
+                    >
+                      <tspan x="669.1812496185303" dy="0.71em">12:22 PM</tspan>
+                    </text>
+                  </g>
+                </g>
+              </g>
+              <g class="recharts-layer recharts-area">
+                <g class="recharts-layer">
+                  <path
+                    fill="url(#gradient)"
+                    stroke-width="2"
+                    fill-opacity="0.6"
+                    points="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+                    width="698"
+                    height="238"
+                    type="linear"
+                    stroke="none"
+                    class="recharts-curve recharts-area-area"
+                    d="M0,90.88983678532489L29.083333333333332,39.234987681574154L58.166666666666664,50.30367739252114L87.25,143.27553670104328L116.33333333333333,213.13398280108254L145.41666666666666,116.50061726875902L174.5,59.73976309794622L203.58333333333331,90.49361285222164L232.66666666666666,71.34029274899214L261.75,52.861927865097385L290.8333333333333,45.77941196489908L319.91666666666663,36.517988541417424L349,105.22771749552368L378.0833333333333,91.17163588812195L407.16666666666663,89.01491070676667L436.25,72.49182677036805L465.3333333333333,81.79585622285609L494.41666666666663,66.38029152705292L523.5,65.79802141004504L552.5833333333333,49.236915266707086L581.6666666666666,23.207462203790897L610.75,59.72195869471108L639.8333333333333,74.4504682859145L668.9166666666666,75.72395346449349L698,149.38034806393662L698,243L668.9166666666666,243L639.8333333333333,243L610.75,243L581.6666666666666,243L552.5833333333333,243L523.5,243L494.41666666666663,243L465.3333333333333,243L436.25,243L407.16666666666663,243L378.0833333333333,243L349,243L319.91666666666663,243L290.8333333333333,243L261.75,243L232.66666666666666,243L203.58333333333331,243L174.5,243L145.41666666666666,243L116.33333333333333,243L87.25,243L58.166666666666664,243L29.083333333333332,243L0,243Z"
+                  ></path>
+                  <path
+                    type="linear"
+                    stroke="#ED4B9E "
+                    fill="none"
+                    stroke-width="2"
+                    fill-opacity="0.6"
+                    points="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+                    width="698"
+                    height="238"
+                    class="recharts-curve recharts-area-curve"
+                    d="M0,90.88983678532489L29.083333333333332,39.234987681574154L58.166666666666664,50.30367739252114L87.25,143.27553670104328L116.33333333333333,213.13398280108254L145.41666666666666,116.50061726875902L174.5,59.73976309794622L203.58333333333331,90.49361285222164L232.66666666666666,71.34029274899214L261.75,52.861927865097385L290.8333333333333,45.77941196489908L319.91666666666663,36.517988541417424L349,105.22771749552368L378.0833333333333,91.17163588812195L407.16666666666663,89.01491070676667L436.25,72.49182677036805L465.3333333333333,81.79585622285609L494.41666666666663,66.38029152705292L523.5,65.79802141004504L552.5833333333333,49.236915266707086L581.6666666666666,23.207462203790897L610.75,59.72195869471108L639.8333333333333,74.4504682859145L668.9166666666666,75.72395346449349L698,149.38034806393662"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECOND CARD EXCHANGE -->
+    <div class="card-2-exchange-box">
+      <div class="card-2-exchange-box-2">
+        <div class="card-2-exchange-box-3">
+          <div
+            class="card-2-exchange-box-4"
+            [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'"
+          >
+            <div class="top-card-2">
+              <div class="box-top-card-2">
+                <button
+                  (click)="divShow()"
+                  class="button-left-card-2 button-zoom"
+                >
+                  <img
+                    *ngIf="!isShown"
+                    src="assets/icons/staked-slash-light-purple.svg"
+                    alt="icon arrow down"
+                  />
+                  <img
+                    *ngIf="isShown"
+                    src="assets/icons/staked-light-purple.svg"
+                    alt="icon arrow up"
+                  />
+                </button>
+
+                <div class="top-card-text">
+                  <h2 [ngClass]="isDarkModeOn ? 'text-white' : 'text-darkpurple'">
+                    Swap
+                  </h2>
+                </div>
+
+                <div class="card-2-icons-right">
+                  <span class="card-2-icons-right-2">
+                    <div class="card-2-icons-right-3">
+                      <app-modal-settings [isDarkModeOn]="isDarkModeOn"></app-modal-settings>
+                    </div>
+                  </span>
+                  <app-modal-clock [isDarkModeOn]="isDarkModeOn"></app-modal-clock>
+                </div>
+              </div>
+              <div class="top-card-text-2">
+                <div
+                  class="top-card-text-3"
+                  [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'"
+                >
+                  Trade tokens in an instant
+                </div>
+              </div>
+            </div>
+
+            <div class="mid-card-2">
+              <div class="tokens-trade">
+                <div class="tokens-trade-crypto">
+                  <button
+                    class="tokens-trade-button"
+                    (click)="open(content); selectedToken(token1)"
+                  >
+                    <div class="tokens-trade-crypto-select">
+                      <img
+                        src="assets/icons/bnb-token.svg"
+                        alt="bnb-icon"
+                        style="margin-right: 8px"
+                      />
+                      <div class="text-left-card-1" [ngClass]="isDarkModeOn ? 'text-white' : 'text-darkpurple'">{{ token1 }}</div>
+                      <img
+                        *ngIf="!isDarkModeOn"
+                        src="assets/icons/arrow-little-down.svg"
+                        alt="icon arrow down"
+                      />
+                      <img
+                        *ngIf="isDarkModeOn"
+                        src="assets/icons/arrow-little-down-white.svg"
+                        alt="icon arrow up"
+                      />
+                    </div>
+                  </button>
+                </div>
+
+                <div
+                  class="tokens-trade-input"
+                  [ngClass]="isDarkModeOn ? 'bcg-dark-button darkmode' : 'bcg-base lightmode'"
+                >
+                  <div class="tokens-trade-input-3">
+                    <div class="tokens-trade-input-4">
+                      <input
+                        class="tokens-trade-input-5"
+                        inputmode="decimal"
+                        title="Token Amount"
+                        autocomplete="off"
+                        autocorrect="off"
+                        type="text"
+                        pattern="^[0-9]*[.,]?[0-9]*$"
+                        placeholder="0.0"
+                        minlength="1"
+                        maxlength="79"
+                        spellcheck="false"
+                        [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'"
+                      />
+                    </div>
+                  </div>
+                  <div class="tokens-trade-space"></div>
+                </div>
+
+                <div class="change-crypto-box" (click)="swapTokens()">
+                  <button
+                    class="change-crypto-button"
+                    [ngClass]="isDarkModeOn ? 'bcg-dark-button' : 'bcg-base'"
+                  >
+                    <img
+                      src="assets/icons/arrow-down-cyan.svg"
+                      alt="change-crypto-button"
+                      class="icon-crypto-down"
+                    />
+                    <img
+                      src="assets/icons/arrow-up-down-white.svg"
+                      alt="change-crypto-icon-2"
+                      class="icon-crypto-up-down"
+                    />
+                  </button>
+                </div>
+
+                <div class="tokens-trade-crypto">
+                  <button
+                    class="tokens-trade-button"
+                    (click)="open(content); selectedToken(token2)"
+                  >
+                    <div class="tokens-trade-crypto-select">
+                      <img
+                        src="assets/icons/pancakes.svg"
+                        alt="pancakes-icon"
+                        style="margin-right: 8px"
+                      />
+                      <div class="text-left-card-1" [ngClass]="isDarkModeOn ? 'text-white' : 'text-darkpurple'">{{ token2 }}</div>
+                      <img
+                        *ngIf="!isDarkModeOn"
+                        src="assets/icons/arrow-little-down.svg"
+                        alt="icon arrow down"
+                      />
+                      <img
+                        *ngIf="isDarkModeOn"
+                        src="assets/icons/arrow-little-down-white.svg"
+                        alt="icon arrow up"
+                      />
+                    </div>
+                  </button>
+                </div>
+
+                <div
+                  class="tokens-trade-input"
+                  [ngClass]="isDarkModeOn ? 'bcg-dark-button darkmode' : 'bcg-base lightmode'"
+                >
+                  <div class="tokens-trade-input-3">
+                    <div class="tokens-trade-input-4">
+                      <input
+                        class="tokens-trade-input-5"
+                        inputmode="decimal"
+                        title="Token Amount"
+                        autocomplete="off"
+                        autocorrect="off"
+                        type="text"
+                        pattern="^[0-9]*[.,]?[0-9]*$"
+                        placeholder="0.0"
+                        minlength="1"
+                        maxlength="79"
+                        spellcheck="false"
+                      />
+                    </div>
+                  </div>
+                  <div class="tokens-trade-space"></div>
+                </div>
+              </div>
+
+              <div class="pt-4">
+                <app-modal-connect-wallet
+                  [buttonClass]="'button-large'"
+                  [isDarkModeOn]="isDarkModeOn"
+                ></app-modal-connect-wallet>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECOND SECTION BOTTOM -->
+  <div class="main-bottom">
+    <div class="main-bottom-box">
+      <div class="main-bottom-left">
+        <div
+          class="bottom-left-button"
+          [ngClass]="isDarkModeOn ? 'bcg-dark-button' : 'bcg-base'"
+        >
+          <button
+            class="switch-v1"
+            [ngClass]="isDarkModeOn ? 'bcg-mauve' : 'bcg-lightpurple'"
+          >
+            <p
+              [ngClass]="isDarkModeOn ? 'text-darkpurple' : 'text-white'"
+              style="margin-bottom: 0rem"
+            >
+              V2
+            </p>
+          </button>
+          <a class="switch-old" [ngClass]="isDarkModeOn ? 'darkmode' : 'lightmode'">V1 (old)</a>
+        </div>
+
+        <a
+          class="link-convert"
+          routerLink="/trade/swap"
+        >
+          Convert ERC-20 to BEP-20
+          <img src="assets/icons/arrow-oblique-cyan.svg" alt="convert-link" />
+        </a>
+      </div>
+
+      <div class="main-bottom-right">
+        <div class="need-help">
+          <a
+            routerLink="/trade/swap"
+            [ngClass]="isDarkModeOn ? 'bcg-mauve' : 'bcg-lightpurple'"
+          >
+            <p
+              [ngClass]="isDarkModeOn ? 'text-darkpurple' : 'text-white'"
+              style="margin-bottom: 0rem"
+            >
+              Need help?
+            </p>
+          </a>
+          <svg
+            viewBox="0 0 16 16"
+            color="text"
+            width="20px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 16V0C0 0 3 1 6 1C9 1 16 -2 16 3.5C16 10.5 7.5 16 0 16Z"
+            ></path>
+          </svg>
+        </div>
+
+        <div class="img-bottom-right">
+          <img src="assets/img/help.png" alt="need-help-png" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<ng-template #content let-modal>
+  <div [ngClass]="isDarkModeOn ? 'darkmode' : 'lightmode'">
+  <div class="modal-box-connect" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
+    <div class="modal-wallet-header">
+      <h3 class="h3 m-0" [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'">Select a Token</h3>
+      <button type="button" class="close-btn" (click)="modal.close('Close click')">
+        <img src="assets/icons/exit.svg" />
+      </button>
+    </div>
+
+    
+
+    </div>
+
+    <div class="modal-section" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
+      <div>
+        <input class="search-field" type="text" placeholder="Search name or paste address" [formControl]="filter" [ngClass]="isDarkModeOn ? 'bcg-dark-button' : 'bcg-base'"/>
+
+        <div class="modal-currency">
+          <div class="modal-currency-container">
+            <div class="box-currency">
+              <div class="container-ciclo-currency" *ngFor="let currencyModals of currency$ | async; index as i"
+              (click)="
+                selectNewTokens(currencyModals.label1);
+                modal.close('Close click')
+              ">
+                <img src="{{ currencyModals.img }}" alt="" style="width: 24px; align-self: center;">
+                <div class="label-container">
+                  <div class="label-currency-1" [ngClass]="isDarkModeOn ? 'text-white' : 'text-black'"> <ngb-highlight [result]="currencyModals.label1" [term]="filter.value"></ngb-highlight> </div>
+                  <div class="label-currency-2" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'"> <ngb-highlight [result]="currencyModals.label2" [term]="filter.value"></ngb-highlight> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-currency-modal">
+        <button> Manage Tokens</button>
+      </div>
+
+      
+    </div>
+  </div>
+</ng-template>

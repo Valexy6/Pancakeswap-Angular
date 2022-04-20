@@ -1,0 +1,216 @@
+footer {
+  background: var(--footer-bcg);
+  display: flex;
+  justify-content: center;
+  padding: 3.5rem 2.5rem 2rem; /*56px 40px 32px*/
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.f-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 75rem; /*1200px*/
+}
+
+.f-logo-responsive {
+  display: none;
+}
+
+.f-row1 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2.25rem; /*36px*/
+}
+
+.f-link {
+  list-style: none;  
+  font-size: 1rem;
+  font-family: 'Kanit', sans-serif;
+  color: var(--text-footer);
+}
+
+.f-link li {
+  margin-bottom: 0.5rem;
+}
+
+.li-title {  
+  color: var(--title-footer);
+  font-weight: 600;
+  line-height: 1rem;
+}
+
+.f-link-a {
+  text-decoration: none;
+  color: var(--text-footer);
+  line-height: 1.5;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.f-link a:hover {
+  text-decoration: underline;
+}
+
+.yellow-a {
+  color: var(--yellow);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.f-row2 {
+  border-bottom: 1px solid rgb(56, 50, 65);
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-self: center;
+  align-items: center;
+}
+
+.f-row2-links {
+  margin-right: 1.5rem; /*24px*/
+  height: 1.375rem; /*22px*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.telegram-container {
+  position: relative;
+}
+
+.telegram-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  width: max-content;
+  max-height: 25rem;
+  box-shadow: rgb(25 19 38 / 10%) 0px 2px 12px -8px, rgb(25 19 38 / 5%) 0px 1px 1px;
+  border-radius: 4px;
+  padding: 1rem;
+  z-index: 15;
+  overflow-y: auto;
+  cursor: pointer;
+}
+
+.telegram-container:hover .telegram-links {
+  display: flex;
+}
+
+.telegram-links a {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-right: 0;
+}
+
+.telegram-links a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.f-row3 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.f-row3 .language-container {
+  padding: 0px 1.5rem;
+}
+
+.f-row3 .lang-selector {
+  transform: translate(-50%, 0px);
+  left: 100%;
+  bottom: 100%;
+}
+
+.f-row3 .pancakes-link {
+  margin-right:  1.25rem; /*20px*/
+}
+
+.pancake-trade {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+app-pancake-trade {
+  margin-right: 0.375rem; /*6px*/
+}
+
+app-language-selector {
+  padding: 0 0.75rem 0 1rem;
+}
+
+
+@media all and (max-width: 768px) {
+  footer {
+    padding: 2.5rem 1rem; /*40px 16px*/
+    margin-bottom: 2.75rem;
+  }
+
+  .f-row1 {
+    flex-flow: column nowrap;
+    order: 2;
+    margin-bottom: 2.625rem;
+  }
+
+  .f-link {
+    margin-bottom: 2.5rem;
+  }
+
+  .f-container .f-link li:last-of-type {
+    padding-bottom: 0.5rem;
+  }
+
+  .f-row2 {
+    order: 2;
+    padding-bottom: 2.625rem;
+    margin: 0;
+  }
+
+  .f-row3 {
+    order: 1;
+    flex-flow: column-reverse nowrap;
+    align-items: flex-start;
+    border-bottom: 1px solid rgb(56, 50, 65);
+    padding: 1.5rem 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .pancake-trade {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+
+  .f-logo-responsive {
+    display: block; 
+    border-bottom: 1px solid rgb(56, 50, 65);
+  }
+
+  .f-logo-responsive img {
+    margin-bottom: 1.5rem;
+  }
+
+  .f-logo {
+    display: none;
+  }
+
+}

@@ -1,0 +1,76 @@
+.switcher {
+  align-items: center;
+  background-color: var(--switcher-bcg);
+  border-radius: 1.5rem;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  cursor: pointer;
+  display: inline-flex;
+  height: 2rem;
+  position: relative;
+  transition: background-color 200ms ease 0s;
+  width: 3.5rem;
+}
+
+.switcher-input {
+  opacity: 0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.switcher-icon-container {
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 1.625rem;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  transition: left 200ms ease-in 0s;
+  width: 1.625rem;
+  z-index: 1;
+}
+
+.switcher-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.switcher-icon-bcg {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.switcher-input:checked + .switcher-icon-container {
+  left: calc(100% - 30px);
+}
+
+.switcher-input:hover + .active-border,
+.switcher-input:focus + .active-border {
+  box-shadow: var(--purple) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+}
+
+/* dark mode */
+.switcher-dark {
+  align-items: center;
+  background-color: var(--switcher-bcg-darkmode);
+  border-radius: 1.5rem;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  cursor: pointer;
+  display: inline-flex;
+  height: 2rem;
+  position: relative;
+  transition: background-color 200ms ease 0s;
+  width: 3.5rem;
+}
+
+.icon-container-dark {
+  background-color: var(--footer-bcg);
+}

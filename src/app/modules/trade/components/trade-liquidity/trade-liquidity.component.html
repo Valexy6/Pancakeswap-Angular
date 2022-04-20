@@ -1,0 +1,86 @@
+<!-- PAGE TRADE LIQUIDITY -->
+<div class="main-page" >
+  <div class="main-page-box">
+    <div class="middle-page" [ngClass]="isDarkModeOn ? 'bcg-gradient-light-purple' : 'bcg-gradient'">
+     <!-- CARD LIQUIDITY -->
+      <div class="card-liquidity">
+        <div class="card-liquidity-box" [ngClass]="isDarkModeOn ? 'bcg-footer' : 'bcg-white'">
+          
+          <div class="section-top">
+            
+            <div class="left-section-top">
+              <div class="left-text-top">
+                <h2 [ngClass]="isDarkModeOn ? 'text-white-footer' : 'text-darkpurple'">Your Liquidity</h2>
+                <div class="left-text-top-box">
+                  <div class="left-text-top-2" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'"[ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Remove liquidity to receive tokens back</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="right-section-top">
+              <span class="first-button-top">
+                <div class="first-button-top-box">
+                  <app-modal-settings [isDarkModeOn]="isDarkModeOn"></app-modal-settings>
+                </div>
+              </span>
+
+              <app-modal-clock [isDarkModeOn]="isDarkModeOn"></app-modal-clock>
+            </div>
+
+          </div>
+
+          <div class="section-middle" [ngClass]="isDarkModeOn ? 'bcg-black' : 'bcg-grey'">
+            <div class="section-middle-text" [ngClass]="isDarkModeOn ? 'text-mauve' : 'text-lightpurple'">Connect to a wallet to view your liquidity.</div>
+          </div>
+
+          <div class="section-bottom">
+            <a class="section-bottom-link" routerLink="/add" routerLinkActive="active">
+              <img src="assets/icons/plus-sign-white.svg" alt="plus-icon">
+              Add Liquidity
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="divisore"></div>
+       <!-- SECOND SECTION BOTTOM -->
+      <div class="main-bottom">
+        <div class="main-bottom-box">
+          
+          <div class="main-bottom-left">
+            <div class="bottom-left-button" [ngClass]="isDarkModeOn ? 'bcg-dark-button' : 'bcg-base'">
+              <button class="switch-v1" [ngClass]="isDarkModeOn ? 'bcg-mauve' : 'bcg-lightpurple'" >
+                <p [ngClass]="isDarkModeOn ? 'text-darkpurple' : 'text-white'" style="margin-bottom: 0rem;">V2</p>
+              </button>
+              <a class="switch-old" routerLink="/trade/liquidity" [ngClass]="isDarkModeOn ? 'darkmode' : 'lightmode'">V1 (old)</a>
+            </div>
+
+            <a class="link-convert" href="https://docs.binance.org/smart-chain/guides/cross-chain.html">
+              Convert ERC-20 to BEP-20
+              <img src="assets/icons/arrow-oblique-cyan.svg" alt="convert-link">
+            </a>
+
+          </div>
+
+          <div class="main-bottom-right">
+            <div class="need-help" >
+              <a href="https://docs.pancakeswap.finance/products/pancakeswap-exchange" [ngClass]="isDarkModeOn ? 'bcg-mauve' : 'bcg-lightpurple'">
+                <p [ngClass]="isDarkModeOn ? 'text-darkpurple' : 'text-white'" style="margin-bottom: 0rem;">Need help?</p>
+              </a>
+              <svg viewBox="0 0 16 16" color="text" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M0 16V0C0 0 3 1 6 1C9 1 16 -2 16 3.5C16 10.5 7.5 16 0 16Z"></path></svg>
+            </div>
+
+            <div class="img-bottom-right">
+              <img src="assets/img/help.png" alt="need-help-png">
+            </div>
+          
+          </div>
+        
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
